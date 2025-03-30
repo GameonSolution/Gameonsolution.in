@@ -2,7 +2,7 @@ import { useCantacts } from "@/hook/useContact";
 import { useState } from "react";
 import { AiOutlineMobile } from "react-icons/ai";
 import { FaMapMarkerAlt, FaRegCommentAlt } from "react-icons/fa";
-import { Footer } from "./Footer";
+import { Footer } from "./footer";
 interface FormData {
   name: string;
   email: string;

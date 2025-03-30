@@ -8,7 +8,7 @@ import AnimateCard from "./animateCard";
 import TabSEO from "./seoOptimize";
 import { seoData } from "@/common/seoTitleDescription";
 import WhatsAppButton from "./WhatsappButton";
-import { Footer } from "./Footer";
+import { Footer } from "./footer";
 
 const News_Page = () => {
   const { queryClient, getNewsFeeds } = useNewsFeed();
