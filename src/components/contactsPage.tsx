@@ -2,12 +2,13 @@ import { useCantacts } from "@/hook/useContact";
 import { useState } from "react";
 import { AiOutlineMobile } from "react-icons/ai";
 import { FaMapMarkerAlt, FaRegCommentAlt } from "react-icons/fa";
-import { Footer } from "./footer";
+import { Footer } from "./Footer";
 interface FormData {
   name: string;
   email: string;
   message: string;
   phone: string;
+  location: string;
 }
 
 interface Errors {
@@ -15,6 +16,7 @@ interface Errors {
   email?: string;
   message?: string;
   phone?: string;
+  location?: string;
 }
 export const ContactsPage = () => {
   const { createContact } = useCantacts();
@@ -23,6 +25,7 @@ export const ContactsPage = () => {
     email: "",
     message: "",
     phone: "",
+    location: "",
   });
   const [errors, setErrors] = useState<Errors>({});
 
@@ -35,6 +38,7 @@ export const ContactsPage = () => {
     }
     if (!formData.message.trim()) newErrors.message = "Message is required";
     const phoneRegex = /^(\+?\d{1,2})?[\s-]?\(?\d{3}\)?[\s-]?\d{3}[\s-]?\d{4}$/;
+    if (!formData.location?.trim()) newErrors.location = "Location is required";
     if (!formData.phone.trim()) {
       newErrors.phone = "Phone number is required";
     } else if (!phoneRegex.test(formData.phone)) {
@@ -49,7 +53,13 @@ export const ContactsPage = () => {
 
     if (validate()) {
       await createContact.mutateAsync({ ...formData }).then(() => {
-        setFormData({ name: "", email: "", message: "", phone: "" });
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+          phone: "",
+          location: "",
+        });
         setErrors({});
       });
     }

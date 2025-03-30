@@ -1,4 +1,4 @@
-import { Footer } from "../footer";
+import { Footer } from "../Footer";
 import Certificates from "./pageAnimation/certificates";
 import { Container } from "./pageAnimation/container";
 import { FadeIn } from "./pageAnimation/fade-in";
@@ -6,6 +6,7 @@ import { Hero } from "./pageAnimation/hero";
 import { VideoCarousel } from "./pageAnimation/video-carousel";
 import AnimateCard from "../animateCard";
 import { useEffect } from "react";
+import TabSEO from "../seoOptimize/index";
 
 const VolleyballTurf = () => {
   useEffect(() => {

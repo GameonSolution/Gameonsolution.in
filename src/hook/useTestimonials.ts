@@ -10,7 +10,8 @@ type Testimonial = {
   mediaUrl: string;
 };
 // Define the API URL base for testimonials (adjust if needed)
-const API_URL = "https://api-gms.vercel.app/api/v1/testimonials";
+// const API_URL = "https://api-gms.vercel.app/api/v1/testimonials";
+const API_URL = "https://api.gameonsolution.in/api/v1/testimonials";
 // const API_URL = "https://api-gms-theta.vercel.app/api/v1/testimonials";
 // const API_URL = "http://localhost:8080/api/v1/testimonials";
 

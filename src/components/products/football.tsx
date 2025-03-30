@@ -1,4 +1,4 @@
-import { Footer } from "../footer";
+import { Footer } from "../Footer";
 import Certificates from "./pageAnimation/certificates";
 import { Container } from "./pageAnimation/container";
 import { FadeIn } from "./pageAnimation/fade-in";

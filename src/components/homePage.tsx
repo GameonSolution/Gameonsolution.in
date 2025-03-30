@@ -3,7 +3,7 @@ import AboutUs from "./aboutUs";
 import CircleMiniCricketStadiumTurf from "./CircleMiniCricketStadiumTurf";
 import Contact from "./contact";
 import FAQ from "./faq";
-import { Footer } from "./footer";
+import { Footer } from "./Footer";
 import HomeBanners from "./homeBanners";
 import HomeNewsFeed from "./homeNewsFeed";
 import IconsWithContent from "./iconsWithContent";

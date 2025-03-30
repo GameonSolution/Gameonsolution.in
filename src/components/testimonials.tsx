@@ -4,7 +4,7 @@ import TextHoverAnimation from "./textHoverAnimation";
 import { useTestimonials } from "@/hook/useTestimonials";
 import VideoCard from "./videoCard/main";
 
-import { Footer } from "./footer";
+import { Footer } from "./Footer";
 import TabSEO from "./seoOptimize";
 import { seoData } from "@/common/seoTitleDescription";
 import WhatsAppButton from "./WhatsappButton";

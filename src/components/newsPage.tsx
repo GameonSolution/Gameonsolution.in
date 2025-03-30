@@ -2,13 +2,13 @@ import { NewsFeed, useNewsFeed } from "@/hook/useNewsFeed";
 import { useEffect, useState } from "react";
 import YouTube from "react-youtube";
 import TextHoverAnimation from "./textHoverAnimation";
-import { Footer } from "./footer";
 import { RiAwardFill } from "react-icons/ri";
 import Preloader from "./preLoading";
 import AnimateCard from "./animateCard";
 import TabSEO from "./seoOptimize";
 import { seoData } from "@/common/seoTitleDescription";
 import WhatsAppButton from "./WhatsappButton";
+import { Footer } from "./Footer";
 
 const News_Page = () => {
   const { queryClient, getNewsFeeds } = useNewsFeed();

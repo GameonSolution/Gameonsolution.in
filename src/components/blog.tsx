@@ -82,7 +82,7 @@
 import { useNavigate } from "react-router-dom";
 import AnimatedCard from "../components/animateCard";
 import TextHoverAnimation from "../components/textHoverAnimation";
-import { Footer } from "../components/Footer";
+import { Footer } from "./Footer";
 import { RiAwardFill } from "react-icons/ri";
 import AnimateCard from "./animateCard";
 import WhatsAppButton from "./WhatsappButton";

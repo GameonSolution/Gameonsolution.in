@@ -5,7 +5,7 @@ type Carousel = {
   url: string;
 };
 // const API_URL = "https://api-gms.vercel.app/api/v1/carousel";
-const API_URL = "https://api-gms-theta.vercel.app/api/v1/carousel";
+const API_URL = "https://api.gameonsolution.in/api/v1/carousel";
 // const API_URL = "http://localhost:8080/api/v1/carousel";
 
 export function useCarousel() {
