@@ -11,10 +11,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "types": ["@types/three", "@types/react-three-fiber"],
+    "forceConsistentCasingInFileNames": true,
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["./src/*"]
     }
   }
 }
