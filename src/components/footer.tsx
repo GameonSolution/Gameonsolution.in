@@ -64,7 +64,7 @@ export const Footer = () => {
           </div>
           <div className="flex lg:w-[50%] w-full text-[12px] gap-8 font-secondary lg:justify-end">
             <a
-              href="https://www.instagram.com/gameon_solution"
+              href="https://www.instagram.com/gameonsolution_southindia/"
               target="_blank"
               rel="noopener noreferrer"
               className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
@@ -72,7 +72,7 @@ export const Footer = () => {
               <FaInstagram />
             </a>
             <a
-              href="https://www.youtube.com/@GameonSolution"
+              href="https://youtube.com/@gameonsolutionoffi?si=U3jRSjQ_TscHG2ry"
               target="_blank"
               rel="noopener noreferrer"
               className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
@@ -80,7 +80,7 @@ export const Footer = () => {
               <FaYoutube />
             </a>
             <a
-              href="https://wa.me/9715131313"
+              href="https://wa.me/9715131373"
               target="_blank"
               rel="noopener noreferrer"
               className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
