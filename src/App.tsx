@@ -24,6 +24,7 @@ import BadmintonCourt from "./components/products/BadmintonCourt";
 import BasketBallCourt from "./components/products/basketBall";
 import HomePage from "./components/homePage";
 import BlogPage from "./components/blog";
+import NotFound from "./components/notfound";
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -71,6 +72,7 @@ const App: React.FC = () => {
               {/* <Route path="/portfolio" element={<Portfolio />} /> */}
               <Route path="/get-in-touch" element={<ContactsPage />} />
               <Route path="/blog" element={<BlogPage />} />
+              <Route path="*" element={<NotFound />} />
 
               {/* products pages */}
               <Route path="/360-circle-turf" element={<CircleTurf360 />} />
