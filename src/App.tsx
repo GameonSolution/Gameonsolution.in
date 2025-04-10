@@ -25,6 +25,8 @@ import BasketBallCourt from "./components/products/basketBall";
 import HomePage from "./components/homePage";
 import BlogPage from "./components/blog";
 import NotFound from "./components/notfound";
+import BlogDetailPage from "./components/BlogDetailPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -62,6 +64,7 @@ const App: React.FC = () => {
           <div
             className={`w-screen h-screen bg-primary no-scrollbar select-none`}
           >
+            <ScrollToTop />
             <Navbar />
             <CursorFollower />
             <ScrollProgress />
@@ -72,6 +75,7 @@ const App: React.FC = () => {
               {/* <Route path="/portfolio" element={<Portfolio />} /> */}
               <Route path="/get-in-touch" element={<ContactsPage />} />
               <Route path="/blog" element={<BlogPage />} />
+              <Route path="/blog/:slug" element={<BlogDetailPage />} />
               <Route path="*" element={<NotFound />} />
 
               {/* products pages */}

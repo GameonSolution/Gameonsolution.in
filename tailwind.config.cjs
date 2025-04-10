@@ -145,6 +145,7 @@ module.exports = {
   },
   plugins: [
     require("tailwindcss-animate"),
+    require("@tailwindcss/typography"), // ← Add this here
     function ({ addUtilities }) {
       addUtilities({
         ".no-scrollbar": {

@@ -111,48 +111,45 @@ const BlogPage = () => {
   const blogs = [
     {
       id: 1,
-      slug: "importance-of-quality-turf",
-      title: "The Importance of Quality Turf in Sports Fields",
+      slug: "minimum-area-required-for-turf-installation",
+      title:
+        "Minimum Area Required for Turf Installation: A Comprehensive Guide",
       excerpt:
-        "Discover why high-quality synthetic turf enhances gameplay, safety, and durability for all sports.",
-      image:
-        "https://www.sporteeno.com/wp-content/uploads/2021/06/main-banner-01.jpg",
+        "Planning to install turf? Here's how much space you need for different sports across urban, semi-urban, and rural setups.",
+      image: "/Football/Football-03.webp",
     },
     {
       id: 2,
-      slug: "turf-maintenance-guide",
-      title: "Essential Turf Maintenance Guide",
+      slug: "turf-cricket-installation",
+      title: "Cricket Turf Installation: A Smart Investment in South India",
       excerpt:
-        "Learn expert tips on how to keep your artificial turf in pristine condition year-round.",
-      image:
-        "https://www.sporteeno.com/wp-content/uploads/2021/06/main-banner-01.jpg",
+        "Explore the financial opportunities, installation costs, and ROI of setting up a turf cricket business in India.",
+      image: "/CircleMiniCricketStadiumTurff/PLT_00017.jpg",
     },
     {
       id: 3,
-      slug: "natural-vs-artificial-turf",
-      title: "Natural Grass vs. Artificial Turf: Pros & Cons",
+      slug: "understanding-turf-and-artificial-grass",
+      title: "Understanding Turf and Artificial Grass: What's the Difference?",
       excerpt:
-        "A deep dive into the benefits and drawbacks of both turf options for sports grounds.",
-      image:
-        "https://www.sporteeno.com/wp-content/uploads/2021/06/main-banner-01.jpg",
+        "Confused between turf and artificial grass? Learn key differences, maintenance needs, and the best use-cases for each surface.",
+      image: "/blog3.jpg",
     },
     {
       id: 4,
-      slug: "best-turf-for-football",
-      title: "Choosing the Best Turf for Football Fields",
+      slug: "india-pakistan-icc-matches-neutral-venues",
+      title: "India-Pakistan Neutral Venue Matches & Turf Infrastructure",
       excerpt:
-        "Find out the key factors in selecting the perfect artificial turf for football stadiums.",
+        "With India-Pakistan matches at neutral venues until 2027, the spotlight is on high-quality turf and world-class sports infrastructure.",
       image:
-        "https://www.sporteeno.com/wp-content/uploads/2021/06/main-banner-01.jpg",
+        "https://5.imimg.com/data5/SELLER/Default/2024/12/475419656/SV/JW/LK/36813047/natural-cricket-pitch-1000x1000.jpg",
     },
     {
       id: 5,
-      slug: "eco-friendly-turf-options",
-      title: "Eco-Friendly Turf: Sustainable Choices for Sports",
+      slug: "average-turf-size-guide",
+      title: "Get in the Know: Average Turf Size Demystified",
       excerpt:
-        "Explore environmentally friendly artificial turf solutions that balance performance and sustainability.",
-      image:
-        "https://www.sporteeno.com/wp-content/uploads/2021/06/main-banner-01.jpg",
+        "From backyard setups to full-scale football fields, understand how turf sizes impact cost, business use, and passive income potential.",
+      image: "/blog5.jpg",
     },
   ];
 
