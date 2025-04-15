@@ -21,7 +21,7 @@ const WhatsAppButton = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const whatsappNumber = "9715131313";
+  const whatsappNumber = "9715131373";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (

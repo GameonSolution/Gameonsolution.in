@@ -166,10 +166,10 @@ const Navbar: React.FC = () => {
                         //360-circle-turf
                         { path: "/football-turf", label: "Football Turf" },
                         { path: "/pickle-turf", label: "Pickle Ball" },
-                        {
-                          path: "/circle-turf",
-                          label: "Mini Cricket Stadium",
-                        },
+                        // {
+                        //   path: "/circle-turf",
+                        //   label: "Mini Cricket Stadium",
+                        // },
 
                         { path: "/cricket-turf", label: "Cricket Nets" },
                         { path: "/indoor-turf", label: "Indoor Turf" },

@@ -125,7 +125,8 @@
 // };
 
 // export default Testimonials;
-import { motion } from "framer-motion";
+
+import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef } from "react";
 import TextHoverAnimation from "./textHoverAnimation";
 import { useTestimonials } from "@/hook/useTestimonials";
@@ -148,10 +149,15 @@ type Testimonial = {
 
 const Testimonials = () => {
   const targetRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+  });
 
   const { queryClient } = useTestimonials();
   const data =
     (queryClient.getQueryData(["testimonials"]) as Testimonial[]) ?? [];
+
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -182,29 +188,32 @@ const Testimonials = () => {
         </div>
 
         <section ref={targetRef} className="md:h-[400vh] flex flex-col px-10">
-          <div className="flex justify-center items-center px-4 py-10">
-            <div className="w-full max-w-[720px] aspect-video">
-              <iframe
-                className="w-full h-full rounded-xl shadow-lg"
-                src="https://www.youtube.com/embed/dApgjWOf7P8?list=PLN7mivnQnwn3J3WlZO2Jk2ie7kVbDgdR0&index=3"
-                title="YouTube video testimonial"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+          {/* Desktop Scrollable Section */}
+          <div className="sticky top-0 h-screen justify-center items-center xl:flex xl:visible lg:flex lg:visible hidden overflow-hidden">
+            <motion.div style={{ x, width: 1100 }} className="flex gap-10">
+              {data.map((test, i) => (
+                <div key={i} className="flex flex-col gap-2">
+                  <HorizontalCard
+                    videoSrc={test.mediaUrl}
+                    fileType={test.fileType}
+                  />
+                </div>
+              ))}
+            </motion.div>
           </div>
 
+          {/* Mobile/Tablet Static Section */}
           <div className="sticky top-0 justify-center items-center py-12 gap-12 md:visible lg:hidden xl:hidden flex flex-col">
             {data.map((test, i) => (
               <div key={i} className="flex flex-col gap-2">
-                <VerticalCard key={i} videoSrc={test.mediaUrl} />
+                <VerticalCard
+                  videoSrc={test.mediaUrl}
+                  fileType={test.fileType}
+                />
                 <p className="text-3xl font-primary text-white uppercase leading-tight">
                   {test.authorName}
                 </p>
-                <div className="text-white text-center max-w-xs">
-                  {test.content}
-                </div>
+                <div className="text-white text-base">{test.content}</div>
               </div>
             ))}
           </div>
@@ -217,7 +226,25 @@ const Testimonials = () => {
   );
 };
 
-const VerticalCard: React.FC<{ videoSrc: string }> = ({ videoSrc }) => {
+const HorizontalCard: React.FC<{ videoSrc: string; fileType: string }> = ({
+  videoSrc,
+  fileType,
+}) => {
+  return (
+    <div className="h-[30rem] w-[20rem] transition-transform overflow-hidden hover:z-50 duration-500 hover:shadow-2xl hover:scale-125">
+      {/* <VideoCard videoSrc={videoSrc} fileType={fileType} /> */}
+      <VideoCard
+        videoSrc={videoSrc}
+        fileType={fileType as "video" | "youtube"}
+      />
+    </div>
+  );
+};
+
+const VerticalCard: React.FC<{ videoSrc: string; fileType: string }> = ({
+  videoSrc,
+  fileType,
+}) => {
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
@@ -232,7 +259,12 @@ const VerticalCard: React.FC<{ videoSrc: string }> = ({ videoSrc }) => {
       transition={{ duration: 0.3, ease: "easeOut" }}
       className="h-[500px] w-[300px]"
     >
-      <VideoCard videoSrc={videoSrc} />
+      {/* <VideoCard videoSrc={videoSrc} fileType={fileType} /> */}
+
+      <VideoCard
+        videoSrc={videoSrc}
+        fileType={fileType as "video" | "youtube"}
+      />
     </motion.div>
   );
 };

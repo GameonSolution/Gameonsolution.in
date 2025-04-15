@@ -280,7 +280,7 @@ const CircleTurf360 = () => {
       </motion.div>
 
       {/* Basketball Court Section */}
-      <div className="flex gap-10 lg:flex-row flex-col px-10 md:px-20 lg:px-[7.5rem] py-20">
+      {/* <div className="flex gap-10 lg:flex-row flex-col px-10 md:px-20 lg:px-[7.5rem] py-20">
         <div className="flex md:flex-row flex-col gap-12">
           <div className="relative w-full flex items-center justify-center">
             <div className="relative flex items-center">
@@ -338,7 +338,7 @@ const CircleTurf360 = () => {
             </motion.p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* 360° Circle Turf Section */}
       <div className="flex gap-10 lg:flex-row flex-col px-10 md:px-20 lg:px-[7.5rem] py-20">
