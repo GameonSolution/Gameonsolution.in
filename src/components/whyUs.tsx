@@ -234,6 +234,14 @@ const WhyUs: React.FC = () => {
           need synthetic grass for your villa, we’ve got your turf needs
           covered.
         </p>
+        <a
+          href="https://gameonsolution.in"
+          className="text-secondary font-medium"
+        >
+          <p className="md:text-2xl text-lg text-center">
+            Check out GameOn Solution
+          </p>
+        </a>
       </div>
     </section>
   );
