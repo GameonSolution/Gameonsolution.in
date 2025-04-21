@@ -70,6 +70,14 @@ const HomeNewsFeed: React.FC = () => {
       src: "/vikadanLogo.png",
       alt: "Vikatan Logo",
     },
+    {
+      src: "/radiocity.jpg",
+      alt: "Radio City Logo",
+    },
+    {
+      src: "/midtown.png",
+      alt: "MidTown Logo",
+    },
   ];
 
   return (

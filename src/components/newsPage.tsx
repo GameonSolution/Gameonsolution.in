@@ -90,12 +90,24 @@ const News_Page = () => {
     {
       icon: "/sitaLogo.png",
       date: "2021-2023",
-      title: "South india's best Sports infrastructure Firm Award by  ",
+      title: "South india's best Sports infrastructure Firm Award by",
+    },
+    {
+      icon: "/radiocity.jpg",
+      date: "2023-2024",
+      title: "Radio City TamilNadu Business Icon of the Year",
     },
     {
       icon: "/vikadanLogo.png",
       date: "2023",
       title: "Best Sportd Infra Solution by",
+    },
+
+    {
+      icon: "/midtown.png",
+      date: "2024",
+      title:
+        "SOUTH INDIA’S BEST SPORTS INFRASTRUCTURE FIRM BY MIDTOWN BUSINESS AWARDS",
     },
   ];
 
@@ -230,21 +242,18 @@ const News_Page = () => {
                   <TextHoverAnimation text="From" />
                 </span>
               </h3>
-              <div className="grid grid-cols-1    md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {awards.map((image, index) => (
                   <AnimateCard key={index}>
-                    <div
-                      key={index}
-                      className="border border-gray-50/10 p-1 transform transition duration-500 ease-in-out hover:scale-105"
-                    >
-                      <div className="w-full shadow-md overflow-hidden bg-yellow-100/20 flex items-center justify-center">
+                    <div className="border border-gray-50/10 p-2 transform transition duration-500 ease-in-out hover:scale-105 rounded-xl bg-white/5">
+                      <div className="w-full h-32 shadow-md overflow-hidden bg-yellow-100/20 flex items-center justify-center p-4">
                         <img
-                          src={image.icon} // Replace with actual paths
-                          alt={`image ${index + 1}`}
-                          className="w-32 h-28 object-cover"
+                          src={image.icon} // Make sure path is correct
+                          alt={`award-logo-${index + 1}`}
+                          className="max-h-full max-w-full object-contain"
                         />
                       </div>
-                      <p className="text-lg flex md:text-lg lg:text-lg p-4  font-primary   leading-tight text-wrap  items-center  justify-center text-secondary uppercase text-center ">
+                      <p className="text-lg md:text-lg lg:text-lg p-4 font-primary leading-tight text-center text-secondary uppercase">
                         {image.title}
                       </p>
                     </div>
