@@ -202,7 +202,7 @@ const blogData = [
 </tr>
 </tbody>
 </table>
-<p><span style="font-weight: 400;">Knowing these factors helps you make smart choices about setting up your turf cricket pitch. Think about the size, the turf quality, and whether you're going pro or DIY to get a handle on the costs and plan your investment. For more tips on turf installation, check out our article on </span><a href="https://gameonsolution.in/news/what-is-the-minimum-sq-ft-for-turf"><span style="font-weight: 400;">what is the minimum sq ft for turf?</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">Knowing these factors helps you make smart choices about setting up your turf cricket pitch. Think about the size, the turf quality, and whether you're going pro or DIY to get a handle on the costs and plan your investment. For more tips on turf installation, check out our article on </span><a href="https://gameonsolution.in/blog/minimum-square-feet-for-turf"><span style="font-weight: 400;">what is the minimum sq ft for turf?</span></a><span style="font-weight: 400;">.</span></p>
 <h2><strong>Understanding the Cost Breakdown</strong></h2>
 <p><span style="font-weight: 400;">Thinking about setting up a turf cricket field to rake in some passive income? Well, you gotta know where your money's going. Let's break down the main costs: turf materials, labor, and those sneaky extras that can catch you off guard.</span></p>
 <h3><strong>Turf Material Costs</strong></h3>
@@ -270,7 +270,7 @@ const blogData = [
 <p><span style="font-weight: 400;">Turf Material</span></p>
 </td>
 <td>
-<p><span style="font-weight: 400;">$0.50 - $1.50</span></p>
+<p><span style="font-weight: 400;">Rs. 0.50 - 1.50</span></p>
 </td>
 </tr>
 <tr>
@@ -278,7 +278,7 @@ const blogData = [
 <p><span style="font-weight: 400;">Installation</span></p>
 </td>
 <td>
-<p><span style="font-weight: 400;">$1.00 - $2.00</span></p>
+<p><span style="font-weight: 400;">Rs. 1.00 - 2.00</span></p>
 </td>
 </tr>
 <tr>
@@ -286,7 +286,7 @@ const blogData = [
 <p><span style="font-weight: 400;">Maintenance (annual)</span></p>
 </td>
 <td>
-<p><span style="font-weight: 400;">$0.25 - $0.50</span></p>
+<p><span style="font-weight: 400;">Rs. 0.25 - 0.50</span></p>
 </td>
 </tr>
 </tbody>
@@ -325,7 +325,7 @@ const blogData = [
 <p><span style="font-weight: 400;">Maintenance (annual)</span></p>
 </td>
 <td>
-<p><span style="font-weight: 400;">Rs.15- 20&nbsp; per sq ft</span></p>
+<p><span style="font-weight: 400;">Rs. 15- 20&nbsp; per sq ft</span></p>
 </td>
 </tr>
 </tbody>
@@ -364,7 +364,7 @@ const blogData = [
 <p><span style="font-weight: 400;">Maintenance (annual)</span></p>
 </td>
 <td>
-<p><span style="font-weight: 400;">Rs.20- 30&nbsp; per sq ft</span></p>
+<p><span style="font-weight: 400;">Rs. 20- 30&nbsp; per sq ft</span></p>
 </td>
 </tr>
 </tbody>
@@ -444,7 +444,7 @@ const blogData = [
 <p><span style="font-weight: 400;">Tournaments/Events</span></p>
 </td>
 <td>
-<p><span style="font-weight: 400;">Rs.200,000 - Rs.500,000</span></p>
+<p><span style="font-weight: 400;">Rs. 200,000 - Rs.500,000</span></p>
 </td>
 </tr>
 </tbody>
@@ -564,7 +564,6 @@ const blogData = [
 <p><span style="font-weight: 400;">By following these tips, you can hit a home run with your turf cricket business. For more scoop on turf options and installation costs, check out our articles on </span><a href="https://gameonsolution.in/blog/minimum-area-required-for-turf-installation"><span style="font-weight: 400;">What is the difference between artificial and turf?</span></a><span style="font-weight: 400;"> and </span><a href="https://gameonsolution.in/blog/understanding-turf-and-artificial-grass"><span style="font-weight: 400;">what is the average size of turf?</span></a></p>
     `,
   },
-
   // 3rd Blog
   {
     slug: "understanding-turf-and-artificial-grass",
