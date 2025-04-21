@@ -32,6 +32,13 @@ const News_Page = () => {
     setActive(index);
   };
 
+  function getYouTubeID(url: string) {
+    const regExp =
+      /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const match = url.match(regExp);
+    return match && match[2].length === 11 ? match[2] : null;
+  }
+
   const onVideoStateChange = (event: any) => {
     const state = event.data;
     if (state === 1) {
@@ -159,7 +166,8 @@ const News_Page = () => {
                       height: "100%",
                       width: "100%",
                     }}
-                    videoId={data[active].mediaUrl.split("v=")[1]} // Extract video ID
+                    // videoId={data[active].mediaUrl.split("v=")[1]} // Extract video ID
+                    videoId={getYouTubeID(data[active].mediaUrl) || ""}
                     onStateChange={onVideoStateChange} // Handle video state change
                   />
                 ) : (
@@ -203,10 +211,9 @@ const News_Page = () => {
                       >
                         {item.fileType === "youtube" ? (
                           <img
-                            src={`https://img.youtube.com/vi/${
-                              item.mediaUrl.split("v=")[1]
-                            }/hqdefault.jpg
-                      `}
+                            src={`https://img.youtube.com/vi/${getYouTubeID(
+                              item.mediaUrl
+                            )}/hqdefault.jpg`}
                             alt={`photo ${item.id}`}
                             className="w-20 h-20 mr-3 object-cover"
                           />
