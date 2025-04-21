@@ -17,7 +17,7 @@ const BlogDetailPage = () => {
 
   if (!blog) return <p className="text-white p-10">Blog not found.</p>;
 
-  const readTime = calculateReadTime(blog.content);
+  const readTime = calculateReadTime(blog.content || "");
 
   return (
     <div className="min-h-screen bg-primary text-white pt-32 pb-20 px-6 md:px-10 lg:px-20">
@@ -75,7 +75,7 @@ const BlogDetailPage = () => {
           />
 
           <div className="prose prose-invert max-w-none prose-li:marker:text-secondary prose-ul:pl-5 prose-h2:text-secondary prose-h2:mb-3 prose-h3:text-white prose-a:text-secondary">
-            <div dangerouslySetInnerHTML={{ __html: blog.content }} />
+            <div dangerouslySetInnerHTML={{ __html: blog.content || "" }} />
           </div>
 
           {/* More Blogs */}

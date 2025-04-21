@@ -162,6 +162,23 @@ const BlogPage = () => {
         "From backyard setups to full-scale football fields, understand how turf sizes impact cost, business use, and passive income potential.",
       image: "/blog5.jpg",
     },
+    {
+      id: 6,
+      slug: "minimum-square-feet-for-turf",
+      title:
+        "Unlocking the Turf Business: What's the Minimum Square Feet for Turf?",
+      excerpt:
+        "The turf business is catching on like wildfire, thanks to its potential for easy money and the growing need for hassle-free yard solutions.",
+      image: "/blog6.JPG",
+    },
+    {
+      id: 7,
+      slug: "dhineshwaran-ms-how-he-built-his-legacy",
+      title:
+        "Constructing the Field of Dreams: How Dhineshwaran M.S. is Changing South Indian Sports",
+      excerpt: "How Did Mr Dhineshwaran Build His Legacy",
+      image: "/blog.jpg",
+    },
   ];
 
   const handleBlogClick = (slug: string) => {
