@@ -2052,6 +2052,7 @@ const blogData = [
     image: "/blog8.JPG",
     tags: ["Dhineshwaran", "Sports", "Infrastructure", "Developer"],
   },
+  // 9th Blog
 ];
 
 export default blogData;
