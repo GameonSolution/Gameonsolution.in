@@ -7,12 +7,13 @@ import { Footer } from "./footer";
 import HomeBanners from "./homeBanners";
 import HomeNewsFeed from "./homeNewsFeed";
 import IconsWithContent from "./iconsWithContent";
-import InstagramEmbed from "./instagram";
+// import InstagramEmbed from "./instagram";
 import ReviewsSection from "./reviewSection";
 import TabSEO from "./seoOptimize";
 import Services from "./services";
 import WhatsAppButton from "./WhatsappButton";
 import WhyUs from "./whyUs";
+// import Testimonials from "./testimonials";
 
 const HomePage: React.FC = () => {
   return (
@@ -52,16 +53,19 @@ const HomePage: React.FC = () => {
         <div id="reviews">
           <ReviewsSection />
         </div>
+
         <div id="faq">
           <FAQ />
         </div>
-        <div id="instagram">
+        {/* <div id="instagram">
           <InstagramEmbed />
-        </div>
+        </div> */}
+        {/* <div id="testimonials">
+          <Testimonials />
+        </div> */}
         <div id="footer">
           <Footer />
         </div>
-
         {/* WhatsApp Button */}
         <WhatsAppButton />
       </div>

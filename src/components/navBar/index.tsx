@@ -112,7 +112,7 @@ const Navbar: React.FC = () => {
             className="w-full h-full flex justify-center items-center"
             onClick={() => handleNavClick("#home")}
           >
-            <img src="./game_on_logo.webp" alt="Logo" className="w-full" />
+            <img src="/game_on_logo.webp" alt="Logo" className="w-full" />
           </a>
         </div>
 

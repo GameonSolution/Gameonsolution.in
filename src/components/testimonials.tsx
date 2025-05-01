@@ -220,7 +220,7 @@ const Testimonials = () => {
         </section>
 
         <WhatsAppButton />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
