@@ -153,8 +153,8 @@
 
 import React from "react";
 import TextHoverAnimation from "./textHoverAnimation";
-import TabSEO from "./seoOptimize";
-import { seoData } from "@/common/seoTitleDescription";
+// import TabSEO from "./seoOptimize";
+// import { seoData } from "@/common/seoTitleDescription";
 import { motion } from "framer-motion";
 
 const fadeInUp = {
@@ -165,13 +165,13 @@ const fadeInUp = {
 const AboutUs: React.FC = () => {
   return (
     <>
-      <TabSEO
+      {/* <TabSEO
         title={seoData.about.title}
         description={seoData.about.description}
         keywords={seoData.about.keywords}
         image={seoData.about.image}
         url={seoData.about.url}
-      />
+      /> */}
       <section className="flex flex-col gap-24 justify-center items-center select-none min-h-screen bg-primary px-10 md:px-20 lg:px-[7.5rem] pb-16 lg:pb-28">
         <div className="flex flex-col w-full text-center gap-10">
           <motion.p

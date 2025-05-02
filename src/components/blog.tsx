@@ -86,6 +86,8 @@ import { Footer } from "./footer";
 import { RiAwardFill } from "react-icons/ri";
 import AnimateCard from "./animateCard";
 import WhatsAppButton from "./WhatsappButton";
+import TabSEO from "./seoOptimize";
+import { seoData } from "@/common/seoTitleDescription";
 
 const awards = [
   {
@@ -124,7 +126,7 @@ const BlogPage = () => {
       id: 1,
       slug: "minimum-area-required-for-turf-installation",
       title:
-        "Minimum Area Required for Turf Installation: A Comprehensive Guide",
+        "Minimum Area Required for Turf Installation: A Comprehensive Guide | GameOn Solution",
       excerpt:
         "Planning to install turf? Here's how much space you need for different sports across urban, semi-urban, and rural setups.",
       image: "/Football/Football-03.webp",
@@ -132,7 +134,8 @@ const BlogPage = () => {
     {
       id: 2,
       slug: "turf-cricket-installation",
-      title: "Cricket Turf Installation: A Smart Investment in South India",
+      title:
+        "Cricket Turf Installation: A Smart Investment in South India | GameOn Solution",
       excerpt:
         "Explore the financial opportunities, installation costs, and ROI of setting up a turf cricket business in India.",
       image: "/CircleMiniCricketStadiumTurff/PLT_00017.jpg",
@@ -140,7 +143,8 @@ const BlogPage = () => {
     {
       id: 3,
       slug: "understanding-turf-and-artificial-grass",
-      title: "Understanding Turf and Artificial Grass: What's the Difference?",
+      title:
+        "Understanding Turf and Artificial Grass: What's the Difference? | GameOn Solution",
       excerpt:
         "Confused between turf and artificial grass? Learn key differences, maintenance needs, and the best use-cases for each surface.",
       image: "/blog3.jpg",
@@ -148,7 +152,8 @@ const BlogPage = () => {
     {
       id: 4,
       slug: "india-pakistan-icc-matches-neutral-venues",
-      title: "India-Pakistan Neutral Venue Matches & Turf Infrastructure",
+      title:
+        "India-Pakistan Neutral Venue Matches & Turf Infrastructure  | GameOn Solution",
       excerpt:
         "With India-Pakistan matches at neutral venues until 2027, the spotlight is on high-quality turf and world-class sports infrastructure.",
       image:
@@ -157,7 +162,7 @@ const BlogPage = () => {
     {
       id: 5,
       slug: "average-turf-size-guide",
-      title: "Get in the Know: Average Turf Size Demystified",
+      title: "Get in the Know: Average Turf Size Demystified | GameOn Solution",
       excerpt:
         "From backyard setups to full-scale football fields, understand how turf sizes impact cost, business use, and passive income potential.",
       image: "/blog5.jpg",
@@ -166,7 +171,7 @@ const BlogPage = () => {
       id: 6,
       slug: "minimum-square-feet-for-turf",
       title:
-        "Unlocking the Turf Business: What's the Minimum Square Feet for Turf?",
+        "Unlocking the Turf Business: What's the Minimum Square Feet for Turf? | GameOn Solution",
       excerpt:
         "The turf business is catching on like wildfire, thanks to its potential for easy money and the growing need for hassle-free yard solutions.",
       image: "/blog6.JPG",
@@ -175,9 +180,27 @@ const BlogPage = () => {
       id: 7,
       slug: "dhineshwaran-ms-how-he-built-his-legacy",
       title:
-        "Constructing the Field of Dreams: How Dhineshwaran M.S. is Changing South Indian Sports",
+        "Constructing the Field of Dreams: How Dhineshwaran M.S. is Changing South Indian Sports | GameOn Solution",
       excerpt: "How Did Mr Dhineshwaran Build His Legacy",
       image: "/blog.jpg",
+    },
+    {
+      id: 8,
+      slug: "fifa-turf-vs-natural-grass",
+      title:
+        "Does FIFA Use Turf or Grass? The Truth Behind Football Fields at the World’s Biggest Stage | GameOn Solution",
+      excerpt:
+        "Curious if FIFA uses artificial turf or natural grass? Discover FIFA’s official stance, turf certifications, real-world examples, and what it means for your football turf project.",
+      image: "/Blog8.png",
+    },
+    {
+      id: 9,
+      slug: "rooftop-turf-ground-guide",
+      title:
+        "Can You Build a Turf Ground on Rooftops? Here’s What You Need to Know | GameOn Solution",
+      excerpt:
+        "Is it possible to install a turf ground on a rooftop in India? Discover the structural, legal, and safety requirements of rooftop turf construction with tips from experts at GameOn Solution.",
+      image: "/Blog9.png",
     },
   ];
 
@@ -187,6 +210,13 @@ const BlogPage = () => {
 
   return (
     <>
+      <TabSEO
+        title={seoData.blog.title}
+        description={seoData.blog.description}
+        keywords={seoData.blog.keywords}
+        image={seoData.blog.image}
+        url={seoData.blog.url}
+      />
       <section className="flex flex-col items-center min-h-screen bg-primary px-10 md:px-20 lg:px-[7.5rem] pb-16 lg:pb-28 mt-20">
         {/* Moved the heading to the start of the section */}
         <div className="text-center py-10 w-full">

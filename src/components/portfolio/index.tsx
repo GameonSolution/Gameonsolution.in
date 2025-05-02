@@ -4,8 +4,8 @@ import { OrbitControls, Stars } from "@react-three/drei";
 import CharacterScene from "./characterScene";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { motion } from "framer-motion";
-import TabSEO from "../seoOptimize";
-import { seoData } from "@/common/seoTitleDescription";
+// import TabSEO from "../seoOptimize";
+// import { seoData } from "@/common/seoTitleDescription";
 
 const Portfolio: React.FC = () => {
   const [screenWidth, setScreenWidth] = useState<number>(window.innerWidth);
@@ -84,13 +84,13 @@ const Portfolio: React.FC = () => {
   }
   return (
     <>
-      <TabSEO
+      {/* <TabSEO
         title={seoData.portfolio.title}
         description={seoData.portfolio.description}
         keywords={seoData.portfolio.keywords}
         image={seoData.portfolio.image}
         url={seoData.portfolio.url}
-      />
+      /> */}
       <div className="w-screen h-screen overflow-y-scroll bg-primary">
         <Canvas
           onContextMenu={(e) => e.stopPropagation()} // Allow default right-click

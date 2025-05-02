@@ -133,8 +133,8 @@ import { servicesObj } from "@/common/servicesObj";
 import Marquee from "react-fast-marquee";
 import { useNavigate } from "react-router-dom";
 import { OptimizedImage } from "./lazyLoadingImage/index.tsx";
-import TabSEO from "./seoOptimize/index.tsx";
-import { seoData } from "@/common/seoTitleDescription/index.ts";
+// import TabSEO from "./seoOptimize/index.tsx";
+// import { seoData } from "@/common/seoTitleDescription/index.ts";
 
 const Services: React.FC = () => {
   const navigate = useNavigate();
@@ -155,13 +155,13 @@ const Services: React.FC = () => {
 
   return (
     <>
-      <TabSEO
+      {/* <TabSEO
         title={seoData.services.title}
         description={seoData.services.description}
         keywords={seoData.services.keywords}
         image={seoData.services.image}
         url={seoData.services.url}
-      />
+      /> */}
       <section className="flex flex-col gap-10 justify-center items-center select-none min-h-screen bg-primary px-10 md:px-20 lg:px-[7.5rem] pb-16 lg:pb-28">
         <div className="text-left w-full">
           <p className="text-[12px] font-secondary uppercase tracking-[1px]">

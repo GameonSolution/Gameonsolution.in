@@ -13,7 +13,7 @@ const calculateReadTime = (html: string) => {
 const BlogDetailPage = () => {
   const { slug } = useParams();
   const blog = blogData.find((b) => b.slug === slug);
-  const otherBlogs = blogData.filter((b) => b.slug !== slug).slice(0, 3);
+  const otherBlogs = blogData.filter((b) => b.slug !== slug).slice(0, 6);
 
   if (!blog) return <p className="text-white p-10">Blog not found.</p>;
 

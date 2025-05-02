@@ -561,8 +561,8 @@
 // export default Contact;
 
 import React, { useState } from "react";
-import TabSEO from "./seoOptimize";
-import { seoData } from "@/common/seoTitleDescription";
+// import TabSEO from "./seoOptimize";
+// import { seoData } from "@/common/seoTitleDescription";
 import { useCantacts } from "@/hook/useContact";
 import { AiOutlineMobile } from "react-icons/ai";
 import { FaMapMarkerAlt, FaRegCommentAlt } from "react-icons/fa";
@@ -640,13 +640,13 @@ const Contact: React.FC = () => {
 
   return (
     <>
-      <TabSEO
+      {/* <TabSEO
         title={seoData.contact.title}
         description={seoData.contact.description}
         keywords={seoData.contact.keywords}
         image={seoData.contact.image}
         url={seoData.contact.url}
-      />
+      /> */}
       <section
         id="contact"
         className="flex flex-col gap-10 lg:gap-0 justify-start items-center select-none min-h-[80vh] bg-primary px-12 md:px-20 lg:px-0 pb-16 lg:pb-28"
