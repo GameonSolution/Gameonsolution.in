@@ -84,6 +84,7 @@ const WhatsAppButton = () => {
   const whatsappNumber = "919615737373";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
   const instagramLink = "https://www.instagram.com/gameonsolution_southindia/";
+  const callLink = `tel:+${whatsappNumber}`; // using same number for call
 
   return (
     <div className="fixed bottom-5 right-5 md:bottom-10 md:right-10 z-50 flex flex-col md:flex-row items-center gap-2 md:gap-3">
@@ -127,6 +128,20 @@ const WhatsAppButton = () => {
         <img
           src="/Insta.png"
           alt="Instagram"
+          className="w-9 h-9 md:w-12 md:h-12 lg:w-14 lg:h-14 drop-shadow-lg hover:scale-110 transition-transform"
+        />
+      </a>
+
+      {/* Call Icon */}
+      <a
+        href={callLink}
+        className={`transition-opacity duration-700 ${
+          visible ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <img
+          src="/Call.png"
+          alt="Call"
           className="w-9 h-9 md:w-12 md:h-12 lg:w-14 lg:h-14 drop-shadow-lg hover:scale-110 transition-transform"
         />
       </a>
