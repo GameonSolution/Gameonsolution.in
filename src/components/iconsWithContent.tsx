@@ -18,6 +18,7 @@ const IconsWithContent: React.FC = () => {
               >
                 <img
                   src={item.imageSrc}
+                  alt={`${item.title} - GameOn Solution`}
                   className="w-[55%] md:w-[75%] lg:w-full select-none"
                   draggable="false"
                 />

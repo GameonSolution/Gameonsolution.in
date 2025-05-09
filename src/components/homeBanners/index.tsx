@@ -288,7 +288,7 @@ const HomeBanners: React.FC = () => {
                   <div className="items-start w-[50%] md:items-center md:justify-center md:w-full flex justify-start">
                     <img
                       src={icon.imageSrc}
-                      alt={icon.title}
+                      alt={`${icon.title} - GameOn Solution`}
                       className="h-full w-full md:h-44 md:w-44 lg:h-44 lg:w-44 select-none"
                       draggable="false"
                       loading="lazy"

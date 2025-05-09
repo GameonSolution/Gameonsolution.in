@@ -91,27 +91,27 @@ import { seoData } from "@/common/seoTitleDescription";
 
 const awards = [
   {
-    icon: "/sunNewsLogo.png",
+    icon: "/awards/sunNewsLogo.webp",
     date: "2023",
     title: "Best Sportd Infra Solution",
   },
   {
-    icon: "/sitaLogo.png",
+    icon: "/awards/sitaLogo.webp",
     date: "2021-2023",
     title: "South India's best Sports infrastructure Firm Award",
   },
   {
-    icon: "/vikadanLogo.png",
+    icon: "/awards/vikadanLogo.webp",
     date: "2023",
     title: "Best Sportd Infra Solution",
   },
   {
-    icon: "/radiocity.jpg",
+    icon: "/awards/radiocity.webp",
     date: "2023-2024",
     title: "Radio City TamilNadu Business Icon of the Year",
   },
   {
-    icon: "/midtown.png",
+    icon: "/awards/midtown.webp",
     date: "2024",
     title:
       "SOUTH INDIA’S BEST SPORTS INFRASTRUCTURE FIRM BY MIDTOWN BUSINESS AWARDS",
@@ -138,7 +138,7 @@ const BlogPage = () => {
         "Cricket Turf Installation: A Smart Investment in South India | GameOn Solution",
       excerpt:
         "Explore the financial opportunities, installation costs, and ROI of setting up a turf cricket business in India.",
-      image: "/CircleMiniCricketStadiumTurff/PLT_00017.jpg",
+      image: "/CircleMiniCricketStadiumTurff/PLT_00017.webp",
     },
     {
       id: 3,
@@ -147,7 +147,7 @@ const BlogPage = () => {
         "Understanding Turf and Artificial Grass: What's the Difference? | GameOn Solution",
       excerpt:
         "Confused between turf and artificial grass? Learn key differences, maintenance needs, and the best use-cases for each surface.",
-      image: "/blog3.jpg",
+      image: "/blog3.webp",
     },
     {
       id: 4,
@@ -165,7 +165,7 @@ const BlogPage = () => {
       title: "Get in the Know: Average Turf Size Demystified | GameOn Solution",
       excerpt:
         "From backyard setups to full-scale football fields, understand how turf sizes impact cost, business use, and passive income potential.",
-      image: "/blog5.jpg",
+      image: "/blog5.webp",
     },
     {
       id: 6,
@@ -174,7 +174,7 @@ const BlogPage = () => {
         "Unlocking the Turf Business: What's the Minimum Square Feet for Turf? | GameOn Solution",
       excerpt:
         "The turf business is catching on like wildfire, thanks to its potential for easy money and the growing need for hassle-free yard solutions.",
-      image: "/blog6.JPG",
+      image: "/blog6.webp",
     },
     {
       id: 7,
@@ -182,7 +182,7 @@ const BlogPage = () => {
       title:
         "Constructing the Field of Dreams: How Dhineshwaran M.S. is Changing South Indian Sports | GameOn Solution",
       excerpt: "How Did Mr Dhineshwaran Build His Legacy",
-      image: "/blog.jpg",
+      image: "/blog.webp",
     },
     {
       id: 8,
@@ -191,7 +191,7 @@ const BlogPage = () => {
         "Does FIFA Use Turf or Grass? The Truth Behind Football Fields at the World’s Biggest Stage | GameOn Solution",
       excerpt:
         "Curious if FIFA uses artificial turf or natural grass? Discover FIFA’s official stance, turf certifications, real-world examples, and what it means for your football turf project.",
-      image: "/Blog8.png",
+      image: "/Blog8 (1).webp",
     },
     {
       id: 9,
@@ -200,7 +200,7 @@ const BlogPage = () => {
         "Can You Build a Turf Ground on Rooftops? Here’s What You Need to Know | GameOn Solution",
       excerpt:
         "Is it possible to install a turf ground on a rooftop in India? Discover the structural, legal, and safety requirements of rooftop turf construction with tips from experts at GameOn Solution.",
-      image: "/Blog9.png",
+      image: "/Blog9.webp",
     },
   ];
 

@@ -12,17 +12,17 @@
 //   const navigate = useNavigate();
 
 //   const marqueeImages = [
-//     "/Football/Football-01.png",
+//     "/Football/Football-01.webp",
 //     "/Football/Football-02.webp",
 //     "/Football/Football-03.webp",
-//     "/CircleMiniCricketStadiumTurff/PLT_000018.jpeg",
-//     "/CircleMiniCricketStadiumTurff/PLT_00002.jpg",
-//     "/CircleMiniCricketStadiumTurff/PLT_00006.jpg",
-//     "/CircleMiniCricketStadiumTurff/PLT_00010.jpg",
-//     "/pickleTurf/pickle-turf-001.jpg",
-//     "/pickleTurf/pickle-turf-002.jpg",
-//     "/pickleTurf/pickle-turf-003.jpg",
-//     "/pickleTurf/pickle-turf-004.jpg",
+//     "/CircleMiniCricketStadiumTurff/PLT_000018.webp",
+//     "/CircleMiniCricketStadiumTurff/PLT_00002.webp",
+//     "/CircleMiniCricketStadiumTurff/PLT_00006.webp",
+//     "/CircleMiniCricketStadiumTurff/PLT_00010.webp",
+//     "/pickleTurf/pickle-turf-001.webp",
+//     "/pickleTurf/pickle-turf-002.webp",
+//     "/pickleTurf/pickle-turf-003.webp",
+//     "/pickleTurf/pickle-turf-004.webp",
 //   ];
 //   return (
 //     <>
@@ -140,17 +140,17 @@ const Services: React.FC = () => {
   const navigate = useNavigate();
 
   const marqueeImages = [
-    "/Football/Football-01.png",
+    "/Football/Football-01.webp",
     "/Football/Football-02.webp",
     "/Football/Football-03.webp",
-    "/CircleMiniCricketStadiumTurff/PLT_000018.jpeg",
-    "/CircleMiniCricketStadiumTurff/PLT_00002.jpg",
-    "/CircleMiniCricketStadiumTurff/PLT_00006.jpg",
-    "/CircleMiniCricketStadiumTurff/PLT_00010.jpg",
-    "/pickleTurf/pickle-turf-001.jpg",
-    "/pickleTurf/pickle-turf-002.jpg",
-    "/pickleTurf/pickle-turf-003.jpg",
-    "/pickleTurf/pickle-turf-004.jpg",
+    "/CircleMiniCricketStadiumTurff/PLT_000018.webp",
+    "/CircleMiniCricketStadiumTurff/PLT_00002.webp",
+    "/CircleMiniCricketStadiumTurff/PLT_00006.webp",
+    "/CircleMiniCricketStadiumTurff/PLT_00010.webp",
+    "/pickleTurf/pickle-turf-001.webp",
+    "/pickleTurf/pickle-turf-002.webp",
+    "/pickleTurf/pickle-turf-003.webp",
+    "/pickleTurf/pickle-turf-004.webp",
   ];
 
   return (

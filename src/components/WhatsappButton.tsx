@@ -110,8 +110,11 @@ const WhatsAppButton = () => {
         style={{ pointerEvents: "auto" }}
       >
         <img
-          src="/WA.png"
-          alt="WhatsApp"
+          src="/WA.webp"
+          alt="WhatsApp Icon"
+          width={64}
+          height={64}
+          loading="lazy"
           className="w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 drop-shadow-lg hover:scale-110 transition-transform"
         />
       </a>
@@ -126,8 +129,11 @@ const WhatsAppButton = () => {
         }`}
       >
         <img
-          src="/Insta.png"
-          alt="Instagram"
+          src="/Insta.webp"
+          alt="Instagram Icon"
+          width={56}
+          height={56}
+          loading="lazy"
           className="w-9 h-9 md:w-12 md:h-12 lg:w-14 lg:h-14 drop-shadow-lg hover:scale-110 transition-transform"
         />
       </a>
@@ -140,8 +146,11 @@ const WhatsAppButton = () => {
         }`}
       >
         <img
-          src="/Call.png"
-          alt="Call"
+          src="/Call.webp"
+          alt="Call Icon"
+          width={56}
+          height={56}
+          loading="lazy"
           className="w-9 h-9 md:w-12 md:h-12 lg:w-14 lg:h-14 drop-shadow-lg hover:scale-110 transition-transform"
         />
       </a>

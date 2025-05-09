@@ -68,48 +68,60 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
+              aria-label="Visit our Instagram"
             >
               <FaInstagram />
+              <span className="sr-only">Instagram</span>
             </a>
             <a
               href="https://youtube.com/@gameonsolutionoffi?si=U3jRSjQ_TscHG2ry"
               target="_blank"
               rel="noopener noreferrer"
               className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
+              aria-label="Visit our YouTube"
             >
               <FaYoutube />
+              <span className="sr-only">YouTube</span>
             </a>
             <a
               href="https://wa.me/9715131373"
               target="_blank"
               rel="noopener noreferrer"
               className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
+              aria-label="Chat on WhatsApp"
             >
               <FaWhatsapp />
+              <span className="sr-only">WhatsApp</span>
             </a>
             <a
               href="https://medium.com/@gameon.solution.317"
               target="_blank"
               rel="noopener noreferrer"
               className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
+              aria-label="Read on Medium"
             >
               <FaMedium />
+              <span className="sr-only">Medium</span>
             </a>
             <a
               href="https://www.quora.com/profile/GameOn-Solution"
               target="_blank"
               rel="noopener noreferrer"
               className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
+              aria-label="Visit our Quora profile"
             >
               <FaQuora />
+              <span className="sr-only">Quora</span>
             </a>
             <a
               href="https://www.reddit.com/user/Dangerous_Aerie_8168/"
               target="_blank"
               rel="noopener noreferrer"
               className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
+              aria-label="Follow us on Reddit"
             >
               <FaReddit />
+              <span className="sr-only">Reddit</span>
             </a>
           </div>
         </div>

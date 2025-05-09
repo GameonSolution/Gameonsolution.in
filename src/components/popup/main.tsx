@@ -57,15 +57,17 @@ export const Popup = ({
         {closeButton ? (
           <button
             className={`
-							absolute z-50 top-2  right-3 p-2 rounded-full hover:bg-hoverLight
-							${loading ? "hidden" : "visible"}
-						`}
+            absolute z-50 top-2 right-3 p-2 rounded-full hover:bg-hoverLight
+            ${loading ? "hidden" : "visible"}
+          `}
             onClick={() => {
               onClose();
+              // eslint-disable-next-line @typescript-eslint/no-unused-expressions
               onCancel && onCancel();
             }}
+            aria-label="Close dialog"
           >
-            <MdClose className="text-secondary  hover:text-white h-6 w-6" />
+            <MdClose className="text-secondary hover:text-white h-6 w-6" />
           </button>
         ) : null}
 

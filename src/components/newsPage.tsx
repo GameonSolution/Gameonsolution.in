@@ -90,28 +90,28 @@ const News_Page = () => {
   }, []);
   const awards = [
     {
-      icon: "/sunNewsLogo.png",
+      icon: "/awards/sunNewsLogo.webp",
       date: "2023",
       title: "Best Sportd Infra Solution by",
     },
     {
-      icon: "/sitaLogo.png",
+      icon: "/awards/sitaLogo.webp",
       date: "2021-2023",
       title: "South india's best Sports infrastructure Firm Award by",
     },
     {
-      icon: "/radiocity.jpg",
+      icon: "/awards/radiocity.webp",
       date: "2023-2024",
       title: "Radio City TamilNadu Business Icon of the Year",
     },
     {
-      icon: "/vikadanLogo.png",
+      icon: "/awards/vikadanLogo.webp",
       date: "2023",
       title: "Best Sportd Infra Solution by",
     },
 
     {
-      icon: "/midtown.png",
+      icon: "/awards/midtown.webp",
       date: "2024",
       title:
         "SOUTH INDIA’S BEST SPORTS INFRASTRUCTURE FIRM BY MIDTOWN BUSINESS AWARDS",

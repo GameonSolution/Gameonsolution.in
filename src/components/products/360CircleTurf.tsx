@@ -23,7 +23,7 @@
 //           title={"BASKETBALL COURT & 360° CIRCLE TURF"}
 //           subtitle={"MAKING EVERY SHOT AND STEP COUNT"}
 //           bgImgUrl={
-//             "/CircleMiniCricketStadiumTurff/PLT_00017.jpg" // Replace with an appropriate image URL
+//             "/CircleMiniCricketStadiumTurff/PLT_00017.webp" // Replace with an appropriate image URL
 //           }
 //         />
 //         <Container className="relative z-10 space-y-10  md:max-w-[1000px] max-w-[692px]   py-36 text-3xl font-bold text-white md:text-4xl ">
@@ -67,7 +67,7 @@
 //               <div className="w-full h-full overflow-hidden group">
 //                 <AnimateCard>
 //                   <img
-//                     src="/CircleMiniCricketStadiumTurff/PLT_00017.jpg" // Replace with an appropriate image URL
+//                     src="/CircleMiniCricketStadiumTurff/PLT_00017.webp" // Replace with an appropriate image URL
 //                     className="lg:w-[400px] w-[250px] h-full object-cover transition-transform duration-500 ease-out scale-105 transform group-hover:scale-100"
 //                     alt="Director"
 //                   />
@@ -147,7 +147,7 @@
 //             <div className="w-full h-full overflow-hidden group">
 //               <AnimateCard>
 //                 <img
-//                   src="/CircleMiniCricketStadiumTurff/PLT_00011.jpg" // Replace with an appropriate image URL
+//                   src="/CircleMiniCricketStadiumTurff/PLT_00011.webp" // Replace with an appropriate image URL
 //                   className="lg:w-[400px] w-[250px] h-full object-cover transition-transform duration-500 ease-out scale-105 transform group-hover:scale-100"
 //                   alt="360° Circle Turf"
 //                 />
@@ -174,42 +174,42 @@
 // export default CircleTurf360;
 // const basketballAndTurfItems = [
 //   {
-//     poster: "/CircleMiniCricketStadiumTurff/PLT_00002.jpg",
+//     poster: "/CircleMiniCricketStadiumTurff/PLT_00002.webp",
 //     name: "Airplane",
 //     blurHash: "L9DJhL~qKkk=?J$+$zIoE0D%4nZ#",
 //   },
 //   {
-//     poster: "/CircleMiniCricketStadiumTurff/PLT_00006.jpg",
+//     poster: "/CircleMiniCricketStadiumTurff/PLT_00006.webp",
 //     name: "Family man",
 //     blurHash: "LnHoH_RPX9bE_NozxFf6_3n%W;ju",
 //   },
 //   {
-//     poster: "/CircleMiniCricketStadiumTurff/PLT_00010.jpg",
+//     poster: "/CircleMiniCricketStadiumTurff/PLT_00010.webp",
 //     name: "Laboratory",
 //     blurHash: "L2CPz#0iPVPw7TI;[.0d}]R;0L0e",
 //   },
 //   {
-//     poster: "/CircleMiniCricketStadiumTurff/PLT_00011.jpg",
+//     poster: "/CircleMiniCricketStadiumTurff/PLT_00011.webp",
 //     name: "Napoleon",
 //     blurHash: "L*Jb4|t7R-bI_4oft6bH?bNGRjn$",
 //   },
 //   {
-//     poster: "/CircleMiniCricketStadiumTurff/PLT_00013.jpg",
+//     poster: "/CircleMiniCricketStadiumTurff/PLT_00013.webp",
 //     name: "Person in Darkness",
 //     blurHash: "LsIX~espxHoM?wS2oybF_3s.t6fk",
 //   },
 //   {
-//     poster: "/CircleMiniCricketStadiumTurff/PLT_00013.jpg",
+//     poster: "/CircleMiniCricketStadiumTurff/PLT_00013.webp",
 //     name: "Scary Building",
 //     blurHash: "L85#@1ay02WCbaayjGoL8#ay??ay",
 //   },
 //   {
-//     poster: "/CircleMiniCricketStadiumTurff/PLT_00017.jpg",
+//     poster: "/CircleMiniCricketStadiumTurff/PLT_00017.webp",
 //     name: "Stars",
 //     blurHash: "LsIX~espxHoM?wS2oybF_3s.t6fk",
 //   },
 //   {
-//     poster: "/CircleMiniCricketStadiumTurff/PLT_00022.jpg",
+//     poster: "/CircleMiniCricketStadiumTurff/PLT_00022.webp",
 //     name: "Stars",
 //     blurHash: "L85#@1ay02WCbaayjGoL8#ay??ay",
 //   },
@@ -239,7 +239,7 @@ const CircleTurf360 = () => {
         <Hero
           title={"BASKETBALL COURT & 360° CIRCLE TURF"}
           subtitle={"MAKING EVERY SHOT AND STEP COUNT"}
-          bgImgUrl={"/CircleMiniCricketStadiumTurff/PLT_00017.jpg"}
+          bgImgUrl={"/CircleMiniCricketStadiumTurff/PLT_00017.webp"}
         />
         <Container className="relative z-10 space-y-10  md:max-w-[1000px] max-w-[692px]   py-36 text-3xl font-bold text-white md:text-4xl ">
           <FadeIn>
@@ -290,7 +290,7 @@ const CircleTurf360 = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
                   viewport={{ once: true }}
-                  src="/CircleMiniCricketStadiumTurff/PLT_00017.jpg"
+                  src="/CircleMiniCricketStadiumTurff/PLT_00017.webp"
                   className="lg:w-[400px] w-[250px] h-full object-cover transition-transform duration-500 ease-out scale-105 transform group-hover:scale-100"
                   alt="Director"
                 />
@@ -391,7 +391,7 @@ const CircleTurf360 = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                src="/CircleMiniCricketStadiumTurff/PLT_00011.jpg"
+                src="/CircleMiniCricketStadiumTurff/PLT_00011.webp"
                 className="lg:w-[400px] w-[250px] h-full object-cover transition-transform duration-500 ease-out scale-105 transform group-hover:scale-100"
                 alt="360° Circle Turf"
               />
@@ -418,42 +418,42 @@ export default CircleTurf360;
 
 const basketballAndTurfItems = [
   {
-    poster: "/CircleMiniCricketStadiumTurff/PLT_00002.jpg",
+    poster: "/CircleMiniCricketStadiumTurff/PLT_00002.webp",
     name: "Airplane",
     blurHash: "L9DJhL~qKkk=?J$+$zIoE0D%4nZ#",
   },
   {
-    poster: "/CircleMiniCricketStadiumTurff/PLT_00006.jpg",
+    poster: "/CircleMiniCricketStadiumTurff/PLT_00006.webp",
     name: "Family man",
     blurHash: "LnHoH_RPX9bE_NozxFf6_3n%W;ju",
   },
   {
-    poster: "/CircleMiniCricketStadiumTurff/PLT_00010.jpg",
+    poster: "/CircleMiniCricketStadiumTurff/PLT_00010.webp",
     name: "Laboratory",
     blurHash: "L2CPz#0iPVPw7TI;[.0d}]R;0L0e",
   },
   {
-    poster: "/CircleMiniCricketStadiumTurff/PLT_00011.jpg",
+    poster: "/CircleMiniCricketStadiumTurff/PLT_00011.webp",
     name: "Napoleon",
     blurHash: "L*Jb4|t7R-bI_4oft6bH?bNGRjn$",
   },
   {
-    poster: "/CircleMiniCricketStadiumTurff/PLT_00013.jpg",
+    poster: "/CircleMiniCricketStadiumTurff/PLT_00013.webp",
     name: "Person in Darkness",
     blurHash: "LsIX~espxHoM?wS2oybF_3s.t6fk",
   },
   {
-    poster: "/CircleMiniCricketStadiumTurff/PLT_00013.jpg",
+    poster: "/CircleMiniCricketStadiumTurff/PLT_00013.webp",
     name: "Scary Building",
     blurHash: "L85#@1ay02WCbaayjGoL8#ay??ay",
   },
   {
-    poster: "/CircleMiniCricketStadiumTurff/PLT_00017.jpg",
+    poster: "/CircleMiniCricketStadiumTurff/PLT_00017.webp",
     name: "Stars",
     blurHash: "LsIX~espxHoM?wS2oybF_3s.t6fk",
   },
   {
-    poster: "/CircleMiniCricketStadiumTurff/PLT_00022.jpg",
+    poster: "/CircleMiniCricketStadiumTurff/PLT_00022.webp",
     name: "Stars",
     blurHash: "L85#@1ay02WCbaayjGoL8#ay??ay",
   },

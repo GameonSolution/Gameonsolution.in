@@ -137,7 +137,7 @@
 
 // const cricketItems = [
 //   {
-//     poster: "/Football/Football-01.png",
+//     poster: "/Football/Football-01.webp",
 //     name: "Airplane",
 //     blurHash: "L29R8gWR01D;0ot3}9xt?qxu02xt",
 //   },
@@ -309,7 +309,7 @@ export default FootballTurf;
 
 const cricketItems = [
   {
-    poster: "/Football/Football-01.png",
+    poster: "/Football/Football-01.webp",
     name: "Airplane",
     blurHash: "L29R8gWR01D;0ot3}9xt?qxu02xt",
   },

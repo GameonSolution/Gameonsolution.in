@@ -27,9 +27,9 @@
 //           <div
 //             className={cn(
 //               "group w-full cursor-pointer overflow-hidden relative card h-[60vh] sm:h-[80vh] lg:h-[100vh] rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 sm:p-6 border border-transparent dark:border-neutral-800",
-//               "bg-[url('/CircleMiniCricketStadiumTurff/PLT_00017.jpg')] bg-cover bg-center",
+//               "bg-[url('/CircleMiniCricketStadiumTurff/PLT_00017.webp')] bg-cover bg-center",
 //               // Preload hover image by setting it in a pseudo-element
-//               "hover:bg-[url('/CircleMiniCricketStadiumTurff/PLT_00022.jpg')]",
+//               "hover:bg-[url('/CircleMiniCricketStadiumTurff/PLT_00022.webp')]",
 //               "hover:after:content-[''] hover:after:absolute hover:after:inset-0 hover:after:bg-black hover:after:opacity-50",
 //               "transition-all duration-500"
 //             )}
@@ -108,8 +108,8 @@ const CircleMiniCricketStadiumTurf = () => {
           <figure
             className={cn(
               "group w-full cursor-pointer overflow-hidden relative card h-[60vh] sm:h-[80vh] lg:h-[100vh] rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 sm:p-6 border border-transparent dark:border-neutral-800",
-              "bg-[url('/CircleMiniCricketStadiumTurff/PLT_00017.jpg')] bg-cover bg-center",
-              "hover:bg-[url('/CircleMiniCricketStadiumTurff/PLT_00022.jpg')]",
+              "bg-[url('/CircleMiniCricketStadiumTurff/PLT_00017.webp')] bg-cover bg-center",
+              "hover:bg-[url('/CircleMiniCricketStadiumTurff/PLT_00022.webp')]",
               "hover:after:content-[''] hover:after:absolute hover:after:inset-0 hover:after:bg-black hover:after:opacity-50",
               "transition-all duration-500"
             )}

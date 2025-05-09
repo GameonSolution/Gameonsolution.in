@@ -22,7 +22,7 @@
 //         <Hero
 //           title={"BADMINTON COURT"}
 //           subtitle={"FINDS ITS MARK"}
-//           bgImgUrl={"/badminton/2.jpg"}
+//           bgImgUrl={"/badminton/2.webp"}
 //         />
 //         <Container className="relative z-10 space-y-10  md:max-w-[1000px] max-w-[692px]   py-36 text-3xl font-bold text-white md:text-4xl ">
 //           <FadeIn>
@@ -110,12 +110,12 @@
 // export default BadmintonCourt;
 // const BadmintonItems = [
 //   {
-//     poster: "/badminton/1.gif",
+//     poster: "/badminton/1.webp",
 //     name: "Airplane",
 //     blurHash: "LQEqA]D%B-x?9+Rlbot9~mouIVj@",
 //   },
 //   {
-//     poster: "/badminton/2.jpg",
+//     poster: "/badminton/2.webp",
 //     name: "Family man",
 //     blurHash: "LdIY5eVtnQs:00WEafR+~BofbbR*",
 //   },
@@ -130,17 +130,17 @@
 //     blurHash: "L6Ax%~MkBB-l03o_Dqx?Q2%b?CNe",
 //   },
 //   {
-//     poster: "/badminton/6.jpg",
+//     poster: "/badminton/6.webp",
 //     name: "Person in Darkness",
 //     blurHash: "LfE3;nWCRiWB^-t7WAR*xcoMogf6",
 //   },
 //   {
-//     poster: "/badminton/7.jpg",
+//     poster: "/badminton/7.webp",
 //     name: "Scary Building",
 //     blurHash: "L6Ax%~MkBB-l03o_Dqx?Q2%b?CNe",
 //   },
 //   {
-//     poster: "/badminton/4.jpg",
+//     poster: "/badminton/4.webp",
 //     name: "Scary Building",
 //     blurHash: "L6Ax%~MkBB-l03o_Dqx?Q2%b?CNe",
 //   },
@@ -174,7 +174,7 @@ const BadmintonCourt = () => {
         <Hero
           title={"BADMINTON COURT"}
           subtitle={"FINDS ITS MARK"}
-          bgImgUrl={"/badminton/2.jpg"}
+          bgImgUrl={"/badminton/2.webp"}
         />
 
         <Container className="relative z-10 space-y-10 md:max-w-[1000px] max-w-[692px] py-36 text-3xl font-bold text-white md:text-4xl ">
@@ -271,12 +271,12 @@ export default BadmintonCourt;
 
 const BadmintonItems = [
   {
-    poster: "/badminton/1.gif",
+    poster: "/badminton/1.webp",
     name: "Airplane",
     blurHash: "LQEqA]D%B-x?9+Rlbot9~mouIVj@",
   },
   {
-    poster: "/badminton/2.jpg",
+    poster: "/badminton/2.webp",
     name: "Family man",
     blurHash: "LdIY5eVtnQs:00WEafR+~BofbbR*",
   },
@@ -291,17 +291,17 @@ const BadmintonItems = [
     blurHash: "L6Ax%~MkBB-l03o_Dqx?Q2%b?CNe",
   },
   {
-    poster: "/badminton/6.jpg",
+    poster: "/badminton/6.webp",
     name: "Person in Darkness",
     blurHash: "LfE3;nWCRiWB^-t7WAR*xcoMogf6",
   },
   {
-    poster: "/badminton/7.jpg",
+    poster: "/badminton/7.webp",
     name: "Scary Building",
     blurHash: "L6Ax%~MkBB-l03o_Dqx?Q2%b?CNe",
   },
   {
-    poster: "/badminton/4.jpg",
+    poster: "/badminton/4.webp",
     name: "Scary Building",
     blurHash: "L6Ax%~MkBB-l03o_Dqx?Q2%b?CNe",
   },

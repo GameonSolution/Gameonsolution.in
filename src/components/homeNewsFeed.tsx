@@ -59,23 +59,23 @@
 const HomeNewsFeed: React.FC = () => {
   const newsFeedImages = [
     {
-      src: "/sunNewsLogo.png",
+      src: "/awards/sunNewsLogo.webp",
       alt: "Sun News Logo",
     },
     {
-      src: "/sitaLogo.png",
+      src: "/awards/sitaLogo.webp",
       alt: "Sita News Logo",
     },
     {
-      src: "/vikadanLogo.png",
+      src: "/awards/vikadanLogo.webp",
       alt: "Vikatan Logo",
     },
     {
-      src: "/radiocity.jpg",
+      src: "/awards/radiocity.webp",
       alt: "Radio City Logo",
     },
     {
-      src: "/midtown.png",
+      src: "/awards/midtown.webp",
       alt: "MidTown Logo",
     },
   ];

@@ -680,7 +680,7 @@ const Contact: React.FC = () => {
             </div>
             <div className="w-full lg:w-1/2">
               <img
-                src="/CircleMiniCricketStadiumTurff/PLT_00017.jpg"
+                src="/CircleMiniCricketStadiumTurff/PLT_00017.webp"
                 alt="Contact Section Image - GameOn Solution"
               />
             </div>

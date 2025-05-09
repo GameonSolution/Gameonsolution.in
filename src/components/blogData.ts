@@ -1119,7 +1119,7 @@ const blogData = [
       "India-Pakistan ICC Matches to Be Held at Neutral Venues Until 2027: Impact on Turf & Infrastructure",
     excerpt:
       "With India-Pakistan ICC matches to be played on neutral grounds until 2027, discover how this shift boosts the demand for premium turf and sports infrastructure globally.",
-    image: "/blog3(1).jpg",
+    image: "/blog3(1).webp",
     tags: [
       "Cricket",
       "Neutral Venues",
@@ -1166,7 +1166,7 @@ const blogData = [
     title: "Get in the Know: Average Turf Size Demystified",
     excerpt:
       "Planning to install turf? This guide breaks down standard sizes, business opportunities, and key tips for choosing the right turf area.",
-    image: "/blog5(1).jpg",
+    image: "/blog5(1).webp",
     tags: ["Turf Size", "Sports Infrastructure", "Installation Guide"],
     content: `
      <h2><strong>Turf Sizes: What You Need to Know</strong></h2>
@@ -1672,7 +1672,7 @@ const blogData = [
       "Unlocking the Turf Business: What's the Minimum Square Feet for Turf?",
     excerpt:
       "The turf business is catching on like wildfire, thanks to its potential for easy money and the growing need for hassle-free yard solutions.",
-    image: "/blog6.JPG",
+    image: "/blog6.webp",
     tags: ["Turf Size", "Square Feet", "Installation Guide"],
     content: `<h2><strong>Understanding Turf Business</strong></h2>
 <h3><strong>The Appeal of Turf Business</strong></h3>
@@ -1980,7 +1980,7 @@ const blogData = [
     title:
       "Constructing the Field of Dreams: How Dhineshwaran M.S. is Changing South Indian Sports",
     excerpt: "How Did Mr Dhineshwaran Build His Legacy",
-    image: "/blog8.JPG",
+    image: "/blog8.webp",
     tags: ["Dhineshwaran", "Sports", "Infrastructure", "Developer"],
     content: `<p><span style="font-weight: 400;">In a world where people are often driven by what they are passionate about, the most impactful journeys often start with a problem that needs to be solved. That&rsquo;s exactly what happened to Dhineshwaran M.S., the founder of Game On Solution, a company that&rsquo;s quickly changing the sports world in South India. Unlike many others in his field, Dhineshwaran wasn&rsquo;t a lifelong athlete who was desperate to build the perfect field. Let&rsquo;s know how his inspiration came to life, born from a personal experience that sparked a flame and a keen eye for opportunity.</span></p>
 <h1><strong>How Did Mr Dhineshwaran Build His Legacy</strong></h1>
@@ -2050,7 +2050,7 @@ const blogData = [
       "Does FIFA Use Turf or Grass? The Truth Behind Football Fields at the World’s Biggest Stage",
     excerpt:
       "Curious if FIFA uses artificial turf or natural grass? Discover FIFA’s official stance, turf certifications, real-world examples, and what it means for your football turf project.",
-    image: "/Blog8.png",
+    image: "/Blog8 (1).webp",
     tags: [
       "FIFA",
       "Artificial Turf",
@@ -2125,7 +2125,7 @@ const blogData = [
       "Can You Build a Turf Ground on Rooftops? Here’s What You Need to Know",
     excerpt:
       "Is it possible to install a turf ground on a rooftop in India? Discover the structural, legal, and safety requirements of rooftop turf construction with tips from experts at GameOn Solution.",
-    image: "/Blog9.png",
+    image: "/Blog9.webp",
     tags: [
       "Rooftop Turf",
       "Turf Installation",

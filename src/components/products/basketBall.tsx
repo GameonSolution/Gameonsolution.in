@@ -116,7 +116,7 @@
 // export default BasketBallCourt;
 // const basketballItems = [
 //   {
-//     poster: "/basketBall/1.jpeg",
+//     poster: "/basketBall/1.webp",
 //     name: "Airplane",
 //     blurHash: "LQEqA]D%B-x?9+Rlbot9~mouIVj@",
 //   },
@@ -131,7 +131,7 @@
 //     blurHash: "LfE3;nWCRiWB^-t7WAR*xcoMogf6",
 //   },
 //   {
-//     poster: "/basketBall/4.jpg",
+//     poster: "/basketBall/4.webp",
 //     name: "Napoleon",
 //     blurHash: "L6Ax%~MkBB-l03o_Dqx?Q2%b?CNe",
 //   },
@@ -141,7 +141,7 @@
 //     blurHash: "LfE3;nWCRiWB^-t7WAR*xcoMogf6",
 //   },
 //   {
-//     poster: "/basketBall/6.jpeg",
+//     poster: "/basketBall/6.webp",
 //     name: "Scary Building",
 //     blurHash: "L6Ax%~MkBB-l03o_Dqx?Q2%b?CNe",
 //   },
@@ -293,7 +293,7 @@ export default BasketBallCourt;
 
 const basketballItems = [
   {
-    poster: "/basketBall/1.jpeg",
+    poster: "/basketBall/1.webp",
     name: "Airplane",
     blurHash: "LQEqA]D%B-x?9+Rlbot9~mouIVj@",
   },
@@ -308,7 +308,7 @@ const basketballItems = [
     blurHash: "LfE3;nWCRiWB^-t7WAR*xcoMogf6",
   },
   {
-    poster: "/basketBall/4.jpg",
+    poster: "/basketBall/4.webp",
     name: "Napoleon",
     blurHash: "L6Ax%~MkBB-l03o_Dqx?Q2%b?CNe",
   },
@@ -318,7 +318,7 @@ const basketballItems = [
     blurHash: "LfE3;nWCRiWB^-t7WAR*xcoMogf6",
   },
   {
-    poster: "/basketBall/6.jpeg",
+    poster: "/basketBall/6.webp",
     name: "Scary Building",
     blurHash: "L6Ax%~MkBB-l03o_Dqx?Q2%b?CNe",
   },

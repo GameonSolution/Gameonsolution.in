@@ -22,7 +22,7 @@
 //         <Hero
 //           title={"PICKLE BALL"}
 //           subtitle={"FINDS ITS MARK"}
-//           bgImgUrl={" /pickleTurf/pickle-turf-005.jpg"}
+//           bgImgUrl={" /pickleTurf/pickle-turf-005.webp"}
 //         />
 //         <Container className="relative z-10 space-y-10  md:max-w-[1000px] max-w-[692px]   py-36 text-3xl font-bold text-white md:text-4xl ">
 //           <FadeIn>
@@ -78,32 +78,32 @@
 
 // const PickleTurfItems = [
 //   {
-//     poster: "/pickleTurf/pickle-turf-001.jpg",
+//     poster: "/pickleTurf/pickle-turf-001.webp",
 //     name: "Airplane",
 //     blurHash: "LDD9*K~BMeS0_NIUWUR*x_IVx@%3",
 //   },
 //   {
-//     poster: "/pickleTurf/pickle-turf-002.jpg",
+//     poster: "/pickleTurf/pickle-turf-002.webp",
 //     name: "Family man",
 //     blurHash: "L26R[Gb]00nh0Nj@--oeu%V@O_a$",
 //   },
 //   {
-//     poster: "/pickleTurf/pickle-turf-003.jpg",
+//     poster: "/pickleTurf/pickle-turf-003.webp",
 //     name: "Family man",
 //     blurHash: "LPB|Nc%1ROV?~WxaRjoe~Bn$R:s:",
 //   },
 //   {
-//     poster: "/pickleTurf/pickle-turf-004.jpg",
+//     poster: "/pickleTurf/pickle-turf-004.webp",
 //     name: "Laboratory",
 //     blurHash: "LE8hnHRk00$_HXoboxR;.TWZIWs*",
 //   },
 //   {
-//     poster: "/pickleTurf/pickle-turf-005.jpg",
+//     poster: "/pickleTurf/pickle-turf-005.webp",
 //     name: "Napoleon",
 //     blurHash: "LWEV{pt6xTocR5n+s:a{~RWBIpR+",
 //   },
 //   {
-//     poster: "/pickleTurf/pickle-turf-006.jpg",
+//     poster: "/pickleTurf/pickle-turf-006.webp",
 //     name: "Person in Darkness",
 //     blurHash: "LPB|Nc%1ROV?~WxaRjoe~Bn$R:s:",
 //   },
@@ -137,7 +137,7 @@ const PickleTurf = () => {
         <Hero
           title="PICKLE BALL"
           subtitle="FINDS ITS MARK"
-          bgImgUrl="/pickleTurf/pickle-turf-005.jpg"
+          bgImgUrl="/pickleTurf/pickle-turf-005.webp"
         />
 
         <Container className="relative z-10 space-y-10 md:max-w-[1000px] max-w-[692px] py-36 text-3xl font-bold text-white md:text-4xl">
@@ -194,32 +194,32 @@ export default PickleTurf;
 
 const PickleTurfItems = [
   {
-    poster: "/pickleTurf/pickle-turf-001.jpg",
+    poster: "/pickleTurf/pickle-turf-001.webp",
     name: "Airplane",
     blurHash: "LDD9*K~BMeS0_NIUWUR*x_IVx@%3",
   },
   {
-    poster: "/pickleTurf/pickle-turf-002.jpg",
+    poster: "/pickleTurf/pickle-turf-002.webp",
     name: "Family man",
     blurHash: "L26R[Gb]00nh0Nj@--oeu%V@O_a$",
   },
   {
-    poster: "/pickleTurf/pickle-turf-003.jpg",
+    poster: "/pickleTurf/pickle-turf-003.webp",
     name: "Family man",
     blurHash: "LPB|Nc%1ROV?~WxaRjoe~Bn$R:s:",
   },
   {
-    poster: "/pickleTurf/pickle-turf-004.jpg",
+    poster: "/pickleTurf/pickle-turf-004.webp",
     name: "Laboratory",
     blurHash: "LE8hnHRk00$_HXoboxR;.TWZIWs*",
   },
   {
-    poster: "/pickleTurf/pickle-turf-005.jpg",
+    poster: "/pickleTurf/pickle-turf-005.webp",
     name: "Napoleon",
     blurHash: "LWEV{pt6xTocR5n+s:a{~RWBIpR+",
   },
   {
-    poster: "/pickleTurf/pickle-turf-006.jpg",
+    poster: "/pickleTurf/pickle-turf-006.webp",
     name: "Person in Darkness",
     blurHash: "LPB|Nc%1ROV?~WxaRjoe~Bn$R:s:",
   },
@@ -252,7 +252,7 @@ const PickleTurfItems = [
 //             <Hero
 //               title="PICKLE BALL"
 //               subtitle="FINDS ITS MARK"
-//               bgImgUrl="/pickleTurf/pickle-turf-005.jpg"
+//               bgImgUrl="/pickleTurf/pickle-turf-005.webp"
 //             />
 //           </div>
 //           <div className="md:w-1/2 w-full relative z-20">
@@ -351,32 +351,32 @@ const PickleTurfItems = [
 
 // const PickleTurfItems = [
 //   {
-//     poster: "/pickleTurf/pickle-turf-001.jpg",
+//     poster: "/pickleTurf/pickle-turf-001.webp",
 //     name: "Airplane",
 //     blurHash: "LDD9*K~BMeS0_NIUWUR*x_IVx@%3",
 //   },
 //   {
-//     poster: "/pickleTurf/pickle-turf-002.jpg",
+//     poster: "/pickleTurf/pickle-turf-002.webp",
 //     name: "Family man",
 //     blurHash: "L26R[Gb]00nh0Nj@--oeu%V@O_a$",
 //   },
 //   {
-//     poster: "/pickleTurf/pickle-turf-003.jpg",
+//     poster: "/pickleTurf/pickle-turf-003.webp",
 //     name: "Family man",
 //     blurHash: "LPB|Nc%1ROV?~WxaRjoe~Bn$R:s:",
 //   },
 //   {
-//     poster: "/pickleTurf/pickle-turf-004.jpg",
+//     poster: "/pickleTurf/pickle-turf-004.webp",
 //     name: "Laboratory",
 //     blurHash: "LE8hnHRk00$_HXoboxR;.TWZIWs*",
 //   },
 //   {
-//     poster: "/pickleTurf/pickle-turf-005.jpg",
+//     poster: "/pickleTurf/pickle-turf-005.webp",
 //     name: "Napoleon",
 //     blurHash: "LWEV{pt6xTocR5n+s:a{~RWBIpR+",
 //   },
 //   {
-//     poster: "/pickleTurf/pickle-turf-006.jpg",
+//     poster: "/pickleTurf/pickle-turf-006.webp",
 //     name: "Person in Darkness",
 //     blurHash: "LPB|Nc%1ROV?~WxaRjoe~Bn$R:s:",
 //   },

@@ -265,10 +265,14 @@ const ContactForm: React.FC<props> = ({ setIsPopupOpen }) => {
         </span>
       </h1>
       <div className="flex flex-col">
-        <label className="block text-sm uppercase font-medium text-white mb-1">
+        <label
+          htmlFor="name"
+          className="block text-sm uppercase font-medium text-white mb-1"
+        >
           Your Name
         </label>
         <input
+          id="name"
           type="text"
           name="name"
           value={formData.name}
@@ -281,10 +285,14 @@ const ContactForm: React.FC<props> = ({ setIsPopupOpen }) => {
         )}
       </div>
       <div className="flex flex-col">
-        <label className="block text-sm uppercase font-medium text-white mb-1">
+        <label
+          htmlFor="email"
+          className="block text-sm uppercase font-medium text-white mb-1"
+        >
           Your Email
         </label>
         <input
+          id="email"
           type="email"
           name="email"
           value={formData.email}
@@ -298,10 +306,14 @@ const ContactForm: React.FC<props> = ({ setIsPopupOpen }) => {
       </div>
 
       <div className="flex flex-col">
-        <label className="block text-sm uppercase font-medium text-white mb-1">
+        <label
+          htmlFor="phone"
+          className="block text-sm uppercase font-medium text-white mb-1"
+        >
           Your Phone
         </label>
         <input
+          id="phone"
           type="text"
           name="phone"
           value={formData.phone}
@@ -318,10 +330,14 @@ const ContactForm: React.FC<props> = ({ setIsPopupOpen }) => {
       </div>
 
       <div className="flex flex-col">
-        <label className="block text-sm uppercase font-medium text-white mb-1">
+        <label
+          htmlFor="location"
+          className="block text-sm uppercase font-medium text-white mb-1"
+        >
           Your Location
         </label>
         <input
+          id="location"
           type="text"
           name="location"
           value={formData.location}
@@ -335,10 +351,14 @@ const ContactForm: React.FC<props> = ({ setIsPopupOpen }) => {
       </div>
 
       <div className="flex flex-col">
-        <label className="block text-sm font-medium uppercase text-white mb-1">
+        <label
+          htmlFor="message"
+          className="block text-sm font-medium uppercase text-white mb-1"
+        >
           Your Message
         </label>
         <textarea
+          id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
@@ -354,7 +374,7 @@ const ContactForm: React.FC<props> = ({ setIsPopupOpen }) => {
       <div className="w-full flex justify-end items-end text-md">
         <button
           type="submit"
-          className="w-[35%] bg-secondary text-white py-2 rounded-full hover:bg-cursor-hover"
+          className="w-[35%] bg-secondary text-black font-medium py-2 rounded-full hover:bg-cursor-hover"
         >
           {createContact.isPending ? "Loading.." : "Send Message"}
         </button>

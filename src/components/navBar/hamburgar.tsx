@@ -13,6 +13,7 @@ const HamburgerMenu: React.FC<menuProps> = ({ isClicked, isOpen }) => {
       <button
         onClick={toggleMenu}
         className="relative w-5 h-5 flex items-center justify-center"
+        aria-label="Toggle menu"
       >
         {/* Top Line */}
         <div

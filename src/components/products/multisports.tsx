@@ -114,7 +114,7 @@
 
 // const cricketItems = [
 //   {
-//     poster: "/Football/Football-01.png",
+//     poster: "/Football/Football-01.webp",
 //     name: "Airplane",
 //     blurHash: "LE8hnHRk00$_HXoboxR;.TWZIWs*",
 //   },
@@ -287,7 +287,7 @@ export default MultiSportsTurf;
 
 const cricketItems = [
   {
-    poster: "/Football/Football-01.png",
+    poster: "/Football/Football-01.webp",
     name: "Airplane",
     blurHash: "LE8hnHRk00$_HXoboxR;.TWZIWs*",
   },
