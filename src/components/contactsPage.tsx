@@ -18,7 +18,7 @@ interface Errors {
   phone?: string;
   location?: string;
 }
-export const ContactsPage = () => {
+const ContactsPage = () => {
   const { createContact } = useCantacts();
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -387,3 +387,5 @@ export const ContactsPage = () => {
     </div>
   );
 };
+
+export default ContactsPage;

@@ -99,34 +99,114 @@
 
 // export default App;
 
-import React from "react";
+// Old non SEO Optimized code
+
+// import React from "react";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { HelmetProvider } from "react-helmet-async";
+// import Navbar from "./components/navBar";
+// import CursorFollower from "./components/customCursor";
+// import ScrollProgress from "./components/scrollProgress";
+// import News_Page from "./components/newsPage";
+// import Testimonials from "./components/testimonials";
+// import { ContactsPage } from "./components/contactsPage";
+// import FootballTurf from "./components/products/football";
+// import CricketTurf from "./components/products/cricket";
+// import VolleyballTurf from "./components/products/volleyball";
+// import MultiSportsTurf from "./components/products/multisports";
+// import IndoorTurf from "./components/products/indoor";
+// import PickleTurf from "./components/products/PickleTurf";
+// // import CircleTurf from "./components/products/circleMiniCriketStadium";
+// import { useNewsFeed } from "./hook/useNewsFeed";
+// import { useCarousel } from "./hook/useCarousel";
+// import { useTestimonials } from "./hook/useTestimonials";
+// // import Portfolio from "./components/portfolio";
+// import CircleTurf360 from "./components/products/360CircleTurf";
+// import BadmintonCourt from "./components/products/BadmintonCourt";
+// import BasketBallCourt from "./components/products/basketBall";
+// import HomePage from "./components/homePage";
+// import BlogPage from "./components/blog";
+// import NotFound from "./components/notfound";
+// import BlogDetailPage from "./components/BlogDetailPage";
+// import ScrollToTop from "./components/ScrollToTop";
+
+// const App: React.FC = () => {
+//   useNewsFeed();
+//   useCarousel();
+//   useTestimonials();
+
+//   return (
+//     <HelmetProvider>
+//       <Router>
+//         <div className="w-screen h-screen bg-primary no-scrollbar select-none">
+//           <ScrollToTop />
+//           <Navbar />
+//           <CursorFollower />
+//           <ScrollProgress />
+//           <Routes>
+//             <Route path="/" element={<HomePage />} />
+//             <Route path="/testimonials" element={<Testimonials />} />
+//             <Route path="/news" element={<News_Page />} />
+//             {/* <Route path="/portfolio" element={<Portfolio />} /> */}
+//             <Route path="/get-in-touch" element={<ContactsPage />} />
+//             <Route path="/blog" element={<BlogPage />} />
+//             <Route path="/blog/:slug" element={<BlogDetailPage />} />
+//             <Route path="*" element={<NotFound />} />
+
+//             {/* Product pages */}
+//             <Route path="/360-circle-turf" element={<CircleTurf360 />} />
+//             <Route path="/basket-ball" element={<BasketBallCourt />} />
+//             <Route path="/badminton-court" element={<BadmintonCourt />} />
+//             <Route path="/pickle-turf" element={<PickleTurf />} />
+//             {/* <Route path="/circle-turf" element={<CircleTurf />} /> */}
+//             <Route path="/football-turf" element={<FootballTurf />} />
+//             <Route path="/cricket-turf" element={<CricketTurf />} />
+//             <Route path="/multi-sports-turf" element={<MultiSportsTurf />} />
+//             <Route path="/indoor-turf" element={<IndoorTurf />} />
+//             <Route path="/volleyball-turf" element={<VolleyballTurf />} />
+//           </Routes>
+//         </div>
+//       </Router>
+//     </HelmetProvider>
+//   );
+// };
+
+// export default App;
+
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Navbar from "./components/navBar";
-import CursorFollower from "./components/customCursor";
-import ScrollProgress from "./components/scrollProgress";
-import News_Page from "./components/newsPage";
-import Testimonials from "./components/testimonials";
-import { ContactsPage } from "./components/contactsPage";
-import FootballTurf from "./components/products/football";
-import CricketTurf from "./components/products/cricket";
-import VolleyballTurf from "./components/products/volleyball";
-import MultiSportsTurf from "./components/products/multisports";
-import IndoorTurf from "./components/products/indoor";
-import PickleTurf from "./components/products/PickleTurf";
-// import CircleTurf from "./components/products/circleMiniCriketStadium";
+import ScrollToTop from "./components/ScrollToTop";
 import { useNewsFeed } from "./hook/useNewsFeed";
 import { useCarousel } from "./hook/useCarousel";
 import { useTestimonials } from "./hook/useTestimonials";
-// import Portfolio from "./components/portfolio";
-import CircleTurf360 from "./components/products/360CircleTurf";
-import BadmintonCourt from "./components/products/BadmintonCourt";
-import BasketBallCourt from "./components/products/basketBall";
-import HomePage from "./components/homePage";
-import BlogPage from "./components/blog";
-import NotFound from "./components/notfound";
-import BlogDetailPage from "./components/BlogDetailPage";
-import ScrollToTop from "./components/ScrollToTop";
+
+// Lazy-loaded core pages
+const HomePage = lazy(() => import("./components/homePage"));
+const Testimonials = lazy(() => import("./components/testimonials"));
+const News_Page = lazy(() => import("./components/newsPage"));
+const ContactsPage = lazy(() => import("./components/contactsPage"));
+const BlogPage = lazy(() => import("./components/blog"));
+const BlogDetailPage = lazy(() => import("./components/BlogDetailPage"));
+const NotFound = lazy(() => import("./components/notfound"));
+
+// Lazy-loaded UI extras
+const CursorFollower = lazy(() => import("./components/customCursor"));
+const ScrollProgress = lazy(() => import("./components/scrollProgress"));
+
+// Lazy-loaded product pages
+const FootballTurf = lazy(() => import("./components/products/football"));
+const CricketTurf = lazy(() => import("./components/products/cricket"));
+const VolleyballTurf = lazy(() => import("./components/products/volleyball"));
+const MultiSportsTurf = lazy(() => import("./components/products/multisports"));
+const IndoorTurf = lazy(() => import("./components/products/indoor"));
+const PickleTurf = lazy(() => import("./components/products/PickleTurf"));
+const CircleTurf360 = lazy(() => import("./components/products/360CircleTurf"));
+const BadmintonCourt = lazy(
+  () => import("./components/products/BadmintonCourt")
+);
+const BasketBallCourt = lazy(() => import("./components/products/basketBall"));
 
 const App: React.FC = () => {
   useNewsFeed();
@@ -139,30 +219,36 @@ const App: React.FC = () => {
         <div className="w-screen h-screen bg-primary no-scrollbar select-none">
           <ScrollToTop />
           <Navbar />
-          <CursorFollower />
-          <ScrollProgress />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/testimonials" element={<Testimonials />} />
-            <Route path="/news" element={<News_Page />} />
-            {/* <Route path="/portfolio" element={<Portfolio />} /> */}
-            <Route path="/get-in-touch" element={<ContactsPage />} />
-            <Route path="/blog" element={<BlogPage />} />
-            <Route path="/blog/:slug" element={<BlogDetailPage />} />
-            <Route path="*" element={<NotFound />} />
 
-            {/* Product pages */}
-            <Route path="/360-circle-turf" element={<CircleTurf360 />} />
-            <Route path="/basket-ball" element={<BasketBallCourt />} />
-            <Route path="/badminton-court" element={<BadmintonCourt />} />
-            <Route path="/pickle-turf" element={<PickleTurf />} />
-            {/* <Route path="/circle-turf" element={<CircleTurf />} /> */}
-            <Route path="/football-turf" element={<FootballTurf />} />
-            <Route path="/cricket-turf" element={<CricketTurf />} />
-            <Route path="/multi-sports-turf" element={<MultiSportsTurf />} />
-            <Route path="/indoor-turf" element={<IndoorTurf />} />
-            <Route path="/volleyball-turf" element={<VolleyballTurf />} />
-          </Routes>
+          <Suspense
+            fallback={
+              <div className="text-white text-center p-4">Loading...</div>
+            }
+          >
+            <CursorFollower />
+            <ScrollProgress />
+
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/testimonials" element={<Testimonials />} />
+              <Route path="/news" element={<News_Page />} />
+              <Route path="/get-in-touch" element={<ContactsPage />} />
+              <Route path="/blog" element={<BlogPage />} />
+              <Route path="/blog/:slug" element={<BlogDetailPage />} />
+              <Route path="*" element={<NotFound />} />
+
+              {/* Product pages */}
+              <Route path="/360-circle-turf" element={<CircleTurf360 />} />
+              <Route path="/basket-ball" element={<BasketBallCourt />} />
+              <Route path="/badminton-court" element={<BadmintonCourt />} />
+              <Route path="/pickle-turf" element={<PickleTurf />} />
+              <Route path="/football-turf" element={<FootballTurf />} />
+              <Route path="/cricket-turf" element={<CricketTurf />} />
+              <Route path="/multi-sports-turf" element={<MultiSportsTurf />} />
+              <Route path="/indoor-turf" element={<IndoorTurf />} />
+              <Route path="/volleyball-turf" element={<VolleyballTurf />} />
+            </Routes>
+          </Suspense>
         </div>
       </Router>
     </HelmetProvider>
