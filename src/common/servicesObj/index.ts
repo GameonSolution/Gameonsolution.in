@@ -80,6 +80,6 @@ export const servicesObj = [
       "/Football/Football-02.webp",
       "/Football/Football-03.webp",
     ],
-    redirect: "/circle-turf",
+    redirect: "/360-circle-turf",
   },
 ];

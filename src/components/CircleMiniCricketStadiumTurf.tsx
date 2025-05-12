@@ -148,7 +148,7 @@ const CircleMiniCricketStadiumTurf = () => {
             className="flex flex-row-reverse gap-2 items-center justify-center border border-opacity-10 hover:bg-secondary bg-slate-200/10 p-2 group hover:cursor-pointer transition-all duration-300"
             role="button"
             aria-label="Read more about Circle Turf"
-            onClick={() => navigate("/circle-turf")}
+            onClick={() => navigate("/360-circle-turf")}
           >
             <FaArrowRight className="text-lg sm:text-xl md:text-2xl group-hover:text-primary text-white/80 transform transition-transform duration-300 -rotate-45 ease-out group-hover:-rotate-0" />
             <p className="text-xs sm:text-sm md:text-base group-hover:text-primary text-white/80 font-primary uppercase tracking-widest transition-colors duration-300">
