@@ -202,6 +202,24 @@ const BlogPage = () => {
         "Is it possible to install a turf ground on a rooftop in India? Discover the structural, legal, and safety requirements of rooftop turf construction with tips from experts at GameOn Solution.",
       image: "/Blog9.webp",
     },
+    {
+      id: 10,
+      slug: "why-gameon-is-best-turf-construction-company",
+      title:
+        "Why GameOn Solution is South India’s No.1 Sports Infra Developer for Turf Construction | GameOn Solution",
+      excerpt:
+        "Planning to build a turf ground? Discover why GameOn Solution is the top choice for durable, high-performance sports infrastructure across Tamil Nadu and beyond.",
+      image: "/Blog10.webp",
+    },
+    {
+      id: 11,
+      slug: "perfect-football-turf-construction-guide",
+      title:
+        "Building the Perfect Football Turf: 6 Key Factors That Define Long-Term Turf Performance | GameOn Solution",
+      excerpt:
+        "Discover the 6 critical elements that make a football turf truly top-class. Learn how GameOn Solution builds long-lasting, high-performance fields across South India.",
+      image: "/Blog11.webp",
+    },
   ];
 
   const handleBlogClick = (slug: string) => {
