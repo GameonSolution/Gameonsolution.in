@@ -46,18 +46,18 @@ const HomeBanners: React.FC = () => {
       autoResize: true,
     });
 
-    let animationFrameId: number;
+    // let animationFrameId: number;
 
     const raf = (time: number) => {
       lenis.raf(time);
-      // requestAnimationFrame(raf);
-      animationFrameId = requestAnimationFrame(raf);
+      requestAnimationFrame(raf);
+      // animationFrameId = requestAnimationFrame(raf);
     };
 
-    animationFrameId = requestAnimationFrame(raf);
+    // animationFrameId = requestAnimationFrame(raf);
 
-    // requestAnimationFrame(raf);
-    return () => cancelAnimationFrame(animationFrameId);
+    requestAnimationFrame(raf);
+    // return () => cancelAnimationFrame(animationFrameId);
   }, []);
 
   useEffect(() => {
@@ -101,7 +101,23 @@ const HomeBanners: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [data]);
 
-  if (!getCarousels?.data?.length || getCarousels.isError) {
+  // if (!getCarousels?.data?.length || getCarousels.isError) {
+  //   return (
+  //     <main ref={container} className="relative h-[100vh]">
+  //       <div className="flex items-center justify-center text-white text-2xl">
+  //         GameOn Solution - Loading Carousel Data.....
+  //       </div>
+  //     </main>
+  //   );
+  // }
+
+  if (
+    !data ||
+    data.length === 0 ||
+    !getCarousels.isSuccess ||
+    !getCarousels.isFetched ||
+    getCarousels.isError
+  ) {
     return (
       <main ref={container} className="relative h-[100vh]">
         <div className="flex items-center justify-center text-white text-2xl">
@@ -114,9 +130,9 @@ const HomeBanners: React.FC = () => {
   return (
     <main
       ref={container}
-      // className={`relative h-[${data?.length * 100}vh] select-none lg:mb-[10%]`}
-      style={{ height: `${data?.length * 100}vh` }}
-      className="relative select-none lg:mb-[10%]"
+      className={`relative h-[${data?.length * 100}vh] select-none lg:mb-[10%]`}
+      // style={{ height: `${data?.length * 100}vh` }}
+      // className="relative select-none lg:mb-[10%]"
     >
       <div className="absolute bottom-0 left-0 w-full z-[9] h-36 bg-gradient-to-t from-primary to-transparent pointer-events-none"></div>
       <div className="">
