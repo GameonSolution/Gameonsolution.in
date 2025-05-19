@@ -133,7 +133,7 @@ const blogData = [
 </tbody>
 </table>
 <h3><strong>Quality of Turf Material</strong></h3>
-<p><span style="font-weight: 400;">Not all turf is created equal. The fancier the turf, the more it's going to cost you. High-end stuff lasts longer and plays better, but it isn't cheap. You've got options: natural grass, fake turf, or a mix of both. Each has its own price tag and perks. Curious about the differences? Swing by our article on </span><a href="https://gameonsolution.in/news/what-is-the-difference-between-turf-and-artificial-grass"><span style="font-weight: 400;">what is the difference between turf and artificial grass?</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">Not all turf is created equal. The fancier the turf, the more it's going to cost you. High-end stuff lasts longer and plays better, but it isn't cheap. You've got options: natural grass, fake turf, or a mix of both. Each has its own price tag and perks. Curious about the differences? Swing by our article on </span><a href="https://gameonsolution.in/blog/understanding-turf-and-artificial-grass"><span style="font-weight: 400;">what is the difference between turf and artificial grass?</span></a><span style="font-weight: 400;">.</span></p>
 <table>
 <tbody>
 <tr>
@@ -409,7 +409,7 @@ const blogData = [
 </tbody>
 </table>
 <p><span style="font-weight: 400;">These systems give you the feel of grass with the strength of synthetic fibers. They need less upkeep than natural grass but more than artificial turf. If you're looking to balance initial costs with ongoing care, this might be your sweet spot.</span></p>
-<p><span style="font-weight: 400;">Knowing the ins and outs of each turf option and their costs is key to making a smart choice. For more scoop on turf sizes and installation, check out our articles on </span><a href="https://gameonsolution.in/blog/average-turf-size-guide"><span style="font-weight: 400;">what is the average size of turf?</span></a><span style="font-weight: 400;"> and </span><a href="https://gameonsolution.in/news/what-is-the-minimum-sq-ft-for-turf"><span style="font-weight: 400;">what is the minimum sq ft for turf?</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">Knowing the ins and outs of each turf option and their costs is key to making a smart choice. For more scoop on turf sizes and installation, check out our articles on </span><a href="https://gameonsolution.in/blog/average-turf-size-guide"><span style="font-weight: 400;">what is the average size of turf?</span></a><span style="font-weight: 400;"> and </span><a href="https://gameonsolution.in/blog/minimum-square-feet-for-turf"><span style="font-weight: 400;">what is the minimum sq ft for turf?</span></a><span style="font-weight: 400;">.</span></p>
 <h2><strong>Return on Investment (ROI) Analysis</strong></h2>
 <h3><strong>Estimating Potential Revenue Streams</strong></h3>
 <p><span style="font-weight: 400;">Thinking about setting up a turf cricket field to rake in some extra cash? Let's break down where the money might come from. You can earn through hourly rentals, memberships, and by hosting tournaments or events. Here's a quick look at what you might expect:</span></p>
@@ -570,8 +570,7 @@ const blogData = [
     title: "Understanding Turf and Artificial Grass: What's the Difference?",
     excerpt:
       "Confused between turf and artificial grass? Learn the differences, pros and cons, and the best eco-friendly options for your space.",
-    image:
-      "/blog3.webp",
+    image: "/blog3.webp",
     tags: ["Artificial Grass", "Turf", "Eco-Friendly Lawn"],
     content: `
      <h2><strong>Understanding Turf and Artificial Grass: Differences, Benefits, and Best Options for Your Space</strong></h2>
@@ -1329,8 +1328,8 @@ const blogData = [
 </tr>
 </tbody>
 </table>
-<p><span style="font-weight: 400;">Knowing these sizes helps you choose the right turf for your project. Whether you're setting up turf for fun or eyeing it as a money-making venture, understanding the options can guide your choice. Curious about the differences between turf types? Check out our article on </span><a href="https://gameonsolution.in/news/what-is-the-difference-between-artificial-and-turf"><span style="font-weight: 400;">what is the difference between artificial and </span></a><a href="https://gameonsolution.in/news/how-much-does-it-cost-to-install-turf-cricket"><span style="font-weight: 400;">turf</span></a><span style="font-weight: 400;">.</span></p>
-<p><span style="font-weight: 400;">By getting familiar with both standard and varied turf sizes, you can plan your setup to fit your needs perfectly. This info is especially handy if you're looking to make some cash with turf-related businesses. Want to know more about turf installation costs? Dive into our article on </span><a href="https://gameonsolution.in/news/how-much-does-it-cost-to-install-turf-cricket"><span style="font-weight: 400;">how much does it cost to install cricket turf ?</span></a></p>
+<p><span style="font-weight: 400;">Knowing these sizes helps you choose the right turf for your project. Whether you're setting up turf for fun or eyeing it as a money-making venture, understanding the options can guide your choice. Curious about the differences between turf types? Check out our article on </span><a href="https://gameonsolution.in/blog/understanding-turf-and-artificial-grass"><span style="font-weight: 400;">what is the difference between artificial and </span></a><a href="https://gameonsolution.in/blog/turf-cricket-installation"><span style="font-weight: 400;">turf</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">By getting familiar with both standard and varied turf sizes, you can plan your setup to fit your needs perfectly. This info is especially handy if you're looking to make some cash with turf-related businesses. Want to know more about turf installation costs? Dive into our article on </span><a href="https://gameonsolution.in/blog/turf-cricket-installation"><span style="font-weight: 400;">how much does it cost to install cricket turf ?</span></a></p>
 <h2><strong>Turf Size Considerations</strong></h2>
 <p><span style="font-weight: 400;">When you're thinking about laying down some turf, it's all about getting the right fit for your space and making it work for you. You want that green carpet to look just right and do what you need it to do.</span></p>
 <h3><strong>Space Requirements for Turf Installation</strong></h3>
@@ -1379,7 +1378,7 @@ const blogData = [
 </tr>
 </tbody>
 </table>
-<p><span style="font-weight: 400;">Make sure you measure your space right and think about any extra room you might need for borders or paths. If you're curious about the nitty-gritty of space needs, check out our article on </span><a href="https://gameonsolution.in/news/what-is-the-minimum-sq-ft-for-turf"><span style="font-weight: 400;">what is the minimum sq ft for turf?</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">Make sure you measure your space right and think about any extra room you might need for borders or paths. If you're curious about the nitty-gritty of space needs, check out our article on </span><a href="https://gameonsolution.in/blog/minimum-square-feet-for-turf"><span style="font-weight: 400;">what is the minimum sq ft for turf?</span></a><span style="font-weight: 400;">.</span></p>
 <h3><strong>Customizing Turf Size</strong></h3>
 <p><span style="font-weight: 400;">Tweaking the size of your turf gives you the freedom to get creative with your space. Whether you're sprucing up a tiny backyard or a big commercial area, you can make the turf fit just right. Here's how you can customize it:</span></p>
 <ul>
@@ -1387,7 +1386,7 @@ const blogData = [
 <li style="font-weight: 400;"><span style="font-weight: 400;">Border Design: Adding some borders or edges can make the turf pop and work better for you.</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Integration with Landscaping: Mix your turf with other landscaping bits like flower beds, trees, and paths for a cohesive look.</span></li>
 </ul>
-<p><span style="font-weight: 400;">Customizing your turf means it fits your space like a glove and makes the most of what you've got. For more tips on making your turf work for you, check out our article on </span><a href="https://gameonsolution.in/news/what-is-the-difference-between-turf-and-artificial-grass"><span style="font-weight: 400;">what is the difference between turf and artificial grass?</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">Customizing your turf means it fits your space like a glove and makes the most of what you've got. For more tips on making your turf work for you, check out our article on </span><a href="https://gameonsolution.in/blog/understanding-turf-and-artificial-grass"><span style="font-weight: 400;">what is the difference between turf and artificial grass?</span></a><span style="font-weight: 400;">.</span></p>
 <p><span style="font-weight: 400;">By thinking about how much space you need and how you can tweak the turf, you can make smart choices that leave you with a turf setup that's both practical and easy on the eyes.</span></p>
 <h2><strong>Benefits of Different Turf Sizes</strong></h2>
 <p><span style="font-weight: 400;">Picking the right turf size can change how your space looks and works. Whether you're setting up turf for your backyard or a business, knowing what each size offers is key.</span></p>
@@ -1508,7 +1507,7 @@ const blogData = [
 </tr>
 </tbody>
 </table>
-<p><span style="font-weight: 400;">Knowing what each turf size brings to the table helps you pick what's best for your needs and space. Want more turf tips? Check out our articles on </span><a href="https://gameonsolution.in/blog/average-turf-size-guide"><span style="font-weight: 400;">what is the minimum sq ft for turf</span></a><span style="font-weight: 400;"> and </span><a href="https://gameonsolution.in/news/how-much-does-it-cost-to-install-turf-cricket"><span style="font-weight: 400;">how much does it cost to install turf cricket</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">Knowing what each turf size brings to the table helps you pick what's best for your needs and space. Want more turf tips? Check out our articles on </span><a href="https://gameonsolution.in/blog/average-turf-size-guide"><span style="font-weight: 400;">what is the minimum sq ft for turf</span></a><span style="font-weight: 400;"> and </span><a href="https://gameonsolution.in/blog/turf-cricket-installation"><span style="font-weight: 400;">how much does it cost to install turf cricket</span></a><span style="font-weight: 400;">.</span></p>
 <h2><strong>Turf Size for Passive Income</strong></h2>
 <p><span style="font-weight: 400;">Who knew grass could be your ticket to a steady cash flow? Exploring the potential of turf for generating passive income can be a thrilling venture. By getting the hang of how to use turf for business opportunities, folks can make smart choices about where to put their money.</span></p>
 <h3><strong>Utilizing Turf for Business Opportunities</strong></h3>
@@ -1610,7 +1609,7 @@ const blogData = [
 </table>
 <p><span style="font-weight: 400;">If you&rsquo;re curious about the minimum space needed for different turf setups, check out our article on </span><a href="https://gameonsolution.in/blog/minimum-area-required-for-turf-installation"><span style="font-weight: 400;">what is the minimum sq ft for turf</span></a><span style="font-weight: 400;">.</span></p>
 <h3><strong>Chatting with Turf Pros</strong></h3>
-<p><span style="font-weight: 400;">Talking to turf pros can be a game-changer. They know their stuff and can help you pick the best size for your space. Plus, they can explain the differences between types of turf, like fake grass versus the real deal. For more on this, see our article on </span><a href="https://gameonsolution.in/news/what-is-the-difference-between-artificial-and-turf"><span style="font-weight: 400;">what is the difference between artificial and turf?</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">Talking to turf pros can be a game-changer. They know their stuff and can help you pick the best size for your space. Plus, they can explain the differences between types of turf, like fake grass versus the real deal. For more on this, see our article on </span><a href="https://gameonsolution.in/blog/understanding-turf-and-artificial-grass"><span style="font-weight: 400;">what is the difference between artificial and turf?</span></a><span style="font-weight: 400;">.</span></p>
 <h3><strong>Planning for Maintenance</strong></h3>
 <p><span style="font-weight: 400;">Don&rsquo;t forget about keeping your turf looking fresh. Bigger areas might need more TLC, while smaller ones are easier to handle. Regular upkeep like cleaning and brushing is key to keeping your turf in top shape.</span></p>
 <table>
@@ -1830,7 +1829,7 @@ const blogData = [
 <li style="font-weight: 400;"><span style="font-weight: 400;">Stands out and draws attention</span></li>
 <li style="font-weight: 400;"><span style="font-weight: 400;">Can be used in lots of ways</span></li>
 </ul>
-<p><span style="font-weight: 400;">Knowing what each turf size can do helps you pick the right one for your turf plans. Whether you go small, medium, or large, each size has its perks to fit different needs and wants. For more turf info, check out our articles on </span><a href="https://gameonsolution.in/blog/average-turf-size-guide"><span style="font-weight: 400;">the average size of </span></a><span style="font-weight: 400;">turf and how</span><a href="https://gameonsolution.in/news/how-much-does-it-cost-to-install-turf-cricket"><span style="font-weight: 400;"> much it costs to install turf cricket</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">Knowing what each turf size can do helps you pick the right one for your turf plans. Whether you go small, medium, or large, each size has its perks to fit different needs and wants. For more turf info, check out our articles on </span><a href="https://gameonsolution.in/blog/average-turf-size-guide"><span style="font-weight: 400;">the average size of </span></a><span style="font-weight: 400;">turf and how</span><a href="https://gameonsolution.in/blog/turf-cricket-installation"><span style="font-weight: 400;"> much it costs to install turf cricket</span></a><span style="font-weight: 400;">.</span></p>
 <h2><strong>Planning Your Turf Business</strong></h2>
 <h3><strong>Budgeting for Turf Installation</strong></h3>
 <p><span style="font-weight: 400;">Getting your turf business off the ground starts with smart budgeting. Knowing what you're up against cost-wise helps you make savvy choices and keep the cash flowing. Prices can swing depending on how big the turf is, what kind of stuff you're using, and how tricky the setup is.</span></p>
