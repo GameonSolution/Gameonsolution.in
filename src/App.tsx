@@ -181,9 +181,10 @@ import ScrollToTop from "./components/ScrollToTop";
 import { useNewsFeed } from "./hook/useNewsFeed";
 import { useCarousel } from "./hook/useCarousel";
 import { useTestimonials } from "./hook/useTestimonials";
+import HomePage from "./components/homePage";
 
 // Lazy-loaded core pages
-const HomePage = lazy(() => import("./components/homePage"));
+// const HomePage = lazy(() => import("./components/homePage"));
 const Testimonials = lazy(() => import("./components/testimonials"));
 const News_Page = lazy(() => import("./components/newsPage"));
 const ContactsPage = lazy(() => import("./components/contactsPage"));
