@@ -571,7 +571,7 @@ const blogData = [
     excerpt:
       "Confused between turf and artificial grass? Learn the differences, pros and cons, and the best eco-friendly options for your space.",
     image:
-      "https://media.angi.com/s3fs-public/artificial-grass-versus-turf.png?impolicy=infographic",
+      "/blog3.webp",
     tags: ["Artificial Grass", "Turf", "Eco-Friendly Lawn"],
     content: `
      <h2><strong>Understanding Turf and Artificial Grass: Differences, Benefits, and Best Options for Your Space</strong></h2>

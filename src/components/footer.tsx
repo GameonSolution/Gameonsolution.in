@@ -84,7 +84,7 @@ export const Footer = () => {
               <span className="sr-only">YouTube</span>
             </a>
             <a
-              href="https://wa.me/9615737373"
+              href="https://wa.me/919615737373"
               target="_blank"
               rel="noopener noreferrer"
               className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"

@@ -310,8 +310,8 @@ const BlogPage = () => {
           </div>
         </div>
         <WhatsAppButton />
-        <Footer />
       </section>
+      <Footer />
     </>
   );
 };
