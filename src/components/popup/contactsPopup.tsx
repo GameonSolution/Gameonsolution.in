@@ -174,7 +174,6 @@
 // export default ContactForm;
 
 import React, { useState } from "react";
-import { FaPhoneAlt } from "react-icons/fa";
 import TextHoverAnimation from "../textHoverAnimation";
 import { useCantacts } from "@/hook/useContact";
 
@@ -186,7 +185,7 @@ interface FormData {
   location: string;
 }
 
-interface Props {
+interface props {
   setIsPopupOpen: (value: boolean) => void;
 }
 
@@ -198,7 +197,7 @@ interface Errors {
   location?: string;
 }
 
-const ContactForm: React.FC<Props> = ({ setIsPopupOpen }) => {
+const ContactForm: React.FC<props> = ({ setIsPopupOpen }) => {
   const { createContact } = useCantacts();
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -208,7 +207,6 @@ const ContactForm: React.FC<Props> = ({ setIsPopupOpen }) => {
     location: "",
   });
   const [errors, setErrors] = useState<Errors>({});
-  const [showMessage, setShowMessage] = useState<boolean>(false);
 
   const validate = (): boolean => {
     const newErrors: Errors = {};
@@ -237,6 +235,7 @@ const ContactForm: React.FC<Props> = ({ setIsPopupOpen }) => {
 
     if (validate()) {
       await createContact.mutateAsync({ ...formData }).then(() => {
+        setIsPopupOpen(false);
         setFormData({
           name: "",
           email: "",
@@ -245,12 +244,8 @@ const ContactForm: React.FC<Props> = ({ setIsPopupOpen }) => {
           location: "",
         });
         setErrors({});
-        setShowMessage(true);
-
-        setTimeout(() => {
-          setIsPopupOpen(false);
-        }, 6000);
       });
+      console.log("Form submitted successfully", formData);
     }
   };
 
@@ -262,97 +257,129 @@ const ContactForm: React.FC<Props> = ({ setIsPopupOpen }) => {
   };
 
   return (
-    <>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-3 p-5">
-        <h1 className="flex gap-2 text-2xl md:text-4xl font-primary uppercase justify-start items-center text-white z-[11] opacity-0 animate-lineUp">
-          <span className="text-white">Let's</span>
-          <span className="text-secondary">
-            <TextHoverAnimation text="Talk" />
-          </span>
-        </h1>
+    <form onSubmit={handleSubmit} className="flex flex-col gap-3 p-5">
+      <h1 className="flex gap-2 text-2xl md:text-4xl font-primary uppercase justify-start items-center text-white z-[11] opacity-0 animate-lineUp">
+        <span className="text-white">Let's</span>
+        <span className="text-secondary">
+          <TextHoverAnimation text="Talk" />
+        </span>
+      </h1>
+      <div className="flex flex-col">
+        <label
+          htmlFor="name"
+          className="block text-sm uppercase font-medium text-white mb-1"
+        >
+          Your Name
+        </label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+          className="block w-full text-secondary bg-transparent border-b border-gray-300 focus:border-secondary focus:outline-none pb-1"
+        />
+        {errors.name && !formData.name && (
+          <p className="text-red-500 text-xs mt-1">{errors.name}</p>
+        )}
+      </div>
+      <div className="flex flex-col">
+        <label
+          htmlFor="email"
+          className="block text-sm uppercase font-medium text-white mb-1"
+        >
+          Your Email
+        </label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+          className="block bg-transparent w-full text-secondary border-b border-gray-300 focus:border-secondary focus:outline-none pb-1"
+        />
+        {errors.email && !formData.email && (
+          <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+        )}
+      </div>
 
-        {/* Inputs */}
-        {[
-          { id: "name", label: "Your Name" },
-          { id: "email", label: "Your Email" },
-          { id: "phone", label: "Your Phone" },
-          { id: "location", label: "Your Location" },
-        ].map((field) => (
-          <div className="flex flex-col" key={field.id}>
-            <label
-              htmlFor={field.id}
-              className="block text-sm uppercase font-medium text-white mb-1"
-            >
-              {field.label}
-            </label>
-            <input
-              id={field.id}
-              type="text"
-              name={field.id}
-              value={(formData as any)[field.id]}
-              onChange={handleChange}
-              required
-              className="block w-full text-secondary bg-transparent border-b border-gray-300 focus:border-secondary focus:outline-none pb-1"
-            />
-            {errors[field.id as keyof Errors] && (
-              <p className="text-red-500 text-xs mt-1">
-                {errors[field.id as keyof Errors]}
-              </p>
-            )}
-          </div>
-        ))}
+      <div className="flex flex-col">
+        <label
+          htmlFor="phone"
+          className="block text-sm uppercase font-medium text-white mb-1"
+        >
+          Your Phone
+        </label>
+        <input
+          id="phone"
+          type="text"
+          name="phone"
+          value={formData.phone}
+          onChange={handleChange}
+          required
+          className="block w-full text-secondary bg-transparent border-b border-gray-300 focus:border-secondary focus:outline-none pb-1"
+        />
+        {errors.phone && !formData.phone && (
+          <p className="text-red-500 text-xs mt-1">{errors.phone}</p>
+        )}
+        {errors.phone && formData.phone && (
+          <p className="text-red-500 text-xs mt-1">{errors.phone}</p>
+        )}
+      </div>
 
-        {/* Message */}
-        <div className="flex flex-col">
-          <label
-            htmlFor="message"
-            className="block text-sm font-medium uppercase text-white mb-1"
-          >
-            Your Message
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            required
-            className="block text-secondary bg-transparent w-full border-b border-gray-300 focus:border-secondary focus:outline-none pb-1"
-            rows={4}
-          />
-          {errors.message && (
-            <p className="text-red-500 text-xs mt-1">{errors.message}</p>
-          )}
-        </div>
+      <div className="flex flex-col">
+        <label
+          htmlFor="location"
+          className="block text-sm uppercase font-medium text-white mb-1"
+        >
+          Your Location
+        </label>
+        <input
+          id="location"
+          type="text"
+          name="location"
+          value={formData.location}
+          onChange={handleChange}
+          required
+          className="block w-full text-secondary bg-transparent border-b border-gray-300 focus:border-secondary focus:outline-none pb-1"
+        />
+        {errors.location && !formData.location && (
+          <p className="text-red-500 text-xs mt-1">{errors.location}</p>
+        )}
+      </div>
 
-        {/* Submit */}
-        <div className="w-full flex justify-end items-end text-md">
-          <button
-            type="submit"
-            className="w-[35%] bg-secondary text-black font-medium py-2 rounded-full hover:bg-cursor-hover"
-          >
-            {createContact.isPending ? "Loading..." : "Send Message"}
-          </button>
-        </div>
-      </form>
+      <div className="flex flex-col">
+        <label
+          htmlFor="message"
+          className="block text-sm font-medium uppercase text-white mb-1"
+        >
+          Your Message
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+          className="block text-secondary bg-transparent w-full border-b border-gray-300 focus:border-secondary focus:outline-none pb-1"
+          rows={4}
+        />
+        {errors.message && !formData.message && (
+          <p className="text-red-500 text-xs mt-1">{errors.message}</p>
+        )}
+      </div>
 
-      {/* Post-submission message */}
-      {showMessage && (
-        <div className="absolute top-5 left-5 right-5 md:left-auto md:right-10 md:top-10 bg-black border border-secondary text-white rounded-lg p-4 flex flex-col gap-2 animate-fadeIn z-50">
-          <p>✅ Your message has been sent!</p>
-          <p>
-            🚨 There are many people waiting. If it’s urgent, please call us
-            now:
-          </p>
-          <a
-            href="tel:+919615737373"
-            className="flex items-center gap-2 text-secondary hover:underline text-lg font-bold"
-          >
-            <FaPhoneAlt />
-            +919615737373
-          </a>
-        </div>
-      )}
-    </>
+      <div className="w-full flex justify-end items-end text-md">
+        <button
+          type="submit"
+          className="w-[35%] bg-secondary text-black font-medium py-2 rounded-full hover:bg-cursor-hover"
+        >
+          {createContact.isPending ? "Loading.." : "Send Message"}
+        </button>
+      </div>
+    </form>
   );
 };
 
