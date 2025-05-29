@@ -300,6 +300,8 @@ const BlogPage = () => {
         url={seoData.blog.url}
       />
       <section className="flex flex-col items-center min-h-screen bg-primary px-10 md:px-20 lg:px-[7.5rem] pb-16 lg:pb-28 mt-20">
+        {/* <div className="min-h-screen bg-primary text-white pt-32 pb-20 px-6 md:px-10 lg:px-20"> */}
+
         {/* Moved the heading to the start of the section */}
         <div className="text-center py-10 w-full">
           <AnimatedCard>
