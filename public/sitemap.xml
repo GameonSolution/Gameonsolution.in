@@ -17,19 +17,16 @@
     <lastmod>2024-03-23</lastmod>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://gameonsolution.in/news</loc>
     <lastmod>2024-03-23</lastmod>
     <priority>0.8</priority>
   </url>
-  
   <url>
     <loc>https://gameonsolution.in/portfolio</loc>
     <lastmod>2024-03-23</lastmod>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://gameonsolution.in/get-in-touch</loc>
     <lastmod>2024-03-23</lastmod>
@@ -37,64 +34,41 @@
   </url>
 
   <!-- Product Pages -->
-  <url>
-    <loc>https://gameonsolution.in/360-circle-turf</loc>
-    <lastmod>2024-03-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  
-  <url>
-    <loc>https://gameonsolution.in/basket-ball</loc>
-    <lastmod>2024-03-23</lastmod>
-    <priority>0.7</priority>
-  </url>
+  <url><loc>https://gameonsolution.in/360-circle-turf</loc><lastmod>2024-03-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://gameonsolution.in/basket-ball</loc><lastmod>2024-03-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://gameonsolution.in/badminton-court</loc><lastmod>2024-03-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://gameonsolution.in/pickle-turf</loc><lastmod>2024-03-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://gameonsolution.in/circle-turf</loc><lastmod>2024-03-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://gameonsolution.in/football-turf</loc><lastmod>2024-03-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://gameonsolution.in/cricket-turf</loc><lastmod>2024-03-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://gameonsolution.in/multi-sports-turf</loc><lastmod>2024-03-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://gameonsolution.in/indoor-turf</loc><lastmod>2024-03-23</lastmod><priority>0.7</priority></url>
+  <url><loc>https://gameonsolution.in/volleyball-turf</loc><lastmod>2024-03-23</lastmod><priority>0.7</priority></url>
 
-  <url>
-    <loc>https://gameonsolution.in/badminton-court</loc>
-    <lastmod>2024-03-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://gameonsolution.in/pickle-turf</loc>
-    <lastmod>2024-03-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://gameonsolution.in/circle-turf</loc>
-    <lastmod>2024-03-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://gameonsolution.in/football-turf</loc>
-    <lastmod>2024-03-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://gameonsolution.in/cricket-turf</loc>
-    <lastmod>2024-03-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://gameonsolution.in/multi-sports-turf</loc>
-    <lastmod>2024-03-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://gameonsolution.in/indoor-turf</loc>
-    <lastmod>2024-03-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://gameonsolution.in/volleyball-turf</loc>
-    <lastmod>2024-03-23</lastmod>
-    <priority>0.7</priority>
-  </url>
+  <!-- Blog Pages -->
+  <url><loc>https://gameonsolution.in/blog/minimum-area-required-for-turf-installation</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/turf-cricket-installation</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/understanding-turf-and-artificial-grass</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/india-pakistan-icc-matches-neutral-venues</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/average-turf-size-guide</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/minimum-square-feet-for-turf</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/dhineshwaran-ms-how-he-built-his-legacy</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/fifa-turf-vs-natural-grass</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/rooftop-turf-ground-guide</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/why-gameon-is-best-turf-construction-company</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/perfect-football-turf-construction-guide</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/convert-empty-land-into-turf-business</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/why-some-turfs-fail</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/india-daily-turf-players</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/why-turf-is-popular-now</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/government-support-for-turfs</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/turf-vs-real-estate-2025</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/playgrounds-are-disappearing-turfs-are-rising</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/turf-impact-local-sports</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/attract-more-players-to-your-turf</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/turf-construction-cost-tamilnadu</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/turf-vs-concrete-sports</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/pickleball-court-construction-tamilnadu</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
+  <url><loc>https://gameonsolution.in/blog/backyard-pickleball-court-construction-2025</loc><lastmod>2024-03-23</lastmod><priority>0.6</priority></url>
 
 </urlset>
