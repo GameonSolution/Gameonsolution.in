@@ -284,6 +284,31 @@ const BlogPage = () => {
         "Local turf grounds are transforming how sports is played in India. From kids and girls playing more, to young entrepreneurs launching turf businesses — discover the turf revolution.",
       image: "/blog/Blog19.webp",
     },
+    {
+      id: 20,
+      slug: "attract-more-players-to-your-turf",
+      title:
+        "Want to Attract More Players to Your Turf? Here’s What They Actually Care About",
+      excerpt:
+        "Struggling to get bookings even after building your turf? Discover the 5 key features players care about – from turf quality to lighting, safety, and online bookings.",
+      image: "/blog/Blog20.webp",
+    },
+    {
+      id: 21,
+      slug: "turf-construction-cost-tamilnadu",
+      title: "Turf Construction Cost in Tamil Nadu (2025 Guide)",
+      excerpt:
+        "Planning to build a turf in Tamil Nadu? Here’s a detailed guide on construction costs, from land preparation to lighting and turf material.",
+      image: "/blog/Blog21.webp",
+    },
+    {
+      id: 22,
+      slug: "turf-vs-concrete-sports",
+      title: "Turf vs Concrete for Sports Use – Which One Should You Choose?",
+      excerpt:
+        "Wondering whether to build your sports area with turf or concrete? This guide compares both in terms of cost, safety, performance, and maintenance.",
+      image: "/blog/Blog22.webp",
+    },
   ];
 
   const handleBlogClick = (slug: string) => {
