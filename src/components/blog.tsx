@@ -309,6 +309,23 @@ const BlogPage = () => {
         "Wondering whether to build your sports area with turf or concrete? This guide compares both in terms of cost, safety, performance, and maintenance.",
       image: "/blog/Blog22.webp",
     },
+    {
+      id: 23,
+      slug: "pickleball-court-construction-tamilnadu",
+      title: "Pickleball Court Construction in Tamil Nadu: Complete 2025 Guide",
+      excerpt:
+        "Looking to build a pickleball court in Tamil Nadu? Our 2025 guide covers everything from costs and permits to materials and maintenance. Get expert tips for constructing the perfect court in Tamil Nadu's climate!",
+      image: "/blog/Blog23.webp",
+    },
+    {
+      id: 24,
+      slug: "backyard-pickleball-court-construction-2025",
+      title:
+        "A Step-by-Step Guide to Building a Backyard Pickleball Court in 2025",
+      excerpt:
+        "Your backyard can be a pickleball oasis! With our full step-by-step guide to building your own pickleball court in 2025, you will have everything you need to create your own backyard pickleball court project from beginning to play!",
+      image: "/blog/Blog24.webp",
+    },
   ];
 
   const handleBlogClick = (slug: string) => {
