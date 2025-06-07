@@ -15,7 +15,7 @@
 //   return (
 //     <div className="">
 //       <TabSEO
-//         title="Expert Football Turf Builders in South India | GameOnSolution"
+//         title="Expert Football Turf Builders in South India | GameOnSolution - South India’s Best Sports Infrastructure"
 //         description="We design & build premium football turfs with top-grade synthetic grass for durability, grip, and all-weather performance"
 //       />
 //       <div className="bg-background relative z-10 select-none">
@@ -193,7 +193,7 @@ const FootballTurf = () => {
   return (
     <div>
       <TabSEO
-        title="Expert Football Turf Builders in South India | GameOnSolution"
+        title="Expert Football Turf Builders in South India | GameOnSolution - South India’s Best Sports Infrastructure"
         description="We design & build premium football turfs with top-grade synthetic grass for durability, grip, and all-weather performance"
       />
 

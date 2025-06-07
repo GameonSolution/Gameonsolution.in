@@ -15,7 +15,7 @@
 //   return (
 //     <div className="">
 //       <TabSEO
-//         title="Indoor Turf Builders in South India | GameOnSolution"
+//         title="Indoor Turf Builders in South India | GameOnSolution - South India’s Best Sports Infrastructure"
 //         description="Get custom indoor sports turfs with advanced synthetic materials for year-round gameplay and training."
 //       />
 //       <div className="bg-background relative z-10 select-none">
@@ -170,7 +170,7 @@ const IndoorTurf = () => {
   return (
     <div>
       <TabSEO
-        title="Indoor Turf Builders in South India | GameOnSolution"
+        title="Indoor Turf Builders in South India | GameOnSolution - South India’s Best Sports Infrastructure"
         description="Get custom indoor sports turfs with advanced synthetic materials for year-round gameplay and training."
       />
       <div className="bg-background relative z-10 select-none">

@@ -15,7 +15,7 @@
 //   return (
 //     <div className="">
 //       <TabSEO
-//         title="Multi-Sports Turf Builders for All Games | GameOnSolution"
+//         title="Multi-Sports Turf Builders for All Games | GameOnSolution - South India’s Best Sports Infrastructure"
 //         description="We design & install multi-sports turfs for football, cricket, and more, ensuring durability and versatility."
 //       />
 //       <div className="bg-background relative z-10 select-none">
@@ -172,7 +172,7 @@ const MultiSportsTurf = () => {
   return (
     <div className="">
       <TabSEO
-        title="Multi-Sports Turf Builders for All Games | GameOnSolution"
+        title="Multi-Sports Turf Builders for All Games | GameOnSolution - South India’s Best Sports Infrastructure"
         description="We design & install multi-sports turfs for football, cricket, and more, ensuring durability and versatility."
       />
       <div className="bg-background relative z-10 select-none">

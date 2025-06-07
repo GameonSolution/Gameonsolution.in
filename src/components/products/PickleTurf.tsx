@@ -15,7 +15,7 @@
 //   return (
 //     <div className="">
 //       <TabSEO
-//         title="Professional Pickleball Court Construction | GameOnSolution"
+//         title="Professional Pickleball Court Construction | GameOnSolution - South India’s Best Sports Infrastructure"
 //         description="We specialize in high-quality pickleball courts with world-class synthetic surfaces for smooth, professional gameplay."
 //       />
 //       <div className="bg-background relative z-10 select-none">
@@ -129,7 +129,7 @@ const PickleTurf = () => {
   return (
     <div>
       <TabSEO
-        title="Professional Pickleball Court Construction | GameOnSolution"
+        title="Professional Pickleball Court Construction | GameOnSolution - South India’s Best Sports Infrastructure"
         description="We specialize in high-quality pickleball courts with world-class synthetic surfaces for smooth, professional gameplay."
       />
 

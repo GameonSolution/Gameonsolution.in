@@ -15,7 +15,7 @@
 //   return (
 //     <div className="">
 //       <TabSEO
-//         title="Mini Cricket Stadium Turf Builders | GameOnSolution"
+//         title="Mini Cricket Stadium Turf Builders | GameOnSolution - South India’s Best Sports Infrastructure"
 //         description="Build your mini cricket stadium with our expert-designed synthetic turfs, offering durability, safety, and superior bounce."
 //       />
 //       <div className="bg-background relative z-10 select-none">
@@ -145,7 +145,7 @@ const CircleTurf = () => {
   return (
     <div>
       <TabSEO
-        title="Mini Cricket Stadium Turf Builders | GameOnSolution"
+        title="Mini Cricket Stadium Turf Builders | GameOnSolution - South India’s Best Sports Infrastructure"
         description="Build your mini cricket stadium with our expert-designed synthetic turfs, offering durability, safety, and superior bounce."
       />
       <div className="bg-background relative z-10 select-none">

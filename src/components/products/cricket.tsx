@@ -15,7 +15,7 @@
 //   return (
 //     <div className="">
 //       <TabSEO
-//         title="Custom Cricket Nets & Turf Installation | GameOnSolution"
+//         title="Custom Cricket Nets & Turf Installation | GameOnSolution - South India’s Best Sports Infrastructure"
 //         description="We provide cricket net construction with advanced synthetic turf, ensuring high performance and long-lasting quality."
 //       />
 //       <div className="bg-background relative z-10 select-none">
@@ -175,7 +175,7 @@ const CricketTurf = () => {
   return (
     <div className="">
       <TabSEO
-        title="Custom Cricket Nets & Turf Installation | GameOnSolution"
+        title="Custom Cricket Nets & Turf Installation | GameOnSolution - South India’s Best Sports Infrastructure"
         description="We provide cricket net construction with advanced synthetic turf, ensuring high performance and long-lasting quality."
       />
 

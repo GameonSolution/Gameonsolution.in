@@ -232,7 +232,7 @@ const CircleTurf360 = () => {
   return (
     <div className="">
       <TabSEO
-        title="Basketball Courts & 360° Circle Turf | GameOnSolution - South India’s Best Sports Infrastructure"
+        title="360° Circle Turf | GameOnSolution - South India’s Best Sports Infrastructure"
         description="Upgrade your game with top-quality basketball courts and 360° circle turf from GameOnSolution, South India’s leading provider of sports infrastructure. Durable, high-performance surfaces for schools, communities, and professionals. Get your court today!"
       />
       <div className="bg-background relative z-10 select-none">

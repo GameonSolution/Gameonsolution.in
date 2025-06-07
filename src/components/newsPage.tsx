@@ -92,7 +92,7 @@ const News_Page = () => {
     {
       icon: "/awards/sunNewsLogo.webp",
       date: "2023",
-      title: "Best Sportd Infra Solution by",
+      title: "Best Sports Infra Solution by",
     },
     {
       icon: "/awards/sitaLogo.webp",
@@ -107,7 +107,7 @@ const News_Page = () => {
     {
       icon: "/awards/vikadanLogo.webp",
       date: "2023",
-      title: "Best Sportd Infra Solution by",
+      title: "Best Sports Infra Solution by",
     },
 
     {

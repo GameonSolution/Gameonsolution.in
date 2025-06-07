@@ -14,7 +14,7 @@ const awards = [
   {
     icon: "/awards/sunNewsLogo.webp",
     date: "2023",
-    title: "Best Sportd Infra Solution",
+    title: "Best Sports Infra Solution",
   },
   {
     icon: "/awards/sitaLogo.webp",
@@ -24,7 +24,7 @@ const awards = [
   {
     icon: "/awards/vikadanLogo.webp",
     date: "2023",
-    title: "Best Sportd Infra Solution",
+    title: "Best Sports Infra Solution",
   },
   {
     icon: "/awards/radiocity.webp",

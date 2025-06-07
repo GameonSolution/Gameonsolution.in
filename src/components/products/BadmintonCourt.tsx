@@ -15,7 +15,7 @@
 //   return (
 //     <div className="">
 //       <TabSEO
-//         title="Badminton Court Construction with Synthetic Turf | GameOnSolution"
+//         title="Badminton Court Construction with Synthetic Turf | GameOnSolution - South India’s Best Sports Infrastructure"
 //         description="We build high-performance badminton courts with anti-slip synthetic flooring for the best playing experience."
 //       />
 //       <div className="bg-background relative z-10 select-none">
@@ -166,7 +166,7 @@ const BadmintonCourt = () => {
   return (
     <div className="">
       <TabSEO
-        title="Badminton Court Construction with Synthetic Turf | GameOnSolution"
+        title="Badminton Court Construction with Synthetic Turf | GameOnSolution - South India’s Best Sports Infrastructure"
         description="We build high-performance badminton courts with anti-slip synthetic flooring for the best playing experience."
       />
 
