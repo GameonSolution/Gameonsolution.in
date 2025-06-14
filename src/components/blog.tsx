@@ -247,6 +247,33 @@ const BlogPage = () => {
         "Your backyard can be a pickleball oasis! With our full step-by-step guide to building your own pickleball court in 2025, you will have everything you need to create your own backyard pickleball court project from beginning to play!",
       image: "/blog/Blog24.webp",
     },
+    {
+      id: 25,
+      slug: "budget-pickleball-court-diy-guide-2025",
+      title:
+        "Budget-Friendly Pickleball Court Construction Ideas for Landowners: 2025 DIY Guide",
+      excerpt:
+        "Looking for affordable pickleball court building ideas for your home in 2025? Check out our full post for money-saving ideas, quick do-it-yourself hacks, and creative substitutes to design a cost-effective court in the backyard!",
+      image: "/blog/Blog25.webp",
+    },
+    {
+      id: 26,
+      slug: "common-pickleball-court-building-mistakes-2025",
+      title:
+        "Common Mistakes to Avoid When Building Your First Pickleball Court: Expert Guide 2025",
+      excerpt:
+        "Planning to build a pickleball court? Learn from the most common DIY and professional mistakes that cost homeowners and facility owners thousands. This 2025 guide helps you avoid budget, design, and safety errors before you start construction.",
+      image: "/blog/Blog26.webp",
+    },
+    {
+      id: 27,
+      slug: "essential-tools-materials-diy-pickleball-court-india-2025",
+      title:
+        "Essential Tools and Materials for DIY Pickleball Court Installation in India: Complete 2025 Guide",
+      excerpt:
+        "Discover the essential tools and materials needed for DIY pickleball court installation in India with our comprehensive 2025 guide. From locally available construction supplies to specialized equipment, build your perfect court while saving on costs!",
+      image: "/blog/Blog27.webp",
+    },
   ];
 
   const handleBlogClick = (slug: string) => {
