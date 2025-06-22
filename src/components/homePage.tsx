@@ -63,6 +63,7 @@ const HomePage: React.FC = () => {
         {/* <div id="testimonials">
           <Testimonials />
         </div> */}
+
         <div id="footer">
           <Footer />
         </div>

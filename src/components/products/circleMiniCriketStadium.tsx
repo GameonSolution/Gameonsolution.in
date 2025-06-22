@@ -167,22 +167,20 @@ const CircleTurf = () => {
           </FadeIn>
           <FadeIn>
             <span className="md:text-2xl text-lg">
-              Welcome to the Circle Mini Cricket Stadium, where passion for
-              Cricket meets high-quality, exclusive playing surfaces. Designed
-              with the perfect blend of aesthetics and functionality, our turf
-              offers an unmatched experience for players of all skill levels.
-              The turf’s professional-grade quality ensures optimal ball bounce,
-              pace, and spin, bringing a true stadium feel to every game.
-              Whether you’re looking to play a friendly match or host a
-              competitive tournament, Circle Mini Stadium is crafted to offer a
-              first-rate cricketing experience in a compact setting. Our
-              exclusive turf has been meticulously engineered to provide
-              durability and safety, allowing players to focus solely on their
-              game. With shock-absorbing materials, the surface minimizes impact
-              on joints, making it ideal for extended play sessions. At Circle
-              Mini Stadium, every aspect has been designed to create an
-              environment that brings out the best in every cricketer—from
-              beginners to seasoned professionals.
+              Experience cricket like never before at the Circle Mini Cricket
+              Stadium, where top-tier turf technology meets the thrill of the
+              game. Designed for both casual players and serious athletes, this
+              compact yet professional setup offers the perfect balance of
+              performance, aesthetics, and comfort. With a high-performance
+              synthetic cricket turf that delivers ideal ball bounce, pace, and
+              spin, every match feels like a stadium-level experience. Powered
+              by GameOn Solution&apos;s expertise in cricket turf construction,
+              the surface is built for durability, safety, and long-term
+              usability. The shock-absorbing layer reduces stress on joints,
+              making it suitable for long playing hours. Whether you're
+              organizing a friendly match or a competitive tournament, Circle
+              Mini Stadium is engineered to deliver an elite cricketing
+              experience for players at every level.
             </span>
           </FadeIn>
           <FadeIn>

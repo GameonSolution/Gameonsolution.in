@@ -149,19 +149,20 @@ const PickleTurf = () => {
 
           <FadeIn>
             <span className="md:text-2xl text-lg">
-              Introducing our Pickleball Court turf — a premium-grade surface
-              engineered specifically for pickleball lovers who demand top-tier
-              performance. Our turf delivers consistent ball bounce, excellent
-              traction, and optimal comfort, helping players of all skill levels
-              improve their game.
+              Our Pickleball Court Turf is a premium synthetic sports surface
+              designed specifically for high-performance pickleball play. Built
+              with advanced turf technology, it ensures consistent ball bounce,
+              excellent traction, and superior player comfort—making it ideal
+              for beginners and professional pickleball players alike.
               <br />
               <br />
-              Designed for durability and minimal maintenance, this
-              weather-resistant turf is perfect for indoor or outdoor play. The
-              built-in shock-absorbing layer reduces stress on joints, allowing
-              for safer and longer play sessions. Whether you’re training,
-              competing, or simply enjoying the game, our pickleball turf
-              transforms any space into a professional-grade court.
+              Engineered for durability, low maintenance, and all-weather
+              conditions, this outdoor and indoor pickleball turf includes a
+              shock-absorbing base layer to reduce joint strain and enhance
+              player safety during long matches. Whether you're setting up a
+              backyard pickleball court or a commercial facility, GameOn
+              Solution&apos;s professional-grade pickleball turf delivers
+              optimal performance, safety, and long-term value.
             </span>
           </FadeIn>
 

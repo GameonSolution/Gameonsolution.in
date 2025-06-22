@@ -252,16 +252,16 @@ const CircleTurf360 = () => {
           </FadeIn>
           <FadeIn>
             <span className="md:text-2xl text-lg">
-              Establishing modern basketball courts in urban and suburban areas
-              is a significant opportunity as interest in basketball continues
-              to grow. With a rise in community sports initiatives, schools, and
-              local organizations seeking quality courts, there’s an increasing
-              demand for spaces designed to enhance performance and safety.
-              Investing in professional-grade courts not only meets the need for
-              durable playing surfaces but also ensures minimal maintenance and
-              maximized usability. Advanced synthetic surfaces offer improved
-              grip, resistance to wear, and safer gameplay while allowing
-              multi-sport adaptability.
+              At GameOn Solution, we specialize in modern basketball court
+              construction for urban and suburban areas across India, where
+              interest in basketball and community sports is rapidly growing.
+              With schools, colleges, and local organizations seeking
+              high-quality courts, the demand for durable, low-maintenance, and
+              performance-enhancing surfaces is at an all-time high. Our
+              professional basketball court installation uses advanced synthetic
+              sports flooring that ensures excellent grip, player safety, and
+              multi-sport adaptability—making it ideal for both recreational and
+              competitive use.
             </span>
           </FadeIn>
         </Container>

@@ -53,20 +53,21 @@ const Certificates = () => {
       </p>
 
       <div className="flex flex-wrap gap-4 justify-center">
-        <div className="bg-white flex flex-col p-5 rounded-xl min-w-[200px] items-center">
+        {/* South India's No.1 Box */}
+        <div className="bg-white flex flex-col p-5 rounded-xl w-[160px] h-[140px] items-center justify-center text-center">
           <span className="flex items-center justify-center gap-2">
-            <span className="text-2xl font-primary tracking-widest flex flex-col text-center">
+            <span className="text-lg font-primary tracking-widest flex flex-col">
               <span>SOUTH</span>
               <span>INDIA'S</span>
             </span>
-            <span className="text-5xl font-primary text-secondary">NO.1</span>
+            <span className="text-3xl font-primary text-secondary">NO.1</span>
           </span>
-          <span className="font-bold tracking-wide text-center">
+          <span className="font-bold tracking-wide text-xs">
             SPORTS INFRA DEVELOPERS
           </span>
         </div>
 
-        {/* Image Certificates */}
+        {/* Certificate Images */}
         {[
           "BWF.webp",
           "FIBA.webp",
@@ -78,7 +79,7 @@ const Certificates = () => {
         ].map((cert, index) => (
           <div
             key={index}
-            className="bg-white flex items-center justify-center p-2 rounded-xl w-36 h-28 sm:w-40 sm:h-32 md:w-48 md:h-36"
+            className="bg-white flex items-center justify-center p-2 rounded-xl w-[160px] h-[140px]"
           >
             <img
               src={`/ProductCertificates/${cert}`}

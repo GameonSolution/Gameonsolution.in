@@ -188,15 +188,16 @@ const BadmintonCourt = () => {
           </FadeIn>
           <FadeIn>
             <span className="md:text-2xl text-lg">
-              Creating a safe and professional environment for badminton players
-              offers a remarkable business opportunity. With communities
-              focusing on sports and fitness, the demand for high-quality
-              badminton courts is growing. Opting for synthetic flooring ensures
-              enhanced safety and durability, minimizing the risk of injuries
-              while improving the playing experience. These courts not only
-              provide a flat and standardized playing surface but also include
-              protective features like proper lighting and boundary markers to
-              elevate the overall game quality.
+              At GameOn Solution, we understand that building high-quality
+              badminton courts is a growing business opportunity, especially as
+              more communities prioritize sports and fitness. Our professional
+              badminton court construction services focus on creating a safe and
+              performance-driven environment for players. By using synthetic
+              badminton court flooring, we enhance safety, reduce injury risks,
+              and ensure long-lasting durability. These indoor and outdoor
+              courts come with standardized surfaces, proper lighting, and
+              clearly marked boundaries—delivering a premium playing experience
+              for both recreational and competitive use.
             </span>
           </FadeIn>
         </Container>

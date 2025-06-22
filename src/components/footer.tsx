@@ -162,7 +162,7 @@ export const Footer = () => {
                 <p className="font-primary uppercase text-2xl text-secondary">
                   Visit
                 </p>
-                <p className="font-secondary tracking-[1.5px] uppercase text-center text-xs font-medium text-white">
+                <p className="font-secondary tracking-[1.5px] text-center text-xs font-medium text-white">
                   Hanifa Nagar, NGO Colony, Dindigul, Tamil Nadu 624005
                 </p>
               </div>

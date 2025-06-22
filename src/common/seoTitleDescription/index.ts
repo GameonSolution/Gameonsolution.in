@@ -4,7 +4,7 @@ export const seoData = {
     description:
       "Looking for premium sports turf? GameOnSolution is India's trusted leader in high-quality sports turf installations for cricket, football, and more.",
     keywords: "sports turf, artificial turf, GameOnSolution",
-    image: "/bg-image.webp",
+    image: "/homepageSlideImages/5.jpeg",
     url: "https://gameonsolution.in",
   },
   // about: {
@@ -46,7 +46,7 @@ export const seoData = {
     description:
       "Stay updated with the latest sports turf innovations, trends, and news from GameOnSolution.",
     keywords: "sports turf news, artificial grass industry updates",
-    image: "/bg-image.webp",
+    image: "/homepageSlideImages/5.jpeg",
     url: "https://gameonsolution.in/news",
   },
   testimonials: {
@@ -55,7 +55,7 @@ export const seoData = {
       "Read real client testimonials and see why GameOnSolution is the #1 choice for sports turf installations.",
     keywords:
       "sports turf reviews, client testimonials, GameOnSolution feedback",
-    image: "/bg-image.webp",
+    image: "/homepageSlideImages/5.jpeg",
     url: "https://gameonsolution.in/testimonials",
   },
   blog: {
@@ -63,7 +63,7 @@ export const seoData = {
     description:
       "Discover the latest articles on GameOnSolution's blog. Stay up-to-date with the latest sports turf innovations, trends, and news.",
     keywords: "sports turf blogs, sports turf news, GameOnSolution blog",
-    image: "/bg-image.webp",
+    image: "/homepageSlideImages/5.jpeg",
     url: "https://gameonsolution.in/blog",
   },
 };

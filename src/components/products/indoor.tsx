@@ -190,14 +190,17 @@ const IndoorTurf = () => {
           </FadeIn>
           <FadeIn>
             <p className="md:text-2xl text-lg">
-              When constructing an indoor turf, key considerations must be
-              addressed to ensure functionality, durability, and player safety.
-              Organizations like FIFA, FIBA, and FIH provide recommended
-              dimensions and specifications to ensure that indoor facilities
-              meet the requirements for professional or competitive play.
-              However, for multi-purpose or recreational indoor turfs, the
-              dimensions are often customized based on the intended use,
-              available space, and client requirements.
+              Constructing an indoor turf requires careful attention to design,
+              safety, and long-term performance. Governing bodies like FIFA,
+              FIBA, and FIH provide standardized dimensions and technical
+              guidelines to ensure that indoor sports facilities meet
+              professional and competitive play standards. At GameOn Solution,
+              we customize indoor turf construction based on client needs,
+              available space, and the intended purpose—whether it's for
+              football, basketball, or multi-sport recreational use. Our indoor
+              turf surfaces are engineered for maximum durability, player
+              safety, and adaptability, making them ideal for both professional
+              training and community sports environments.
             </p>
           </FadeIn>
         </Container>

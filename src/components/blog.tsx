@@ -274,6 +274,85 @@ const BlogPage = () => {
         "Discover the essential tools and materials needed for DIY pickleball court installation in India with our comprehensive 2025 guide. From locally available construction supplies to specialized equipment, build your perfect court while saving on costs!",
       image: "/blog/Blog27.webp",
     },
+    {
+      id: 28,
+      slug: "convert-tennis-court-to-pickleball-2025-guide",
+      title:
+        "How to Convert an Existing Tennis Court to a Pickleball Court: The Complete 2025 Guide",
+      excerpt:
+        "Thinking of transforming your unused tennis court into a buzzing pickleball hub? Our 2025 step-by-step guide covers everything—from layout, drainage, surfacing, and line marking to net systems and budget breakdown. Discover how to make the switch smoothly and affordably.",
+      image: "/blog/Blog28.webp",
+    },
+    {
+      id: 29,
+      slug: "pickleball-court-construction-mistakes-guide",
+      title:
+        "The Ultimate Guide: Pickleball Court Construction Mistakes That Will Cost You a Fortune!",
+      excerpt:
+        "Avoid the most common pickleball court construction mistakes that could cost you lakhs. Learn from GameOn Solution—the leading sports infra developers in South India—on how to build your court right the first time.",
+      image: "/blog/Blog29.webp",
+    },
+    {
+      id: 30,
+      slug: "how-to-build-your-own-pickleball-court-step-by-step-guide",
+      title:
+        "The Ultimate Guide to Building Your Own Pickleball Court—Step-by-Step + Pro Tips + 11 Must-Know Steps",
+      excerpt:
+        "Ready to build your own pickleball court? This step-by-step guide shows you how to plan, construct, and maintain a regulation court at home—with expert tips from GameOn Solution.",
+      image: "/blog/Blog30.webp",
+    },
+    {
+      id: 31,
+      slug: "top-places-in-tamilnadu-to-start-a-turf-business",
+      title:
+        "Top 5 Places in Tamil Nadu Perfect for Starting a Turf Business in 2025",
+      excerpt:
+        "Planning to start a turf business in Tamil Nadu? Discover the top 5 high-potential cities like Chennai, Coimbatore, and Madurai where demand is booming. Learn why these locations are ideal for turf investments in 2025.",
+      image: "/blog/Blog31.webp",
+    },
+    {
+      id: 32,
+      slug: "rise-of-pickleball-in-tamil-nadu",
+      title:
+        "The Rise of Pickleball in Tamil Nadu: Why Now Is the Time to Build a Court",
+      excerpt:
+        "Pickleball is booming across Tamil Nadu — from apartment rooftops to farmhouses. Learn why 2025 is the perfect year to invest in your own court and how GameOn Solution can help you build it right.",
+      image: "/blog/Blog32.webp",
+    },
+    {
+      id: 33,
+      slug: "cost-of-football-and-cricket-turf-construction-india",
+      title:
+        "What Determines the Cost of Football and Cricket Turf Construction in India?",
+      excerpt:
+        "From turf size to materials, drainage to certifications, discover what really affects turf construction costs in India. Whether it’s for cricket or football, GameOn Solution helps you make the right investment.",
+      image: "/blog/Blog33.webp",
+    },
+    {
+      id: 34,
+      slug: "gen-alpha-aqua-eco-friendly-turf-rajapalayam",
+      title: "South TN’s First Aqua Eco-Friendly Turf Is Here - GEN ALPHA",
+      excerpt:
+        "GameOn Solution launches GEN ALPHA in Rajapalayam — South Tamil Nadu's first aqua blue, eco-friendly multi-sport turf. Built for high performance, low maintenance, and future-ready play.",
+      image: "/blog/Blog34.webp",
+    },
+    {
+      id: 35,
+      slug: "sports-infrastructure-products-gameon-solution",
+      title: "What We Build at GameOn Solution - Our Sports Infra Products",
+      excerpt:
+        "From multi-sport turfs to skating tracks and pickleball courts, GameOn Solution builds world-class sports infrastructure across South India. Explore all our offerings.",
+      image: "/blog/Blog35.webp",
+    },
+    {
+      id: 36,
+      slug: "bangalore-largest-multipurpose-turf-gameon-solution",
+      title:
+        "Bangalore’s BIGGEST Turf - 25,000 Sq. Ft. of Sporting Excellence!",
+      excerpt:
+        "GameOn Solution unveils Bangalore's largest turf with 25,000 sq. ft. of world-class sports infra. FIFA-grade grass, cricket mats, and multi-game setups await players!",
+      image: "/blog/Blog36.webp",
+    },
   ];
 
   const handleBlogClick = (slug: string) => {
@@ -344,18 +423,18 @@ const BlogPage = () => {
                 <TextHoverAnimation text="From" />
               </span>
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4">
               {awards.map((image, index) => (
                 <AnimateCard key={index}>
-                  <div className="border border-gray-50/10 p-2 transform transition duration-500 ease-in-out hover:scale-105 rounded-xl bg-white/5">
-                    <div className="w-full h-32 shadow-md overflow-hidden bg-yellow-100/20 flex items-center justify-center">
+                  <div className="border border-gray-50/10 p-3 transform transition duration-300 ease-in-out hover:scale-105 rounded-xl bg-white/5 w-full max-w-[160px] mx-auto">
+                    <div className="w-full h-28 md:h-32 flex items-center justify-center bg-white/10 rounded-md">
                       <img
                         src={image.icon}
                         alt={`award-logo-${index + 1}`}
-                        className="max-h-24 max-w-full object-contain"
+                        className="h-20 w-auto object-contain"
                       />
                     </div>
-                    <p className="text-lg md:text-lg lg:text-lg p-4 font-primary leading-tight text-center text-secondary uppercase">
+                    <p className="text-sm md:text-base font-primary leading-tight text-center text-secondary uppercase mt-3">
                       {image.title}
                     </p>
                   </div>

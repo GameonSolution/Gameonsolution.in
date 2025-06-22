@@ -200,18 +200,22 @@ const VolleyballTurf = () => {
           </FadeIn>
           <FadeIn>
             <span className="md:text-2xl text-lg">
-              To guarantee maximum playability and durability, a number of
-              important factors must be taken into account while constructing a
-              volleyball court.
+              Constructing a professional volleyball court requires careful
+              planning to ensure maximum playability, safety, and long-term
+              durability. Key factors such as surface material, shock
+              absorption, drainage, and proper line markings play a crucial role
+              in delivering a high-performance sports environment.
             </span>
           </FadeIn>
           <FadeIn>
             <span className="md:text-2xl text-lg">
-              The Federation Internationale de Volleyball (FIVB), which is the
-              worldwide governing organization of volleyball, establishes the
-              size of a volleyball court. The FIVB sets the official volleyball
-              rules and regulations, including the court's exact measurements,
-              the height of the net, and other important details.
+              The Federation Internationale de Volleyball (FIVB), the global
+              governing body for volleyball, defines the official court
+              dimensions, net height, and other essential standards. At GameOn
+              Solution, we specialize in building FIVB-compliant synthetic
+              volleyball courts for both indoor and outdoor use, ensuring
+              accurate measurements, optimal surface quality, and a professional
+              playing experience for all skill levels.
             </span>
           </FadeIn>
         </Container>

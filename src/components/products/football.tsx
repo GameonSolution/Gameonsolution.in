@@ -215,19 +215,25 @@ const FootballTurf = () => {
           </FadeIn>
           <FadeIn>
             <span className="md:text-2xl text-lg">
-              Ensuring compliance with FIFA (Federation Internationale de
-              Football Association) and UEFA (Union of European Football
-              Associations) standards is essential for artificial turf used in
-              football. These standards guarantee that the playing surface meets
-              high levels of quality, safety, and performance for both
-              professional and amateur matches...
+              Meeting FIFA (Fédération Internationale de Football Association)
+              and UEFA (Union of European Football Associations) standards is
+              critical when installing artificial football turf. These global
+              certifications ensure that the synthetic turf meets strict
+              criteria for safety, durability, and performance—suitable for both
+              amateur training and professional-level football matches. GameOn
+              Solution specializes in building FIFA-compliant football turfs
+              designed to deliver consistent playability, reduced injury risks,
+              and long-term resilience.
             </span>
           </FadeIn>
           <FadeIn>
             <span className="md:text-2xl text-lg">
-              These bodies establish regulations concerning the quality and
-              performance of artificial football surfaces, including
-              certifications such as FIFA Quality Pro.
+              FIFA and UEFA regulate the technical standards of artificial
+              football surfaces through certifications like FIFA Quality and
+              FIFA Quality Pro. These certifications validate surface quality,
+              shock absorption, ball behavior, and player interaction—ensuring
+              that every turf built by GameOn Solution meets global benchmarks
+              for football excellence.
             </span>
           </FadeIn>
         </Container>

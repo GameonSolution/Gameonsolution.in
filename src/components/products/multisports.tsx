@@ -192,13 +192,17 @@ const MultiSportsTurf = () => {
           </FadeIn>
           <FadeIn>
             <span className="md:text-2xl text-lg">
-              A multi-sport turf's construction must take into account elements
-              that guarantee player safety, longevity, and adaptability to
-              different sports. High-grade synthetic materials are used to
-              create the surface, which provides a good mix of cushioning and
-              grip for a variety of sports, including basketball, tennis, and
-              soccer. For a variety of uses, our multi-sport turf may offer a
-              dependable, entertaining, and safe playing surface.
+              Constructing a high-performance multi-sport turf requires careful
+              consideration of player safety, durability, and versatility across
+              various games. Using premium synthetic materials, the surface is
+              engineered to offer the right balance of cushioning and grip,
+              making it suitable for sports like basketball, tennis, and
+              football. GameOn Solution specializes in multi-sport turf
+              installation that meets international standards and adapts
+              seamlessly to both indoor and outdoor environments. Whether for
+              recreational use or organized play, our turfs deliver a reliable,
+              engaging, and safe playing experience across multiple sports
+              disciplines.
             </span>
           </FadeIn>
         </Container>

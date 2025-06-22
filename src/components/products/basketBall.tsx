@@ -194,16 +194,17 @@ const BasketBallCourt = () => {
           </FadeIn>
           <FadeIn>
             <span className="md:text-2xl text-lg">
-              Establishing modern basketball courts in urban and suburban areas
-              is a significant opportunity as interest in basketball continues
-              to grow. With a rise in community sports initiatives, schools, and
-              local organizations seeking quality courts, there’s an increasing
-              demand for spaces designed to enhance performance and safety.
-              Investing in professional-grade courts not only meets the need for
-              durable playing surfaces but also ensures minimal maintenance and
-              maximized usability. Advanced synthetic surfaces offer improved
-              grip, resistance to wear, and safer gameplay while allowing
-              multi-sport adaptability.
+              At GameOn Solution, we specialize in building modern basketball
+              courts in urban and suburban areas, where the demand is rapidly
+              increasing due to the growing popularity of basketball. With the
+              rise of community sports initiatives, schools, and local
+              organizations are actively seeking premium basketball court
+              construction services that focus on performance and safety. Our
+              professional-grade courts are designed with advanced synthetic
+              sports flooring that offers superior grip, durability, and minimal
+              maintenance. These multi-sport surfaces ensure safer gameplay,
+              long-term usability, and adaptability for various athletic
+              activities.
             </span>
           </FadeIn>
         </Container>

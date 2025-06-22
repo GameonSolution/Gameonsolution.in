@@ -199,8 +199,17 @@ const CricketTurf = () => {
 
           <FadeIn>
             <p className="md:text-2xl text-lg">
-              Reviving box cricket in a safer environment presents a remarkable
-              business opportunity...
+              Reviving box cricket in a safer and more controlled environment
+              presents a remarkable business opportunity, especially as urban
+              communities seek compact, high-quality sports spaces. With rising
+              interest in recreational cricket, there&apos;s a growing demand
+              for well-designed turf-based box cricket setups that prioritize
+              both safety and performance. GameOn Solution specializes in
+              constructing professional-grade box cricket turfs that feature
+              durable synthetic flooring, shock-absorption, and clear boundary
+              markings. These turfs not only enhance player experience but also
+              minimize the risk of injuries, making them ideal for regular
+              practice sessions, friendly games, or local tournaments.
             </p>
           </FadeIn>
         </Container>

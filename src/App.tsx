@@ -130,6 +130,7 @@ import BlogDetailPage from "./components/BlogDetailPage";
 import ScrollToTop from "./components/ScrollToTop";
 import ContactsPage from "./components/contactsPage";
 import Preloader from "./components/preLoading";
+import TurfCalculator from "./components/turfcalculator";
 
 const App: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -179,6 +180,7 @@ const App: React.FC = () => {
               <Route path="/get-in-touch" element={<ContactsPage />} />
               <Route path="/blog" element={<BlogPage />} />
               <Route path="/blog/:slug" element={<BlogDetailPage />} />
+              <Route path="/turf-calculator" element={<TurfCalculator />} />
               <Route path="*" element={<NotFound />} />
 
               {/* Product pages */}
