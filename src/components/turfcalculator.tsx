@@ -63,24 +63,24 @@ const grassTypes = [
     type: "rubber",
     description:
       "A cost-effective option with good shock absorption, commonly used for multi-purpose sports grounds. Ideal for low-maintenance and durability.",
-    indoorRange: [260, 280],
-    outdoorRange: [460, 480],
+    indoorRange: [460, 480],
+    outdoorRange: [260, 280],
   },
   {
     name: "Eco Friendly",
     type: "eco",
     description:
       "Made with recyclable materials, this turf is safe, sustainable, and suited for schools, communities, and eco-conscious institutions.",
-    indoorRange: [280, 320],
-    outdoorRange: [490, 520],
+    indoorRange: [490, 520],
+    outdoorRange: [280, 320],
   },
   {
     name: "Aqua Eco Friendly",
     type: "aqua",
     description:
       "Designed with water-drainage and heat-resistance in mind. A premium pick for long-term projects requiring superior performance and minimal environmental impact.",
-    indoorRange: [330, 360],
-    outdoorRange: [530, 570],
+    indoorRange: [530, 570],
+    outdoorRange: [330, 360],
   },
 ];
 const blogs = [
@@ -130,6 +130,11 @@ export default function TurfCalculator() {
   const navigate = useNavigate();
 
   const calculateEstimate = () => {
+    if (formData.size < 3000) {
+      alert("Minimum size must be 3000 sq.ft");
+      return;
+    }
+
     const grass = grassTypes.find((g) => g.type === formData.grassType);
     if (!grass) return;
     const [min, max] =
@@ -331,15 +336,32 @@ export default function TurfCalculator() {
                 ))}
               </select>
 
-              <input
-                type="number"
-                className="w-full mt-1 p-3 rounded-xl bg-black/60 text-white border border-gray-700"
-                value={formData.size}
-                onChange={(e) =>
-                  setFormData({ ...formData, size: +e.target.value })
-                }
-                placeholder="Ground Size (sq.ft)"
-              />
+              <div className="relative">
+                <input
+                  type="number"
+                  className={`w-full p-3 pr-20 rounded-xl bg-black/60 text-white border ${
+                    formData.size < 3000 ? "border-red-500" : "border-gray-700"
+                  }`}
+                  value={formData.size}
+                  onChange={(e) => {
+                    const value = +e.target.value;
+                    setFormData({
+                      ...formData,
+                      size: value < 0 ? 0 : value,
+                    });
+                  }}
+                  min={0}
+                  placeholder="Ground Size"
+                />
+                <span className="absolute top-1/2 right-4 transform -translate-y-1/2 text-sm text-gray-400">
+                  sq.ft
+                </span>
+                {formData.size < 3000 && (
+                  <p className="text-sm text-red-400 mt-1">
+                    Minimum ground size must be 3000 sq.ft
+                  </p>
+                )}
+              </div>
 
               <button
                 onClick={calculateEstimate}
@@ -531,8 +553,8 @@ export default function TurfCalculator() {
 
         {/* 🏆 Why GameOn Section */}
         <section className="mt-28 max-w-6xl mx-auto text-white px-6">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Why 200+ Turf Owners Choose GameOn
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-center">
+            Why Turf Owners Choose GameOn Solution
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
@@ -547,8 +569,8 @@ export default function TurfCalculator() {
                 link: "https://gameonsolution.in/blog/turf-construction-cost-tamilnadu",
               },
               {
-                title: "📍 200+ Projects Done",
-                desc: "Turf grounds installed across TN, KA, AP & more.",
+                title: "📍 Multiple Projects Done",
+                desc: "Turf grounds installed across TN, KA, KL, AP & more.",
                 link: "https://gameonsolution.in/news",
               },
             ].map((item, i) => (

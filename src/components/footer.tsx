@@ -5,6 +5,7 @@ import {
   FaReddit,
   FaMedium,
   FaQuora,
+  FaLinkedin,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { MdCall, MdEmail, MdLocationPin } from "react-icons/md";
@@ -122,6 +123,16 @@ export const Footer = () => {
             >
               <FaReddit />
               <span className="sr-only">Reddit</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/gameon-solution/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
+              aria-label="Follow us on Reddit"
+            >
+              <FaLinkedin />
+              <span className="sr-only">LinkedIn</span>
             </a>
           </div>
         </div>

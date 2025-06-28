@@ -3036,9 +3036,6 @@ const blogData = [
 <p>✅ Includes:</p>
 <ul data-spread="false">
 <li>
-<p>Ground leveling</p>
-</li>
-<li>
 <p>Base layer + shock pad</p>
 </li>
 <li>

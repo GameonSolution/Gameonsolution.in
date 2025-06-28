@@ -331,7 +331,7 @@ const Testimonials = () => {
           {data.map((test, i) => (
             <div
               key={i}
-              className="bg-white rounded-xl p-4 flex flex-col gap-4 items-center shadow-lg"
+              className="bg-emerald-900/20 border border-emerald-600/20 rounded-xl p-4 flex flex-col gap-4 items-center shadow-lg backdrop-blur-sm"
             >
               <div className="h-[300px] w-full">
                 <VideoCard
@@ -339,10 +339,10 @@ const Testimonials = () => {
                   fileType={test.fileType as "video" | "youtube"}
                 />
               </div>
-              <p className="text-2xl font-primary text-center text-black uppercase">
+              <p className="text-2xl font-primary text-center text-emerald-300 uppercase">
                 {test.authorName}
               </p>
-              <p className="text-sm text-gray-700 text-center">
+              <p className="text-sm text-emerald-100 text-center">
                 {test.content}
               </p>
             </div>

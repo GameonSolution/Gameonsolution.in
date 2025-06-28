@@ -258,10 +258,14 @@ const AppRoutes = ({
   const { getCarousels } = useCarousel();
   const { getAllTestimonials } = useTestimonials();
 
-  const isTurfCalculatorPage = location.pathname === "/turf-calculator";
+  // 👉 Skip preloader for specific pages
+  const shouldSkipPreloader =
+    location.pathname === "/turf-calculator" ||
+    location.pathname === "/blog" ||
+    location.pathname.startsWith("/blog/");
 
   const showPreloader =
-    !isTurfCalculatorPage &&
+    !shouldSkipPreloader &&
     (isLoading ||
       getNewsFeeds.isLoading ||
       getAllTestimonials.isLoading ||
