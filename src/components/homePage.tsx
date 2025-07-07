@@ -8,11 +8,12 @@ import HomeBanners from "./homeBanners";
 import HomeNewsFeed from "./homeNewsFeed";
 import IconsWithContent from "./iconsWithContent";
 // import InstagramEmbed from "./instagram";
-import ReviewsSection from "./reviewSection";
+// import ReviewsSection from "./reviewSection";
 import TabSEO from "./seoOptimize";
 import Services from "./services";
 import WhatsAppButton from "./WhatsappButton";
 import WhyUs from "./whyUs";
+import Testimonials from "./testimonial";
 // import Testimonials from "./testimonials";
 
 const HomePage: React.FC = () => {
@@ -50,9 +51,12 @@ const HomePage: React.FC = () => {
         <div id="homeNewsFeed">
           <HomeNewsFeed />
         </div>
-        <div id="reviews">
-          <ReviewsSection />
+        <div id="testimonials">
+          <Testimonials />
         </div>
+        {/* <div id="reviews">
+          <ReviewsSection />
+        </div> */}
 
         <div id="faq">
           <FAQ />

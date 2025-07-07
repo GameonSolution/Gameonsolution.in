@@ -45,12 +45,13 @@ const MenuDrawer: React.FC<drawerProps> = ({ isCloseMenu }) => {
           {[
             { path: "#home", label: "Home" },
             { path: "#aboutUs", label: "About" },
-            { path: "#services", label: "Services" },
-            { path: "#contact", label: "Contact" },
+            // { path: "#services", label: "Services" },
+            // { path: "#contact", label: "Contact" },
             // { path: "/portfolio", label: "Portfolio" },
             { path: "/blog", label: "Blogs" },
             { path: "/news", label: "News" },
             { path: "/testimonials", label: "Testimonials" },
+            // { path: "/turf-calculator", label: "Turf Calculator" },
           ].map((item) => (
             <li key={item.label}>
               <button

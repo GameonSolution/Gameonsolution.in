@@ -353,6 +353,66 @@ const BlogPage = () => {
         "GameOn Solution unveils Bangalore's largest turf with 25,000 sq. ft. of world-class sports infra. FIFA-grade grass, cricket mats, and multi-game setups await players!",
       image: "/blog/Blog36.webp",
     },
+    {
+      id: 37,
+      slug: "turf-construction-cost-karnataka",
+      title: "Turf Construction Cost in Karnataka (2025 Guide)",
+      excerpt:
+        "Planning to build a sports turf in Karnataka? Your biggest question is likely “How much will it cost to build a turf ground here?",
+      image: "/blog/Blog37.webp",
+    },
+    {
+      id: 38,
+      slug: "turf-construction-cost-ap-telangana",
+      title:
+        "Turf Construction Cost in Andhra Pradesh & Telangana (2025 Guide)",
+      excerpt:
+        "Planning to build a turf in Andhra Pradesh or Telangana? You’re in the right place. At GameOn Solution, we’ve helped clients across South India — from Guntur to Hyderabad — build pro-grade turfs that fit their land and budget.",
+      image: "/blog/Blog38.webp",
+    },
+    {
+      id: 39,
+      slug: "turf-construction-cost-kerala",
+      title: "Turf Construction Cost in Kerala (2025 Guide)",
+      excerpt:
+        "If you’re planning turf construction in Kerala — whether Kochi, Trivandrum, or Calicut — GameOn Solution offers state-specific expertise.",
+      image: "/blog/Blog38.webp",
+    },
+    {
+      id: 40,
+      slug: "turf-calculator-online-estimate-tool",
+      title:
+        "Turf Calculator India (2025): Instantly Estimate Turf Construction Cost",
+      excerpt:
+        "Use GameOn Solution’s free Turf Calculator to estimate football, cricket, or pickleball turf construction costs in seconds. Plan smarter with real-time pricing.",
+      image: "/blog/Blog40.webp",
+    },
+    {
+      id: 41,
+      slug: "turf-construction-cost-chennai",
+      title: "Turf Construction Cost in Chennai 2025: A Complete Local Guide",
+      excerpt:
+        "Planning a turf in Chennai? This 2025 local guide breaks down everything you need to know about turf construction costs, from OMR to Velachery.",
+      image: "/blog/Blog41.webp",
+    },
+    {
+      id: 42,
+      slug: "best-turf-builder-bangalore-2025",
+      title:
+        "Best Turf Builder in Bengaluru: Top Picks & Installation Costs (2025)",
+      excerpt:
+        "Looking to build a turf in Bangalore? Discover why GameOn Solution is Bengaluru’s #1 turf builder with project costs, features, and real examples from 2025.",
+      image: "/blog/Blog42.webp",
+    },
+    {
+      id: 43,
+      slug: "turf-installation-kochi-cost-permits-locations",
+      title:
+        "Turf Installation in Kochi: Cost, Permits & Popular Locations (2025 Guide)",
+      excerpt:
+        "Planning turf installation in Kochi? Learn the complete 2025 guide to turf construction costs, permits, drainage requirements, and the best localities in Kerala.",
+      image: "/blog/Blog43.webp",
+    },
   ];
 
   const handleBlogClick = (slug: string) => {
