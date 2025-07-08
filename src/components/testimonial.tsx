@@ -60,7 +60,7 @@ const Testimonials = () => {
           {randomTestimonials.map((test, i) => (
             <div
               key={i}
-              className="bg-yellow-300/90 border border-yellow-400 rounded-xl p-4 flex flex-col gap-4 items-center shadow-xl backdrop-blur-md hover:scale-[1.02] transition-transform duration-300"
+              className="bg-emerald-900/20 border border-emerald-600/20 rounded-xl p-4 flex flex-col gap-4 items-center shadow-lg backdrop-blur-sm"
             >
               <div className="h-[300px] w-full">
                 <VideoCard
@@ -68,10 +68,10 @@ const Testimonials = () => {
                   fileType={test.fileType as "video" | "youtube"}
                 />
               </div>
-              <p className="text-lg text-black text-center font-bold">
+              <p className="text-lg text-yellow-400 font-primary text-center text-secondary">
                 {test.authorName}
               </p>
-              <p className="text-sm text-gray-800 text-center font-medium">
+              <p className="text-sm text-yellow-400 font-primary text-center font-medium text-secondary">
                 {test.content}
               </p>
             </div>

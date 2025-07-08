@@ -5007,7 +5007,6 @@ const blogData = [
 </ul>
 <h3 data-start="3003" data-end="3035">&nbsp;</h3>
 <h3 data-start="3003" data-end="3035">What Inputs Are Required?</h3>
-<p data-start="3037" data-end="3128">Using the <strong data-start="3047" data-end="3111"><a class="" href="https://gameonsolution.in/turf-calculator" target="_new" rel="noopener" data-start="3049" data-end="3109">Turf Calculator</a></strong> is super simple:</p>
 <div class="_tableContainer_80l1q_1">
 <div class="_tableWrapper_80l1q_14 group flex w-fit flex-col-reverse" tabindex="-1">
 <table class="w-fit min-w-(--thread-content-width)" data-start="3130" data-end="3436">
@@ -5056,7 +5055,6 @@ const blogData = [
 <p data-start="3699" data-end="3759"><strong data-start="3699" data-end="3735">Indoor Cricket Turf in Hyderabad</strong> (60x90 ft) = ~₹16 Lakhs</p>
 </li>
 </ul>
-<p data-start="3761" data-end="3933">You can play with these combinations using the <strong data-start="3808" data-end="3872"><a class="" href="https://gameonsolution.in/turf-calculator" target="_new" rel="noopener" data-start="3810" data-end="3870">Turf Calculator</a></strong> and even share the results with your investor or co-founder.</p>
 <h3 data-start="3940" data-end="3983">&nbsp;</h3>
 <h3 data-start="3940" data-end="3983">Want to Learn More Before You Build?</h3>
 <ul data-start="3985" data-end="4493">
@@ -5122,7 +5120,6 @@ const blogData = [
 <h3 data-start="4803" data-end="4857">Conclusion: Don&rsquo;t Build Blind. Calculate First!</h3>
 <p data-start="4859" data-end="5102">Thousands of turf owners and builders across South India trust <strong data-start="4922" data-end="4941">GameOn Solution</strong> for high-performance, cost-effective turf construction. The <strong data-start="5002" data-end="5066"><a class="" href="https://gameonsolution.in/turf-calculator" target="_new" rel="noopener" data-start="5004" data-end="5064">Turf Calculator</a></strong> is your first step in that journey.</p>
 <p data-start="5104" data-end="5141">Save time. Save money. Build smart.</p>
-<p data-start="5143" data-end="5262">Try the Turf Calculator now &rarr; <a class="" href="https://gameonsolution.in/turf-calculator" target="_new" rel="noopener" data-start="5176" data-end="5262">https://gameonsolution.in/turf-calculator</a></p>
 `,
   },
   {
