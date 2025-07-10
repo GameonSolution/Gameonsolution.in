@@ -46,11 +46,12 @@ const MenuDrawer: React.FC<drawerProps> = ({ isCloseMenu }) => {
             { path: "#home", label: "Home" },
             { path: "#aboutUs", label: "About" },
             // { path: "#services", label: "Services" },
-            // { path: "#contact", label: "Contact" },
+            { path: "#contact", label: "Contact" },
             // { path: "/portfolio", label: "Portfolio" },
             { path: "/blog", label: "Blogs" },
             { path: "/news", label: "News" },
             { path: "/testimonials", label: "Testimonials" },
+            // { path: "/products", label: "Products" },
             // { path: "/turf-calculator", label: "Turf Calculator" },
           ].map((item) => (
             <li key={item.label}>
@@ -76,7 +77,7 @@ const MenuDrawer: React.FC<drawerProps> = ({ isCloseMenu }) => {
                     isDropdownOpen ? "text-secondary" : "text-[#D2D2D0]"
                   } transition-all hover:text-secondary`}
                 >
-                  Products
+                  Services
                   <FaChevronDown className="ml-1" />
                 </button>
               }

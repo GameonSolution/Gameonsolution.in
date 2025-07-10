@@ -243,6 +243,7 @@ import TurfCalculator from "./components/turfcalculator";
 import { useNewsFeed } from "./hook/useNewsFeed";
 import { useCarousel } from "./hook/useCarousel";
 import { useTestimonials } from "./hook/useTestimonials";
+import ProductsPage from "./components/productsPage/main";
 
 // Wrapper component to allow using `useLocation` inside JSX
 const AppRoutes = ({
@@ -271,6 +272,14 @@ const AppRoutes = ({
       getAllTestimonials.isLoading ||
       getCarousels.isLoading);
 
+  //   Only show preloader on homepage
+  // const showPreloader =
+  //   location.pathname === "/" &&
+  //   (isLoading ||
+  //     getNewsFeeds.isLoading ||
+  //     getAllTestimonials.isLoading ||
+  //     getCarousels.isLoading);
+
   if (showPreloader) {
     return (
       <div className="w-screen h-screen bg-primary">
@@ -293,6 +302,7 @@ const AppRoutes = ({
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<BlogDetailPage />} />
         <Route path="/turf-calculator" element={<TurfCalculator />} />
+        <Route path="/products" element={<ProductsPage />} />
         <Route path="/360-circle-turf" element={<CircleTurf360 />} />
         <Route path="/basket-ball" element={<BasketBallCourt />} />
         <Route path="/badminton-court" element={<BadmintonCourt />} />

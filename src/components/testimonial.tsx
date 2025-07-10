@@ -71,7 +71,7 @@ const Testimonials = () => {
               <p className="text-lg text-yellow-400 font-primary text-center text-secondary">
                 {test.authorName}
               </p>
-              <p className="text-sm text-yellow-400 font-primary text-center font-medium text-secondary">
+              <p className="text-sm text-white font-primary text-center font-medium text-secondary">
                 {test.content}
               </p>
             </div>

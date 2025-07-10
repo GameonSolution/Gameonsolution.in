@@ -41,7 +41,7 @@ export const Hero = ({ title, subtitle, bgImgUrl }: HeroProps) => {
           animate="hidden"
           viewport={{ amount: 0.98 }}
         >
-          <h1 className="mb-28 text-4xl font-bold font-primary md:text-5xl">
+          <h1 className="mb-28 text-4xl font-primary md:text-5xl">
             {title} <br />
             <div className="text-secondary">{subtitle}</div>
           </h1>

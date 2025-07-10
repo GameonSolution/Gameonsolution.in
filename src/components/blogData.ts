@@ -3021,15 +3021,15 @@ const blogData = [
 </tr>
 <tr>
 <td>3,000&ndash;4,000 sq ft</td>
-<td>₹12 &ndash; ₹18 Lakhs</td>
+<td>₹14.5 &ndash; ₹15 Lakhs</td>
 </tr>
 <tr>
 <td>5,000&ndash;6,000 sq ft</td>
-<td>₹18 &ndash; ₹25 Lakhs</td>
+<td>₹16 &ndash; ₹18 Lakhs</td>
 </tr>
 <tr>
 <td>Rooftop Turf</td>
-<td>₹8 &ndash; ₹15 Lakhs (depends on load capacity)</td>
+<td>₹15 Lakhs (depends on load capacity)</td>
 </tr>
 </tbody>
 </table>
@@ -4705,15 +4705,15 @@ const blogData = [
 </tr>
 <tr>
 <td>3,000&ndash;4,000 sq ft</td>
-<td>₹10 &ndash; ₹15 Lakhs</td>
+<td>₹14.5 &ndash; ₹15 Lakhs</td>
 </tr>
 <tr>
 <td>5,000&ndash;6,000 sq ft</td>
-<td>₹15 &ndash; ₹22 Lakhs</td>
+<td>₹16 &ndash; ₹18 Lakhs</td>
 </tr>
 <tr>
 <td>Rooftop Turf</td>
-<td>₹7 &ndash; ₹13 Lakhs</td>
+<td>₹15 Lakhs</td>
 </tr>
 </tbody>
 </table>
@@ -4794,15 +4794,15 @@ const blogData = [
 </tr>
 <tr>
 <td>3,000&ndash;4,000 sq ft</td>
-<td>₹12 &ndash; ₹18 Lakhs</td>
+<td>₹14.5 &ndash; ₹15 Lakhs</td>
 </tr>
 <tr>
 <td>5,000&ndash;6,000 sq ft</td>
-<td>₹18 &ndash; ₹25 Lakhs</td>
+<td>₹16 &ndash; ₹18 Lakhs</td>
 </tr>
 <tr>
 <td>Rooftop Turf</td>
-<td>₹8 &ndash; ₹15 Lakhs</td>
+<td>₹15 Lakhs</td>
 </tr>
 </tbody>
 </table>
@@ -4892,7 +4892,7 @@ const blogData = [
 </tr>
 <tr>
 <td>Rooftop Turf (load-tested)</td>
-<td>₹9 &ndash; ₹14 Lakhs</td>
+<td>₹15 Lakhs</td>
 </tr>
 </tbody>
 </table>
@@ -5144,94 +5144,78 @@ const blogData = [
       "OMR",
       "Velachery",
     ],
-    content: `<p data-pm-slice="1 1 []">Chennai is witnessing a turf boom&mdash;whether you're in OMR, Velachery, or Tambaram, turf bookings are almost always full. But if you're planning to build your own turf, the first question is:</p>
-<p><strong>&ldquo;How much will it cost to build a turf in Chennai in 2025?&rdquo;</strong></p>
-<p>Here's a detailed, Chennai-specific breakdown from GameOn Solution &ndash; South India's No.1 Sports Infrastructure Developer.</p>
-<div>&nbsp;</div>
+    content: `<p data-pm-slice="1 1 []">Chennai is witnessing a turf boom—whether you're in OMR, Velachery, or Tambaram, turf bookings are almost always full. But if you're planning to build your own turf, the first question is:</p>
+
+<p><strong>“How much will it cost to build a turf in Chennai in 2025?”</strong></p>
+
+<p>Here's a detailed, Chennai-specific breakdown from GameOn Solution – South India's No.1 Sports Infrastructure Developer.</p>
+
 <h3>Why Chennai Is a Turf Hotspot</h3>
-<ul data-spread="false">
-<li>
-<p>365 days of playable weather</p>
-</li>
-<li>
-<p>High population density and limited playgrounds</p>
-</li>
-<li>
-<p>Weekend turf bookings are always full</p>
-</li>
-<li>
-<p>Growing interest in 5v5, box cricket, and futsal</p>
-</li>
+<ul>
+  <li>365 days of playable weather</li>
+  <li>High population density and limited playgrounds</li>
+  <li>Weekend turf bookings are always full</li>
+  <li>Growing interest in 5v5, box cricket, and futsal</li>
 </ul>
-<div>&nbsp;</div>
+
 <h3>Average Turf Construction Cost in Chennai</h3>
 <table>
-<tbody>
-<tr>
-<th>Turf Size</th>
-<th>Estimated Cost (INR)</th>
-</tr>
-<tr>
-<td>3,000&ndash;4,000 sq ft</td>
-<td>₹13&ndash;₹19 Lakhs</td>
-</tr>
-<tr>
-<td>5,000&ndash;6,000 sq ft</td>
-<td>₹19&ndash;₹26 Lakhs</td>
-</tr>
-<tr>
-<td>Rooftop Turf</td>
-<td>₹9&ndash;₹15 Lakhs</td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th>Turf Size</th>
+      <th>Estimated Cost (INR)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>3,000&ndash;4,000 sq ft</td>
+      <td>₹14.5 &ndash; ₹15 Lakhs</td>
+    </tr>
+    <tr>
+      <td>5,000&ndash;6,000 sq ft</td>
+      <td>₹16 &ndash; ₹18 Lakhs</td>
+    </tr>
+    <tr>
+      <td>Rooftop Turf</td>
+      <td>₹15 Lakhs</td>
+    </tr>
+  </tbody>
 </table>
+
 <p><strong>Includes:</strong></p>
-<ul data-spread="false">
-<li>
-<p>Base layer, shock pad, and synthetic turf</p>
-</li>
-<li>
-<p>FIFA-quality turf options available</p>
-</li>
-<li>
-<p>Drainage + LED floodlights + net fencing</p>
-</li>
+<ul>
+  <li>Base layer, shock pad, and synthetic turf</li>
+  <li>FIFA-quality turf options available</li>
+  <li>Drainage + LED floodlights + net fencing</li>
+  <li><strong>Eco-friendly options:</strong> Aqua Eco-Friendly Turf available for sustainable projects</li>
 </ul>
-<div>&nbsp;</div>
+
 <h3>What Increases or Decreases Turf Cost in Chennai?</h3>
-<ol start="1" data-spread="false">
-<li>
-<p><strong>Land Leveling Needs:</strong> Sloped plots like those near Pallavaram cost more</p>
-</li>
-<li>
-<p><strong>Lighting:</strong> LED floodlights are preferred for energy efficiency</p>
-</li>
-<li>
-<p><strong>Material Logistics:</strong> Transport costs vary within Chennai vs outskirts</p>
-</li>
-<li>
-<p><strong>Add-ons:</strong> Restrooms, fencing height, seating, and branding</p>
-</li>
+<ol>
+  <li><strong>Land Leveling Needs:</strong> Sloped plots like those near Pallavaram cost more</li>
+  <li><strong>Lighting:</strong> LED floodlights are preferred for energy efficiency</li>
+  <li><strong>Material Logistics:</strong> Transport costs vary within Chennai vs outskirts</li>
+  <li><strong>Add-ons:</strong> Restrooms, fencing height, seating, and branding</li>
 </ol>
+
 <p>📌 <em>See this related blog: </em><a href="https://gameonsolution.in/blog/turf-construction-cost-tamilnadu"><em>Turf Construction Cost in Tamil Nadu</em></a></p>
-<div>&nbsp;</div>
+
 <h3>Use the Free Turf Calculator for Chennai Estimates</h3>
-<p>GameOn Solution&rsquo;s <a href="https://gameonsolution.in/turf-calculator">Turf Construction Calculator</a> helps you:</p>
-<ul data-spread="false">
-<li>
-<p>Estimate cost based on your Chennai plot</p>
-</li>
-<li>
-<p>Compare turf size options</p>
-</li>
-<li>
-<p>Get PDF quotes instantly</p>
-</li>
+<p>GameOn Solution’s <a href="https://gameonsolution.in/turf-calculator">Turf Construction Calculator</a> helps you:</p>
+<ul>
+  <li>Estimate cost based on your Chennai plot</li>
+  <li>Compare turf size options</li>
+  <li>Get PDF quotes instantly</li>
 </ul>
 <p>✅ <em>Highly used by turf investors across Tamil Nadu!</em></p>
-<div>&nbsp;</div>
+
+<h3>Looking for Eco-Friendly Turf Solutions?</h3>
+<p>If you're building a sustainable sports facility, ask about our <strong>Aqua Eco-Friendly Turf</strong>. It's built for Chennai’s climate with excellent drainage and minimal water retention—perfect for long-term use with less maintenance.</p>
+
 <p><strong>Ready to Build Your Turf in Chennai?</strong> GameOn Solution has delivered over 150+ successful turf projects across South India. Contact us now for a site inspection and customized quote.</p>
-<p>📞 <a href="https://gameonsolution.in/#contact">Reach Out Here</a></p>`,
+
+<p>📞 <a href="https://gameonsolution.in/#contact">Reach Out Here</a></p>
+`,
   },
   {
     slug: "best-turf-builder-bangalore-2025",
@@ -5292,7 +5276,7 @@ const blogData = [
 </tr>
 <tr>
 <td>Rooftop Turf</td>
-<td>₹10&ndash;18 Lakhs (based on load)</td>
+<td>₹15 Lakhs (based on load)</td>
 </tr>
 </tbody>
 </table>

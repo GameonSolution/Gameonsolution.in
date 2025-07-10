@@ -13,7 +13,10 @@ const allPages = [
   { path: "/cricket-turf", priority: "0.9" },
   { path: "/indoor-turf", priority: "0.9" },
   { path: "/360-circle-turf", priority: "0.9" },
-  { path: "/badminton-court", priority: "0.8" },
+  { path: "/badminton-court", priority: "0.9" },
+  { path: "/volleyball-turf", priority: "0.8" },
+  { path: "/basket-ball", priority: "0.8" },
+  { path: "/multi-sports-turf", priority: "0.9" },
   { path: "/turf-calculator", priority: "0.9" },
 
   // Important blog posts

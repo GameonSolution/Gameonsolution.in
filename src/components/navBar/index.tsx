@@ -128,6 +128,7 @@ const Navbar: React.FC = () => {
                 // { path: "/portfolio", label: "Portfolio" },
                 { path: "/news", label: "News" },
                 { path: "/testimonials", label: "Testimonials" },
+                // { path: "/products", label: "Products" },
                 // { path: "/turf-calculator", label: "Turf Calculator" },
               ].map((item) => (
                 <li key={item.label}>
@@ -150,7 +151,7 @@ const Navbar: React.FC = () => {
                   } transition-all hover:text-secondary`}
                   onClick={() => setIsDropdownOpen((prev) => !prev)}
                 >
-                  Products
+                  Services
                   <FaChevronDown className="ml-1" />
                 </button>
                 {isDropdownOpen && (
