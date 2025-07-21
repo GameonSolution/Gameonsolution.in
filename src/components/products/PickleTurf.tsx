@@ -137,12 +137,12 @@ const PickleTurf = () => {
         <Hero
           title="PICKLE BALL"
           subtitle="FINDS ITS MARK"
-          bgImgUrl="/pickleTurf/pickle-turf-005.webp"
+          bgImgUrl="/pickleTurf/Pickle2.webp"
         />
 
         <Container className="relative z-10 space-y-10 md:max-w-[1000px] max-w-[692px] py-36 text-3xl font-bold text-white md:text-4xl">
           <FadeIn>
-            <p className="uppercase font-primary text-secondary">
+            <p className="uppercase font-primary text-secondary font-normal">
               Premium Playing Surface for Pickleball Enthusiasts
             </p>
           </FadeIn>
@@ -195,32 +195,32 @@ export default PickleTurf;
 
 const PickleTurfItems = [
   {
-    poster: "/pickleTurf/pickle-turf-001.webp",
+    poster: "/pickleTurf/Pickle1.webp",
     name: "Airplane",
     blurHash: "LDD9*K~BMeS0_NIUWUR*x_IVx@%3",
   },
   {
-    poster: "/pickleTurf/pickle-turf-002.webp",
+    poster: "/pickleTurf/Pickle7.webp",
     name: "Family man",
     blurHash: "L26R[Gb]00nh0Nj@--oeu%V@O_a$",
   },
   {
-    poster: "/pickleTurf/pickle-turf-003.webp",
+    poster: "/pickleTurf/Pickle3.webp",
     name: "Family man",
     blurHash: "LPB|Nc%1ROV?~WxaRjoe~Bn$R:s:",
   },
   {
-    poster: "/pickleTurf/pickle-turf-004.webp",
+    poster: "/pickleTurf/Pickle8.webp",
     name: "Laboratory",
     blurHash: "LE8hnHRk00$_HXoboxR;.TWZIWs*",
   },
   {
-    poster: "/pickleTurf/pickle-turf-005.webp",
+    poster: "/pickleTurf/Pickle6.webp",
     name: "Napoleon",
     blurHash: "LWEV{pt6xTocR5n+s:a{~RWBIpR+",
   },
   {
-    poster: "/pickleTurf/pickle-turf-006.webp",
+    poster: "/pickleTurf/Pickle5.webp",
     name: "Person in Darkness",
     blurHash: "LPB|Nc%1ROV?~WxaRjoe~Bn$R:s:",
   },

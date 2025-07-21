@@ -183,7 +183,9 @@ const MultiSportsTurf = () => {
         />
         <Container className="relative z-10 space-y-10  md:max-w-[1000px] max-w-[692px]   py-36 text-3xl font-bold text-white md:text-4xl ">
           <FadeIn>
-            <p className="text-secondary font-primary">MULTI-SPORT TURF</p>
+            <p className="text-secondary font-primary font-normal">
+              MULTI-SPORT TURF
+            </p>
           </FadeIn>
           <FadeIn>
             <p className="text-secondary">
@@ -292,42 +294,37 @@ export default MultiSportsTurf;
 const cricketItems = [
   {
     poster: "/Football/Football-01.webp",
-    name: "Airplane",
+    name: "Multi-Sports Turf",
     blurHash: "LE8hnHRk00$_HXoboxR;.TWZIWs*",
   },
   {
-    poster:
-      "https://static.wixstatic.com/media/4c43d3_ae21e210035347fa8c17e92f7d623b6d~mv2.png/v1/crop/x_167,y_0,w_1751,h_1167/fill/w_416,h_278,fp_0.60_0.31,q_85,usm_0.66_1.00_0.01,enc_auto/Cricket-04.png",
-    name: "Family man",
+    poster: "/blog/Blog41.webp",
+    name: "Multi-Sports Turf",
     blurHash: "LQEgpQIAB-xs9+Rlbot9~mouIVoL",
   },
   {
-    poster: "/Football/Football-02.webp",
-    name: "Laboratory",
+    poster: "/Football/Football-05.webp",
+    name: "Multi-Sports Turf",
     blurHash: "LfE3;nWCRiWB^-t7WAR*xcoMogf6",
   },
   {
-    poster:
-      "https://static.wixstatic.com/media/4c43d3_93db6e485dbf44e58148ef38aa5db9d1~mv2.png/v1/fill/w_420,h_662,fp_0.52_0.64,q_85,usm_0.66_1.00_0.01,enc_auto/Indoor-06.png",
-    name: "Napoleon",
+    poster: "/Football/1.webp",
+    name: "Multi-Sports Turf",
     blurHash: "L17n]o4T~p0100yoTJxZ00~p4T_M",
   },
   {
-    poster:
-      "https://static.wixstatic.com/media/4c43d3_26585cf912084d5ab27ee8ae33a06fbd~mv2.png/v1/crop/x_208,y_0,w_1669,h_1167/fill/w_466,h_326,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Cricket-03.png",
-    name: "Person in Darkness",
+    poster: "/blog/Blog43.webp",
+    name: "Multi-Sports Turf",
     blurHash: "LE8hnHRk00$_HXoboxR;.TWZIWs*",
   },
   {
-    poster:
-      "https://static.wixstatic.com/media/4c43d3_cbfa6596676b4692a4f70ba8069553ba~mv2.png/v1/fill/w_488,h_326,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Volleyball%20court-04.png",
-    name: "Scary Building",
+    poster: "/Football/Football-08.webp",
+    name: "Multi-Sports Turf",
     blurHash: "L17n]o4T~p0100yoTJxZ00~p4T_M",
   },
   {
-    poster:
-      "https://static.wixstatic.com/media/4c43d3_a42f5b921efb4985b64fa716c98ed47b~mv2.png/v1/fill/w_466,h_326,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Indoor-03.png",
-    name: "Stars",
+    poster: "/homepageSlideImages/3.jpg",
+    name: "Multi-Sports Turf",
     blurHash: "L77n:SDm4U%K8|%KyCMz01tO?@W=",
   },
 ];

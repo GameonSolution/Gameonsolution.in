@@ -184,14 +184,14 @@ const VolleyballTurf = () => {
         <Hero
           title={"WHERE EVERY SHOT "}
           subtitle={"FINDS ITS MARK"}
-          bgImgUrl={
-            "https://static.wixstatic.com/media/4c43d3_108dfb94ec234a17a6d8cdc9026bfc8d~mv2.png/v1/fill/w_466,h_326,fp_0.15_0.48,q_85,usm_0.66_1.00_0.01,enc_auto/Volleyball%20court-05.png"
-          }
+          bgImgUrl={"/VolleyBall/Volley-Ball-001.webp"}
         />
 
         <Container className="relative z-10 space-y-10 md:max-w-[1000px] max-w-[692px] py-36 text-3xl font-bold text-white md:text-4xl">
           <FadeIn>
-            <p className="text-secondary font-primary">VOLLEYBALL COURT</p>
+            <p className="text-secondary font-primary font-normal">
+              VOLLEYBALL COURT
+            </p>
           </FadeIn>
           <FadeIn>
             <span className="text-secondary">
@@ -234,9 +234,9 @@ const VolleyballTurf = () => {
               <div className="w-full h-full overflow-hidden group">
                 <AnimateCard>
                   <img
-                    src="https://storage.googleapis.com/a1aa/image/cOI0WQ1AEFLPD1FgjM1Fpj73nvF8e7egZf9KpfjhUGcbml6OB.jpg"
+                    src="/VolleyBall/Volley-Ball-004.webp"
                     className="lg:w-[400px] w-[250px] h-full object-cover transition-transform duration-500 ease-out scale-105 transform group-hover:scale-100"
-                    alt="Director"
+                    alt="Volleyball Court"
                   />
                 </AnimateCard>
 
@@ -291,38 +291,37 @@ export default VolleyballTurf;
 
 const cricketItems = [
   {
-    poster: "https://www.meckavosports.com//uploads/volleyball_court_1.webp",
-    name: "Airplane",
+    poster: "/VolleyBall/Volley-Ball-003.webp",
+    name: "Volleyball Court",
     blurHash: "L~Lgtvt6Rjt6_NoLf6a~o#s:j[WC",
   },
   {
-    poster:
-      "https://static.wixstatic.com/media/4c43d3_108dfb94ec234a17a6d8cdc9026bfc8d~mv2.png/v1/fill/w_466,h_326,fp_0.15_0.48,q_85,usm_0.66_1.00_0.01,enc_auto/Volleyball%20court-05.png",
-    name: "Family man",
+    poster: "/VolleyBall/Volley-Ball-002.webp",
+    name: "Volleyball Court",
     blurHash: "LUEM?@D$kqRj_MV[j]W=tpxZaet7",
   },
   {
     poster:
       "https://static.wixstatic.com/media/4c43d3_14b3e64472704a399f224c9b7999145f~mv2.png/v1/fill/w_488,h_326,fp_0.44_0.52,q_85,usm_0.66_1.00_0.01,enc_auto/Volleyball%20court-03.png",
-    name: "Laboratory",
+    name: "Volleyball Court",
     blurHash: "LB8=EGsm8^IB?[xvM}IUs_xvNQf5",
   },
   {
     poster:
       "https://static.wixstatic.com/media/4c43d3_cbfa6596676b4692a4f70ba8069553ba~mv2.png/v1/fill/w_488,h_326,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Volleyball%20court-04.png",
-    name: "Napoleon",
+    name: "Volleyball Court",
     blurHash: "LQK^sL00^*My9YO?D%x[~AnmR6tk",
   },
   {
     poster:
       "https://static.wixstatic.com/media/4c43d3_06ddf9fa58a143e4bcc20f2b25e1ad05~mv2.png/v1/fill/w_466,h_326,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Volleyball%20court-02.png",
-    name: "Person in Darkness",
+    name: "Volleyball Court",
     blurHash: "LWEV{pt6xTocR5n+s:a{~RWBIpR+",
   },
   {
     poster:
       "https://static.wixstatic.com/media/4c43d3_bb5250c3415947e8b6a9d1cdad06f9e7~mv2.png/v1/fill/w_484,h_662,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Volleyball%20court-06.png",
-    name: "Scary Building",
+    name: "Volleyball Court",
     blurHash: "L3Ac0{KK1Cov00nm%3V@0J-B+VbF",
   },
 ];

@@ -180,12 +180,14 @@ const BasketBallCourt = () => {
         <Hero
           title="BASKETBALL COURT"
           subtitle="MAKING EVERY SHOT COUNT"
-          bgImgUrl="/basketBall/2.webp"
+          bgImgUrl="/basketBall/Basketball-001.webp"
         />
 
         <Container className="relative z-10 space-y-10 md:max-w-[1000px] max-w-[692px] py-36 text-3xl font-bold text-white md:text-4xl">
           <FadeIn>
-            <p className="text-secondary font-primary">BASKETBALL COURT</p>
+            <p className="text-secondary font-primary font-normal">
+              BASKETBALL COURT
+            </p>
           </FadeIn>
           <FadeIn>
             <span className="text-secondary">
@@ -234,7 +236,7 @@ const BasketBallCourt = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6 }}
                   viewport={{ once: true }}
-                  src="https://storage.googleapis.com/a1aa/image/8B5NNyMd6nKtNFAgIRhd8tPpOkqOe0ivBgTl6wXZI8fro6yTA.jpg"
+                  src="/basketBall/Basketball-002.webp"
                   className="lg:w-[400px] w-[250px] h-full object-cover transition-transform duration-500 ease-out scale-105 transform group-hover:scale-100"
                   alt="Director"
                 />

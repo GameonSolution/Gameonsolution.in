@@ -177,11 +177,13 @@ const IndoorTurf = () => {
         <Hero
           title="INDOOR TURF"
           subtitle="FINDS ITS MARK"
-          bgImgUrl="https://static.wixstatic.com/media/4c43d3_f327577b6eca48acb7752d3d746c1a58~mv2.jpeg/v1/fill/w_1216,h_257,al_c,q_80,enc_auto/bg.jpeg"
+          bgImgUrl="/Football/Football-08.webp"
         />
         <Container className="relative z-10 space-y-10 md:max-w-[1000px] max-w-[692px] py-36 text-3xl font-bold text-white md:text-4xl">
           <FadeIn>
-            <h1 className="text-secondary font-primary">INDOOR TURF</h1>
+            <h1 className="text-secondary font-primary font-normal">
+              INDOOR TURF
+            </h1>
           </FadeIn>
           <FadeIn>
             <h2 className="text-secondary">

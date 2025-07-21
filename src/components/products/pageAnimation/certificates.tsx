@@ -76,6 +76,7 @@ const Certificates = () => {
           "AIPA.webp",
           "FIFAPRO.webp",
           "IFP.webp",
+          "ITFLOGO.webp",
         ].map((cert, index) => (
           <div
             key={index}

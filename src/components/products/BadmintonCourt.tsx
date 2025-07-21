@@ -174,12 +174,14 @@ const BadmintonCourt = () => {
         <Hero
           title={"BADMINTON COURT"}
           subtitle={"FINDS ITS MARK"}
-          bgImgUrl={"/badminton/2.webp"}
+          bgImgUrl={"/badminton/Badminton-001.webp"}
         />
 
         <Container className="relative z-10 space-y-10 md:max-w-[1000px] max-w-[692px] py-36 text-3xl font-bold text-white md:text-4xl ">
           <FadeIn>
-            <p className="text-secondary font-primary">BADMINTON COURT</p>
+            <p className="text-secondary font-primary font-normal">
+              BADMINTON COURT
+            </p>
           </FadeIn>
           <FadeIn>
             <span className="text-secondary">
@@ -272,32 +274,32 @@ export default BadmintonCourt;
 
 const BadmintonItems = [
   {
-    poster: "/badminton/1.webp",
+    poster: "/badminton/Badminton-002.webp",
     name: "Airplane",
     blurHash: "LQEqA]D%B-x?9+Rlbot9~mouIVj@",
   },
   {
-    poster: "/badminton/2.webp",
+    poster: "/badminton/Badminton-003.webp",
     name: "Family man",
     blurHash: "LdIY5eVtnQs:00WEafR+~BofbbR*",
   },
   {
-    poster: "/badminton/3.webp",
+    poster: "/badminton/Badminton-004.webp",
     name: "Laboratory",
     blurHash: "LfE3;nWCRiWB^-t7WAR*xcoMogf6",
   },
   {
-    poster: "/badminton/5.webp",
+    poster: "/badminton/Badminton-005.webp",
     name: "Napoleon",
     blurHash: "L6Ax%~MkBB-l03o_Dqx?Q2%b?CNe",
   },
   {
-    poster: "/badminton/6.webp",
+    poster: "/badminton/Badminton-006.webp",
     name: "Person in Darkness",
     blurHash: "LfE3;nWCRiWB^-t7WAR*xcoMogf6",
   },
   {
-    poster: "/badminton/7.webp",
+    poster: "/badminton/Badminton-007.webp",
     name: "Scary Building",
     blurHash: "L6Ax%~MkBB-l03o_Dqx?Q2%b?CNe",
   },

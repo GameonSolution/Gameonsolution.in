@@ -237,37 +237,43 @@ const CircleTurf360 = () => {
       />
       <div className="bg-background relative z-10 select-none">
         <Hero
-          title={"BASKETBALL COURT & 360° CIRCLE TURF"}
+          title={"360° CIRCLE TURF"}
           subtitle={"MAKING EVERY SHOT AND STEP COUNT"}
           bgImgUrl={"/CircleMiniCricketStadiumTurff/PLT_00017.webp"}
         />
         <Container className="relative z-10 space-y-10  md:max-w-[1000px] max-w-[692px]   py-36 text-3xl font-bold text-white md:text-4xl ">
           <FadeIn>
-            <p className="text-secondary font-primary">BASKETBALL COURT</p>
+            <p className="text-secondary font-primary font-normal">
+              360° CIRCLE TURF
+            </p>
           </FadeIn>
           <FadeIn>
             <span className="text-secondary">
-              ESSENTIAL CONSIDERATIONS FOR BASKETBALL COURTS
+              ESSENTIAL CONSIDERATIONS FOR 360° TURFS
             </span>
           </FadeIn>
           <FadeIn>
             <span className="md:text-2xl text-lg">
-              At GameOn Solution, we specialize in modern basketball court
-              construction for urban and suburban areas across India, where
-              interest in basketball and community sports is rapidly growing.
-              With schools, colleges, and local organizations seeking
-              high-quality courts, the demand for durable, low-maintenance, and
-              performance-enhancing surfaces is at an all-time high. Our
-              professional basketball court installation uses advanced synthetic
-              sports flooring that ensures excellent grip, player safety, and
-              multi-sport adaptability—making it ideal for both recreational and
-              competitive use.
+              Experience cricket like never before at the Circle Mini Cricket
+              Stadium, where top-tier turf technology meets the thrill of the
+              game. Designed for both casual players and serious athletes, this
+              compact yet professional setup offers the perfect balance of
+              performance, aesthetics, and comfort. With a high-performance
+              synthetic cricket turf that delivers ideal ball bounce, pace, and
+              spin, every match feels like a stadium-level experience. Powered
+              by GameOn Solution&apos;s expertise in cricket turf construction,
+              the surface is built for durability, safety, and long-term
+              usability. The shock-absorbing layer reduces stress on joints,
+              making it suitable for long playing hours. Whether you're
+              organizing a friendly match or a competitive tournament, Circle
+              Mini Stadium is engineered to deliver an elite cricketing
+              experience for players at every level.
             </span>
           </FadeIn>
         </Container>
       </div>
       <VideoCarousel
-        title="Basketball Court & Turf"
+        title="360° CIRCLE TURF"
         carouselImages={basketballAndTurfItems}
       />
       <motion.div

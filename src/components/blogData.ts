@@ -2978,7 +2978,7 @@ const blogData = [
 <p data-start="4008" data-end="4143">📞 <strong data-start="4011" data-end="4067">Need help improving your turf or building a new one?</strong><br data-start="4067" data-end="4070" /><a href="https://gameonsolution.in/">GameOn Solution</a> can guide you &mdash; from drainage to digital booking systems.</p>
 `,
   },
-  //21st Blog
+  // 21st Blog
   {
     slug: "turf-construction-cost-tamilnadu",
     title: "Turf Construction Cost in Tamil Nadu (2025 Guide)",
@@ -3966,7 +3966,7 @@ const blogData = [
 <p>Converting your existing tennis court into a pickleball court is a wise investment that brings new life to underdeveloped facilities! There is no sign of slowing down on the exponential growth of pickleball, which will result in immediate benefits regarding usage, community options, and revenue! The conversion process requires planning and execution but is much cheaper than building new courts. Following the steps in this guide can help you develop top-notch pickleball courts, which can please everyone of every ability, young or old! Once you determine where on the temporary-to-permanent conversion spectrum you want your court to fall, you will soon have a lively, active, new experience in your court space! Once you see players flocking to your newly converted tennis courts and into the wonderful (ridiculously fun) game of pickleball, you will be even more excited to be at the forefront of the fastest-growing sport in America!</p>
 `,
   },
-  //29th Blog
+  // 29th Blog
   {
     slug: "pickleball-court-construction-mistakes-guide",
     title:
@@ -4077,7 +4077,7 @@ const blogData = [
 <p>Somewhere else, etc. With <a href="https://gameonsolution.in/">GameOn Solution</a> | 📍 Sports Infra Developers throughout South India.</p>
 `,
   },
-  //30th Blog
+  // 30th Blog
   {
     slug: "how-to-build-your-own-pickleball-court-step-by-step-guide",
     title:
@@ -4218,7 +4218,7 @@ const blogData = [
 <p>Building your own pickleball court is not only a luxury; it is a life change that promotes wellness, family, community, and, of course, fun. With good planning, construction materials, and maintenance, your pickleball court will remain active for years to come. Whether it is family gatherings or your local neighborhood tournaments, your court will soon become, at the very least, the neighborhood hangout.</p>
 `,
   },
-  //31st Blog
+  // 31st Blog
   {
     slug: "top-places-in-tamilnadu-to-start-a-turf-business",
     title:
@@ -4303,7 +4303,7 @@ const blogData = [
 <p><strong>Tip:</strong> Consider starting with multi-sport turf to maximize ROI. Football + Cricket combinations work very well in local markets.</p>
 `,
   },
-  //32nd Post
+  // 32nd Post
   {
     slug: "rise-of-pickleball-in-tamil-nadu",
     title:
@@ -4379,7 +4379,7 @@ const blogData = [
 <p><strong>Interested in building your own court?</strong> Let <a href="https://gameonsolution.in/">GameOn Solution</a> be your trusted partner in designing, building, and maintaining world-class pickleball courts.</p>
 `,
   },
-  //33rd Blog
+  // 33rd Blog
   {
     slug: "cost-of-football-and-cricket-turf-construction-india",
     title:
@@ -4436,7 +4436,7 @@ const blogData = [
 <p data-pm-slice="1 1 []">Don&rsquo;t just compare prices &mdash; compare quality. <a href="https://gameonsolution.in/">GameOn Solution</a> ensures long-lasting turf with smart ROI.</p>
 `,
   },
-  //34th Blog
+  // 34th Blog
   {
     id: 34,
     slug: "gen-alpha-aqua-eco-friendly-turf-rajapalayam",
@@ -4542,7 +4542,7 @@ const blogData = [
 <p data-start="5078" data-end="5347">🔗 <a class="" href="https://gameonsolution.in/indoor-turf" target="_new" rel="noopener" data-start="5081" data-end="5150">Explore Indoor Turf Projects</a><br data-start="5150" data-end="5153" /> 🔗 <a class="" href="https://gameonsolution.in/360-circle-turf" target="_new" rel="noopener" data-start="5156" data-end="5240">Learn about Our 360 Circle Turf Concept</a><br data-start="5240" data-end="5243" /> 📩 Contact us at <a class="" href="https://gameonsolution.in" target="_new" rel="noopener" data-start="5260" data-end="5306">gameonsolution.in</a> or call us for a free site consultation.</p>
 `,
   },
-  //35th Blog
+  // 36th Blog
   {
     slug: "bangalore-largest-multipurpose-turf-gameon-solution",
     title: "Bangalore’s BIGGEST Turf - 25,000 Sq. Ft. of Sporting Excellence!",
@@ -4668,6 +4668,7 @@ const blogData = [
 </li>
 </ul>`,
   },
+  // 37th Blog
   {
     slug: "turf-construction-cost-karnataka",
     title: "Turf Construction Cost in Karnataka (2025 Guide)",
@@ -4750,6 +4751,7 @@ const blogData = [
 <p class="demoTitle">&nbsp;</p>
 `,
   },
+  // 38th Blog
   {
     slug: "turf-construction-cost-ap-telangana",
     title: "Turf Construction Cost in Andhra Pradesh & Telangana (2025 Guide)",
@@ -4851,6 +4853,7 @@ const blogData = [
 <p class="demoTitle">&nbsp;</p>
 `,
   },
+  // 39th Blog
   {
     slug: "turf-construction-cost-kerala",
     title: "Turf Construction Cost in Kerala (2025 Guide)",
@@ -4917,6 +4920,7 @@ const blogData = [
 <p><strong>Pro Tip:</strong> Use UV-stabilized turf to ensure color and texture hold up in Kerala&rsquo;s humidity.</p>
 `,
   },
+  // 40th Blog
   {
     slug: "turf-calculator-online-estimate-tool",
     title:
@@ -5122,6 +5126,7 @@ const blogData = [
 <p data-start="5104" data-end="5141">Save time. Save money. Build smart.</p>
 `,
   },
+  // 41st Blog
   {
     slug: "turf-construction-cost-chennai",
     title: "Turf Construction Cost in Chennai 2025: A Complete Local Guide",
@@ -5217,6 +5222,7 @@ const blogData = [
 <p>📞 <a href="https://gameonsolution.in/#contact">Reach Out Here</a></p>
 `,
   },
+  // 44nd Blog
   {
     slug: "best-turf-builder-bangalore-2025",
     title:
@@ -5319,6 +5325,7 @@ const blogData = [
 </ul>
 <p>📞 Want to build a turf in Bangalore? Contact GameOn Solution for a free consultation and site analysis.</p>`,
   },
+  // 45th Blog
   {
     id: 45,
     slug: "turf-installation-kochi-cost-permits-locations",

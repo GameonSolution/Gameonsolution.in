@@ -201,12 +201,14 @@ const FootballTurf = () => {
         <Hero
           title={"UNLEASH YOUR GAME ON GREEN: "}
           subtitle={"FOOTBALL TURF REDEFINED"}
-          bgImgUrl={"/Football/Football-07.webp"}
+          bgImgUrl={"/Football/1.webp"}
         />
 
         <Container className="relative z-10 space-y-10 md:max-w-[1000px] max-w-[692px] py-36 text-3xl font-bold text-white md:text-4xl">
           <FadeIn>
-            <p className="text-secondary font-primary">FOOTBALL TURF</p>
+            <p className="text-secondary font-primary font-normal">
+              FOOTBALL TURF
+            </p>
           </FadeIn>
           <FadeIn>
             <p className="text-secondary">
@@ -215,25 +217,35 @@ const FootballTurf = () => {
           </FadeIn>
           <FadeIn>
             <span className="md:text-2xl text-lg">
-              Meeting FIFA (Fédération Internationale de Football Association)
-              and UEFA (Union of European Football Associations) standards is
-              critical when installing artificial football turf. These global
-              certifications ensure that the synthetic turf meets strict
-              criteria for safety, durability, and performance—suitable for both
-              amateur training and professional-level football matches. GameOn
-              Solution specializes in building FIFA-compliant football turfs
-              designed to deliver consistent playability, reduced injury risks,
-              and long-term resilience.
+              Environmentally Safe Grass Solutions: <br /> GameOn Solution
+              champions sustainability with our state-of-the-art,
+              environmentally friendly artificial grass technology. Our turfs
+              are manufactured using recycled materials and toxic-free
+              substances, delivering maximum performance and a minimum
+              environmental footprint.
             </span>
           </FadeIn>
           <FadeIn>
             <span className="md:text-2xl text-lg">
-              FIFA and UEFA regulate the technical standards of artificial
-              football surfaces through certifications like FIFA Quality and
-              FIFA Quality Pro. These certifications validate surface quality,
-              shock absorption, ball behavior, and player interaction—ensuring
-              that every turf built by GameOn Solution meets global benchmarks
-              for football excellence.
+              Aqua Eco-Friendly Grass Systems: <br /> Our Aqua eco-friendly
+              grass solutions use piezo technology, which offers superior
+              drainage and water systems. Our Aqua eco-friendly grass system
+              minimizes water, up to 70% less than natural grass, and maintains
+              quality playing conditions across the many climates in South
+              India.
+            </span>
+          </FadeIn>
+          <FadeIn>
+            <span className="md:text-2xl text-lg">
+              FIFA Pro Certified Quality: <br /> All football turfs installed by
+              GameOn Solution are at FIFA Pro standards and are internationally
+              recognized certified turf. The certified grass marked "Pro" is
+              rigorously tested for ball bounce, player-surface interaction, and
+              hardness standards. Built to International Standards, All football
+              turfs installed by GameOn Solution are constructed to FIFA
+              standards and international specifications, assuring regulation
+              playing field dimensions, shock absorption, and consistent surface
+              quality, comparable and playable for professional-level football.
             </span>
           </FadeIn>
         </Container>
@@ -345,7 +357,7 @@ const cricketItems = [
     blurHash: "L67xEt-=00I9osM_j^xw00D$?@-=",
   },
   {
-    poster: "/contactSideImg.webp",
+    poster: "/Football/Football-08.webp",
     name: "Stars",
     blurHash: "LfE3;nWCRiWB^-t7WAR*xcoMogf6",
   },

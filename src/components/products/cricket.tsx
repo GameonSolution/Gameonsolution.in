@@ -183,12 +183,14 @@ const CricketTurf = () => {
         <Hero
           title="CRICKET NETS"
           subtitle="FINDS ITS MARK"
-          bgImgUrl="https://static.wixstatic.com/media/4c43d3_7fc4a48fadee496cb7ac4d59d32dcbc1~mv2.png/v1/fill/w_968,h_540,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/4c43d3_7fc4a48fadee496cb7ac4d59d32dcbc1~mv2.png"
+          bgImgUrl="/CricketNets/Cricket-Nets-002.webp"
         />
 
         <Container className="relative z-10 space-y-10 md:max-w-[1000px] max-w-[692px] py-36 text-3xl font-bold text-white md:text-4xl">
           <FadeIn>
-            <h1 className="text-secondary font-primary">CRICKET NETS</h1>
+            <h1 className="text-secondary font-primary font-normal">
+              CRICKET NETS
+            </h1>
           </FadeIn>
 
           <FadeIn>
@@ -287,20 +289,17 @@ export default CricketTurf;
 
 const cricketItems = [
   {
-    poster:
-      "https://static.wixstatic.com/media/4c43d3_ae21e210035347fa8c17e92f7d623b6d~mv2.png/v1/crop/x_167,y_0,w_1751,h_1167/fill/w_488,h_326,fp_0.60_0.31,q_85,usm_0.66_1.00_0.01,enc_auto/Cricket-04.png",
+    poster: "/CricketNets/Cricket-Nets-001.webp",
     name: "Airplane",
     blurHash: "LQEqA]D%B-x?9+Rlbot9~mouIVj@",
   },
   {
-    poster:
-      "https://static.wixstatic.com/media/4c43d3_8177731fb1f44699946bd36ce43c7997~mv2.png/v1/fill/w_488,h_326,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Cricket-02.png",
+    poster: "/CricketNets/Cricket-Nets-002.webp",
     name: "Family man",
     blurHash: "LdIY5eVtnQs:00WEafR+~BofbbR*",
   },
   {
-    poster:
-      "https://static.wixstatic.com/media/4c43d3_177ae28dd7534c0b9961d0a1957f8f3c~mv2.png/v1/fill/w_420,h_662,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Cricket-06.png",
+    poster: "/CricketNets/Cricket-Nets-003.webp",
     name: "Laboratory",
     blurHash: "LfE3;nWCRiWB^-t7WAR*xcoMogf6",
   },

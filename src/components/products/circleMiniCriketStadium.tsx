@@ -156,7 +156,7 @@ const CircleTurf = () => {
         />
         <Container className="relative z-10 space-y-10 md:max-w-[1000px] max-w-[692px] py-36 text-3xl font-bold text-white md:text-4xl">
           <FadeIn>
-            <p className="uppercase text-secondary font-primary">
+            <p className="uppercase text-secondary font-primary font-normal">
               Mini Cricket Stadium
             </p>
           </FadeIn>
