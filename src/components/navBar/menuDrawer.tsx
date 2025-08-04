@@ -92,6 +92,36 @@ const MenuDrawer: React.FC<drawerProps> = ({ isCloseMenu }) => {
                 { path: "/basket-ball", label: "Basket Ball Court" },
                 { path: "/badminton-court", label: "Badminton Court" },
                 { path: "/360-circle-turf", label: "360 Circle Turf" },
+                {
+                  path: "/aqua-eco-friendly-turf",
+                  label: "Aqua-Themed Turf",
+                },
+              ]}
+            />{" "}
+          </li>
+          <li>
+            <Dropdown
+              onClick={(value: string) => {
+                setIsDropdownOpen(false);
+                handleNavClick(value);
+              }}
+              trigger={
+                <button
+                  className={`flex gap-1 rounded-lg items-center font-medium uppercase ${
+                    isDropdownOpen ? "text-secondary" : "text-[#D2D2D0]"
+                  } transition-all hover:text-secondary`}
+                >
+                  Products
+                  <FaChevronDown className="ml-1" />
+                </button>
+              }
+              items={[
+                { path: "/products/eco-friendly", label: "Eco Friendly" },
+                {
+                  path: "/products/aqua-eco-friendly",
+                  label: "Aqua Eco Friendly",
+                },
+                { path: "/products/360-turf", label: "360 Turf" },
               ]}
             />{" "}
           </li>

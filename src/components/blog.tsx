@@ -413,6 +413,106 @@ const BlogPage = () => {
         "Planning turf installation in Kochi? Learn the complete 2025 guide to turf construction costs, permits, drainage requirements, and the best localities in Kerala.",
       image: "/blog/Blog43.webp",
     },
+    {
+      id: 44,
+      slug: "pickleball-court-dimensions-builder-guide",
+      title:
+        "Pickleball Court Dimensions: What Every Builder Should Know (2025 Guide)",
+      excerpt:
+        "Discover the essential pickleball court dimensions every builder must know. This comprehensive 2025 guide covers court sizes, net height, indoor vs outdoor layouts, surface materials, lighting, fencing, and more for successful construction.",
+      image: "/blog/Blog44.webp",
+    },
+    {
+      id: 45,
+      slug: "pickleball-court-layout-elements",
+      title: "Key Elements of an Effective Pickleball Court Layout",
+      excerpt:
+        "Master the key elements that make a pickleball court layout safe, functional, and tournament-ready—from dimensions to lighting and surface texture.",
+      image: "/blog/Blog45.webp",
+    },
+    {
+      id: 46,
+      slug: "pickleball-court-installation-cost",
+      title: "How Much Should You Budget for Pickleball Court Installation?",
+      excerpt:
+        "Discover the pickleball court installation cost breakdown and budgeting tips for a smooth court creation process—from materials and labor to DIY vs professional options.",
+      image: "/blog/Blog46.webp",
+    },
+    {
+      id: 47,
+      slug: "pickleball-court-surface-options",
+      title: "Discover the Most Durable Pickleball Court Surface Options",
+      excerpt:
+        "Explore the top pickleball court surface options! From asphalt to artificial turf, find the perfect fit for your game.",
+      image: "/blog/Blog47.webp",
+    },
+    {
+      id: 48,
+      slug: "artificial-turf-installation-cost",
+      title: "Artificial Turf Installation Cost: A Comprehensive Guide",
+      excerpt:
+        "Discover the ins and outs of artificial turf installation costs. From materials to labor, get the full breakdown here!",
+      image: "/blog/Blog48.webp",
+    },
+    {
+      id: 49,
+      slug: "artificial-turf-infill-options",
+      title: "Artificial Turf Infill Options: Which One Is Best for You?",
+      excerpt:
+        "Discover the top artificial turf infill options for your sports field! Make the right choice for performance and maintenance.",
+      image: "/blog/Blog49.webp",
+    },
+    {
+      id: 50,
+      slug: "best-artificial-turf-for-football",
+      title:
+        "Why the Best Artificial Turf for Football Is Worth the Investment",
+      excerpt:
+        "Discover why investing in the best artificial turf for football is a game-changer for performance and sustainability!",
+      image: "/blog/Blog50.webp",
+    },
+    {
+      id: 51,
+      slug: "football-field-turf-construction-mistakes",
+      title: "Football Field Turf Construction: Common Mistakes to Avoid",
+      excerpt:
+        "Avoid common mistakes in football field turf construction! Learn how to ensure longevity and top performance.",
+      image: "/blog/Blog51.webp",
+    },
+    {
+      id: 52,
+      slug: "benefits-of-artificial-turf-football-fields",
+      title: "The Benefits of Choosing Artificial Turf for Football Fields",
+      excerpt:
+        "Discover the advantages of artificial turf for football fields—from durability to FIFA standards, elevate your game!",
+      image: "/blog/Blog52.webp",
+    },
+    {
+      id: 53,
+      slug: "pickleball-court-dimensions-guide",
+      title: "Pickleball Court Dimensions: What Every Builder Should Know",
+      excerpt:
+        "Discover essential pickleball court dimensions for your project. Ensure precision in construction for the perfect game setup!",
+      image: "/blog/Blog53.webp",
+    },
+    {
+      id: 54,
+      slug: "rubber-infilled-vs-eco-friendly-turf",
+      title:
+        "Rubber Infilled vs Eco-Friendly Turf: Which is Best for South India?",
+      excerpt:
+        "Compare Rubber Infilled and Eco-Friendly Turf to choose the right surface for your sports ground in Tamil Nadu and South India. Learn about durability, cost, and environmental benefits.",
+      image: "/blog/Blog54.webp",
+    },
+    {
+      id: 55,
+      slug: "turf-maintenance-services-south-india",
+      title:
+        "Complete Guide to Turf Maintenance Services for South Indian Climate",
+      excerpt:
+        "Discover the ultimate guide to turf maintenance services in South India. Learn how to maintain football and cricket turfs for durability, safety, and peak performance year-round.",
+      image: "/blog/Blog55.webp",
+    },
   ];
 
   const handleBlogClick = (slug: string) => {

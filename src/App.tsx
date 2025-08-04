@@ -243,7 +243,11 @@ import TurfCalculator from "./components/turfcalculator";
 import { useNewsFeed } from "./hook/useNewsFeed";
 import { useCarousel } from "./hook/useCarousel";
 import { useTestimonials } from "./hook/useTestimonials";
-import ProductsPage from "./components/productsPage/main";
+import AquaEcoTurf from "./components/products/aquaturf";
+import OurProducts from "./components/ourproducts";
+import EcoFriendly from "./components/ourproducts/EcoFriendly";
+import AquaEcoFriendly from "./components/ourproducts/AquaEcoFriendly";
+import Turf360 from "./components/ourproducts/Turf360";
 
 // Wrapper component to allow using `useLocation` inside JSX
 const AppRoutes = ({
@@ -259,11 +263,27 @@ const AppRoutes = ({
   const { getCarousels } = useCarousel();
   const { getAllTestimonials } = useTestimonials();
 
+  const productPathsToSkip = [
+    "/360-circle-turf",
+    "/basket-ball",
+    "/badminton-court",
+    "/pickle-turf",
+    "/football-turf",
+    "/cricket-turf",
+    "/multi-sports-turf",
+    "/indoor-turf",
+    "/volleyball-turf",
+    "/aqua-eco-friendly-turf",
+  ];
+
   // 👉 Skip preloader for specific pages
   const shouldSkipPreloader =
     location.pathname === "/turf-calculator" ||
     location.pathname === "/blog" ||
-    location.pathname.startsWith("/blog/");
+    location.pathname.startsWith("/blog/") ||
+    location.pathname === "/products" ||
+    location.pathname.startsWith("/products/") ||
+    productPathsToSkip.includes(location.pathname);
 
   const showPreloader =
     !shouldSkipPreloader &&
@@ -302,7 +322,14 @@ const AppRoutes = ({
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<BlogDetailPage />} />
         <Route path="/turf-calculator" element={<TurfCalculator />} />
-        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/products" element={<OurProducts />} />
+        <Route path="/products/eco-friendly" element={<EcoFriendly />} />
+        <Route
+          path="/products/aqua-eco-friendly"
+          element={<AquaEcoFriendly />}
+        />
+        <Route path="/products/360-turf" element={<Turf360 />} />
+
         <Route path="/360-circle-turf" element={<CircleTurf360 />} />
         <Route path="/basket-ball" element={<BasketBallCourt />} />
         <Route path="/badminton-court" element={<BadmintonCourt />} />
@@ -312,6 +339,7 @@ const AppRoutes = ({
         <Route path="/multi-sports-turf" element={<MultiSportsTurf />} />
         <Route path="/indoor-turf" element={<IndoorTurf />} />
         <Route path="/volleyball-turf" element={<VolleyballTurf />} />
+        <Route path="/aqua-eco-friendly-turf" element={<AquaEcoTurf />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

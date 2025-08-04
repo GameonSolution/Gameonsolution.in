@@ -4,7 +4,6 @@ import {
   FaYoutube,
   FaReddit,
   FaMedium,
-  FaQuora,
   FaLinkedin,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
@@ -104,7 +103,7 @@ export const Footer = () => {
               <FaMedium />
               <span className="sr-only">Medium</span>
             </a>
-            <a
+            {/* <a
               href="https://www.quora.com/profile/GameOn-Solution"
               target="_blank"
               rel="noopener noreferrer"
@@ -113,7 +112,7 @@ export const Footer = () => {
             >
               <FaQuora />
               <span className="sr-only">Quora</span>
-            </a>
+            </a> */}
             <a
               href="https://www.reddit.com/user/Dangerous_Aerie_8168/"
               target="_blank"

@@ -350,8 +350,8 @@ const Testimonials = () => {
         </div>
 
         <WhatsAppButton />
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 };
