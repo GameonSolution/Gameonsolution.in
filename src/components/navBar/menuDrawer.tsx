@@ -46,7 +46,7 @@ const MenuDrawer: React.FC<drawerProps> = ({ isCloseMenu }) => {
             { path: "#home", label: "Home" },
             { path: "#aboutUs", label: "About" },
             // { path: "#services", label: "Services" },
-            { path: "#contact", label: "Contact" },
+            // { path: "#contact", label: "Contact" },
             // { path: "/portfolio", label: "Portfolio" },
             { path: "/blog", label: "Blogs" },
             { path: "/news", label: "News" },
@@ -94,7 +94,7 @@ const MenuDrawer: React.FC<drawerProps> = ({ isCloseMenu }) => {
                 { path: "/360-circle-turf", label: "360 Circle Turf" },
                 {
                   path: "/aqua-eco-friendly-turf",
-                  label: "Aqua-Themed Turf",
+                  label: "Aqua Eco Friendly Turf",
                 },
               ]}
             />{" "}

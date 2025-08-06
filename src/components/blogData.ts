@@ -110,7 +110,7 @@ const blogData = [
 <p><span style="font-weight: 400;">3000 sq ft</span></p>
 </td>
 <td>
-<p><span style="font-weight: 400;">Rs. 14,500,000 - 19,00,000</span></p>
+<p><span style="font-weight: 400;">Rs. 14,500,000 - Rs. 19,00,000</span></p>
 </td>
 </tr>
 <tr>
@@ -118,7 +118,7 @@ const blogData = [
 <p><span style="font-weight: 400;">5000 sq ft</span></p>
 </td>
 <td>
-<p><span style="font-weight: 400;">Rs. 18,00,000 - 26,00,000</span></p>
+<p><span style="font-weight: 400;">Rs. 18,00,000 - Rs. 26,00,000</span></p>
 </td>
 </tr>
 <tr>
@@ -126,47 +126,53 @@ const blogData = [
 <p><span style="font-weight: 400;">10,000 sq ft</span></p>
 </td>
 <td>
-<p><span style="font-weight: 400;">Rs. 28,00,000 - 35,00,000</span></p>
+<p><span style="font-weight: 400;">Rs. 28,00,000 - Rs. 35,00,000</span></p>
 </td>
 </tr>
 </tbody>
 </table>
 <h3><strong>Quality of Turf Material</strong></h3>
 <p><span style="font-weight: 400;">Not all turf is created equal. The fancier the turf, the more it's going to cost you. High-end stuff lasts longer and plays better, but it isn't cheap. You've got options: natural grass, fake turf, or a mix of both. Each has its own price tag and perks. Curious about the differences? Swing by our article on </span><a href="https://gameonsolution.in/blog/understanding-turf-and-artificial-grass"><span style="font-weight: 400;">what is the difference between turf and artificial grass?</span></a><span style="font-weight: 400;">.</span></p>
-<table>
+<table style="width: 410.672px;">
 <tbody>
 <tr>
-<td>
+<td style="width: 139px;">
 <p><strong>Turf Material</strong></p>
 </td>
-<td>
+<td style="width: 253.672px;">
 <p><strong>Estimated Cost per sq ft</strong></p>
 </td>
 </tr>
 <tr>
-<td>
+<td style="width: 139px;">
 <p><span style="font-weight: 400;">Natural Grass</span></p>
 </td>
-<td>
-<p><span style="font-weight: 400;">Rs.30-60</span></p>
+<td style="width: 253.672px;">
+<p><span style="font-weight: 400;">Rs. 30 - Rs. 60</span></p>
 </td>
 </tr>
 <tr>
-<td>
-<p><span style="font-weight: 400;">Artificial Turf</span></p>
-<p><span style="font-weight: 400;">Eco- frienfly turf</span></p>
+<td style="width: 139px;">
+<p><span style="font-weight: 400;">Artificial Grass</span></p>
 </td>
-<td>
-<p><span style="font-weight: 400;">Rs. 270-300</span></p>
-<p><span style="font-weight: 400;">Rs.300 - 350</span></p>
+<td style="width: 253.672px;">
+<p>Rs. 270 -&nbsp;Rs. 300</p>
 </td>
 </tr>
 <tr>
-<td>
-<p><span style="font-weight: 400;">Hybrid Turf</span></p>
+<td style="width: 139px;">
+<p>Eco-friendly turf</p>
 </td>
-<td>
-<p><span style="font-weight: 400;">Rs.350 - 400</span></p>
+<td style="width: 253.672px;">
+<p><span style="font-weight: 400;">Rs. 300 -&nbsp;Rs. 350</span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 139px;">
+<p><span style="font-weight: 400;">Gen Alpha Turf</span></p>
+</td>
+<td style="width: 253.672px;">
+<p><span style="font-weight: 400;">Rs. 350 - Rs. 400</span></p>
 </td>
 </tr>
 </tbody>
@@ -251,41 +257,41 @@ const blogData = [
 <p><span style="font-weight: 400;">These extras keep your field in tip-top shape. Good prep and drainage are key to avoiding soggy turf and keeping it looking sharp.</span></p>
 <p><span style="font-weight: 400;">Knowing these costs helps you plan smart for your turf cricket setup. For more on turf sizes and space needs, check out our articles on </span><a href="https://gameonsolution.in/blog/average-turf-size-guide"><span style="font-weight: 400;">What is the average size of turf?</span></a><span style="font-weight: 400;"> and </span><a href="https://gameonsolution.in/blog/minimum-area-required-for-turf-installation"><span style="font-weight: 400;">what is the minimum sq ft for turf?</span></a><span style="font-weight: 400;">.</span></p>
 <h2><strong>Comparing Different Turf Options</strong></h2>
-<p><span style="font-weight: 400;">Thinking about setting up a turf cricket field to rake in some passive income? Well, you gotta know your turf options first! Each type has its perks and price tags. Let's break down the choices: natural grass, artificial turf, and hybrid turf systems.</span></p>
+<p><span style="font-weight: 400;">Thinking about setting up a turf cricket field to rake in some passive income? Well, you gotta know your turf options first! Each type has its perks and price tags. Let's break down the choices: natural grass, artificial turf, and Eco Friendly turf systems.</span></p>
 <h3><strong>Natural Grass Turf</strong></h3>
 <p><span style="font-weight: 400;">Natural grass is the old-school pick for cricket fields. Players love its authentic feel, but it comes with its own set of headaches and expenses.</span></p>
-<table>
+<table style="width: 424px;">
 <tbody>
 <tr>
-<td>
+<td style="width: 185.312px;">
 <p><strong>Cost Component</strong></p>
 </td>
-<td>
+<td style="width: 222.688px;">
 <p><strong>Estimated Cost (per sq ft)</strong></p>
 </td>
 </tr>
 <tr>
-<td>
+<td style="width: 185.312px;">
 <p><span style="font-weight: 400;">Turf Material</span></p>
 </td>
-<td>
-<p><span style="font-weight: 400;">Rs. 0.50 - 1.50</span></p>
+<td style="width: 222.688px;">
+<p><span style="font-weight: 400;">Rs. 45 -&nbsp;Rs. 140</span></p>
 </td>
 </tr>
 <tr>
-<td>
+<td style="width: 185.312px;">
 <p><span style="font-weight: 400;">Installation</span></p>
 </td>
-<td>
-<p><span style="font-weight: 400;">Rs. 1.00 - 2.00</span></p>
+<td style="width: 222.688px;">
+<p><span style="font-weight: 400;">Rs.&nbsp;90 -&nbsp;Rs. 180</span></p>
 </td>
 </tr>
 <tr>
-<td>
+<td style="width: 185.312px;">
 <p><span style="font-weight: 400;">Maintenance (annual)</span></p>
 </td>
-<td>
-<p><span style="font-weight: 400;">Rs. 0.25 - 0.50</span></p>
+<td style="width: 222.688px;">
+<p><span style="font-weight: 400;">Rs. 25 -&nbsp;Rs. 50</span></p>
 </td>
 </tr>
 </tbody>
@@ -369,8 +375,8 @@ const blogData = [
 </tbody>
 </table>
 <p>&nbsp;</p>
-<h3><strong>Hybrid Turf Systems</strong></h3>
-<p><span style="font-weight: 400;">Hybrid turf systems are like the best of both worlds. They mix natural grass with synthetic fibers to create a tough yet natural-looking surface.</span></p>
+<h3><strong>Gen Alpha Turf</strong></h3>
+<p><span style="font-weight: 400;">Gen Alpha turf systems are like the best of both worlds. They mix natural grass with synthetic fibers to create a tough yet natural-looking surface.</span></p>
 <table>
 <tbody>
 <tr>

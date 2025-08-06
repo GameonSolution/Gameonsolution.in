@@ -374,7 +374,7 @@ const Navbar: React.FC = () => {
             <ul className="flex flex-col items-center justify-center w-full gap-8 md:gap-6 lg:gap-10 xl:gap-12 text-white md:flex-row md:w-auto font-secondary">
               {[
                 { path: "#home", label: "Home" },
-                { path: "#contact", label: "Contact" },
+                // { path: "#contact", label: "Contact" },
                 { path: "/blog", label: "Blogs" },
                 { path: "/news", label: "News" },
                 { path: "/testimonials", label: "Testimonials" },
@@ -438,7 +438,7 @@ const Navbar: React.FC = () => {
                           },
                           {
                             path: "/aqua-eco-friendly-turf",
-                            label: "Aqua-Themed Turf",
+                            label: "Aqua Eco Friendly Turf",
                           },
                         ].map((item) => (
                           <li key={item.label}>

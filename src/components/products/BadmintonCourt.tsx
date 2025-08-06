@@ -157,6 +157,7 @@ import { VideoCarousel } from "./pageAnimation/video-carousel";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import { motion } from "framer-motion";
+import Testimonials from "../testimonial";
 
 const BadmintonCourt = () => {
   useEffect(() => {
@@ -264,7 +265,7 @@ const BadmintonCourt = () => {
           </motion.p>
         </div>
       </div>
-
+      <Testimonials />
       <Footer />
     </div>
   );

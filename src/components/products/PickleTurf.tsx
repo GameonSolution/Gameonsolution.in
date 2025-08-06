@@ -120,6 +120,7 @@ import { VideoCarousel } from "./pageAnimation/video-carousel";
 import AnimateCard from "../animateCard";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
+import Testimonials from "../testimonial";
 
 const PickleTurf = () => {
   useEffect(() => {
@@ -186,6 +187,8 @@ const PickleTurf = () => {
       <AnimateCard>
         <Certificates />
       </AnimateCard>
+      <Testimonials />
+
       <Footer />
     </div>
   );

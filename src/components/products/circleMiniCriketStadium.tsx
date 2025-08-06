@@ -136,6 +136,7 @@ import { VideoCarousel } from "./pageAnimation/video-carousel";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import { motion } from "framer-motion";
+import Testimonials from "../testimonial";
 
 const CircleTurf = () => {
   useEffect(() => {
@@ -215,6 +216,7 @@ const CircleTurf = () => {
       >
         <Certificates />
       </motion.section>
+      <Testimonials />
 
       <Footer />
     </div>

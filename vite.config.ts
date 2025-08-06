@@ -8,6 +8,8 @@ const allPages = [
   { path: "/", priority: "1.0" },
   { path: "/testimonials", priority: "0.9" },
   { path: "/news", priority: "0.9" },
+  { path: "/get-in-touch", priority: "0.9" },
+  { path: "/blog", priority: "0.9" },
   { path: "/football-turf", priority: "0.9" },
   { path: "/pickle-turf", priority: "0.8" },
   { path: "/cricket-turf", priority: "0.9" },
@@ -17,7 +19,17 @@ const allPages = [
   { path: "/volleyball-turf", priority: "0.8" },
   { path: "/basket-ball", priority: "0.8" },
   { path: "/multi-sports-turf", priority: "0.9" },
+  {
+    path: "/aqua-eco-friendly-turf",
+    priority: "1.0",
+  },
   { path: "/turf-calculator", priority: "0.9" },
+
+  // Important Producut Pages
+  { path: "/products/eco-friendly", priority: "1.0" },
+  { path: "/products/aqua-eco-friendly", priority: "1.0" },
+  { path: "/products/360-turf", priority: "1.0" },
+  { path: "/products", priority: "1.0" },
 
   // Important blog posts
   {
@@ -38,6 +50,10 @@ const allPages = [
   { path: "/blog/turf-construction-cost-karnataka", priority: "0.9" },
   { path: "/blog/turf-calculator-online-estimate-tool", priority: "0.9" },
   { path: "/blog/best-turf-builder-bangalore-2025", priority: "0.9" },
+  { path: "/blog/turf-construction-cost-chennai", priority: "0.9" },
+  { path: "/blog/rubber-infilled-vs-eco-friendly-turf", priority: "0.9" },
+  { path: "/blog/turf-maintenance-services-south-india", priority: "0.9" },
+
   {
     path: "/blog/turf-installation-kochi-cost-permits-locations",
     priority: "0.9",
@@ -76,9 +92,19 @@ const allPages = [
     "pickleball-court-construction-mistakes-guide",
     "how-to-build-your-own-pickleball-court-step-by-step-guide",
     "rise-of-pickleball-in-tamil-nadu",
+    "pickleball-court-dimensions-builder-guide",
+    "pickleball-court-layout-elements",
+    "pickleball-court-installation-cost",
+    "pickleball-court-surface-options",
+    "artificial-turf-installation-cost",
+    "artificial-turf-infill-options",
+    "best-artificial-turf-for-football",
+    "football-field-turf-construction-mistakes",
+    "benefits-of-artificial-turf-football-fields",
+    "pickleball-court-dimensions-guide",
   ].map((slug) => ({
     path: `/blog/${slug}`,
-    priority: "0.8",
+    priority: "0.9",
   })),
 ];
 

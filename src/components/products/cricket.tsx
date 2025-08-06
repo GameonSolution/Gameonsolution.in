@@ -166,6 +166,7 @@ import { VideoCarousel } from "./pageAnimation/video-carousel";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import { motion } from "framer-motion";
+import Testimonials from "../testimonial";
 
 const CricketTurf = () => {
   useEffect(() => {
@@ -279,6 +280,7 @@ const CricketTurf = () => {
           <Certificates />
         </motion.div>
       </section>
+      <Testimonials />
 
       <Footer />
     </div>

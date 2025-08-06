@@ -167,6 +167,7 @@ import { VideoCarousel } from "./pageAnimation/video-carousel";
 import AnimateCard from "../animateCard";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
+import Testimonials from "../testimonial";
 
 const VolleyballTurf = () => {
   useEffect(() => {
@@ -281,7 +282,7 @@ const VolleyballTurf = () => {
           </div>
         </div>
       </div>
-
+      <Testimonials />
       <Footer />
     </div>
   );

@@ -161,6 +161,7 @@ import { Hero } from "./pageAnimation/hero";
 import { VideoCarousel } from "./pageAnimation/video-carousel";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
+import Testimonials from "../testimonial";
 
 const IndoorTurf = () => {
   useEffect(() => {
@@ -254,6 +255,7 @@ const IndoorTurf = () => {
           </div>
         </div>
       </div>
+      <Testimonials />
 
       <Footer />
     </div>

@@ -9,6 +9,7 @@ import { VideoCarousel } from "./pageAnimation/video-carousel";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
+import Testimonials from "../testimonial";
 
 const AquaEcoTurf = () => {
   useEffect(() => {
@@ -18,13 +19,13 @@ const AquaEcoTurf = () => {
   return (
     <div>
       <TabSEO
-        title="Aqua-Themed Eco-Friendly Turf | GameOnSolution - Vibrant Sports Flooring"
-        description="Transform your sports space with Aqua-Themed Eco-Friendly Turf by GameOnSolution. Sustainable, weather-resistant, and visually striking – perfect for communities, schools, and sports arenas."
+        title="Aqua Eco-Friendly Turf | GameOnSolution - Vibrant Sports Flooring"
+        description="Transform your sports space with Aqua Eco-Friendly Turf by GameOnSolution. Sustainable, weather-resistant, and visually striking – perfect for communities, schools, and sports arenas."
       />
 
       <div className="bg-background relative z-10 select-none">
         <Hero
-          title="AQUA-THEMED ECO-FRIENDLY TURF"
+          title="AQUA ECO-FRIENDLY TURF"
           subtitle="COOLER LOOKS, GREENER FUTURE"
           bgImgUrl="/aquaturf/3.webp"
         />
@@ -32,7 +33,7 @@ const AquaEcoTurf = () => {
         <Container className="relative z-10 space-y-10 md:max-w-[1000px] max-w-[692px] py-36 text-3xl font-bold text-white md:text-4xl">
           <FadeIn>
             <p className="text-secondary font-primary font-normal">
-              AQUA-THEMED ECO-FRIENDLY TURF
+              AQUA ECO-FRIENDLY TURF
             </p>
           </FadeIn>
           <FadeIn>
@@ -43,8 +44,8 @@ const AquaEcoTurf = () => {
           <FadeIn>
             <span className="md:text-2xl text-lg">
               GameOn Solution introduces a new standard in sports flooring with
-              our **Aqua-Themed Eco-Friendly Turf**. Designed to catch the eye
-              and support the planet, this turf blends aesthetic excellence with
+              our Aqua-Themed Eco-Friendly Turf. Designed to catch the eye and
+              support the planet, this turf blends aesthetic excellence with
               sustainable construction. It's the ideal surface for modern
               schools, turf centers, and recreational spaces seeking
               high-performance play with minimal environmental impact.
@@ -129,7 +130,7 @@ const AquaEcoTurf = () => {
           </motion.div>
         </div>
       </div>
-
+      <Testimonials />
       <Footer />
     </div>
   );
