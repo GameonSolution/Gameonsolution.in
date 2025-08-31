@@ -5,7 +5,7 @@ import { FaPlus, FaMinus } from "react-icons/fa";
 import { Footer } from "../footer";
 import WhatsAppButton from "../WhatsappButton";
 
-const Turf360: React.FC = () => {
+const UShapeTurf: React.FC = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
@@ -14,20 +14,20 @@ const Turf360: React.FC = () => {
 
   const maintenanceServices = [
     {
-      title: "Regular Turf Cleaning",
-      desc: "Keep your 360 Turf fresh and hygienic with our professional cleaning and debris removal service.",
+      title: "Routine Turf Brushing",
+      desc: "Maintain the U Shape Turf’s structure and consistency with regular brushing services.",
     },
     {
-      title: "Infill & Leveling",
-      desc: "Maintain even play and optimal performance with periodic infill adjustments and leveling.",
+      title: "Infill Balancing",
+      desc: "Keep performance consistent with professional infill rebalancing and topping up.",
     },
     {
-      title: "Damage Repair & Replacement",
-      desc: "Quick repair of torn seams, worn-out patches, or fiber damage to extend turf life.",
+      title: "Tear & Seam Repair",
+      desc: "Fix any seams, edges, or worn-out patches to ensure long-lasting durability.",
     },
     {
-      title: "Anti-Weed & Anti-Moss Treatment",
-      desc: "Prevent unwanted weed and moss growth with eco-friendly treatments.",
+      title: "Deep Cleaning & Sanitization",
+      desc: "Eco-friendly turf sanitization for hygienic and safe sporting environments.",
     },
   ];
 
@@ -35,22 +35,22 @@ const Turf360: React.FC = () => {
     <div className="bg-[#0a1a0a] text-white font-secondary">
       <WhatsAppButton />
       <Helmet>
-        <title>360 Turf | GameOn Solution</title>
+        <title>U Shape Turf | GameOn Solution</title>
         <meta
           name="description"
-          content="Premium 360 Turf by GameOn Solution - a high-performance, eco-friendly, and durable turf solution for professional and recreational sports spaces."
+          content="Premium U Shape Turf by GameOn Solution - specialized design for indoor and outdoor training arenas, batting cages, and multi-sport facilities in South India."
         />
         <link
           rel="canonical"
-          href="https://gameonsolution.in/products/360-turf"
+          href="https://gameonsolution.in/products/u-shape-turf"
         />
       </Helmet>
 
-      {/* ✅ HERO - GREEN THEMED */}
+      {/* ✅ HERO */}
       <div className="relative h-[75vh] flex items-center justify-center">
         <img
-          src="/360/5.webp"
-          alt="360 Turf - Premium"
+          src="/Ushape/UST.webp"
+          alt="U Shape Turf - Premium"
           className="absolute w-full h-full object-cover opacity-30"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-green-900/30 to-black/80" />
@@ -62,15 +62,18 @@ const Turf360: React.FC = () => {
           className="text-center relative z-10 px-6"
         >
           <h1 className="text-5xl md:text-7xl bg-gradient-to-r from-green-400 to-lime-500 bg-clip-text text-transparent font-primary mb-4 uppercase">
-            360° Turf
+            U Shape Turf
           </h1>
           <p className="text-gray-200 max-w-3xl mx-auto text-xl md:text-2xl font-medium">
-            <span className="text-green-400 font-bold">360° Turf</span> – the{" "}
+            <span className="text-green-400 font-bold">U Shape Turf</span> – a{" "}
             <span className="text-green-300 font-bold">
-              ultimate all-rounder
+              specialized turf layout
             </span>{" "}
-            for sports and leisure. Premium, eco-friendly, and engineered for
-            superior performance, safety, and durability.
+            perfect for{" "}
+            <span className="text-green-300 font-bold">
+              batting cages, training grounds, and indoor/outdoor arenas
+            </span>
+            . Built for durability, playability, and eco-friendly performance.
           </p>
         </motion.div>
       </div>
@@ -78,8 +81,8 @@ const Turf360: React.FC = () => {
       {/* ✅ INTRO SECTION */}
       <div className="max-w-7xl mx-auto px-6 lg:px-20 py-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <motion.img
-          src="/360/6.webp"
-          alt="360 Turf Grass"
+          src="/Ushape/UST1.webp"
+          alt="U Shape Turf Grass"
           className="rounded-2xl shadow-lg w-full h-full object-cover"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -95,25 +98,25 @@ const Turf360: React.FC = () => {
           className="space-y-6"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-green-400">
-            Introducing 360 Turf
+            Why Choose U Shape Turf?
           </h2>
           <p className="text-gray-200 text-lg">
-            <strong>360 Turf</strong> by GameOn Solution is an advanced
-            all-purpose turf engineered for maximum playability, durability, and
-            environmental sustainability. It offers the perfect balance of
-            performance and aesthetics, making it ideal for professional arenas,
-            schools, clubs, and community spaces.
+            <strong>U Shape Turf</strong> by GameOn Solution is designed for
+            unique venues that need enclosed or semi-enclosed turf setups. Ideal
+            for <strong>batting cages, training academies, futsal courts</strong>
+            , and compact multipurpose play areas.
           </p>
           <p className="text-gray-200 text-lg">
-            360 Turf is the ultimate solution for multipurpose fields and
-            high-traffic areas. It maintains consistent performance, whether
-            used for football, cricket, or recreational sports.
+            Its specialized layout ensures{" "}
+            <strong>better ball rebound, safe side boundaries, and enhanced
+            training focus</strong>. With eco-friendly infills and durable
+            fibers, it is a modern turf built to last.
           </p>
           <ul className="list-disc list-inside text-gray-200 space-y-3 text-lg">
-            <li>High-density turf for professional-grade play</li>
-            <li>Cool fiber technology for hot climates</li>
-            <li>Perfect for multi-sport arenas and playgrounds</li>
-            <li>Durable and low-maintenance solution</li>
+            <li>Specialized U-shaped design for targeted play areas</li>
+            <li>Enhanced boundary safety with cushioned turf edges</li>
+            <li>Perfect for batting cages, futsal, and indoor arenas</li>
+            <li>Durable, low-maintenance, and eco-friendly</li>
           </ul>
           <button className="mt-6 px-8 py-3 bg-green-400 text-black rounded-lg font-medium hover:bg-green-300 transition">
             <a href="https://wa.me/919615737373">Get a Free Quote</a>
@@ -121,20 +124,19 @@ const Turf360: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* ✅ 360 TURF SECTION */}
+      {/* ✅ U SHAPE TURF SECTION */}
       <div className="py-20 bg-[#102010] text-white">
         <div className="max-w-6xl mx-auto px-6 flex flex-col gap-8">
           <h2 className="text-3xl md:text-4xl font-primary text-green-400 uppercase text-center">
-            360 Turf Specifications
+            U Shape Turf Specifications
           </h2>
           <p className="text-gray-300 text-lg text-center max-w-3xl mx-auto">
-            The <strong>360 Turf</strong> is built for elite performance with
-            enhanced safety and eco-friendly materials. Its premium fibers
-            ensure durability, while its drainage and cooling features make it
-            perfect for year-round play.
+            The <strong>U Shape Turf</strong> is engineered for compact, enclosed
+            installations where safety and precision matter. With high-density
+            fibers and advanced drainage, it delivers consistent play throughout
+            the year.
           </p>
 
-          {/* ✅ SPECIFICATIONS */}
           <div className="bg-green-900/20 border border-green-600 rounded-2xl p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h3 className="text-xl font-bold text-green-400 mb-4">
@@ -142,26 +144,25 @@ const Turf360: React.FC = () => {
               </h3>
               <ul className="text-gray-300 space-y-2 text-sm md:text-base">
                 <li>
-                  <strong>Pile Height:</strong> 40mm
+                  <strong>Pile Height:</strong> 32mm
                 </li>
                 <li>
-                  <strong>Gauge:</strong> 5/8 inch
+                  <strong>Gauge:</strong> 3/8 inch
                 </li>
                 <li>
-                  <strong>Stitch Rate:</strong> 18 st / 10 cm
+                  <strong>Stitch Rate:</strong> 19 st / 10 cm
                 </li>
                 <li>
-                  <strong>Density:</strong> 16,800
+                  <strong>Density:</strong> 17,500
                 </li>
                 <li>
-                  <strong>Backing:</strong> 4 Layers (Double PP + Mesh + SBR
-                  Latex + PU)
+                  <strong>Backing:</strong> 3 Layers (PP + Mesh + PU)
                 </li>
                 <li>
-                  <strong>Warranty:</strong> 8 Years Manufacturer Warranty
+                  <strong>Warranty:</strong> 6 Years Manufacturer Warranty
                 </li>
                 <li>
-                  <strong>Certification:</strong> FIFA Quality Certified
+                  <strong>Certification:</strong> Training Arena Certified
                 </li>
               </ul>
             </div>
@@ -172,25 +173,26 @@ const Turf360: React.FC = () => {
               </h3>
               <ul className="text-gray-300 space-y-2 text-sm md:text-base">
                 <li>
-                  <strong>Type:</strong> Premium Silica Sand + Rubber Granules
+                  <strong>Type:</strong> Silica Sand + Optional Organic Infill
                 </li>
                 <li>
-                  <strong>Grain Size:</strong> 0.5 - 2.0mm
+                  <strong>Grain Size:</strong> 0.4 - 0.9mm
                 </li>
                 <li>
-                  <strong>Quantity:</strong> 600g per sqft ±20%
+                  <strong>Quantity:</strong> 500g per sqft ±20%
                 </li>
-                <li>✅ Heat-Resistant & Shock Absorbing</li>
-                <li>✅ Eco-Friendly & Non-Toxic</li>
-                <li>✅ Long-Lasting Play Surface</li>
+                <li>✅ Safe for Indoor & Outdoor Use</li>
+                <li>✅ Eco-Friendly and Non-Toxic</li>
+                <li>✅ Reduced Heat Build-Up</li>
               </ul>
             </div>
           </div>
 
           <div className="bg-green-950/30 rounded-xl p-6 text-center text-gray-200 text-lg">
-            <span className="text-green-400 font-bold">360 Turf</span> is the
-            complete solution for multi-sport installations, delivering
-            unmatched durability, comfort, and all-weather performance.
+            <span className="text-green-400 font-bold">U Shape Turf</span> – the
+            perfect choice for training centers, futsal arenas, and compact play
+            fields in South India, ensuring durability, safety, and professional
+            quality.
           </div>
         </div>
       </div>
@@ -219,20 +221,20 @@ const Turf360: React.FC = () => {
         </div>
       </div>
 
-      {/* ✅ GALLERY SECTION */}
+      {/* ✅ GALLERY */}
       <div className="py-20 bg-[#102010]">
         <h2 className="text-center text-3xl md:text-4xl font-primary uppercase mb-12 text-green-400">
-          360 Turf Gallery
+          U Shape Turf Gallery
         </h2>
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6">
           {[
-            { src: "/360/6.webp", alt: "360 Turf Project 1" },
-            { src: "/360/8.webp", alt: "360 Turf Project 2" },
-            { src: "/360/7.webp", alt: "360 Turf Project 3" },
-            { src: "/360/4.webp", alt: "360 Turf Project 4" },
-            { src: "/360/3.webp", alt: "360 Turf Project 5" },
-            { src: "/360/5.webp", alt: "360 Turf Project 6" },
+            { src: "/Ushape/UST.webp", alt: "U Shape Turf Project 1" },
+            { src: "/Ushape/UST4.webp", alt: "U Shape Turf Project 2" },
+            { src: "/Ushape/UST7.webp", alt: "U Shape Turf Project 3" },
+            { src: "/Ushape/UST6.webp", alt: "U Shape Turf Project 4" },
+            { src: "/Ushape/UST8.webp", alt: "U Shape Turf Project 5" },
+            { src: "/Ushape/UST1.webp", alt: "U Shape Turf Project 6" },
           ].map((img, idx) => (
             <motion.div
               key={idx}
@@ -248,9 +250,6 @@ const Turf360: React.FC = () => {
                 className="w-full h-48 md:h-56 object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-green-900/30 to-transparent opacity-70 group-hover:opacity-90 transition" />
-              {/* <div className="absolute bottom-4 left-4 text-green-400 text-lg font-bold drop-shadow-lg">
-                {img.alt}
-              </div> */}
             </motion.div>
           ))}
         </div>
@@ -262,31 +261,31 @@ const Turf360: React.FC = () => {
           FAQs
         </p>
         <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary text-white uppercase leading-tight flex flex-wrap justify-center gap-2">
-          <span>360 Turf</span>
+          <span>U Shape Turf</span>
           <span className="text-green-400">FAQs</span>
         </h1>
 
         <div className="flex flex-col w-full border border-white/10 rounded-md overflow-hidden divide-y divide-white/10">
           {[
             {
-              q: "What makes 360 Turf unique?",
-              a: "360 Turf is a high-density, multi-purpose sports turf designed for professional play and long-lasting durability. It is eco-friendly, safe, and optimized for all weather conditions.",
+              q: "What is U Shape Turf best for?",
+              a: "U Shape Turf is best suited for batting cages, futsal courts, compact sports arenas, and training zones needing enclosed turf boundaries.",
             },
             {
-              q: "Is 360 Turf safe for kids and pets?",
-              a: "Yes, 360 Turf is 100% non-toxic and lead-free, making it safe for children, pets, and heavy community use.",
+              q: "How long does U Shape Turf last?",
+              a: "On average, U Shape Turf lasts 6-8 years with proper upkeep and maintenance.",
             },
             {
-              q: "How long does 360 Turf last?",
-              a: "With proper maintenance, 360 Turf can last 8-10 years while maintaining its performance and color vibrancy.",
+              q: "Is U Shape Turf eco-friendly?",
+              a: "Yes, it uses eco-friendly and recyclable materials with organic infill options, ensuring sustainability.",
             },
             {
-              q: "Does 360 Turf require maintenance?",
-              a: "It requires minimal maintenance like occasional cleaning, infill leveling, and debris removal to keep it in top condition.",
+              q: "Does U Shape Turf require a lot of maintenance?",
+              a: "No. It only requires periodic brushing, infill checks, and surface cleaning to keep it in great shape.",
             },
             {
-              q: "Is 360 Turf weather-resistant?",
-              a: "Yes, it features UV-resistant fibers, excellent drainage, and heat-reducing infill, making it suitable for all climates.",
+              q: "Can U Shape Turf withstand South Indian weather?",
+              a: "Yes, it is UV-stable, heat-resistant, and has efficient drainage for both summer heat and heavy rainfall.",
             },
           ].map((faq, index) => (
             <div
@@ -331,10 +330,9 @@ const Turf360: React.FC = () => {
         </div>
       </div>
 
-      {/* ✅ FOOTER */}
       <Footer />
     </div>
   );
 };
 
-export default Turf360;
+export default UShapeTurf;

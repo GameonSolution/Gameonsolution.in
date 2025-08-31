@@ -29,6 +29,9 @@ const allPages = [
   { path: "/products/eco-friendly", priority: "1.0" },
   { path: "/products/aqua-eco-friendly", priority: "1.0" },
   { path: "/products/360-turf", priority: "1.0" },
+  { path: "/products/oval-turf", priority: "1.0" },
+  { path: "/products/u-shape-turf", priority: "1.0" },
+  { path: "/products/skating-rink", priority: "1.0" },
   { path: "/products", priority: "1.0" },
 
   // Important blog posts

@@ -2,8 +2,17 @@ import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 import { FaPlus, FaMinus } from "react-icons/fa";
-import { Footer } from "../footer";
 import WhatsAppButton from "../WhatsappButton";
+import {
+  FaInstagram,
+  FaWhatsapp,
+  FaYoutube,
+  FaReddit,
+  FaMedium,
+  FaLinkedin,
+} from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+import { MdCall, MdEmail, MdLocationPin } from "react-icons/md";
 
 const AquaEcoFriendly: React.FC = () => {
   useEffect(() => {
@@ -11,6 +20,28 @@ const AquaEcoFriendly: React.FC = () => {
   }, []);
 
   const [openIndex, setOpenIndex] = React.useState<number | null>(null);
+
+  const navigate = useNavigate();
+
+  const handleNavClick = (path: string) => {
+    if (path.startsWith("#")) {
+      if (location.pathname !== "/") {
+        // If not on the home page, navigate to it first
+        navigate("/", { replace: true });
+        setTimeout(() => {
+          const section = document.querySelector(path);
+          if (section) section.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      } else {
+        // Scroll directly if already on the home page
+        const section = document.querySelector(path);
+        if (section) section.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // External route navigation
+      navigate(path);
+    }
+  };
 
   const maintenanceServices = [
     {
@@ -343,7 +374,145 @@ const AquaEcoFriendly: React.FC = () => {
       </div>
 
       {/* ✅ FOOTER */}
-      <Footer />
+          {/* ✅ FOOTER */}
+    <div className="flex flex-col gap-3 px-8 lg:px-28 py-16 lg:py-28 h-full w-full bg-[#052029] text-white">
+      <div className="w-full flex flex-col border-t border-b border-cyan-200/20 py-10 px-0 lg:px-1 h-full gap-10">
+        <div className="w-full flex flex-col lg:flex-row gap-10">
+          {/* Navigation */}
+          <div className="flex flex-col lg:items-center lg:flex-row lg:w-[50%] w-full text-[12px] gap-5 lg:gap-10 font-secondary uppercase">
+            <p
+              onClick={() => handleNavClick("#home")}
+              className="hover:cursor-pointer hover:text-cyan-400"
+            >
+              Home
+            </p>
+            <p
+              onClick={() => handleNavClick("#aboutUs")}
+              className="hover:cursor-pointer hover:text-cyan-400"
+            >
+              About
+            </p>
+            <p
+              onClick={() => handleNavClick("#services")}
+              className="hover:cursor-pointer hover:text-cyan-400"
+            >
+              Services
+            </p>
+            <p
+              onClick={() => handleNavClick("#contact")}
+              className="hover:cursor-pointer hover:text-cyan-400"
+            >
+              Contact
+            </p>
+          </div>
+
+          {/* Socials */}
+          <div className="flex lg:w-[50%] w-full text-[12px] gap-8 font-secondary lg:justify-end">
+            {[
+              {
+                href: "https://www.instagram.com/gameonsolution_southindia/",
+                icon: <FaInstagram />,
+                label: "Instagram",
+              },
+              {
+                href: "https://youtube.com/@gameonsolutionoffi?si=U3jRSjQ_TscHG2ry",
+                icon: <FaYoutube />,
+                label: "YouTube",
+              },
+              {
+                href: "https://wa.me/919615737373",
+                icon: <FaWhatsapp />,
+                label: "WhatsApp",
+              },
+              {
+                href: "https://medium.com/@gameon.solution.317",
+                icon: <FaMedium />,
+                label: "Medium",
+              },
+              {
+                href: "https://www.reddit.com/user/Dangerous_Aerie_8168/",
+                icon: <FaReddit />,
+                label: "Reddit",
+              },
+              {
+                href: "https://www.linkedin.com/company/gameon-solution/",
+                icon: <FaLinkedin />,
+                label: "LinkedIn",
+              },
+            ].map((s, i) => (
+              <a
+                key={i}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border p-2 border-cyan-200/20 flex justify-center hover:bg-cyan-400/10 hover:text-cyan-400"
+                aria-label={`Visit our ${s.label}`}
+              >
+                {s.icon}
+                <span className="sr-only">{s.label}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Contact Info */}
+        <div className="w-full flex justify-center bg-cyan-400/10 px-5 py-5 rounded-lg">
+          <div className="flex flex-col lg:flex-row gap-10 lg:justify-around w-full">
+            {/* Call */}
+            <div className="flex flex-col justify-center w-full lg:w-[30%] items-center gap-2">
+              <MdCall className="text-2xl text-cyan-400 opacity-80" />
+              <div className="flex flex-col gap-3 justify-center items-center">
+                <p className="font-primary uppercase text-xl md:text-2xl text-cyan-400">
+                  Call
+                </p>
+                <p className="flex tracking-[1.5px] justify-center items-center gap-1 font-secondary uppercase text-xs font-medium text-gray-200">
+                  <span className="flex justify-center items-center gap-1.5">
+                    <span className="tracking-[1.5px]">+91 9615737373</span>
+                    <span>(or)</span>
+                    <span className="tracking-[1.5px]">+91 9715131313</span>
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            {/* Email */}
+            <div className="flex flex-col justify-center w-full lg:w-[30%] items-center gap-2">
+              <MdEmail className="text-2xl text-cyan-400 opacity-80" />
+              <div className="flex flex-col gap-3 justify-center items-center">
+                <p className="font-primary uppercase text-xl md:text-2xl text-cyan-400">
+                  Write
+                </p>
+                <a
+                  href="mailto:sales@gameonsolution.in"
+                  className="text-xs font-medium text-gray-200 hover:text-cyan-400"
+                >
+                  sales@gameonsolution.in
+                </a>
+              </div>
+            </div>
+
+            {/* Location */}
+            <div className="flex flex-col justify-center w-full lg:w-[30%] items-center gap-2">
+              <MdLocationPin className="text-2xl text-cyan-400 opacity-80" />
+              <div className="flex flex-col gap-3 justify-center items-center">
+                <p className="font-primary uppercase text-2xl text-cyan-400">
+                  Visit
+                </p>
+                <p className="font-secondary tracking-[1.5px] text-center text-xs font-medium text-gray-200">
+                  Hanifa Nagar, NGO Colony, Dindigul, Tamil Nadu 624005
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="flex">
+        <p>©2025. All rights reserved.</p>
+      </div>
+    </div>
+
     </div>
   );
 };

@@ -613,7 +613,7 @@ export default function TurfCalculator() {
         {/* 🌍 Location SEO Section */}
         <section className="mt-20 max-w-6xl mx-auto text-center text-white px-6">
           <h3 className="text-2xl font-bold mb-4">
-            📍 Our Turf Projects Are Active In:
+            Our Turf Projects Are Active In:
           </h3>
           <p className="text-sm text-gray-400 mb-4">
             Explore our local turf construction work across South India.
@@ -621,23 +621,23 @@ export default function TurfCalculator() {
           <div className="flex flex-wrap justify-center gap-4 text-yellow-300 text-sm font-medium">
             {[
               {
-                name: "🏙 Chennai",
+                name: "Chennai",
                 url: "https://gameonsolution.in/blog/gen-alpha-aqua-eco-friendly-turf-rajapalayam",
               },
               {
-                name: "🏞 Coimbatore",
+                name: "Coimbatore",
                 url: "https://gameonsolution.in/blog/turf-construction-cost-tamilnadu",
               },
               {
-                name: "🌆 Bangalore",
+                name: "Bangalore",
                 url: "https://gameonsolution.in/blog/bangalore-largest-multipurpose-turf-gameon-solution",
               },
               {
-                name: "🕌 Hyderabad",
+                name: "Hyderabad",
                 url: "https://gameonsolution.in/blog/turf-impact-local-sports",
               },
               {
-                name: "🌴 Trivandrum",
+                name: "Trivandrum",
                 url: "https://gameonsolution.in/blog/why-gameon-is-best-turf-construction-company",
               },
             ].map((city, i) => (

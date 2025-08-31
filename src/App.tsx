@@ -248,6 +248,10 @@ import OurProducts from "./components/ourproducts";
 import EcoFriendly from "./components/ourproducts/EcoFriendly";
 import AquaEcoFriendly from "./components/ourproducts/AquaEcoFriendly";
 import Turf360 from "./components/ourproducts/Turf360";
+import SemiCircleTurf from "./components/ourproducts/SemiCircleTurf";
+import UShapeTurf from "./components/ourproducts/UShapeTurf";
+import OvalTurf from "./components/ourproducts/OvalTurf";
+import SkatingRink from "./components/ourproducts/SkatingRink";
 
 // Wrapper component to allow using `useLocation` inside JSX
 const AppRoutes = ({
@@ -329,6 +333,10 @@ const AppRoutes = ({
           element={<AquaEcoFriendly />}
         />
         <Route path="/products/360-turf" element={<Turf360 />} />
+        <Route path="/products/semi-circle-turf" element={<SemiCircleTurf />} />
+        <Route path="/products/u-shape-turf" element={<UShapeTurf />} />
+        <Route path="/products/oval-turf" element={<OvalTurf />} />
+        <Route path="/products/skating-rink" element={<SkatingRink />} />
 
         <Route path="/360-circle-turf" element={<CircleTurf360 />} />
         <Route path="/basket-ball" element={<BasketBallCourt />} />

@@ -122,6 +122,9 @@ const MenuDrawer: React.FC<drawerProps> = ({ isCloseMenu }) => {
                   label: "Aqua Eco Friendly",
                 },
                 { path: "/products/360-turf", label: "360 Turf" },
+                { path: "/products/u-shape-turf", label: "U Shape Turf" },
+                { path: "/products/oval-turf", label: "Oval Turf" },
+                { path: "/products/skating-rink", label: "Skating Rink" },
               ]}
             />{" "}
           </li>
