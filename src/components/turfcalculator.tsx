@@ -216,7 +216,9 @@ export default function TurfCalculator() {
   const [error, setError] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isSaving, setIsSaving] = useState<boolean>(false);
+  const [isSendingEmail, setIsSendingEmail] = useState<boolean>(false);
   const [firebaseAvailable, setFirebaseAvailable] = useState<boolean>(true);
+  const [emailSent, setEmailSent] = useState<boolean>(false);
 
   const minSqft = useMemo(
     () => (formData.mode === "cage360" ? 10000 : 4000),
@@ -380,9 +382,88 @@ export default function TurfCalculator() {
 
   const logoBase64 = "data:image/jpeg;base64,/9j/4AAQSk..."; // your logo
 
-  const exportPDF = () => {
+  // Generate PDF and send via email
+  const sendEstimateEmail = async () => {
     if (!result) return;
 
+    setIsSendingEmail(true);
+    setError("");
+
+    try {
+      // Generate PDF
+      const pdfBlob = await generatePDF();
+      
+      // Prepare form data
+      const formDataToSend = new FormData();
+      formDataToSend.append('pdf', pdfBlob, `Turf-Cost-Estimate-${formData.name.replace(/\s+/g, '-')}.pdf`);
+      
+      // Add estimate data
+      const estimateData = {
+        name: formData.name.trim(),
+        email: formData.email.trim().toLowerCase(),
+        phone: normalizeIndianMobile(formData.phone),
+        timeline: formData.timeline,
+        mode: formData.mode,
+        environment: formData.environment,
+        grassType: formData.grassType,
+        sizeSqft: formData.size,
+        rateMin: getRateRange()[0],
+        rateMax: getRateRange()[1],
+        totalEstimate: result!,
+        createdAtIST: getISTNow().istString,
+      };
+
+      // Add all form fields to FormData
+      Object.keys(estimateData).forEach(key => {
+        const value = estimateData[key as keyof typeof estimateData];
+        formDataToSend.append(key, String(value));
+      });
+
+      // Send to backend API
+      // const response = await fetch(`${import.meta.env.VITE_API_URL || 'http://localhost:3001'}/api/send-estimate`, {
+      //   method: 'POST',
+      //   body: formDataToSend,
+      // });
+      const baseUrl = import.meta.env.VITE_API_URL || "http://localhost:3001";
+
+      const response = await fetch(`${baseUrl}/api/send-estimate`, {
+        method: "POST",
+        body: formDataToSend,
+      });
+      
+      const text = await response.text();
+      let responseData;
+      try {
+        responseData = JSON.parse(text);
+      } catch {
+        console.error("Raw server error:", text);
+        throw new Error("Server did not return JSON");
+      }
+      
+
+      // const responseData = await response.json();
+
+      if (responseData.success) {
+        setEmailSent(true);
+        console.log("Email sent successfully:", responseData.messageId);
+      } else {
+        throw new Error(responseData.message || "Failed to send email");
+      }
+      
+
+    } catch (error) {
+      console.error("Email sending failed:", error);
+      setError(
+        "Failed to send email. Please try again or contact support.\n" +
+        "Also, kindly check your Spam or Promotions folder in case it was filtered."
+      );
+    } finally {
+      setIsSendingEmail(false);
+    }
+    
+  };
+
+  const generatePDF = async (): Promise<Blob> => {
     const doc = new jsPDF("p", "pt", "a4");
     const typedDoc = doc as jsPDF & { lastAutoTable: { finalY: number } };
 
@@ -465,7 +546,7 @@ export default function TurfCalculator() {
       head: [["Cost Summary", ""]],
       body: [
         ["Base Project Floor", formatINRCurrency(BASE_PRICE)],
-        ["Total Estimate", formatINRCurrency(result)],
+        ["Total Estimate", formatINRCurrency(result || 0)],
         [
           "Note",
           "Final pricing subject to site evaluation, access, civil conditions, and selected specifications. Amounts rounded up for turnkey completion.",
@@ -513,7 +594,11 @@ export default function TurfCalculator() {
       { align: "center" }
     );
 
-    doc.save("GameOnSolution-Turf-Cost-Estimate.pdf");
+    // Return PDF as blob instead of saving
+    return new Promise((resolve) => {
+      const pdfBlob = doc.output('blob');
+      resolve(pdfBlob);
+    });
   };
 
   // UI helpers
@@ -772,6 +857,14 @@ export default function TurfCalculator() {
                   Estimate saved locally (Firebase unavailable)
                 </div>
               )}
+              
+              {/* Email sending indicator */}
+              {isSendingEmail && (
+                <div className="text-blue-400 text-sm flex items-center gap-2">
+                  <div className="w-3 h-3 border-2 border-blue-400 border-t-transparent rounded-full animate-spin"></div>
+                  Sending estimate to your email...
+                </div>
+              )}
             </div>
           </motion.div>
 
@@ -797,16 +890,47 @@ export default function TurfCalculator() {
               <div className="mt-6 text-center">
                 <p className="text-xl text-white mb-3">
                   <span className="font-semibold text-secondary">Total:</span>{" "}
-                  {formatINRCurrency(result)}
+                  {formatINRCurrency(result || 0)}
                 </p>
 
-                <button
-                  onClick={exportPDF}
-                  className="group inline-flex items-center gap-2 mt-2 px-6 py-3 rounded-xl border border-yellow-400 bg-white/5 text-yellow-300 hover:bg-yellow-400 hover:text-black transition shadow-[0_0_0_1px_rgba(234,179,8,0.2)]"
-                >
-                  <HiOutlineDocumentArrowDown className="text-xl transition-transform group-hover:translate-y-0.5" />
-                  <span className="font-semibold">Download Detailed PDF</span>
-                </button>
+                {!emailSent ? (
+                  <button
+                    onClick={sendEstimateEmail}
+                    disabled={isSendingEmail}
+                    className={`group inline-flex items-center gap-2 mt-2 px-6 py-3 rounded-xl border transition shadow-[0_0_0_1px_rgba(234,179,8,0.2)] ${
+                      isSendingEmail
+                        ? 'border-gray-500 bg-gray-600 text-gray-300 cursor-not-allowed'
+                        : 'border-yellow-400 bg-white/5 text-yellow-300 hover:bg-yellow-400 hover:text-black'
+                    }`}
+                  >
+                    {isSendingEmail ? (
+                      <>
+                        <div className="w-4 h-4 border-2 border-yellow-300 border-t-transparent rounded-full animate-spin"></div>
+                        <span className="font-semibold">Sending Email...</span>
+                      </>
+                    ) : (
+                      <>
+                        <HiOutlineDocumentArrowDown className="text-xl transition-transform group-hover:translate-y-0.5" />
+                        <span className="font-semibold">Get Estimate via Email</span>
+                      </>
+                    )}
+                  </button>
+                ) : (
+                  <div className="mt-2 px-6 py-3 rounded-xl bg-green-900/30 border border-green-500 text-green-300">
+                    <div className="flex items-center gap-2">
+                      <div className="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center">
+                        <span className="text-xs text-white">✓</span>
+                      </div>
+                      <span className="font-semibold">Estimate sent to your email!</span>
+                    </div>
+                    <p className="text-sm mt-1 text-green-200">
+                      Check your inbox for the detailed PDF estimate. <br />
+                      <span className="text-green-400">
+                        If you don’t see it, please check your Spam or Promotions folder as well.
+                      </span>
+                    </p>
+                  </div>
+                )}
 
                 <div className="mt-4 text-xs text-gray-400">
                   Rounded to nearest {formatINRCurrency(ROUND_TO)} for presentation.
@@ -930,7 +1054,7 @@ export default function TurfCalculator() {
         </section>
 
         {/* CTAs */}
-        <section className="mt-28 text-center bg-white/5 backdrop-blur-md py-14 px-6 rounded-2xl max-w-4xl mx-auto border border-white/10 shadow-xl">
+        {/* <section className="mt-28 text-center bg-white/5 backdrop-blur-md py-14 px-6 rounded-2xl max-w-4xl mx-auto border border-white/10 shadow-xl">
           <h2 className="text-4xl font-bold text-white mb-4">
             End-to-End Turf Construction Starts Here
           </h2>
@@ -945,9 +1069,9 @@ export default function TurfCalculator() {
           >
             View Turf Services →
           </a>
-        </section>
+        </section> */}
 
-        <section className="text-center mt-28 mb-16 max-w-4xl mx-auto bg-gradient-to-tr from-black/50 to-green-950 p-10 rounded-xl border border-white/10">
+        <section className="text-center mt-28 mb-16 max-w-4xl mx-auto bg-gradient-to-tr from-black/50 to-green-950 p-10 rounded-xl border border-white/20">
           <h2 className="text-3xl font-bold text-white mb-4">
             💬 Got Questions? Let&apos;s Talk!
           </h2>

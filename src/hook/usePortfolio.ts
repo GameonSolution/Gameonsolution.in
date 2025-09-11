@@ -4,7 +4,7 @@ type Portfolio = {
   id: number;
   date: string;
   details: string;
-  fileType: "image" | "video" | "youtube";
+  fileType: "image" | "video" | "youtube" | "instagram";
   mediaUrl: string;
 };
 // const API_URL = "https://api-gms-theta.vercel.app/api/v1/portfolio";

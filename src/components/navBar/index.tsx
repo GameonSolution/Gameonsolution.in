@@ -378,6 +378,8 @@ const Navbar: React.FC = () => {
                 { path: "/blog", label: "Blogs" },
                 { path: "/news", label: "News" },
                 { path: "/testimonials", label: "Testimonials" },
+                // { path: "/projects", label: "Projects" },
+                { path: "/turf-calculator", label: "Turf Calculator" },
               ].map((item) => (
                 <li key={item.label}>
                   <button
@@ -490,6 +492,9 @@ const Navbar: React.FC = () => {
                           { path: "/products/u-shape-turf", label: "U Shape Turf" },
                           { path: "/products/oval-turf", label: "Oval Turf" },
                           { path: "/products/skating-rink", label: "Skating Rink" },
+                          { path: "/products/semi-circle-turf", label: "Semi Circle Turf" },
+                          { path: "/products/diagonal-pitch", label: "Diagonal Pitch" },
+
                         ].map((item) => (
                           <li key={item.label}>
                             <button

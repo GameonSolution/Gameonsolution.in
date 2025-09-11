@@ -252,6 +252,10 @@ import SemiCircleTurf from "./components/ourproducts/SemiCircleTurf";
 import UShapeTurf from "./components/ourproducts/UShapeTurf";
 import OvalTurf from "./components/ourproducts/OvalTurf";
 import SkatingRink from "./components/ourproducts/SkatingRink";
+import { Toaster } from "react-hot-toast";
+import DiagonalPitch from "./components/ourproducts/DiagonalPitch";
+import Projects from "./components/projects";
+
 
 // Wrapper component to allow using `useLocation` inside JSX
 const AppRoutes = ({
@@ -284,6 +288,8 @@ const AppRoutes = ({
   const shouldSkipPreloader =
     location.pathname === "/turf-calculator" ||
     location.pathname === "/blog" ||
+    location.pathname === "/testimonials" ||
+    location.pathname === "/projects" ||
     location.pathname.startsWith("/blog/") ||
     location.pathname === "/products" ||
     location.pathname.startsWith("/products/") ||
@@ -318,9 +324,11 @@ const AppRoutes = ({
       <Navbar />
       <CursorFollower />
       <ScrollProgress />
+      <Toaster position="top-right" reverseOrder={false} />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/projects" element={<Projects />} />
         <Route path="/news" element={<News_Page />} />
         <Route path="/get-in-touch" element={<ContactsPage />} />
         <Route path="/blog" element={<BlogPage />} />
@@ -337,6 +345,8 @@ const AppRoutes = ({
         <Route path="/products/u-shape-turf" element={<UShapeTurf />} />
         <Route path="/products/oval-turf" element={<OvalTurf />} />
         <Route path="/products/skating-rink" element={<SkatingRink />} />
+        <Route path="/products/diagonal-pitch" element={<DiagonalPitch />} />
+
 
         <Route path="/360-circle-turf" element={<CircleTurf360 />} />
         <Route path="/basket-ball" element={<BasketBallCourt />} />

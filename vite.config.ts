@@ -32,6 +32,8 @@ const allPages = [
   { path: "/products/oval-turf", priority: "1.0" },
   { path: "/products/u-shape-turf", priority: "1.0" },
   { path: "/products/skating-rink", priority: "1.0" },
+  { path: "/products/semi-circle-turf", priority: "1.0" },
+  { path: "/products/diagonal-pitch", priority: "1.0" },
   { path: "/products", priority: "1.0" },
 
   // Important blog posts

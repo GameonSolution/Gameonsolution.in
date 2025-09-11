@@ -118,7 +118,7 @@ import { MdMusicOff, MdMusicNote } from "react-icons/md";
 
 interface Props {
   videoSrc: string;
-  fileType: "video" | "youtube";
+  fileType: "video" | "youtube" | "instagram";
 }
 
 const VideoCard: React.FC<Props> = ({ videoSrc, fileType }) => {
