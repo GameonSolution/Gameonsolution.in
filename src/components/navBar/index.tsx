@@ -419,6 +419,10 @@ const Navbar: React.FC = () => {
                         {[
                           { path: "/football-turf", label: "Football Turf" },
                           { path: "/pickle-turf", label: "Pickle Ball" },
+                          {
+                            path: "/360-circle-turf",
+                            label: "360 Circle Turf",
+                          },
                           { path: "/cricket-turf", label: "Cricket Nets" },
                           { path: "/indoor-turf", label: "Indoor Turf" },
                           {
@@ -434,10 +438,7 @@ const Navbar: React.FC = () => {
                             path: "/badminton-court",
                             label: "Badminton Court",
                           },
-                          {
-                            path: "/360-circle-turf",
-                            label: "360 Circle Turf",
-                          },
+
                           {
                             path: "/aqua-eco-friendly-turf",
                             label: "Aqua Eco Friendly Turf",
@@ -489,12 +490,23 @@ const Navbar: React.FC = () => {
                             label: "Aqua Eco Friendly",
                           },
                           { path: "/products/360-turf", label: "360 Turf" },
-                          { path: "/products/u-shape-turf", label: "U Shape Turf" },
+                          {
+                            path: "/products/u-shape-turf",
+                            label: "U Shape Turf",
+                          },
                           { path: "/products/oval-turf", label: "Oval Turf" },
-                          { path: "/products/skating-rink", label: "Skating Rink" },
-                          { path: "/products/semi-circle-turf", label: "Semi Circle Turf" },
-                          { path: "/products/diagonal-pitch", label: "Diagonal Pitch" },
-
+                          {
+                            path: "/products/skating-rink",
+                            label: "Skating Rink",
+                          },
+                          {
+                            path: "/products/semi-circle-turf",
+                            label: "Semi Circle Turf",
+                          },
+                          {
+                            path: "/products/diagonal-pitch",
+                            label: "Diagonal Pitch",
+                          },
                         ].map((item) => (
                           <li key={item.label}>
                             <button

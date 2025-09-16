@@ -85,6 +85,7 @@ const MenuDrawer: React.FC<drawerProps> = ({ isCloseMenu }) => {
               items={[
                 { path: "/football-turf", label: "Football Turf" },
                 { path: "/pickle-turf", label: "Pickle Ball" },
+                { path: "/360-circle-turf", label: "360 Circle Turf" },
                 // { path: "/circle-turf", label: " Mini Cricket Stadium " },
                 { path: "/cricket-turf", label: "Cricket Nets" },
                 { path: "/indoor-turf", label: "Indoor Turf" },
@@ -92,7 +93,6 @@ const MenuDrawer: React.FC<drawerProps> = ({ isCloseMenu }) => {
                 { path: "/multi-sports-turf", label: "MultiSports Turf" },
                 { path: "/basket-ball", label: "Basket Ball Court" },
                 { path: "/badminton-court", label: "Badminton Court" },
-                { path: "/360-circle-turf", label: "360 Circle Turf" },
                 {
                   path: "/aqua-eco-friendly-turf",
                   label: "Aqua Eco Friendly Turf",
@@ -126,7 +126,10 @@ const MenuDrawer: React.FC<drawerProps> = ({ isCloseMenu }) => {
                 { path: "/products/u-shape-turf", label: "U Shape Turf" },
                 { path: "/products/oval-turf", label: "Oval Turf" },
                 { path: "/products/skating-rink", label: "Skating Rink" },
-                { path: "/products/semi-circle-turf", label: "Semi Circle Turf" },
+                {
+                  path: "/products/semi-circle-turf",
+                  label: "Semi Circle Turf",
+                },
                 { path: "/products/diagonal-pitch", label: "Diagonal Pitch" },
               ]}
             />{" "}

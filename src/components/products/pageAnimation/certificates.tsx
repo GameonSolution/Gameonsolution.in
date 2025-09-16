@@ -80,7 +80,7 @@ const Certificates = () => {
         ].map((cert, index) => (
           <div
             key={index}
-            className="bg-white flex items-center justify-center p-2 rounded-xl w-[160px] h-[140px]"
+            className="bg-white flex items-center justify-center p-2 rounded-xl w-[100px] h-[140px]"
           >
             <img
               src={`/ProductCertificates/${cert}`}

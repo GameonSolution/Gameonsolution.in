@@ -110,7 +110,6 @@
 // ];
 
 /// Edited SEO Optimzed code
-
 import { Footer } from "../footer";
 import Certificates from "./pageAnimation/certificates";
 import { Container } from "./pageAnimation/container";
@@ -122,9 +121,61 @@ import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import Testimonials from "../testimonial";
 
+const META_PIXEL_ID = "1258580152418894"; // replace if you want a different pixel
+
 const PickleTurf = () => {
   useEffect(() => {
+    // scroll to top when page mounts
     window.scrollTo({ top: 0, behavior: "smooth" });
+
+    // Quick, TS-friendly Meta Pixel injector
+    const w: any = window;
+    if (!w.fbq) {
+      let n: any;
+      let t: HTMLScriptElement;
+      let s: Element | null;
+
+      (function (f: any, b: Document, e: string, v: string) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          (n.callMethod
+            ? n.callMethod
+            : function () {
+                (n.queue = n.queue || []).push(arguments);
+              }
+          ).apply(n, arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = true;
+        n.version = "2.0";
+        n.queue = n.queue || [];
+        t = b.createElement(e) as HTMLScriptElement;
+        t.async = true;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        if (s && s.parentNode) s.parentNode.insertBefore(t, s);
+      })(
+        w,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+
+      try {
+        w.fbq("init", META_PIXEL_ID);
+        w.fbq("track", "PageView");
+      } catch (err) {
+        // fail silently
+      }
+
+      // noscript fallback
+      const noscript = document.createElement("noscript");
+      noscript.innerHTML = `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1" />`;
+      document.body.appendChild(noscript);
+    }
+
+    // no cleanup to intentionally leave pixel for SPA navigations
   }, []);
 
   return (
@@ -184,9 +235,178 @@ const PickleTurf = () => {
       </div>
 
       <VideoCarousel title="Pickle Turf" carouselImages={PickleTurfItems} />
+
+      <section className="bg-background text-white py-24">
+        <Container className="md:max-w-[1200px]">
+          <div className="grid gap-12 lg:grid-cols-2 items-start">
+            <div className="space-y-6">
+              <h2 className="text-4xl font-extrabold">
+                Designing a World-Class Pickleball Court
+              </h2>
+              <p className="text-lg text-white/85">
+                We design courts that look, feel and play like professional
+                venues — from precise orientation and drainage to the right
+                surface texture and lighting.
+              </p>
+
+              {/* Quick facts cards (theme synced) */}
+              <div className="grid grid-cols-2 gap-4">
+                <div className="p-6 rounded-2xl shadow-lg border border-white/6 bg-surface/60">
+                  <h4 className="text-xl font-semibold">Standard Court</h4>
+                  <p className="mt-2 text-white/90">
+                    20 ft × 44 ft (play area) — allow 30 × 60 ft total
+                  </p>
+                </div>
+                <div className="p-6 rounded-2xl shadow-lg border border-white/6 bg-surface/60">
+                  <h4 className="text-xl font-semibold">Net Specs</h4>
+                  <p className="mt-2 text-white/90">
+                    Center: 34 in | Posts: 36 in | Length: 22 ft
+                  </p>
+                </div>
+                <div className="p-6 rounded-2xl shadow-lg border border-white/6 bg-surface/60">
+                  <h4 className="text-xl font-semibold">Surface</h4>
+                  <p className="mt-2 text-white/90">
+                    Concrete, asphalt or specialized sports systems with
+                    medium-to-rough texture
+                  </p>
+                </div>
+                <div className="p-6 rounded-2xl shadow-lg border border-white/6 bg-surface/60">
+                  <h4 className="text-xl font-semibold">Lighting</h4>
+                  <p className="mt-2 text-white/90">
+                    Target ≥ 50 foot-candles, uniform distribution and
+                    anti-glare mounting
+                  </p>
+                </div>
+              </div>
+
+              <div className="mt-6">
+                <a
+                  href="https://gameonsolution.in/"
+                  className="inline-block rounded-full px-6 py-3 border-2 border-white bg-white text-black font-semibold"
+                >
+                  Get a free site survey
+                </a>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="rounded-2xl overflow-hidden shadow-xl border border-white/6 bg-gradient-to-br from-primary/10 to-surface/10">
+                <img
+                  src="/pickleTurf/Pickle7.webp"
+                  alt="Pickle court"
+                  className="w-full h-64 object-cover"
+                />
+              </div>
+
+              <div className="p-6 rounded-2xl border border-white/6 bg-surface/60 shadow-sm">
+                <h3 className="text-2xl font-bold mb-3">
+                  Factors to consider before installing a Pickleball Court
+                </h3>
+                <div className="space-y-3 text-sm md:text-base text-white/90">
+                  <dl className="grid gap-3">
+                    <div>
+                      <dt className="font-semibold">Location</dt>
+                      <dd>
+                        Choose a flat, level area with sufficient clearance and
+                        room for players and spectators.
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="font-semibold">Surface Material</dt>
+                      <dd>
+                        Select a surface that balances traction, bounce and
+                        durability (asphalt, concrete or sports surface).
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="font-semibold">Orientation</dt>
+                      <dd>
+                        Orient court north-south to reduce sun glare during
+                        play.
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="font-semibold">Accessibility & Budget</dt>
+                      <dd>
+                        Plan parking, pathways and set a realistic budget
+                        including installation and maintenance.
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="font-semibold">Local Regulations</dt>
+                      <dd>
+                        Check zoning, permits and any community rules that could
+                        affect installation.
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Deep dive sections (theme matched) */}
+          <div className="mt-16 grid gap-12">
+            <article className="prose max-w-none prose-invert">
+              <h3>Court Dimensions & Markings</h3>
+              <p>
+                A standard court measures 20' x 44' for both singles and
+                doubles. Allow a 30' x 60' footprint to provide player run-off
+                and spectator space. Key markings include the baseline,
+                sidelines, non-volley zone (7' from the net) and centerline for
+                service.
+              </p>
+
+              <h3>Net Setup & Height</h3>
+              <p>
+                The official net length is 22 feet. Height should be 34 inches
+                at center and 36 inches at the posts. Use durable,
+                weather-resistant net material and ensure the net is properly
+                tensioned for consistent play.
+              </p>
+
+              <h3>Surface Material & Texture</h3>
+              <p>
+                Concrete and asphalt are common bases; specialized sports
+                surfacing systems deliver the best combination of shock
+                absorption, traction and consistent bounce. We recommend a
+                medium to rough texture for optimal grip without overly
+                affecting ball speed.
+              </p>
+
+              <h3>Lighting & Surroundings</h3>
+              <p>
+                Evening play needs even, glare-controlled light. Aim for a
+                minimum of 50 foot-candles on the playing surface and position
+                fixtures to avoid pointing into players' eyes. Provide at least
+                10' of clearance on each side and a 10' minimum fence to keep
+                the ball in play.
+              </p>
+
+              <h3>Maintenance & Longevity</h3>
+              <p>
+                Weekly cleaning, monthly inspections of lines and net, and
+                resurfacing every 3-5 years (depending on usage and material)
+                will keep the court safe and playable. Good drainage and
+                UV-resistant materials extend lifespan.
+              </p>
+
+              <p>
+                For a professional installation or maintenance plan,{" "}
+                <a href="https://gameonsolution.in/" className="underline">
+                  Contact GameOn Solution
+                </a>{" "}
+                for a site survey and quote.
+              </p>
+            </article>
+          </div>
+        </Container>
+      </section>
+
       <AnimateCard>
         <Certificates />
       </AnimateCard>
+
       <Testimonials />
 
       <Footer />

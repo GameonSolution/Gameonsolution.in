@@ -88,6 +88,11 @@ const WhatsAppButton = () => {
 
   return (
     <div className="fixed bottom-5 right-5 md:bottom-10 md:right-10 z-50 flex flex-col md:flex-row items-center gap-2 md:gap-3">
+      <script
+        src="https://myappzchat.com/production/master/widget/embed-widget.umd.js"
+        data-widget-id="9c5d0333-e81c-4cf8-b26c-c02d1c94833a"
+        defer
+      ></script>
       {/* Animated WhatsApp Text (only on md and above) */}
       <span
         className={`hidden md:block text-white bg-green-600 px-3 py-1 rounded-lg text-sm font-semibold shadow-lg transition-all duration-500 ${

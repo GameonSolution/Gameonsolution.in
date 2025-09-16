@@ -9,6 +9,8 @@ import AnimateCard from "./animateCard";
 import WhatsAppButton from "./WhatsappButton";
 import TabSEO from "./seoOptimize";
 import { seoData } from "@/common/seoTitleDescription";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const awards = [
   {
@@ -39,10 +41,34 @@ const awards = [
   },
 ];
 
+const API_URL = import.meta.env.VITE_BLOG_API_URL;
+
 const BlogPage = () => {
   const navigate = useNavigate();
+  const [extraBlogs, setExtraBlogs] = useState<any[]>([]);
 
-  const blogs = [
+  useEffect(() => {
+    const fetchExtraBlogs = async () => {
+      try {
+        const res = await axios.get(`${API_URL}/api/blogs`);
+        // Expecting { success: true, blogs: [...] }
+        if (res.data && res.data.success && Array.isArray(res.data.blogs)) {
+          setExtraBlogs(res.data.blogs);
+        } else if (res.data && Array.isArray(res.data)) {
+          // in case API returns array directly
+          setExtraBlogs(res.data);
+        } else {
+          console.warn("Unexpected blogs response shape", res.data);
+        }
+      } catch (error) {
+        console.error("Error fetching extra blogs:", error);
+      }
+    };
+
+    fetchExtraBlogs();
+  }, []);
+
+  const staticBlogs = [
     {
       id: 1,
       slug: "minimum-area-required-for-turf-installation",
@@ -515,6 +541,8 @@ const BlogPage = () => {
     },
   ];
 
+  const mergedBlogs = [...staticBlogs, ...extraBlogs];
+
   const handleBlogClick = (slug: string) => {
     navigate(`/blog/${slug}`);
   };
@@ -549,8 +577,8 @@ const BlogPage = () => {
 
         {/* Blog List */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl w-full py-10">
-          {blogs.map((blog) => (
-            <AnimatedCard key={blog.id}>
+          {mergedBlogs.map((blog, idx) => (
+            <AnimatedCard key={blog.slug ?? blog.id ?? idx}>
               <div
                 className="cursor-pointer group bg-black/20 hover:bg-black/30 transition rounded-lg overflow-hidden"
                 onClick={() => handleBlogClick(blog.slug)}

@@ -14,10 +14,7 @@ import AnimatedCard from "./animateCard";
 import { useNavigate } from "react-router-dom";
 
 // ⬇️ NEW: Firestore
-import { 
-  saveTurfEstimate, 
-  TurfEstimateData
-} from "@/lib/firebase";
+import { saveTurfEstimate, TurfEstimateData } from "@/lib/firebase";
 /** --------------------------
  * CONFIG / CONSTANTS
  * ------------------------- */
@@ -25,7 +22,8 @@ const BASE_PRICE = 1_500_000; // ₹15,00,000 floor
 const ROUND_TO = 50_000; // round up to nearest ₹50,000
 
 // Utility: Indian-style number formatting (e.g., 33,00,000)
-const formatINR = (n: number) => new Intl.NumberFormat("en-IN").format(Math.round(n));
+const formatINR = (n: number) =>
+  new Intl.NumberFormat("en-IN").format(Math.round(n));
 const formatINRCurrency = (n: number) => `₹${formatINR(n)}`;
 
 // ⬇️ NEW: validators
@@ -203,7 +201,7 @@ export default function TurfCalculator() {
   const [formData, setFormData] = useState({
     mode: "standard" as TurfMode, // "standard" | "cage360"
     environment: "outdoor" as EnvType,
-    grassType: "rubber" as GrassType,
+    grassType: "eco" as GrassType,
     size: 4000,
     name: "",
     email: "",
@@ -256,7 +254,9 @@ export default function TurfCalculator() {
     if (formData.mode === "cage360") return CAGE_RANGE;
     const env: EnvType = formData.environment;
     const grass: GrassType = formData.grassType;
-    return (PRICE_BANDS as Record<EnvType, Record<GrassType, [number, number]>>)[env][grass];
+    return (
+      PRICE_BANDS as Record<EnvType, Record<GrassType, [number, number]>>
+    )[env][grass];
   };
 
   const getAvgRate = () => {
@@ -284,11 +284,14 @@ export default function TurfCalculator() {
   };
 
   // ⬇️ NEW: Save to Firestore with enhanced error handling and local fallback
-  const saveLead = async (finalPrice: number, rateRange: [number, number]): Promise<boolean> => {
+  const saveLead = async (
+    finalPrice: number,
+    rateRange: [number, number]
+  ): Promise<boolean> => {
     try {
       setIsSaving(true);
       const { istString } = getISTNow();
-      
+
       const estimateData: Partial<TurfEstimateData> = {
         name: formData.name.trim(),
         email: formData.email.trim().toLowerCase(),
@@ -303,28 +306,33 @@ export default function TurfCalculator() {
         totalEstimate: finalPrice,
         createdAtIST: istString, // Human-friendly IST
       };
-      
+
       // Try Firebase first
       try {
         await saveTurfEstimate(estimateData);
-        console.log('Estimate saved successfully to Firebase');
+        console.log("Estimate saved successfully to Firebase");
         return true;
       } catch (firebaseError: any) {
-        console.warn('Firebase save failed, falling back to local storage:', firebaseError);
-        
+        console.warn(
+          "Firebase save failed, falling back to local storage:",
+          firebaseError
+        );
+
         // Fallback to localStorage
-        const localEstimates = JSON.parse(localStorage.getItem('turfEstimates') || '[]');
+        const localEstimates = JSON.parse(
+          localStorage.getItem("turfEstimates") || "[]"
+        );
         localEstimates.push({
           ...estimateData,
           id: Date.now().toString(),
           savedAt: new Date().toISOString(),
         });
-        localStorage.setItem('turfEstimates', JSON.stringify(localEstimates));
-        console.log('Estimate saved to local storage as fallback');
+        localStorage.setItem("turfEstimates", JSON.stringify(localEstimates));
+        console.log("Estimate saved to local storage as fallback");
         return false; // Return false to indicate Firebase failed
       }
     } catch (error) {
-      console.error('Failed to save lead:', error);
+      console.error("Failed to save lead:", error);
       return false;
     } finally {
       setIsSaving(false);
@@ -355,7 +363,7 @@ export default function TurfCalculator() {
 
     setError("");
     setIsLoading(true);
-    
+
     try {
       const avgRate = getAvgRate();
       const rawCost = avgRate * formData.size;
@@ -392,11 +400,15 @@ export default function TurfCalculator() {
     try {
       // Generate PDF
       const pdfBlob = await generatePDF();
-      
+
       // Prepare form data
       const formDataToSend = new FormData();
-      formDataToSend.append('pdf', pdfBlob, `Turf-Cost-Estimate-${formData.name.replace(/\s+/g, '-')}.pdf`);
-      
+      formDataToSend.append(
+        "pdf",
+        pdfBlob,
+        `Turf-Cost-Estimate-${formData.name.replace(/\s+/g, "-")}.pdf`
+      );
+
       // Add estimate data
       const estimateData = {
         name: formData.name.trim(),
@@ -414,7 +426,7 @@ export default function TurfCalculator() {
       };
 
       // Add all form fields to FormData
-      Object.keys(estimateData).forEach(key => {
+      Object.keys(estimateData).forEach((key) => {
         const value = estimateData[key as keyof typeof estimateData];
         formDataToSend.append(key, String(value));
       });
@@ -430,7 +442,7 @@ export default function TurfCalculator() {
         method: "POST",
         body: formDataToSend,
       });
-      
+
       const text = await response.text();
       let responseData;
       try {
@@ -439,7 +451,6 @@ export default function TurfCalculator() {
         console.error("Raw server error:", text);
         throw new Error("Server did not return JSON");
       }
-      
 
       // const responseData = await response.json();
 
@@ -449,18 +460,15 @@ export default function TurfCalculator() {
       } else {
         throw new Error(responseData.message || "Failed to send email");
       }
-      
-
     } catch (error) {
       console.error("Email sending failed:", error);
       setError(
         "Failed to send email. Please try again or contact support.\n" +
-        "Also, kindly check your Spam or Promotions folder in case it was filtered."
+          "Also, kindly check your Spam or Promotions folder in case it was filtered."
       );
     } finally {
       setIsSendingEmail(false);
     }
-    
   };
 
   const generatePDF = async (): Promise<Blob> => {
@@ -485,7 +493,8 @@ export default function TurfCalculator() {
 
     let startY = 100;
 
-    const modeLabel = formData.mode === "cage360" ? "360° Turf (Cage)" : "Standard Turf";
+    const modeLabel =
+      formData.mode === "cage360" ? "360° Turf (Cage)" : "Standard Turf";
     const grassLabel =
       formData.mode === "cage360"
         ? "Eco Friendly (360° only)"
@@ -514,8 +523,15 @@ export default function TurfCalculator() {
         ["Timeline", formData.timeline || "-"],
       ],
       styles: { fontSize: 10, cellPadding: 6 },
-      headStyles: { fillColor: [247, 247, 247], textColor: 20, fontStyle: "bold" },
-      columnStyles: { 0: { cellWidth: 180, fontStyle: "bold" }, 1: { cellWidth: 340 } },
+      headStyles: {
+        fillColor: [247, 247, 247],
+        textColor: 20,
+        fontStyle: "bold",
+      },
+      columnStyles: {
+        0: { cellWidth: 180, fontStyle: "bold" },
+        1: { cellWidth: 340 },
+      },
       margin: { left: 40, right: 40 },
     });
 
@@ -530,11 +546,21 @@ export default function TurfCalculator() {
         ["Environment", envLabel],
         ["Grass Type", grassLabel],
         ["Ground Size", `${formatINR(formData.size)} sq.ft`],
-        ["Rate Range (₹/sq.ft)", `${formatINR(minRate)} – ${formatINR(maxRate)}`],
+        [
+          "Rate Range (₹/sq.ft)",
+          `${formatINR(minRate)} – ${formatINR(maxRate)}`,
+        ],
       ],
       styles: { fontSize: 10, cellPadding: 6 },
-      headStyles: { fillColor: [247, 247, 247], textColor: 20, fontStyle: "bold" },
-      columnStyles: { 0: { cellWidth: 180, fontStyle: "bold" }, 1: { cellWidth: 340 } },
+      headStyles: {
+        fillColor: [247, 247, 247],
+        textColor: 20,
+        fontStyle: "bold",
+      },
+      columnStyles: {
+        0: { cellWidth: 180, fontStyle: "bold" },
+        1: { cellWidth: 340 },
+      },
       margin: { left: 40, right: 40 },
     });
 
@@ -554,7 +580,10 @@ export default function TurfCalculator() {
       ],
       styles: { fontSize: 11, cellPadding: 8 },
       headStyles: { fillColor: [255, 223, 0], textColor: 0, fontStyle: "bold" },
-      columnStyles: { 0: { cellWidth: 180, fontStyle: "bold" }, 1: { cellWidth: 340 } },
+      columnStyles: {
+        0: { cellWidth: 180, fontStyle: "bold" },
+        1: { cellWidth: 340 },
+      },
       margin: { left: 40, right: 40 },
     });
 
@@ -566,7 +595,11 @@ export default function TurfCalculator() {
       head: [["Scope of Work (Included)"]],
       body: INCLUDED_WORKS_TITLES.map((t) => [`• ${t}`]),
       styles: { fontSize: 10, cellPadding: 5 },
-      headStyles: { fillColor: [247, 247, 247], textColor: 20, fontStyle: "bold" },
+      headStyles: {
+        fillColor: [247, 247, 247],
+        textColor: 20,
+        fontStyle: "bold",
+      },
       margin: { left: 40, right: 40 },
     });
 
@@ -579,7 +612,10 @@ export default function TurfCalculator() {
       body: DETAILED_SCOPE.map((s) => [s.title, s.details]),
       styles: { fontSize: 10, cellPadding: 6, overflow: "linebreak" },
       headStyles: { fillColor: [8, 47, 14], textColor: 255, fontStyle: "bold" },
-      columnStyles: { 0: { cellWidth: 180, fontStyle: "bold" }, 1: { cellWidth: 340 } },
+      columnStyles: {
+        0: { cellWidth: 180, fontStyle: "bold" },
+        1: { cellWidth: 340 },
+      },
       margin: { left: 40, right: 40 },
     });
 
@@ -596,7 +632,7 @@ export default function TurfCalculator() {
 
     // Return PDF as blob instead of saving
     return new Promise((resolve) => {
-      const pdfBlob = doc.output('blob');
+      const pdfBlob = doc.output("blob");
       resolve(pdfBlob);
     });
   };
@@ -606,7 +642,6 @@ export default function TurfCalculator() {
     const [min, max] = getRateRange();
     return `₹${formatINR(min)}–₹${formatINR(max)} / sq.ft`;
   }, [formData.environment, formData.grassType, formData.mode]);
-
 
   return (
     <>
@@ -632,8 +667,8 @@ export default function TurfCalculator() {
             <TextHoverAnimation text="Turf Calculator" />
           </h1>
           <p className="mt-4 text-lg text-gray-300">
-            AI-assisted estimates with <strong>strict project minimums</strong> and a{" "}
-            <strong>complete turnkey scope</strong>.
+            AI-assisted estimates with <strong>strict project minimums</strong>{" "}
+            and a <strong>complete turnkey scope</strong>.
           </p>
         </motion.div>
 
@@ -649,7 +684,9 @@ export default function TurfCalculator() {
               {/* Mode */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <button
-                  onClick={() => setFormData((d) => ({ ...d, mode: "standard" }))}
+                  onClick={() =>
+                    setFormData((d) => ({ ...d, mode: "standard" }))
+                  }
                   className={`p-3 rounded-xl border text-sm font-semibold ${
                     formData.mode === "standard"
                       ? "bg-yellow-400 text-black border-yellow-400"
@@ -659,7 +696,9 @@ export default function TurfCalculator() {
                   Standard Turf
                 </button>
                 <button
-                  onClick={() => setFormData((d) => ({ ...d, mode: "cage360" }))}
+                  onClick={() =>
+                    setFormData((d) => ({ ...d, mode: "cage360" }))
+                  }
                   className={`p-3 rounded-xl border text-sm font-semibold ${
                     formData.mode === "cage360"
                       ? "bg-yellow-400 text-black border-yellow-400"
@@ -681,7 +720,9 @@ export default function TurfCalculator() {
                 placeholder="Your Name"
                 className="w-full p-3 rounded-xl bg-black/60 text-white border border-gray-700"
                 value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, name: e.target.value })
+                }
               />
 
               <input
@@ -692,12 +733,17 @@ export default function TurfCalculator() {
                 type="email"
                 placeholder="Email Address"
                 className={`w-full p-3 rounded-xl bg-black/60 text-white border ${
-                  formValid || !formData.email ? "border-gray-700" : "border-red-500"
+                  formValid || !formData.email
+                    ? "border-gray-700"
+                    : "border-red-500"
                 }`}
                 value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
                 onBlur={(e) =>
-                  !isValidEmail(e.target.value) && setError("Please enter a valid email address.")
+                  !isValidEmail(e.target.value) &&
+                  setError("Please enter a valid email address.")
                 }
               />
 
@@ -712,10 +758,14 @@ export default function TurfCalculator() {
                 type="tel"
                 placeholder="Mobile Number (India)"
                 className={`w-full p-3 rounded-xl bg-black/60 text-white border ${
-                  formValid || !formData.phone ? "border-gray-700" : "border-red-500"
+                  formValid || !formData.phone
+                    ? "border-gray-700"
+                    : "border-red-500"
                 }`}
                 value={formData.phone}
-                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, phone: e.target.value })
+                }
                 onBlur={(e) =>
                   !isValidIndianMobile(e.target.value) &&
                   setError("Please enter a valid Indian mobile number.")
@@ -729,7 +779,9 @@ export default function TurfCalculator() {
                 required
                 className="w-full p-3 rounded-xl bg-black/60 text-white border border-gray-700"
                 value={formData.timeline}
-                onChange={(e) => setFormData({ ...formData, timeline: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, timeline: e.target.value })
+                }
               >
                 <option value="">Select Construction Time</option>
                 <option value="15 Days">15 Days</option>
@@ -744,7 +796,10 @@ export default function TurfCalculator() {
                   className="w-full mt-1 p-3 rounded-xl bg-black/60 text-white border border-gray-700"
                   value={formData.environment}
                   onChange={(e) =>
-                    setFormData({ ...formData, environment: e.target.value as EnvType })
+                    setFormData({
+                      ...formData,
+                      environment: e.target.value as EnvType,
+                    })
                   }
                 >
                   <option value="indoor">Indoor</option>
@@ -757,18 +812,23 @@ export default function TurfCalculator() {
                 className="w-full mt-1 p-3 rounded-xl bg-black/60 text-white border border-gray-700"
                 value={formData.grassType}
                 onChange={(e) =>
-                  setFormData({ ...formData, grassType: e.target.value as GrassType })
+                  setFormData({
+                    ...formData,
+                    grassType: e.target.value as GrassType,
+                  })
                 }
                 disabled={formData.mode === "cage360"}
                 title={
-                  formData.mode === "cage360" ? "Eco Friendly is mandatory for 360° Turf" : ""
+                  formData.mode === "cage360"
+                    ? "Eco Friendly is mandatory for 360° Turf"
+                    : ""
                 }
               >
                 {(formData.mode === "cage360"
                   ? [{ name: "Eco Friendly", type: "eco" as GrassType }]
                   : [
-                      { name: "Rubber Infilled", type: "rubber" as GrassType },
                       { name: "Eco Friendly", type: "eco" as GrassType },
+                      { name: "Rubber Infilled", type: "rubber" as GrassType },
                       { name: "Aqua Eco Friendly", type: "aqua" as GrassType },
                     ]
                 ).map((g) => (
@@ -784,7 +844,9 @@ export default function TurfCalculator() {
                   type="number"
                   required
                   className={`w-full p-3 pr-28 rounded-xl bg-black/60 text-white border ${
-                    formData.size < minSqft ? "border-red-500" : "border-gray-700"
+                    formData.size < minSqft
+                      ? "border-red-500"
+                      : "border-gray-700"
                   }`}
                   value={formData.size}
                   onChange={(e) => {
@@ -814,7 +876,8 @@ export default function TurfCalculator() {
 
               {/* Band helper */}
               <div className="text-sm text-yellow-300">
-                Current Rate Band: <span className="font-semibold">{priceBandLabel}</span>
+                Current Rate Band:{" "}
+                <span className="font-semibold">{priceBandLabel}</span>
               </div>
 
               {/* Calculate */}
@@ -827,7 +890,13 @@ export default function TurfCalculator() {
                 }`}
                 disabled={!formValid || isLoading}
                 aria-disabled={!formValid || isLoading}
-                title={!formValid ? "Fill all required details to get estimate" : isLoading ? "Calculating..." : "Calculate"}
+                title={
+                  !formValid
+                    ? "Fill all required details to get estimate"
+                    : isLoading
+                    ? "Calculating..."
+                    : "Calculate"
+                }
               >
                 {isLoading ? (
                   <div className="flex items-center justify-center gap-2">
@@ -841,7 +910,7 @@ export default function TurfCalculator() {
 
               {/* Error */}
               {error && <p className="text-red-400 text-sm">{error}</p>}
-              
+
               {/* Saving indicator */}
               {isSaving && (
                 <div className="text-yellow-400 text-sm flex items-center gap-2">
@@ -849,7 +918,7 @@ export default function TurfCalculator() {
                   Saving estimate...
                 </div>
               )}
-              
+
               {/* Firebase status indicator */}
               {!firebaseAvailable && (
                 <div className="text-orange-400 text-sm flex items-center gap-2">
@@ -857,7 +926,7 @@ export default function TurfCalculator() {
                   Estimate saved locally (Firebase unavailable)
                 </div>
               )}
-              
+
               {/* Email sending indicator */}
               {isSendingEmail && (
                 <div className="text-blue-400 text-sm flex items-center gap-2">
@@ -899,8 +968,8 @@ export default function TurfCalculator() {
                     disabled={isSendingEmail}
                     className={`group inline-flex items-center gap-2 mt-2 px-6 py-3 rounded-xl border transition shadow-[0_0_0_1px_rgba(234,179,8,0.2)] ${
                       isSendingEmail
-                        ? 'border-gray-500 bg-gray-600 text-gray-300 cursor-not-allowed'
-                        : 'border-yellow-400 bg-white/5 text-yellow-300 hover:bg-yellow-400 hover:text-black'
+                        ? "border-gray-500 bg-gray-600 text-gray-300 cursor-not-allowed"
+                        : "border-yellow-400 bg-white/5 text-yellow-300 hover:bg-yellow-400 hover:text-black"
                     }`}
                   >
                     {isSendingEmail ? (
@@ -911,7 +980,9 @@ export default function TurfCalculator() {
                     ) : (
                       <>
                         <HiOutlineDocumentArrowDown className="text-xl transition-transform group-hover:translate-y-0.5" />
-                        <span className="font-semibold">Get Estimate via Email</span>
+                        <span className="font-semibold">
+                          Get Estimate via Email
+                        </span>
                       </>
                     )}
                   </button>
@@ -921,27 +992,31 @@ export default function TurfCalculator() {
                       <div className="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center">
                         <span className="text-xs text-white">✓</span>
                       </div>
-                      <span className="font-semibold">Estimate sent to your email!</span>
+                      <span className="font-semibold">
+                        Estimate sent to your email!
+                      </span>
                     </div>
                     <p className="text-sm mt-1 text-green-200">
                       Check your inbox for the detailed PDF estimate. <br />
                       <span className="text-green-400">
-                        If you don’t see it, please check your Spam or Promotions folder as well.
+                        If you don’t see it, please check your Spam or
+                        Promotions folder as well.
                       </span>
                     </p>
                   </div>
                 )}
 
                 <div className="mt-4 text-xs text-gray-400">
-                  Rounded to nearest {formatINRCurrency(ROUND_TO)} for presentation.
+                  Rounded to nearest {formatINRCurrency(ROUND_TO)} for
+                  presentation.
                 </div>
               </div>
             )}
           </motion.div>
         </section>
 
-          {/* WHY / FAQ / BLOGS (unchanged aside from copy polish) */}
-          <section className="max-w-5xl mx-auto px-4 md:px-0 mt-16 text-center text-gray-300">
+        {/* WHY / FAQ / BLOGS (unchanged aside from copy polish) */}
+        <section className="max-w-5xl mx-auto px-4 md:px-0 mt-16 text-center text-gray-300">
           <div className="flex flex-col w-full text-center gap-10 max-w-6xl">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
               Why Use Our Turf Cost Calculator?
@@ -950,12 +1025,13 @@ export default function TurfCalculator() {
               <a href="https://gameonsolution.in/">
                 <b>GameOn Solution&apos;s</b>
               </a>{" "}
-              calculator enforces minimum viable scope for complete execution — civil,
-              lighting, nets, goals, wiring, and markings.
+              calculator enforces minimum viable scope for complete execution —
+              civil, lighting, nets, goals, wiring, and markings.
             </div>
             <div className="text-lg mb-3">
-              It supports <strong>standard</strong> and <strong>360° cage</strong> setups
-              with strict minimum sizes to avoid under-scoping.
+              It supports <strong>standard</strong> and{" "}
+              <strong>360° cage</strong> setups with strict minimum sizes to
+              avoid under-scoping.
             </div>
             <div className="text-sm text-yellow-300 mt-4 italic mb-10">
               💬 Need help? WhatsApp: +91 96157 37373.
@@ -995,14 +1071,20 @@ export default function TurfCalculator() {
                       {faq.question}
                     </h2>
                     <span className="text-secondary ml-4">
-                      {openIndex === index ? <FaMinus size={16} /> : <FaPlus size={16} />}
+                      {openIndex === index ? (
+                        <FaMinus size={16} />
+                      ) : (
+                        <FaPlus size={16} />
+                      )}
                     </span>
                   </button>
 
                   <div
                     id={`faq-answer-${index}`}
                     className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                      openIndex === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                      openIndex === index
+                        ? "max-h-96 opacity-100"
+                        : "max-h-0 opacity-0"
                     }`}
                   >
                     <p className="p-4 md:p-6 pt-2 md:pt-3 text-base md:text-lg text-white bg-black/10">
@@ -1076,7 +1158,8 @@ export default function TurfCalculator() {
             💬 Got Questions? Let&apos;s Talk!
           </h2>
           <p className="text-lg text-gray-300 mb-6">
-            From turf estimates to full-site execution — we&apos;re just one click away.
+            From turf estimates to full-site execution — we&apos;re just one
+            click away.
           </p>
           <a
             href="https://gameonsolution.in/get-in-touch"
@@ -1087,7 +1170,9 @@ export default function TurfCalculator() {
         </section>
 
         <section className="mt-20 max-w-6xl mx-auto text-center text-white px-6">
-          <h3 className="text-2xl font-bold mb-4">Our Turf Projects Are Active In:</h3>
+          <h3 className="text-2xl font-bold mb-4">
+            Our Turf Projects Are Active In:
+          </h3>
           <p className="text-sm text-gray-400 mb-4">
             Explore our local turf construction work across South India.
           </p>
