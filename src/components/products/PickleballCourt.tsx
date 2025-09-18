@@ -123,7 +123,7 @@ import Testimonials from "../testimonial";
 
 const META_PIXEL_ID = "1258580152418894"; // replace if you want a different pixel
 
-const PickleTurf = () => {
+const PickleballCourt = () => {
   useEffect(() => {
     // scroll to top when page mounts
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -290,13 +290,13 @@ const PickleTurf = () => {
             </div>
 
             <div className="space-y-6">
-              <div className="rounded-2xl overflow-hidden shadow-xl border border-white/6 bg-gradient-to-br from-primary/10 to-surface/10">
+              {/* <div className="rounded-2xl overflow-hidden shadow-xl border border-white/6 bg-gradient-to-br from-primary/10 to-surface/10">
                 <img
                   src="/pickleTurf/Pickle7.webp"
                   alt="Pickle court"
                   className="w-full h-64 object-cover"
                 />
-              </div>
+              </div> */}
 
               <div className="p-6 rounded-2xl border border-white/6 bg-surface/60 shadow-sm">
                 <h3 className="text-2xl font-bold mb-3">
@@ -343,6 +343,14 @@ const PickleTurf = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="rounded-2xl overflow-hidden shadow-xl border border-white/6 bg-gradient-to-br from-primary/10 to-surface/10 mt-6 md:mt-8">
+            <img
+              src="/pickleTurf/Pickle7.webp"
+              alt="Pickle court"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           {/* Deep dive sections (theme matched) */}
@@ -414,7 +422,7 @@ const PickleTurf = () => {
   );
 };
 
-export default PickleTurf;
+export default PickleballCourt;
 
 const PickleTurfItems = [
   {

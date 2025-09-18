@@ -226,7 +226,7 @@ import CricketTurf from "./components/products/cricket";
 import VolleyballTurf from "./components/products/volleyball";
 import MultiSportsTurf from "./components/products/multisports";
 import IndoorTurf from "./components/products/indoor";
-import PickleTurf from "./components/products/PickleTurf";
+import PickleballCourt from "./components/products/PickleballCourt";
 import CircleTurf360 from "./components/products/360CircleTurf";
 import BadmintonCourt from "./components/products/BadmintonCourt";
 import BasketBallCourt from "./components/products/basketBall";
@@ -256,7 +256,6 @@ import { Toaster } from "react-hot-toast";
 import DiagonalPitch from "./components/ourproducts/DiagonalPitch";
 import Projects from "./components/projects";
 
-
 // Wrapper component to allow using `useLocation` inside JSX
 const AppRoutes = ({
   isLoading,
@@ -275,7 +274,7 @@ const AppRoutes = ({
     "/360-circle-turf",
     "/basket-ball",
     "/badminton-court",
-    "/pickle-turf",
+    "/pickleball-court",
     "/football-turf",
     "/cricket-turf",
     "/multi-sports-turf",
@@ -347,11 +346,10 @@ const AppRoutes = ({
         <Route path="/products/skating-rink" element={<SkatingRink />} />
         <Route path="/products/diagonal-pitch" element={<DiagonalPitch />} />
 
-
         <Route path="/360-circle-turf" element={<CircleTurf360 />} />
         <Route path="/basket-ball" element={<BasketBallCourt />} />
         <Route path="/badminton-court" element={<BadmintonCourt />} />
-        <Route path="/pickle-turf" element={<PickleTurf />} />
+        <Route path="/pickleball-court" element={<PickleballCourt />} />
         <Route path="/football-turf" element={<FootballTurf />} />
         <Route path="/cricket-turf" element={<CricketTurf />} />
         <Route path="/multi-sports-turf" element={<MultiSportsTurf />} />

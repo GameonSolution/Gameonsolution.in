@@ -11,7 +11,7 @@ const allPages = [
   { path: "/get-in-touch", priority: "0.9" },
   { path: "/blog", priority: "0.9" },
   { path: "/football-turf", priority: "0.9" },
-  { path: "/pickle-turf", priority: "0.8" },
+  { path: "/pickleball-court", priority: "0.9" },
   { path: "/cricket-turf", priority: "0.9" },
   { path: "/indoor-turf", priority: "0.9" },
   { path: "/360-circle-turf", priority: "0.9" },

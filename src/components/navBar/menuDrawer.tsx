@@ -84,7 +84,7 @@ const MenuDrawer: React.FC<drawerProps> = ({ isCloseMenu }) => {
               }
               items={[
                 { path: "/football-turf", label: "Football Turf" },
-                { path: "/pickle-turf", label: "Pickle Ball" },
+                { path: "/pickleball-court", label: "Pickleball" },
                 { path: "/360-circle-turf", label: "360 Circle Turf" },
                 // { path: "/circle-turf", label: " Mini Cricket Stadium " },
                 { path: "/cricket-turf", label: "Cricket Nets" },

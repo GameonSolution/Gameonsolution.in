@@ -167,7 +167,7 @@
 //                       {[
 //                         //360-circle-turf
 //                         { path: "/football-turf", label: "Football Turf" },
-//                         { path: "/pickle-turf", label: "Pickle Ball" },
+//                         { path: "/pickleball-court", label: "Pickle Ball" },
 //                         // {
 //                         //   path: "/circle-turf",
 //                         //   label: "Mini Cricket Stadium",
@@ -418,7 +418,7 @@ const Navbar: React.FC = () => {
                       <ul className="flex flex-col">
                         {[
                           { path: "/football-turf", label: "Football Turf" },
-                          { path: "/pickle-turf", label: "Pickle Ball" },
+                          { path: "/pickleball-court", label: "Pickleball" },
                           {
                             path: "/360-circle-turf",
                             label: "360 Circle Turf",

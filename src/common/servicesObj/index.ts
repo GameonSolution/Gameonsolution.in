@@ -69,7 +69,7 @@ export const servicesObj = [
       "/pickleTurf/pickle-turf-003.webp",
       "/pickleTurf/pickle-turf-004.webp",
     ],
-    redirect: "/pickle-turf",
+    redirect: "/pickleball-court",
   },
   {
     title: "Circle Mini Cricket Stadium Turf",
