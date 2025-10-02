@@ -378,7 +378,7 @@ const Navbar: React.FC = () => {
                 { path: "/blog", label: "Blogs" },
                 { path: "/news", label: "News" },
                 { path: "/testimonials", label: "Testimonials" },
-                // { path: "/projects", label: "Projects" },
+                { path: "/projects", label: "Projects" },
                 { path: "/turf-calculator", label: "Turf Calculator" },
               ].map((item) => (
                 <li key={item.label}>

@@ -10,6 +10,7 @@ const allPages = [
   { path: "/news", priority: "0.9" },
   { path: "/get-in-touch", priority: "0.9" },
   { path: "/blog", priority: "0.9" },
+  { path: "/projects", priority: "0.9" },
   { path: "/football-turf", priority: "0.9" },
   { path: "/pickleball-court", priority: "0.9" },
   { path: "/cricket-turf", priority: "0.9" },

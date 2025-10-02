@@ -319,45 +319,50 @@ const AppRoutes = ({
 
   return (
     <div className="w-screen h-screen bg-primary no-scrollbar select-none">
-      <ScrollToTop />
-      <Navbar />
-      <CursorFollower />
-      <ScrollProgress />
-      <Toaster position="top-right" reverseOrder={false} />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/testimonials" element={<Testimonials />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/news" element={<News_Page />} />
-        <Route path="/get-in-touch" element={<ContactsPage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/blog/:slug" element={<BlogDetailPage />} />
-        <Route path="/turf-calculator" element={<TurfCalculator />} />
-        <Route path="/products" element={<OurProducts />} />
-        <Route path="/products/eco-friendly" element={<EcoFriendly />} />
-        <Route
-          path="/products/aqua-eco-friendly"
-          element={<AquaEcoFriendly />}
-        />
-        <Route path="/products/360-turf" element={<Turf360 />} />
-        <Route path="/products/semi-circle-turf" element={<SemiCircleTurf />} />
-        <Route path="/products/u-shape-turf" element={<UShapeTurf />} />
-        <Route path="/products/oval-turf" element={<OvalTurf />} />
-        <Route path="/products/skating-rink" element={<SkatingRink />} />
-        <Route path="/products/diagonal-pitch" element={<DiagonalPitch />} />
+      <HelmetProvider>
+        <ScrollToTop />
+        <Navbar />
+        <CursorFollower />
+        <ScrollProgress />
+        <Toaster position="top-right" reverseOrder={false} />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/news" element={<News_Page />} />
+          <Route path="/get-in-touch" element={<ContactsPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/blog/:slug" element={<BlogDetailPage />} />
+          <Route path="/turf-calculator" element={<TurfCalculator />} />
+          <Route path="/products" element={<OurProducts />} />
+          <Route path="/products/eco-friendly" element={<EcoFriendly />} />
+          <Route
+            path="/products/aqua-eco-friendly"
+            element={<AquaEcoFriendly />}
+          />
+          <Route path="/products/360-turf" element={<Turf360 />} />
+          <Route
+            path="/products/semi-circle-turf"
+            element={<SemiCircleTurf />}
+          />
+          <Route path="/products/u-shape-turf" element={<UShapeTurf />} />
+          <Route path="/products/oval-turf" element={<OvalTurf />} />
+          <Route path="/products/skating-rink" element={<SkatingRink />} />
+          <Route path="/products/diagonal-pitch" element={<DiagonalPitch />} />
 
-        <Route path="/360-circle-turf" element={<CircleTurf360 />} />
-        <Route path="/basket-ball" element={<BasketBallCourt />} />
-        <Route path="/badminton-court" element={<BadmintonCourt />} />
-        <Route path="/pickleball-court" element={<PickleballCourt />} />
-        <Route path="/football-turf" element={<FootballTurf />} />
-        <Route path="/cricket-turf" element={<CricketTurf />} />
-        <Route path="/multi-sports-turf" element={<MultiSportsTurf />} />
-        <Route path="/indoor-turf" element={<IndoorTurf />} />
-        <Route path="/volleyball-turf" element={<VolleyballTurf />} />
-        <Route path="/aqua-eco-friendly-turf" element={<AquaEcoTurf />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+          <Route path="/360-circle-turf" element={<CircleTurf360 />} />
+          <Route path="/basket-ball" element={<BasketBallCourt />} />
+          <Route path="/badminton-court" element={<BadmintonCourt />} />
+          <Route path="/pickleball-court" element={<PickleballCourt />} />
+          <Route path="/football-turf" element={<FootballTurf />} />
+          <Route path="/cricket-turf" element={<CricketTurf />} />
+          <Route path="/multi-sports-turf" element={<MultiSportsTurf />} />
+          <Route path="/indoor-turf" element={<IndoorTurf />} />
+          <Route path="/volleyball-turf" element={<VolleyballTurf />} />
+          <Route path="/aqua-eco-friendly-turf" element={<AquaEcoTurf />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </HelmetProvider>
     </div>
   );
 };
