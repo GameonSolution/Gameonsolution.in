@@ -1232,7 +1232,7 @@ import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
 import WhatsAppButton from "./WhatsappButton";
 import AnimatedCard from "./animateCard";
 import { useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
 
 // ⬇️ NEW: Firestore
 import { saveTurfEstimate, TurfEstimateData } from "@/lib/firebase";
@@ -1943,8 +1943,7 @@ export default function TurfCalculator() {
 
   return (
     <>
-      <Helmet>
-        {/* Meta Pixel Code */}
+      {/* <Helmet>
         <script>
           {`
             !function(f,b,e,v,n,t,s)
@@ -1967,7 +1966,7 @@ export default function TurfCalculator() {
             src="https://www.facebook.com/tr?id=1431820297926243&ev=PageView&noscript=1"
           />
         </noscript>
-      </Helmet>
+      </Helmet> */}
       <TabSEO
         title="Turf Cost Calculator | GameOn Solution"
         description="Calculate accurate turf installation costs with strict base pricing, professional scope, and a polished PDF quote."

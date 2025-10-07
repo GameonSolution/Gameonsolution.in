@@ -120,7 +120,7 @@ import AnimateCard from "../animateCard";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import Testimonials from "../testimonial";
-import { Helmet } from "react-helmet-async";
+// import { Helmet } from "react-helmet-async";
 
 const META_PIXEL_ID = "1258580152418894"; // replace if you want a different pixel
 
@@ -181,8 +181,7 @@ const PickleballCourt = () => {
 
   return (
     <div>
-      <Helmet>
-        {/* Meta Pixel Code */}
+      {/* <Helmet>
         <script>
           {`
             !function(f,b,e,v,n,t,s)
@@ -205,7 +204,7 @@ const PickleballCourt = () => {
             src="https://www.facebook.com/tr?id=1258580152418894&ev=PageView&noscript=1"
           />
         </noscript>
-      </Helmet>
+      </Helmet> */}
       <TabSEO
         title="Professional Pickleball Court Construction | GameOnSolution - South India’s Best Sports Infrastructure"
         description="We specialize in high-quality pickleball courts with world-class synthetic surfaces for smooth, professional gameplay."
