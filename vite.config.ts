@@ -108,6 +108,7 @@ const allPages = [
     "football-field-turf-construction-mistakes",
     "benefits-of-artificial-turf-football-fields",
     "pickleball-court-dimensions-guide",
+    "choose-right-turf-builder-tamil-nadu",
   ].map((slug) => ({
     path: `/blog/${slug}`,
     priority: "0.9",
