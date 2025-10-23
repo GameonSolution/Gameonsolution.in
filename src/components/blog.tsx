@@ -548,6 +548,15 @@ const BlogPage = () => {
         "Looking for the best turf builder in Tamil Nadu? Here are 7 expert tips to help you choose the right company for your football or cricket turf project.",
       image: "/blog/Blog56.webp",
     },
+    {
+      id: 57,
+      slug: "eco-friendly-turf-construction-india",
+      title:
+        "Eco-Friendly Turf Construction in India | Sustainable Sports Turf Solutions",
+      excerpt:
+        "Learn practical methods for eco-friendly turf construction in India, including sustainable materials, organic infill choices, solar lighting, water-wise drainage and maintenance tips for turf owners in Tamil Nadu and South India.",
+      image: "/blog/Blog57.webp",
+    }
   ];
 
   const mergedBlogs = [...staticBlogs, ...extraBlogs];

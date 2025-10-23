@@ -109,6 +109,7 @@ const allPages = [
     "benefits-of-artificial-turf-football-fields",
     "pickleball-court-dimensions-guide",
     "choose-right-turf-builder-tamil-nadu",
+    "eco-friendly-turf-construction-india",
   ].map((slug) => ({
     path: `/blog/${slug}`,
     priority: "0.9",
