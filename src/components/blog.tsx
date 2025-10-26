@@ -556,7 +556,60 @@ const BlogPage = () => {
       excerpt:
         "Learn practical methods for eco-friendly turf construction in India, including sustainable materials, organic infill choices, solar lighting, water-wise drainage and maintenance tips for turf owners in Tamil Nadu and South India.",
       image: "/blog/Blog57.webp",
-    }
+    },
+    {
+      id: 58,
+      slug: "multi-sport-turf-revenue-india",
+      title:
+        "How Multi-Sport Turf Facilities Maximise Revenue: Case Studies from South India",
+      excerpt:
+        "Explore how multi-sport turf facilities in South India are boosting revenue through smart design, flexible usage, and efficient planning. Learn strategies used by turf owners in Chennai, Coimbatore, and Bengaluru to increase playtime and profits.",
+      image: "/blog/Blog58.webp",
+    },
+    {
+      id: 59,
+      slug: "start-turf-business-india",
+      title: "How to Start a Turf Business in India (2025 Guide)",
+      excerpt:
+        "Thinking about starting a turf business in India? Learn the step-by-step guide for 2025, including cost estimates, ROI calculation, location selection, marketing ideas, and legal requirements for turf entrepreneurs across South India.",
+      image: "/blog/Blog59.webp",
+    },
+    {
+      id: 60,
+      slug: "best-turf-grass-india",
+      title:
+        "Best Turf Grass Options for Indian Climate (Hot & Humid) | Eco-Friendly Turf Guide 2025",
+      excerpt:
+        "Discover the best turf grass for India's hot and humid climate. Learn why eco-friendly turf and organic infill are better than rubber-based systems, and how to build safe, sustainable sports turfs across South India.",
+      image: "/blog/Blog60.webp",
+    },
+    {
+      id: 61,
+      slug: "turf-marketing-india",
+      title:
+        "How to Promote and Market Your Turf Ground Online | GameOn Solution",
+      excerpt:
+        "Learn effective strategies for turf marketing in India. From Google My Business optimization to social media ads, partnerships, and SEO keywords, discover how to grow bookings and visibility for your turf.",
+      image: "/blog/Blog61.webp",
+    },
+    {
+      id: 62,
+      slug: "turf-business-tamil-nadu",
+      title:
+        "Turf Business in Tier 2 Cities: Is It Worth the Investment? | GameOn Solution",
+      excerpt:
+        "Explore the growth of turf business in Tamil Nadu's Tier 2 cities like Madurai, Trichy, Salem, Erode, and Tirunelveli. Learn about costs, ROI, location strategy, marketing, and sustainability for your next turf project.",
+      image: "/blog/Blog62.webp",
+    },
+    {
+      id: 63,
+      slug: "turf-design-ideas-india",
+      title:
+        "How to Design a Turf That Attracts Sponsors and Players | Turf Design Ideas India",
+      excerpt:
+        "Learn how turf design ideas like 360 Turf, Oval Turf, Aqua Eco Friendly Turf, U-Shape Turf, Semi Circle Turf and Diagonal Pitch attract more players, increase revenue, and bring in sponsors.",
+      image: "/blog/Blog63.webp",
+    },
   ];
 
   const mergedBlogs = [...staticBlogs, ...extraBlogs];

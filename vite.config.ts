@@ -110,6 +110,12 @@ const allPages = [
     "pickleball-court-dimensions-guide",
     "choose-right-turf-builder-tamil-nadu",
     "eco-friendly-turf-construction-india",
+    "multi-sport-turf-revenue-india",
+    "start-turf-business-india",
+    "best-turf-grass-india",
+    "turf-marketing-india",
+    "turf-business-tamil-nadu",
+    "turf-design-ideas-india",
   ].map((slug) => ({
     path: `/blog/${slug}`,
     priority: "0.9",
