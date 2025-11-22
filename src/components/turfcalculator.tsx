@@ -1374,7 +1374,7 @@ const PRICE_BANDS: Record<
   },
   indoor: {
     rubber: [480, 500],
-    eco: [500, 530], // "edo" clarified to eco
+    eco: [500, 530],
     aqua: [520, 540],
   },
 };

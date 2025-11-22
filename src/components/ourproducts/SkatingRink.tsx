@@ -378,7 +378,7 @@ const SkatingRink: React.FC = () => {
                   <span className="flex justify-center items-center gap-1.5">
                     <span className="tracking-[1.5px]">+91 9615737373</span>
                     <span>(or)</span>
-                    <span className="tracking-[1.5px]">+91 9715131313</span>
+                    <span className="tracking-[1.5px]">+91 9859873873</span>
                   </span>
                 </p>
               </div>

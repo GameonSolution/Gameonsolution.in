@@ -141,7 +141,7 @@
 //                     <span className="flex flex-col xl:flex-row justify-center items-center gap-1.5">
 //                       <span className="tracking-[1.5px]">+91 9615737373</span>
 //                       <span>(or)</span>
-//                       <span className="tracking-[1.5px]">+91 9715131313</span>
+//                       <span className="tracking-[1.5px]">+91 9859873873</span>
 //                     </span>
 //                   </p>
 //                 </div>
@@ -421,7 +421,7 @@
 //                     <span className="flex flex-col xl:flex-row justify-center items-center gap-1.5">
 //                       <span className="tracking-[1.5px]">+91 9615737373</span>
 //                       <span>(or)</span>
-//                       <span className="tracking-[1.5px]">+91 9715131313</span>
+//                       <span className="tracking-[1.5px]">+91 9859873873</span>
 //                     </span>
 //                   </p>
 //                 </div>
@@ -707,7 +707,7 @@ const Contact: React.FC = () => {
                     <span className="flex flex-col xl:flex-row justify-center items-center gap-1.5">
                       <span className="tracking-[1.5px]">+91 9615737373</span>
                       <span>(or)</span>
-                      <span className="tracking-[1.5px]">+91 9715131313</span>
+                      <span className="tracking-[1.5px]">+91 9859873873</span>
                     </span>
                   </p>
                 </div>
