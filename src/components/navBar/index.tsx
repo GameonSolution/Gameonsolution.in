@@ -210,17 +210,17 @@
 
 //         <div className="flex gap-7  h-full w-[70%] lg:w-[10%] lg:hidden justify-end items-center">
 //           <FaRegEnvelope
-//             onClick={() => navigate("/get-in-touch")}
+//             onClick={() => navigate("/contact")}
 //             className="text-xl md:text-2xl text-[#D2D2D0] cursor-pointer"
 //           />
 //           <HamburgerMenu isClicked={isClicked} isOpen={isMenuClick} />
 //         </div>
 //         <div
 //           className="hidden  gap-7 h-full w-[50%] md:w-[70%] lg:flex lg:w-[10%] justify-center cursor-pointer items-center"
-//           // onClick={() => navigate("/get-in-touch")}
+//           // onClick={() => navigate("/contact")}
 //         >
 //           <FaRegEnvelope
-//             onClick={() => navigate("/get-in-touch")}
+//             onClick={() => navigate("/contact")}
 //             className="text-xl md:text-2xl text-[#D2D2D0]"
 //           />
 //         </div>
@@ -529,14 +529,14 @@ const Navbar: React.FC = () => {
         {/* Mobile Icons */}
         <div className="flex gap-7 h-full w-[70%] lg:w-[10%] lg:hidden justify-end items-center">
           <FaRegEnvelope
-            onClick={() => navigate("/get-in-touch")}
+            onClick={() => navigate("/contact")}
             className="text-xl md:text-2xl text-[#D2D2D0] cursor-pointer"
           />
           <HamburgerMenu isClicked={isClicked} isOpen={isMenuClick} />
         </div>
         <div className="hidden gap-7 h-full w-[50%] md:w-[70%] lg:flex lg:w-[10%] justify-center cursor-pointer items-center">
           <FaRegEnvelope
-            onClick={() => navigate("/get-in-touch")}
+            onClick={() => navigate("/contact")}
             className="text-xl md:text-2xl text-[#D2D2D0]"
           />
         </div>

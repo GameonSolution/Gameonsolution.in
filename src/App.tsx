@@ -73,7 +73,7 @@
 //               <Route path="/testimonials" element={<Testimonials />} />
 //               <Route path="/news" element={<News_Page />} />
 //               {/* <Route path="/portfolio" element={<Portfolio />} /> */}
-//               <Route path="/get-in-touch" element={<ContactsPage />} />
+//               <Route path="/contact" element={<ContactsPage />} />
 //               <Route path="/blog" element={<BlogPage />} />
 //               <Route path="/blog/:slug" element={<BlogDetailPage />} />
 //               <Route path="*" element={<NotFound />} />
@@ -177,7 +177,7 @@
 //               <Route path="/testimonials" element={<Testimonials />} />
 //               <Route path="/news" element={<News_Page />} />
 //               {/* <Route path="/portfolio" element={<Portfolio />} /> */}
-//               <Route path="/get-in-touch" element={<ContactsPage />} />
+//               <Route path="/contact" element={<ContactsPage />} />
 //               <Route path="/blog" element={<BlogPage />} />
 //               <Route path="/blog/:slug" element={<BlogDetailPage />} />
 //               <Route path="/turf-calculator" element={<TurfCalculator />} />
@@ -330,7 +330,7 @@ const AppRoutes = ({
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/news" element={<News_Page />} />
-          <Route path="/get-in-touch" element={<ContactsPage />} />
+          <Route path="/contact" element={<ContactsPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<BlogDetailPage />} />
           <Route path="/turf-calculator" element={<TurfCalculator />} />

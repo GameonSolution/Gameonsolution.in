@@ -1162,7 +1162,7 @@
 //             click away.
 //           </p>
 //           <a
-//             href="https://gameonsolution.in/get-in-touch"
+//             href="https://gameonsolution.in/contact"
 //             className="inline-block bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold shadow hover:bg-yellow-300 transition"
 //           >
 //             Contact GameOn →
@@ -2467,7 +2467,7 @@ export default function TurfCalculator() {
             click away.
           </p>
           <a
-            href="https://gameonsolution.in/get-in-touch"
+            href="https://gameonsolution.in/contact"
             className="inline-block bg-yellow-400 text-black px-6 py-3 rounded-lg font-bold shadow hover:bg-yellow-300 transition"
           >
             Contact GameOn →

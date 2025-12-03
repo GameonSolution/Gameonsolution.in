@@ -8,7 +8,7 @@ const allPages = [
   { path: "/", priority: "1.0" },
   { path: "/testimonials", priority: "0.9" },
   { path: "/news", priority: "0.9" },
-  { path: "/get-in-touch", priority: "0.9" },
+  { path: "/contact", priority: "0.9" },
   { path: "/blog", priority: "0.9" },
   { path: "/projects", priority: "0.9" },
   { path: "/football-turf", priority: "0.9" },
