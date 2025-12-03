@@ -185,6 +185,7 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import Testimonials from "../testimonial";
+import WhatsAppButton from "../WhatsappButton";
 
 const FootballTurf = () => {
   useEffect(() => {
@@ -193,6 +194,7 @@ const FootballTurf = () => {
 
   return (
     <div>
+      <WhatsAppButton />
       <TabSEO
         title="Expert Football Turf Builders in South India | GameOnSolution - South India’s Best Sports Infrastructure"
         description="We design & build premium football turfs with top-grade synthetic grass for durability, grip, and all-weather performance"

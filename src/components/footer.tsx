@@ -159,10 +159,10 @@ export const Footer = () => {
                   Write
                 </p>
                 <a
-                  href="mailto:sales@gameonsolution.in"
+                  href="mailto:gameonsolutionoff@gmail.com"
                   className="text-xs font-medium text-white"
                 >
-                  sales@gameonsolution.in
+                  gameonsolutionoff@gmail.com
                 </a>
               </div>
             </div>

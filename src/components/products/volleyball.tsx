@@ -168,6 +168,7 @@ import AnimateCard from "../animateCard";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import Testimonials from "../testimonial";
+import WhatsAppButton from "../WhatsappButton";
 
 const VolleyballTurf = () => {
   useEffect(() => {
@@ -176,6 +177,7 @@ const VolleyballTurf = () => {
 
   return (
     <div className="">
+      <WhatsAppButton />
       <TabSEO
         title="Best Volleyball Court Construction in South India | GameOnSolution - South India’s Best Sports Infrastructure"
         description="We build high-quality volleyball courts with precision-designed surfaces for optimal grip and playability."

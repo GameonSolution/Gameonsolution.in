@@ -167,6 +167,7 @@ import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import { motion } from "framer-motion";
 import Testimonials from "../testimonial";
+import WhatsAppButton from "../WhatsappButton";
 
 const CricketTurf = () => {
   useEffect(() => {
@@ -175,6 +176,7 @@ const CricketTurf = () => {
 
   return (
     <div className="">
+      <WhatsAppButton />
       <TabSEO
         title="Custom Cricket Nets & Turf Installation | GameOnSolution - South India’s Best Sports Infrastructure"
         description="We provide cricket net construction with advanced synthetic turf, ensuring high performance and long-lasting quality."

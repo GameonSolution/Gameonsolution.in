@@ -1368,8 +1368,8 @@ const PRICE_BANDS: Record<
   Record<"rubber" | "eco" | "aqua", [number, number]>
 > = {
   outdoor: {
-    rubber: [260, 280],
-    eco: [280, 300],
+    rubber: [250, 270],
+    eco: [260, 290],
     aqua: [300, 320],
   },
   indoor: {

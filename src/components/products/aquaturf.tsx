@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import Testimonials from "../testimonial";
+import WhatsAppButton from "../WhatsappButton";
 
 const AquaEcoTurf = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const AquaEcoTurf = () => {
 
   return (
     <div>
+      <WhatsAppButton />
       <TabSEO
         title="Aqua Eco-Friendly Turf | GameOnSolution - Vibrant Sports Flooring"
         description="Transform your sports space with Aqua Eco-Friendly Turf by GameOnSolution. Sustainable, weather-resistant, and visually striking – perfect for communities, schools, and sports arenas."

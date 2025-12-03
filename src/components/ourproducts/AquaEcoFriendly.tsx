@@ -792,10 +792,10 @@ const AquaEcoFriendly: React.FC = () => {
                     Write
                   </p>
                   <a
-                    href="mailto:sales@gameonsolution.in"
+                    href="mailto:gameonsolutionoff@gmail.com"
                     className="text-xs font-medium text-gray-200 hover:text-cyan-400"
                   >
-                    sales@gameonsolution.in
+                    gameonsolutionoff@gmail.com
                   </a>
                 </div>
               </div>

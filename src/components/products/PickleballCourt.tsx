@@ -120,6 +120,7 @@ import AnimateCard from "../animateCard";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import Testimonials from "../testimonial";
+import WhatsAppButton from "../WhatsappButton";
 // import { Helmet } from "react-helmet-async";
 
 const META_PIXEL_ID = "1258580152418894"; // replace if you want a different pixel
@@ -205,6 +206,7 @@ const PickleballCourt = () => {
           />
         </noscript>
       </Helmet> */}
+      <WhatsAppButton />
       <TabSEO
         title="Professional Pickleball Court Construction | GameOnSolution - South India’s Best Sports Infrastructure"
         description="We specialize in high-quality pickleball courts with world-class synthetic surfaces for smooth, professional gameplay."

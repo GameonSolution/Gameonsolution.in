@@ -164,7 +164,9 @@ import { VideoCarousel } from "./pageAnimation/video-carousel";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
+import { FaCheckCircle } from "react-icons/fa";
 import Testimonials from "../testimonial";
+import WhatsAppButton from "../WhatsappButton";
 
 const MultiSportsTurf = () => {
   useEffect(() => {
@@ -172,6 +174,7 @@ const MultiSportsTurf = () => {
   }, []);
   return (
     <div className="">
+      <WhatsAppButton />
       <TabSEO
         title="Multi-Sports Turf Builders for All Games | GameOnSolution - South India’s Best Sports Infrastructure"
         description="We design & install multi-sports turfs for football, cricket, and more, ensuring durability and versatility."
@@ -211,6 +214,7 @@ const MultiSportsTurf = () => {
         </Container>
       </div>
       <VideoCarousel title="Multi-sports Turf" carouselImages={cricketItems} />
+      <Testimonials />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -220,6 +224,253 @@ const MultiSportsTurf = () => {
         <Certificates />
       </motion.div>
 
+      {/* ===================================== */}
+      {/* NEW: Multi Sports Marketing Content */}
+      {/* ===================================== */}
+      <section className="px-10 md:px-20 lg:px-[7.5rem] py-20 text-white font-secondary bg-background/50">
+        {/* Intro */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-4xl"
+        >
+          <h2 className="text-3xl md:text-5xl font-primary text-secondary uppercase">
+            Multi Sports Turf Construction by GameOn Solution
+          </h2>
+          <p className="mt-4 md:text-xl text-lg text-gray-200">
+            <strong>One Turf. Endless Possibilities.</strong> At GameOn
+            Solution, we believe that great play shouldn’t be limited to one
+            game.
+          </p>
+          <p className="mt-3 md:text-lg text-gray-300">
+            Our Multi Sports Turf systems are designed to host multiple sports -
+            football, cricket, volleyball, tennis, and more - all on a single,
+            versatile surface engineered for performance, durability, and
+            all-weather play. Whether you manage a school, academy, resort, or
+            community ground, our multi-sport surfaces help you maximize space
+            and engagement while ensuring professional-level quality for every
+            match.
+          </p>
+          <p className="mt-3 md:text-lg text-gray-300">
+            Across Tamil Nadu and South India, GameOn has become the go-to brand
+            for custom multi-sport turf installations that bring energy,
+            versatility, and style to every venue.
+          </p>
+        </motion.div>
+
+        {/* Why It Matters */}
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="space-y-4"
+          >
+            <h3 className="text-2xl md:text-3xl font-primary text-secondary">
+              Why Multi Sports Turf Matters
+            </h3>
+            <p className="text-gray-300">
+              In today’s world, space is valuable - and so is versatility. A
+              multi-sport turf gives you the power to host multiple games on a
+              single surface, making it perfect for institutions, academies, and
+              private developments that want to promote fitness, community, and
+              play without needing multiple grounds.
+            </p>
+            <p className="text-gray-300">
+              Whether it’s kids switching between cricket and football, or
+              professionals training for multiple sports, GameOn’s turf systems
+              are built to perform across disciplines.{" "}
+              <strong>
+                Our goal? To make every square foot of your turf count.
+              </strong>
+            </p>
+          </motion.div>
+          <motion.img
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            src="/Football/Football-02.webp"
+            alt="Multi Sports Turf"
+            className="rounded-2xl border border-white/10 shadow-xl w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Why Choose GameOn */}
+        <div className="mt-16">
+          <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
+            Why Choose GameOn Solution for Multi Sports Turf Construction?
+          </h3>
+          <p className="text-gray-300 mb-4">
+            We don’t just install turf - we engineer sports ecosystems. Here’s
+            why South India trusts GameOn Solution:
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {[
+              "Custom Layout Design - Tailor-made turf plans for your available area and sports lineup.",
+              "All-Weather Performance - Advanced drainage systems for consistent play - rain or shine.",
+              "Multi-Activity Ready - Ideal for football, cricket, volleyball, tennis, and more.",
+              "Eco-Friendly AQUA Turf - Our signature sustainable grass option reduces heat and maintenance.",
+              "International Standards - Surfaces comply with FIFA, ITF, and ASTM benchmarks.",
+              "End-to-End Construction - From base work to netting, lighting, and branding.",
+              "Low Maintenance, High Durability - Built to last 8–12 years under active usage.",
+            ].map((t, i) => (
+              <div
+                key={i}
+                className="flex gap-3 items-start bg-white/5 border border-white/10 rounded-xl p-4"
+              >
+                <FaCheckCircle className="mt-1" />
+                <span className="text-gray-200">{t}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Specs Table */}
+        <div className="mt-16">
+          <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-6">
+            Specifications & Design Options
+          </h3>
+          <div className="overflow-hidden rounded-2xl border border-white/10">
+            <table className="w-full text-left text-gray-200">
+              <thead className="bg-white/10">
+                <tr>
+                  <th className="py-3 px-4">Feature</th>
+                  <th className="py-3 px-4">Specification</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-white/10">
+                <tr>
+                  <td className="py-3 px-4">Base Construction</td>
+                  <td className="py-3 px-4">
+                    Compacted aggregate + RCC concrete / Asphalt
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4">Surface Material</td>
+                  <td className="py-3 px-4">
+                    Synthetic turf (AQUA Eco Turf or Hybrid Grass)
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4">Turf Pile Height</td>
+                  <td className="py-3 px-4">
+                    30mm–60mm (customizable per sport)
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4">Infill Type</td>
+                  <td className="py-3 px-4">
+                    Silica sand / Rubber granules (optional)
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4">Line Marking</td>
+                  <td className="py-3 px-4">
+                    Multi-color permanent lines for 2–4 sports
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4">Lighting</td>
+                  <td className="py-3 px-4">200–400 lux LED floodlights</td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4">Drainage System</td>
+                  <td className="py-3 px-4">
+                    Multi-channel system with slope calibration
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4">Fencing</td>
+                  <td className="py-3 px-4">
+                    12–15 ft mesh fencing for ball control
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4">Lifespan</td>
+                  <td className="py-3 px-4">
+                    8–12 years with regular brushing & cleaning
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-3 px-4">Maintenance Support</td>
+                  <td className="py-3 px-4">
+                    Available via GameOn Service Team
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* Who Benefits */}
+        <div className="mt-16">
+          <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
+            Who Can Benefit From Multi Sports Turf
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {[
+              "Schools & Colleges - Multiple sports, one playground, endless fun.",
+              "Sports Academies - Training zones for football, tennis, and cricket all in one facility.",
+              "Corporate Campuses - Employee recreation zones for diverse sports events.",
+              "Gated Communities - Boost engagement with a vibrant, multi-sport amenity.",
+              "Resorts & Clubs - Add versatile recreational experiences for guests.",
+              "Private Owners - Create an adaptable backyard sports zone for family and friends.",
+            ].map((t, i) => (
+              <div
+                key={i}
+                className="flex gap-3 items-start bg-white/5 border border-white/10 rounded-xl p-4"
+              >
+                <FaCheckCircle className="mt-1" />
+                <span className="text-gray-200">{t}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Process */}
+        <div className="mt-16">
+          <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
+            How GameOn Builds a World-Class Multi Sports Turf
+          </h3>
+          <ol className="list-decimal pl-5 space-y-3 text-gray-200">
+            <li>
+              <strong>Consultation & Layout Planning:</strong> Free site survey
+              to understand space, soil conditions, and sports preferences.
+              Designers create a 2D/3D plan to show how sports share the turf
+              seamlessly.
+            </li>
+            <li>
+              <strong>Civil Base Construction:</strong> Robust foundation with
+              slope calibration for durability and perfect water flow.
+            </li>
+            <li>
+              <strong>Turf Installation:</strong> High-performance synthetic
+              turf (AQUA Eco Turf or hybrid) laid precisely and infilled for
+              optimal bounce and traction.
+            </li>
+            <li>
+              <strong>Line Marking & Branding:</strong> Permanent multi-color
+              lines for each sport, with optional logo branding and aesthetic
+              customization.
+            </li>
+            <li>
+              <strong>Lighting, Fencing & Accessories:</strong> LED floodlights,
+              high-grade fencing, and optional seating or shade structures.
+            </li>
+            <li>
+              <strong>Final Handover:</strong> Complete playability test and
+              ready-to-play arena - backed by GameOn’s quality assurance and
+              service support.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      {/* Existing dimensions block */}
       <div className="flex gap-10 lg:flex-row flex-col px-10 md:px-20 lg:px-[7.5rem] py-20">
         <div className="flex  md:flex-row flex-col gap-12 ">
           <div className="relative w-full  flex items-center justify-center ">
@@ -234,15 +485,12 @@ const MultiSportsTurf = () => {
                   <img
                     src="https://storage.googleapis.com/a1aa/image/9FeWw1HWmeg2WkAUfZBmvn8eZTSzLKm82E1PA3z0jo4AYm6OB.jpg"
                     className="lg:w-[400px] w-[250px]  h-full object-cover transition-transform duration-500 ease-out scale-105 transform group-hover:scale-100"
-                    alt="Director"
+                    alt="Multi Sports"
                   />
                 </motion.div>
-
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-out pointer-events-none">
                   <div className="absolute inset-0 bg-black/25" />
                   <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-purple-800/20 to-yellow-500/50" />
-                  <div className="absolute inset-0 bg-gradient-to-tr from-black/60 via-purple-800/20 to-yellow-500/50" />
-
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/45 to-black/50" />
                   <div className="absolute inset-0 flex  items-end justify-center duration-500 ease-out p-4">
                     <p className="lg:text-xl flex-col flex text-white bg-transparent p-2 font-primary tracking-[3px] w-full text-center">
@@ -286,7 +534,6 @@ const MultiSportsTurf = () => {
           </div>
         </div>
       </div>
-      <Testimonials />
       <Footer />
     </div>
   );

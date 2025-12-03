@@ -112,7 +112,7 @@ const ContactsPage = () => {
                   Write
                 </p>
                 <p className="font-secondary uppercase text-xs font-medium text-white tracking-[1.5px]">
-                  sales@gameonsolution.in
+                  gameonsolutionoff@gmail.com
                 </p>
               </div>
             </div>

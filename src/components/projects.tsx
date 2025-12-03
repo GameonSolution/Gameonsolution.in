@@ -327,10 +327,10 @@
 //                     Write
 //                   </p>
 //                   <a
-//                     href="mailto:sales@gameonsolution.in"
+//                     href="mailto:gameonsolutionoff@gmail.com"
 //                     className="text-xs font-medium text-white"
 //                   >
-//                     sales@gameonsolution.in
+//                     gameonsolutionoff@gmail.com
 //                   </a>
 //                 </div>
 //               </div>
@@ -357,8 +357,7 @@
 // };
 
 // export default Projects;
-
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import TextHoverAnimation from "./textHoverAnimation";
 import { usePortfolio } from "@/hook/usePortfolio";
 import VideoCard from "./videoCard/main";
@@ -382,15 +381,53 @@ import {
 /**
  * Projects page: renders a grid of project cards.
  * Each card shows: image/media, Title, Location, Short description, and date.
+ *
+ * Added: a simple preloading animation (gif/image) shown while projects are loading.
+ * - The code observes the portfolio hook for data and/or a loading flag.
+ * - Falls back to a local loading timeout guard in case the hook doesn't expose a loading flag.
  */
 
 const Projects: React.FC = () => {
   const { getPortfolio } = usePortfolio();
   const data = getPortfolio.data ?? [];
 
+  // If the portfolio hook exposes a loading flag, prefer it. Otherwise use our local guard.
+  const remoteLoading: boolean | undefined =
+    (getPortfolio as any)?.isLoading ?? (getPortfolio as any)?.loading;
+
+  const [isLoading, setIsLoading] = useState<boolean>(remoteLoading ?? true);
+
   useEffect(() => {
+    // ensure top-of-page on mount
     window.scrollTo({ top: 0, behavior: "smooth" });
+
+    // If the hook provides a loading flag keep sync
+    if (typeof remoteLoading === "boolean") {
+      setIsLoading(remoteLoading);
+    }
+
+    // If there's already data available immediately, stop loading
+    if (data && data.length > 0) {
+      setIsLoading(false);
+    }
+
+    // Safety: in case the hook never toggles a loading flag, set a reasonable timeout to hide loader
+    const guard = setTimeout(() => {
+      if (!data || data.length === 0) {
+        // keep loading if truly empty; otherwise hide
+        // here we assume backend will respond quickly; adjust as needed
+        setIsLoading(false);
+      }
+    }, 2500); // 2.5s fallback
+
+    return () => clearTimeout(guard);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // Watch for data changes from the hook to turn off loader
+  useEffect(() => {
+    if (data && data.length > 0) setIsLoading(false);
+  }, [data]);
 
   // shuffle & limit to 6 (defensive copy)
   const randomProjects = [...data].sort(() => 0.5 - Math.random()).slice(0, 6);
@@ -439,67 +476,112 @@ const Projects: React.FC = () => {
         </div>
 
         {/* GRID OF PROJECT CARDS */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl px-4">
-          {randomProjects.map((proj: any) => {
-            const id = proj.id;
-            const title = proj.title ?? "Project";
-            const locationText = proj.location ?? "";
-            const description = proj.shortDescription ?? "";
-            // const date = proj.date ?? proj.createdAt ?? "";
-            const fileType = proj.fileType ?? "image";
-            const mediaUrl = proj.mediaUrl ?? proj.imageUrl ?? "";
+        <div className="w-full max-w-7xl px-4">
+          {/* Preloader: centered gif + optional 'loading' skeleton behind */}
+          {isLoading ? (
+            <div className="flex flex-col items-center justify-center py-16">
+              <div className="mb-6">
+                {/* Put your gif file in public folder as /preloader.gif or change path as needed */}
+                <img
+                  src="/preloader.gif"
+                  alt="Loading projects..."
+                  className="w-40 h-40 object-contain animate-pulse"
+                  onError={(e) => {
+                    // fallback static image if gif not available
+                    (e.target as HTMLImageElement).src = "/preloader.png";
+                  }}
+                />
+              </div>
 
-            return (
-              <article
-                key={id}
-                className="group bg-[#0e1b12]/40 border border-emerald-600/30 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-emerald-300 transition duration-300"
-                aria-labelledby={`project-title-${id}`}
-              >
-                {/* Media */}
-                <div className="h-[220px] w-full bg-gray-200">
-                  {fileType === "image" || !mediaUrl ? (
-                    <img
-                      src={mediaUrl || "/placeholder.svg"}
-                      alt={title}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).src = "/placeholder.svg";
-                      }}
-                    />
-                  ) : (
-                    <VideoCard
-                      videoSrc={mediaUrl}
-                      fileType={fileType as "video" | "youtube" | "instagram"}
-                    />
-                  )}
-                </div>
+              <p className="text-sm text-gray-300">
+                Loading projects — please wait.
+              </p>
 
-                {/* Card body */}
-                <div className="p-5 bg-[#0b1610]/60 backdrop-blur-sm border-t border-emerald-600/20">
-                  {/* TITLE */}
-                  <h3
-                    id={`project-title-${id}`}
-                    className="text-xl font-semibold text-emerald-300 leading-snug mb-2 line-clamp-2"
+              {/* lightweight skeleton grid to indicate layout */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-8">
+                {Array.from({ length: 6 }).map((_, i) => (
+                  <div
+                    key={i}
+                    className="bg-[#0e1b12]/30 border border-emerald-600/20 rounded-2xl overflow-hidden p-0 h-[360px]"
                   >
-                    {title}
-                  </h3>
-
-                  {/* LOCATION */}
-                  <div className="flex items-start mb-3">
-                    <MdLocationPin className="mt-0.5 mr-2 text-emerald-400 shrink-0" />
-                    <p className="text-sm text-gray-300 leading-relaxed line-clamp-1">
-                      {locationText}
-                    </p>
+                    <div className="h-[220px] bg-gray-700 animate-pulse" />
+                    <div className="p-5">
+                      <div className="h-6 bg-gray-700 rounded mb-3 w-3/4 animate-pulse" />
+                      <div className="h-4 bg-gray-700 rounded mb-2 w-1/2 animate-pulse" />
+                      <div className="h-3 bg-gray-700 rounded mt-2 w-full animate-pulse" />
+                      <div className="h-3 bg-gray-700 rounded mt-2 w-5/6 animate-pulse" />
+                    </div>
                   </div>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+              {randomProjects.map((proj: any) => {
+                const id = proj.id;
+                const title = proj.title ?? "Project";
+                const locationText = proj.location ?? "";
+                const description = proj.shortDescription ?? "";
+                // const date = proj.date ?? proj.createdAt ?? "";
+                const fileType = proj.fileType ?? "image";
+                const mediaUrl = proj.mediaUrl ?? proj.imageUrl ?? "";
 
-                  {/* DESCRIPTION */}
-                  <p className="text-[14px] text-gray-200 leading-relaxed line-clamp-3">
-                    {description}
-                  </p>
-                </div>
-              </article>
-            );
-          })}
+                return (
+                  <article
+                    key={id}
+                    className="group bg-[#0e1b12]/40 border border-emerald-600/30 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-emerald-300 transition duration-300"
+                    aria-labelledby={`project-title-${id}`}
+                  >
+                    {/* Media */}
+                    <div className="h-[220px] w-full bg-gray-200">
+                      {fileType === "image" || !mediaUrl ? (
+                        <img
+                          src={mediaUrl || "/placeholder.svg"}
+                          alt={title}
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            (e.target as HTMLImageElement).src =
+                              "/placeholder.svg";
+                          }}
+                        />
+                      ) : (
+                        <VideoCard
+                          videoSrc={mediaUrl}
+                          fileType={
+                            fileType as "video" | "youtube" | "instagram"
+                          }
+                        />
+                      )}
+                    </div>
+
+                    {/* Card body */}
+                    <div className="p-5 bg-[#0b1610]/60 backdrop-blur-sm border-t border-emerald-600/20">
+                      {/* TITLE */}
+                      <h3
+                        id={`project-title-${id}`}
+                        className="text-xl font-semibold text-emerald-300 leading-snug mb-2 line-clamp-2"
+                      >
+                        {title}
+                      </h3>
+
+                      {/* LOCATION */}
+                      <div className="flex items-start mb-3">
+                        <MdLocationPin className="mt-0.5 mr-2 text-emerald-400 shrink-0" />
+                        <p className="text-sm text-gray-300 leading-relaxed line-clamp-1">
+                          {locationText}
+                        </p>
+                      </div>
+
+                      {/* DESCRIPTION */}
+                      <p className="text-[14px] text-gray-200 leading-relaxed line-clamp-3">
+                        {description}
+                      </p>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          )}
         </div>
       </div>
 
@@ -520,6 +602,7 @@ const Projects: React.FC = () => {
             1024: { slidesPerView: 3 },
           }}
         >
+          =
           {[
             {
               content:
@@ -698,10 +781,10 @@ const Projects: React.FC = () => {
                     Write
                   </p>
                   <a
-                    href="mailto:sales@gameonsolution.in"
+                    href="mailto:gameonsolutionoff@gmail.com"
                     className="text-xs font-medium text-white"
                   >
-                    sales@gameonsolution.in
+                    gameonsolutionoff@gmail.com
                   </a>
                 </div>
               </div>

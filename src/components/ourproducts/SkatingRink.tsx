@@ -77,10 +77,14 @@ const SkatingRink: React.FC = () => {
             Skating Rink
           </h1>
           <p className="text-gray-200 max-w-3xl mx-auto text-xl md:text-2xl font-medium">
-            <span className="text-purple-400 font-bold">GameOn Skating Rinks</span> – 
-            world-class indoor & outdoor rinks designed for{" "}
-            <span className="text-pink-400 font-bold">schools, clubs, and professional competitions</span>, 
-            with advanced materials and international safety standards.
+            <span className="text-purple-400 font-bold">
+              GameOn Skating Rinks
+            </span>{" "}
+            – world-class indoor & outdoor rinks designed for{" "}
+            <span className="text-pink-400 font-bold">
+              schools, clubs, and professional competitions
+            </span>
+            , with advanced materials and international safety standards.
           </p>
         </motion.div>
       </div>
@@ -109,10 +113,12 @@ const SkatingRink: React.FC = () => {
           </h2>
           <p className="text-gray-300 text-lg">
             At <strong>GameOn Solution</strong>, we construct{" "}
-            <strong>synthetic and concrete skating rinks</strong> with smooth, 
+            <strong>synthetic and concrete skating rinks</strong> with smooth,
             durable, and friction-controlled surfaces. Designed for{" "}
-            <strong>roller skating, inline skating, and competitive skating</strong>, 
-            our rinks combine world-class performance with{" "}
+            <strong>
+              roller skating, inline skating, and competitive skating
+            </strong>
+            , our rinks combine world-class performance with{" "}
             <strong>international safety standards</strong>.
           </p>
           <ul className="list-disc list-inside text-gray-300 space-y-3 text-lg">
@@ -136,7 +142,8 @@ const SkatingRink: React.FC = () => {
           <p className="text-gray-300 text-lg text-center max-w-3xl mx-auto">
             Our <strong>Skating Rinks</strong> are built with{" "}
             <strong>world-class construction techniques</strong> and{" "}
-            <strong>safety-first design</strong>, perfect for both beginners and professional athletes.
+            <strong>safety-first design</strong>, perfect for both beginners and
+            professional athletes.
           </p>
 
           <div className="bg-[#2a1237] border border-purple-600 rounded-2xl p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -145,11 +152,22 @@ const SkatingRink: React.FC = () => {
                 Construction Standards
               </h3>
               <ul className="text-gray-300 space-y-2 text-sm md:text-base">
-                <li><strong>Surface Type:</strong> Synthetic PU / Concrete Finish</li>
-                <li><strong>Rink Size:</strong> Customizable indoor & outdoor layouts</li>
-                <li><strong>Banking:</strong> Available (for speed rinks)</li>
-                <li><strong>Drainage:</strong> Advanced all-weather system</li>
-                <li><strong>Certification:</strong> RSFI / International Standards</li>
+                <li>
+                  <strong>Surface Type:</strong> Synthetic PU / Concrete Finish
+                </li>
+                <li>
+                  <strong>Rink Size:</strong> Customizable indoor & outdoor
+                  layouts
+                </li>
+                <li>
+                  <strong>Banking:</strong> Available (for speed rinks)
+                </li>
+                <li>
+                  <strong>Drainage:</strong> Advanced all-weather system
+                </li>
+                <li>
+                  <strong>Certification:</strong> RSFI / International Standards
+                </li>
               </ul>
             </div>
 
@@ -167,8 +185,11 @@ const SkatingRink: React.FC = () => {
           </div>
 
           <div className="bg-[#1f1427] rounded-xl p-6 text-center text-gray-200 text-lg">
-            <span className="text-pink-400 font-bold">GameOn Skating Rinks</span> – 
-            perfect for training academies, schools, recreational clubs, and international-level competitions.
+            <span className="text-pink-400 font-bold">
+              GameOn Skating Rinks
+            </span>{" "}
+            – perfect for training academies, schools, recreational clubs, and
+            international-level competitions.
           </div>
         </div>
       </div>
@@ -283,145 +304,144 @@ const SkatingRink: React.FC = () => {
       </div>
 
       {/* Footer */}
-          {/* ✅ FOOTER - SKATING RINK THEME */}
-    <div className="flex flex-col gap-3 px-8 lg:px-28 py-16 lg:py-28 h-full w-full bg-[#1a0f1f] text-white">
-      <div className="w-full flex flex-col border-t border-b border-purple-300/20 py-10 px-0 lg:px-1 h-full gap-10">
-        <div className="w-full flex flex-col lg:flex-row gap-10">
-          {/* Navigation */}
-          <div className="flex flex-col lg:items-center lg:flex-row lg:w-[50%] w-full text-[12px] gap-5 lg:gap-10 font-secondary uppercase">
-            <p
-              onClick={() => handleNavClick("#home")}
-              className="hover:cursor-pointer hover:text-purple-400"
-            >
-              Home
-            </p>
-            <p
-              onClick={() => handleNavClick("#aboutUs")}
-              className="hover:cursor-pointer hover:text-purple-400"
-            >
-              About
-            </p>
-            <p
-              onClick={() => handleNavClick("#services")}
-              className="hover:cursor-pointer hover:text-purple-400"
-            >
-              Services
-            </p>
-            <p
-              onClick={() => handleNavClick("#contact")}
-              className="hover:cursor-pointer hover:text-purple-400"
-            >
-              Contact
-            </p>
-          </div>
-
-          {/* Socials */}
-          <div className="flex lg:w-[50%] w-full text-[12px] gap-8 font-secondary lg:justify-end">
-            {[
-              {
-                href: "https://www.instagram.com/gameonsolution_southindia/",
-                icon: <FaInstagram />,
-                label: "Instagram",
-              },
-              {
-                href: "https://youtube.com/@gameonsolutionoffi?si=U3jRSjQ_TscHG2ry",
-                icon: <FaYoutube />,
-                label: "YouTube",
-              },
-              {
-                href: "https://wa.me/919615737373",
-                icon: <FaWhatsapp />,
-                label: "WhatsApp",
-              },
-              {
-                href: "https://medium.com/@gameon.solution.317",
-                icon: <FaMedium />,
-                label: "Medium",
-              },
-              {
-                href: "https://www.reddit.com/user/Dangerous_Aerie_8168/",
-                icon: <FaReddit />,
-                label: "Reddit",
-              },
-              {
-                href: "https://www.linkedin.com/company/gameon-solution/",
-                icon: <FaLinkedin />,
-                label: "LinkedIn",
-              },
-            ].map((s, i) => (
-              <a
-                key={i}
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border p-2 border-purple-300/20 flex justify-center hover:bg-purple-500/10 hover:text-purple-400"
-                aria-label={`Visit our ${s.label}`}
+      {/* ✅ FOOTER - SKATING RINK THEME */}
+      <div className="flex flex-col gap-3 px-8 lg:px-28 py-16 lg:py-28 h-full w-full bg-[#1a0f1f] text-white">
+        <div className="w-full flex flex-col border-t border-b border-purple-300/20 py-10 px-0 lg:px-1 h-full gap-10">
+          <div className="w-full flex flex-col lg:flex-row gap-10">
+            {/* Navigation */}
+            <div className="flex flex-col lg:items-center lg:flex-row lg:w-[50%] w-full text-[12px] gap-5 lg:gap-10 font-secondary uppercase">
+              <p
+                onClick={() => handleNavClick("#home")}
+                className="hover:cursor-pointer hover:text-purple-400"
               >
-                {s.icon}
-                <span className="sr-only">{s.label}</span>
-              </a>
-            ))}
-          </div>
-        </div>
-
-        {/* Contact Info */}
-        <div className="w-full flex justify-center bg-purple-400/10 px-5 py-5 rounded-lg">
-          <div className="flex flex-col lg:flex-row gap-10 lg:justify-around w-full">
-            {/* Call */}
-            <div className="flex flex-col justify-center w-full lg:w-[30%] items-center gap-2">
-              <MdCall className="text-2xl text-purple-400 opacity-80" />
-              <div className="flex flex-col gap-3 justify-center items-center">
-                <p className="font-primary uppercase text-xl md:text-2xl text-purple-400">
-                  Call
-                </p>
-                <p className="flex tracking-[1.5px] justify-center items-center gap-1 font-secondary uppercase text-xs font-medium text-gray-200">
-                  <span className="flex justify-center items-center gap-1.5">
-                    <span className="tracking-[1.5px]">+91 9615737373</span>
-                    <span>(or)</span>
-                    <span className="tracking-[1.5px]">+91 9859873873</span>
-                  </span>
-                </p>
-              </div>
+                Home
+              </p>
+              <p
+                onClick={() => handleNavClick("#aboutUs")}
+                className="hover:cursor-pointer hover:text-purple-400"
+              >
+                About
+              </p>
+              <p
+                onClick={() => handleNavClick("#services")}
+                className="hover:cursor-pointer hover:text-purple-400"
+              >
+                Services
+              </p>
+              <p
+                onClick={() => handleNavClick("#contact")}
+                className="hover:cursor-pointer hover:text-purple-400"
+              >
+                Contact
+              </p>
             </div>
 
-            {/* Email */}
-            <div className="flex flex-col justify-center w-full lg:w-[30%] items-center gap-2">
-              <MdEmail className="text-2xl text-purple-400 opacity-80" />
-              <div className="flex flex-col gap-3 justify-center items-center">
-                <p className="font-primary uppercase text-xl md:text-2xl text-purple-400">
-                  Write
-                </p>
+            {/* Socials */}
+            <div className="flex lg:w-[50%] w-full text-[12px] gap-8 font-secondary lg:justify-end">
+              {[
+                {
+                  href: "https://www.instagram.com/gameonsolution_southindia/",
+                  icon: <FaInstagram />,
+                  label: "Instagram",
+                },
+                {
+                  href: "https://youtube.com/@gameonsolutionoffi?si=U3jRSjQ_TscHG2ry",
+                  icon: <FaYoutube />,
+                  label: "YouTube",
+                },
+                {
+                  href: "https://wa.me/919615737373",
+                  icon: <FaWhatsapp />,
+                  label: "WhatsApp",
+                },
+                {
+                  href: "https://medium.com/@gameon.solution.317",
+                  icon: <FaMedium />,
+                  label: "Medium",
+                },
+                {
+                  href: "https://www.reddit.com/user/Dangerous_Aerie_8168/",
+                  icon: <FaReddit />,
+                  label: "Reddit",
+                },
+                {
+                  href: "https://www.linkedin.com/company/gameon-solution/",
+                  icon: <FaLinkedin />,
+                  label: "LinkedIn",
+                },
+              ].map((s, i) => (
                 <a
-                  href="mailto:sales@gameonsolution.in"
-                  className="text-xs font-medium text-gray-200 hover:text-purple-400"
+                  key={i}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border p-2 border-purple-300/20 flex justify-center hover:bg-purple-500/10 hover:text-purple-400"
+                  aria-label={`Visit our ${s.label}`}
                 >
-                  sales@gameonsolution.in
+                  {s.icon}
+                  <span className="sr-only">{s.label}</span>
                 </a>
-              </div>
+              ))}
             </div>
+          </div>
 
-            {/* Location */}
-            <div className="flex flex-col justify-center w-full lg:w-[30%] items-center gap-2">
-              <MdLocationPin className="text-2xl text-purple-400 opacity-80" />
-              <div className="flex flex-col gap-3 justify-center items-center">
-                <p className="font-primary uppercase text-2xl text-purple-400">
-                  Visit
-                </p>
-                <p className="font-secondary tracking-[1.5px] text-center text-xs font-medium text-gray-200">
-                  Hanifa Nagar, NGO Colony, Dindigul, Tamil Nadu 624005
-                </p>
+          {/* Contact Info */}
+          <div className="w-full flex justify-center bg-purple-400/10 px-5 py-5 rounded-lg">
+            <div className="flex flex-col lg:flex-row gap-10 lg:justify-around w-full">
+              {/* Call */}
+              <div className="flex flex-col justify-center w-full lg:w-[30%] items-center gap-2">
+                <MdCall className="text-2xl text-purple-400 opacity-80" />
+                <div className="flex flex-col gap-3 justify-center items-center">
+                  <p className="font-primary uppercase text-xl md:text-2xl text-purple-400">
+                    Call
+                  </p>
+                  <p className="flex tracking-[1.5px] justify-center items-center gap-1 font-secondary uppercase text-xs font-medium text-gray-200">
+                    <span className="flex justify-center items-center gap-1.5">
+                      <span className="tracking-[1.5px]">+91 9615737373</span>
+                      <span>(or)</span>
+                      <span className="tracking-[1.5px]">+91 9859873873</span>
+                    </span>
+                  </p>
+                </div>
+              </div>
+
+              {/* Email */}
+              <div className="flex flex-col justify-center w-full lg:w-[30%] items-center gap-2">
+                <MdEmail className="text-2xl text-purple-400 opacity-80" />
+                <div className="flex flex-col gap-3 justify-center items-center">
+                  <p className="font-primary uppercase text-xl md:text-2xl text-purple-400">
+                    Write
+                  </p>
+                  <a
+                    href="mailto:gameonsolutionoff@gmail.com"
+                    className="text-xs font-medium text-gray-200 hover:text-purple-400"
+                  >
+                    gameonsolutionoff@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              {/* Location */}
+              <div className="flex flex-col justify-center w-full lg:w-[30%] items-center gap-2">
+                <MdLocationPin className="text-2xl text-purple-400 opacity-80" />
+                <div className="flex flex-col gap-3 justify-center items-center">
+                  <p className="font-primary uppercase text-2xl text-purple-400">
+                    Visit
+                  </p>
+                  <p className="font-secondary tracking-[1.5px] text-center text-xs font-medium text-gray-200">
+                    Hanifa Nagar, NGO Colony, Dindigul, Tamil Nadu 624005
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Bottom Bar */}
-      <div className="flex">
-        <p>©2025. All rights reserved.</p>
+        {/* Bottom Bar */}
+        <div className="flex">
+          <p>©2025. All rights reserved.</p>
+        </div>
       </div>
-    </div>
-
     </div>
   );
 };

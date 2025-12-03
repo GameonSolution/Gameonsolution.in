@@ -137,6 +137,7 @@ import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import { motion } from "framer-motion";
 import Testimonials from "../testimonial";
+import WhatsAppButton from "../WhatsappButton";
 
 const CircleTurf = () => {
   useEffect(() => {
@@ -145,6 +146,7 @@ const CircleTurf = () => {
 
   return (
     <div>
+      <WhatsAppButton />
       <TabSEO
         title="Mini Cricket Stadium Turf Builders | GameOnSolution - South India’s Best Sports Infrastructure"
         description="Build your mini cricket stadium with our expert-designed synthetic turfs, offering durability, safety, and superior bounce."
