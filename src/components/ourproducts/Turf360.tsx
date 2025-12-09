@@ -7,6 +7,7 @@ import WhatsAppButton from "../WhatsappButton";
 import Awards from "../Awards";
 import Certificates from "../products/pageAnimation/certificates";
 import Testimonials from "../testimonial";
+import TextTestimonials from "../texttestimonials";
 
 const Turf360: React.FC = () => {
   useEffect(() => {
@@ -122,6 +123,8 @@ const Turf360: React.FC = () => {
       </div>
 
       <Testimonials />
+
+      <TextTestimonials />
 
       <Certificates />
 
@@ -258,81 +261,6 @@ const Turf360: React.FC = () => {
         </div>
       </div>
 
-      {/* FAQ */}
-      <div className="py-20 max-w-6xl mx-auto px-6 text-center flex flex-col gap-10">
-        <p className="text-[12px] font-secondary uppercase tracking-[1px] text-white">
-          FAQs
-        </p>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary text-white uppercase leading-tight flex flex-wrap justify-center gap-2">
-          <span>360 Turf</span>
-          <span className="text-green-400">FAQs</span>
-        </h1>
-
-        <div className="flex flex-col w-full border border-white/10 rounded-md overflow-hidden divide-y divide-white/10">
-          {[
-            {
-              q: "What makes 360 Turf unique?",
-              a: "360 Turf is a high-density, multi-purpose sports turf designed for professional play and long-lasting durability. It is eco-friendly, safe, and optimized for all weather conditions.",
-            },
-            {
-              q: "Is 360 Turf safe for kids and pets?",
-              a: "Yes, 360 Turf is 100% non-toxic and lead-free, making it safe for children, pets, and heavy community use.",
-            },
-            {
-              q: "How long does 360 Turf last?",
-              a: "With proper maintenance, 360 Turf can last 8-10 years while maintaining its performance and color vibrancy.",
-            },
-            {
-              q: "Does 360 Turf require maintenance?",
-              a: "It requires minimal maintenance like occasional cleaning, infill leveling, and debris removal to keep it in top condition.",
-            },
-            {
-              q: "Is 360 Turf weather-resistant?",
-              a: "Yes, it features UV-resistant fibers, excellent drainage, and heat-reducing infill, making it suitable for all climates.",
-            },
-          ].map((faq, index) => (
-            <div
-              key={index}
-              className="bg-[#153015] hover:bg-[#1a3a1a] transition-colors"
-            >
-              <button
-                className="w-full flex justify-between items-center p-4 md:p-6 cursor-pointer text-left"
-                onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                aria-expanded={openIndex === index}
-                aria-controls={`faq-answer-${index}`}
-              >
-                <h2
-                  className={`text-lg md:text-xl lg:text-2xl font-primary ${
-                    index % 2 === 0 ? "text-white" : "text-green-400"
-                  }`}
-                >
-                  {faq.q}
-                </h2>
-                <span className="text-green-400 ml-4">
-                  {openIndex === index ? (
-                    <FaMinus size={16} />
-                  ) : (
-                    <FaPlus size={16} />
-                  )}
-                </span>
-              </button>
-              <div
-                id={`faq-answer-${index}`}
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  openIndex === index
-                    ? "max-h-96 opacity-100"
-                    : "max-h-0 opacity-0"
-                }`}
-              >
-                <p className="p-4 md:p-6 pt-2 md:pt-3 text-base md:text-lg text-white bg-[#0a1a0a]">
-                  {faq.a}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* ===================================== */}
       {/* NEW: Marketing Content Block (Below the FAQs) */}
       {/* ===================================== */}
@@ -362,7 +290,7 @@ const Turf360: React.FC = () => {
             <h3 className="text-2xl font-bold text-green-400 mb-3">
               Serving All Over South India
             </h3>
-            <p className="text-gray-300">
+            <p className="text-gray-300 md:text-lg">
               We design and install turfs across Tamil Nadu and South India,
               including
               <span className="text-white">
@@ -372,7 +300,7 @@ const Turf360: React.FC = () => {
               and
               <span className="text-white"> Tirupati</span>.
             </p>
-            <p className="text-gray-300 mt-2">
+            <p className="text-gray-300 mt-2 md:text-lg">
               Whether you're a sports academy, school, corporate complex, or
               private developer, we deliver turnkey turf solutions tailored to
               your requirements, location, and budget.
@@ -385,10 +313,10 @@ const Turf360: React.FC = () => {
               <h3 className="text-2xl md:text-3xl font-primary text-green-400">
                 Why Choose GameOn Solution for Your Football Turf Project?
               </h3>
-              <p className="text-gray-300">
+              <p className="text-gray-300 md:text-lg">
                 Because we don’t just install turf – we build professionalism.
               </p>
-              <ul className="space-y-2 text-gray-200">
+              <ul className="space-y-2 text-gray-200 md:text-lg">
                 {[
                   "FIFA Quality and FIFA Pro-Approved Artificial Turf Systems",
                   "Eco-Friendly Grass",
@@ -416,11 +344,11 @@ const Turf360: React.FC = () => {
             <h3 className="text-2xl md:text-3xl font-primary text-green-400 mb-6">
               Our Turf Installation Process
             </h3>
-            <p className="text-gray-300 mb-6">
+            <p className="text-gray-300 mb-6 md:text-lg">
               We follow a proven, data-backed installation process that ensures
               durability, precision, and global-standard quality.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:text-lg">
               {[
                 {
                   title: "Site Evaluation",
@@ -463,7 +391,7 @@ const Turf360: React.FC = () => {
             <h3 className="text-2xl md:text-3xl font-primary text-green-400 mb-6">
               Technical Specifications & Design Details
             </h3>
-            <div className="overflow-hidden rounded-2xl border border-green-800">
+            <div className="overflow-hidden rounded-2xl border border-green-800 md:text-lg">
               <table className="w-full text-left text-gray-200">
                 <thead className="bg-[#123112]">
                   <tr>
@@ -551,12 +479,12 @@ const Turf360: React.FC = () => {
             <h3 className="text-2xl md:text-3xl font-primary text-green-400 mb-4">
               Why Choose a 360° Turf?
             </h3>
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-300 mb-4 md:text-lg">
               Unlike single-sport installations, the 360° Turf by GameOn
               Solution offers unmatched multi-utility flexibility, perfect for
               clients who want one surface for various sports.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:text-lg">
               {[
                 "Play multiple sports on a single surface",
                 "Low maintenance and weather-resistant",
@@ -572,7 +500,7 @@ const Turf360: React.FC = () => {
                 </div>
               ))}
             </div>
-            <p className="text-gray-300 mt-4">
+            <p className="text-gray-300 mt-4 md:text-lg">
               The 360° Turf System provides optimal bounce for football, soft
               cushioning for volleyball, and durability for cricket and fitness
               training - the all-in-one solution for your facility.
@@ -584,7 +512,7 @@ const Turf360: React.FC = () => {
             <h3 className="text-2xl md:text-3xl font-primary text-green-400 mb-6">
               Step-by-Step Construction Process
             </h3>
-            <ol className="space-y-4 list-decimal list-inside text-gray-200">
+            <ol className="space-y-4 list-decimal list-inside text-gray-200 md:text-lg">
               <li>
                 <strong>Site Analysis & Soil Testing –</strong> Thorough
                 inspection to assess land slope, drainage, and soil stability.
@@ -619,11 +547,11 @@ const Turf360: React.FC = () => {
               <h3 className="text-2xl md:text-3xl font-primary text-green-400 mb-4">
                 Eco-Friendly Turf Technology
               </h3>
-              <p className="text-gray-300 mb-4">
+              <p className="text-gray-300 mb-4 md:text-lg">
                 We use Eco-Friendly Turf Systems that reduce heat, conserve
                 water, and offer a natural grass-like feel without pesticides.
               </p>
-              <ul className="space-y-2 text-gray-200">
+              <ul className="space-y-2 text-gray-200 md:text-lg">
                 {[
                   "Non-toxic, lead-free fibers",
                   "Low water retention for faster drying",
@@ -650,7 +578,7 @@ const Turf360: React.FC = () => {
             <h3 className="text-2xl md:text-3xl font-primary text-green-400 mb-4">
               Maintenance & Aftercare
             </h3>
-            <ul className="space-y-2 text-gray-200">
+            <ul className="space-y-2 text-gray-200 md:text-lg">
               {[
                 "Regular brushing keeps turf fibers standing tall.",
                 "Periodic infill leveling maintains safety and playability.",
@@ -670,7 +598,7 @@ const Turf360: React.FC = () => {
             <h3 className="text-2xl md:text-3xl font-primary text-green-400 mb-4">
               Why Choose GameOn Solution for 360° Turf Construction?
             </h3>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-200">
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-200 md:text-lg">
               {[
                 "8+ years of experience in sports infrastructure",
                 "Certified FIFA-approved materials",
@@ -687,10 +615,87 @@ const Turf360: React.FC = () => {
           </div>
 
           <div className="text-center mt-10">
-            <p className="text-gray-400 mt-3 text-sm">
+            <p className="text-gray-400 mt-3 text-sm md:text-lg">
               When you choose GameOn Solution, you’re investing in reliability,
               precision engineering, and top-tier finishing.
             </p>
+          </div>
+
+          {/* FAQ */}
+          <div className="py-20 max-w-6xl mx-auto px-6 text-center flex flex-col gap-10">
+            <p className="text-[12px] font-secondary uppercase tracking-[1px] text-white">
+              FAQs
+            </p>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary text-white uppercase leading-tight flex flex-wrap justify-center gap-2">
+              <span>360 Turf</span>
+              <span className="text-green-400">FAQs</span>
+            </h1>
+
+            <div className="flex flex-col w-full border border-white/10 rounded-md overflow-hidden divide-y divide-white/10">
+              {[
+                {
+                  q: "What makes 360 Turf unique?",
+                  a: "360 Turf is a high-density, multi-purpose sports turf designed for professional play and long-lasting durability. It is eco-friendly, safe, and optimized for all weather conditions.",
+                },
+                {
+                  q: "Is 360 Turf safe for kids and pets?",
+                  a: "Yes, 360 Turf is 100% non-toxic and lead-free, making it safe for children, pets, and heavy community use.",
+                },
+                {
+                  q: "How long does 360 Turf last?",
+                  a: "With proper maintenance, 360 Turf can last 8-10 years while maintaining its performance and color vibrancy.",
+                },
+                {
+                  q: "Does 360 Turf require maintenance?",
+                  a: "It requires minimal maintenance like occasional cleaning, infill leveling, and debris removal to keep it in top condition.",
+                },
+                {
+                  q: "Is 360 Turf weather-resistant?",
+                  a: "Yes, it features UV-resistant fibers, excellent drainage, and heat-reducing infill, making it suitable for all climates.",
+                },
+              ].map((faq, index) => (
+                <div
+                  key={index}
+                  className="bg-[#153015] hover:bg-[#1a3a1a] transition-colors"
+                >
+                  <button
+                    className="w-full flex justify-between items-center p-4 md:p-6 cursor-pointer text-left"
+                    onClick={() =>
+                      setOpenIndex(openIndex === index ? null : index)
+                    }
+                    aria-expanded={openIndex === index}
+                    aria-controls={`faq-answer-${index}`}
+                  >
+                    <h2
+                      className={`text-lg md:text-xl lg:text-2xl font-primary ${
+                        index % 2 === 0 ? "text-white" : "text-green-400"
+                      }`}
+                    >
+                      {faq.q}
+                    </h2>
+                    <span className="text-green-400 ml-4">
+                      {openIndex === index ? (
+                        <FaMinus size={16} />
+                      ) : (
+                        <FaPlus size={16} />
+                      )}
+                    </span>
+                  </button>
+                  <div
+                    id={`faq-answer-${index}`}
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      openIndex === index
+                        ? "max-h-96 opacity-100"
+                        : "max-h-0 opacity-0"
+                    }`}
+                  >
+                    <p className="p-4 md:p-6 pt-2 md:pt-3 text-base md:text-lg text-white bg-[#0a1a0a]">
+                      {faq.a}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

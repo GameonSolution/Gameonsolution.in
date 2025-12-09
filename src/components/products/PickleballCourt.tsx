@@ -121,6 +121,7 @@ import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import Testimonials from "../testimonial";
 import WhatsAppButton from "../WhatsappButton";
+import TextTestimonials from "../texttestimonials";
 // import { Helmet } from "react-helmet-async";
 
 const META_PIXEL_ID = "1258580152418894"; // replace if you want a different pixel
@@ -263,179 +264,178 @@ const PickleballCourt = () => {
 
       <VideoCarousel title="Pickle Turf" carouselImages={PickleTurfItems} />
 
-      <section className="bg-background text-white py-24">
-        <Container className="md:max-w-[1200px]">
-          <div className="grid gap-12 lg:grid-cols-2 items-start">
-            <div className="space-y-6">
-              <h2 className="text-4xl font-extrabold">
-                Designing a World-Class Pickleball Court
-              </h2>
-              <p className="text-lg text-white/85">
-                We design courts that look, feel and play like professional
-                venues — from precise orientation and drainage to the right
-                surface texture and lighting.
-              </p>
+      <TextTestimonials />
 
-              {/* Quick facts cards (theme synced) */}
-              <div className="grid grid-cols-2 gap-4">
-                <div className="p-6 rounded-2xl shadow-lg border border-white/6 bg-surface/60">
-                  <h4 className="text-xl font-semibold">Standard Court</h4>
-                  <p className="mt-2 text-white/90">
-                    20 ft × 44 ft (play area) — allow 30 × 60 ft total
-                  </p>
-                </div>
-                <div className="p-6 rounded-2xl shadow-lg border border-white/6 bg-surface/60">
-                  <h4 className="text-xl font-semibold">Net Specs</h4>
-                  <p className="mt-2 text-white/90">
-                    Center: 34 in | Posts: 36 in | Length: 22 ft
-                  </p>
-                </div>
-                <div className="p-6 rounded-2xl shadow-lg border border-white/6 bg-surface/60">
-                  <h4 className="text-xl font-semibold">Surface</h4>
-                  <p className="mt-2 text-white/90">
-                    Concrete, asphalt or specialized sports systems with
-                    medium-to-rough texture
-                  </p>
-                </div>
-                <div className="p-6 rounded-2xl shadow-lg border border-white/6 bg-surface/60">
-                  <h4 className="text-xl font-semibold">Lighting</h4>
-                  <p className="mt-2 text-white/90">
-                    Target ≥ 50 foot-candles, uniform distribution and
-                    anti-glare mounting
-                  </p>
-                </div>
+      <section className="px-10 md:px-20 lg:px-[7.5rem] py-20 text-white font-secondary bg-background/50">
+        {/* Top grid: text + design facts */}
+        <div className="grid gap-12 lg:grid-cols-2 items-start">
+          {/* Left: Intro copy */}
+          <div className="space-y-6">
+            <h2 className="text-3xl md:text-5xl font-primary text-secondary">
+              Designing a World-Class Pickleball Court
+            </h2>
+            <p className="text-lg md:text-xl text-white/85">
+              We design courts that look, feel and play like professional venues
+              — from precise orientation and drainage to the right surface
+              texture and lighting.
+            </p>
+
+            {/* Quick facts cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="p-5 md:p-6 rounded-2xl shadow-lg border border-white/10 bg-surface/60">
+                <h4 className="text-lg md:text-xl font-semibold">
+                  Standard Court
+                </h4>
+                <p className="mt-2 text-md md:text-base text-white/90">
+                  20 ft × 44 ft (play area) — allow 30 × 60 ft total
+                </p>
               </div>
-
-              <div className="mt-6">
-                <a
-                  href="https://gameonsolution.in/"
-                  className="inline-block rounded-full px-6 py-3 border-2 border-white bg-white text-black font-semibold"
-                >
-                  Get a free site survey
-                </a>
+              <div className="p-5 md:p-6 rounded-2xl shadow-lg border border-white/10 bg-surface/60">
+                <h4 className="text-lg md:text-xl font-semibold">Net Specs</h4>
+                <p className="mt-2 text-md md:text-base text-white/90">
+                  Center: 34 in | Posts: 36 in | Length: 22 ft
+                </p>
+              </div>
+              <div className="p-5 md:p-6 rounded-2xl shadow-lg border border-white/10 bg-surface/60">
+                <h4 className="text-lg md:text-xl font-semibold">Surface</h4>
+                <p className="mt-2 text-md md:text-base text-white/90">
+                  Concrete, asphalt or specialized sports systems with
+                  medium-to-rough texture
+                </p>
+              </div>
+              <div className="p-5 md:p-6 rounded-2xl shadow-lg border border-white/10 bg-surface/60">
+                <h4 className="text-lg md:text-xl font-semibold">Lighting</h4>
+                <p className="mt-2 text-md md:text-base text-white/90">
+                  Target ≥ 50 foot-candles, uniform distribution and anti-glare
+                  mounting
+                </p>
               </div>
             </div>
 
-            <div className="space-y-6">
-              {/* <div className="rounded-2xl overflow-hidden shadow-xl border border-white/6 bg-gradient-to-br from-primary/10 to-surface/10">
-                <img
-                  src="/pickleTurf/Pickle7.webp"
-                  alt="Pickle court"
-                  className="w-full h-64 object-cover"
-                />
-              </div> */}
-
-              <div className="p-6 rounded-2xl border border-white/6 bg-surface/60 shadow-sm">
-                <h3 className="text-2xl font-bold mb-3">
-                  Factors to consider before installing a Pickleball Court
-                </h3>
-                <div className="space-y-3 text-sm md:text-base text-white/90">
-                  <dl className="grid gap-3">
-                    <div>
-                      <dt className="font-semibold">Location</dt>
-                      <dd>
-                        Choose a flat, level area with sufficient clearance and
-                        room for players and spectators.
-                      </dd>
-                    </div>
-                    <div>
-                      <dt className="font-semibold">Surface Material</dt>
-                      <dd>
-                        Select a surface that balances traction, bounce and
-                        durability (asphalt, concrete or sports surface).
-                      </dd>
-                    </div>
-                    <div>
-                      <dt className="font-semibold">Orientation</dt>
-                      <dd>
-                        Orient court north-south to reduce sun glare during
-                        play.
-                      </dd>
-                    </div>
-                    <div>
-                      <dt className="font-semibold">Accessibility & Budget</dt>
-                      <dd>
-                        Plan parking, pathways and set a realistic budget
-                        including installation and maintenance.
-                      </dd>
-                    </div>
-                    <div>
-                      <dt className="font-semibold">Local Regulations</dt>
-                      <dd>
-                        Check zoning, permits and any community rules that could
-                        affect installation.
-                      </dd>
-                    </div>
-                  </dl>
-                </div>
-              </div>
+            <div className="pt-2">
+              <a
+                href="https://gameonsolution.in/"
+                className="inline-block rounded-full px-6 py-3 border-2 border-white bg-white text-black font-semibold text-md md:text-base"
+              >
+                Get a free site survey
+              </a>
             </div>
           </div>
 
-          <div className="rounded-2xl overflow-hidden shadow-xl border border-white/6 bg-gradient-to-br from-primary/10 to-surface/10 mt-6 md:mt-8">
-            <img
-              src="/pickleTurf/Pickle7.webp"
-              alt="Pickle court"
-              className="w-full h-full object-cover"
-            />
+          {/* Right: factors card */}
+          <div className="space-y-6">
+            <div className="p-6 rounded-2xl border border-white/10 bg-surface/60 shadow-sm">
+              <h3 className="text-2xl font-primary text-secondary mb-3">
+                Factors to consider before installing a Pickleball Court
+              </h3>
+              <div className="space-y-3 text-lg md:text-base text-white/90">
+                <dl className="grid gap-3">
+                  <div>
+                    <dt className="font-semibold">Location</dt>
+                    <dd>
+                      Choose a flat, level area with sufficient clearance and
+                      room for players and spectators.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="font-semibold">Surface Material</dt>
+                    <dd>
+                      Select a surface that balances traction, bounce and
+                      durability (asphalt, concrete or sports surface).
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="font-semibold">Orientation</dt>
+                    <dd>
+                      Orient court north-south to reduce sun glare during play.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="font-semibold">
+                      Accessibility &amp; Budget
+                    </dt>
+                    <dd>
+                      Plan parking, pathways and set a realistic budget
+                      including installation and maintenance.
+                    </dd>
+                  </div>
+                  <div>
+                    <dt className="font-semibold">Local Regulations</dt>
+                    <dd>
+                      Check zoning, permits and any community rules that could
+                      affect installation.
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
           </div>
+        </div>
 
-          {/* Deep dive sections (theme matched) */}
-          <div className="mt-16 grid gap-12">
-            <article className="prose max-w-none prose-invert">
-              <h3>Court Dimensions & Markings</h3>
-              <p>
-                A standard court measures 20' x 44' for both singles and
-                doubles. Allow a 30' x 60' footprint to provide player run-off
-                and spectator space. Key markings include the baseline,
-                sidelines, non-volley zone (7' from the net) and centerline for
-                service.
-              </p>
+        {/* Full-width image below, same page style */}
+        <div className="rounded-2xl overflow-hidden shadow-xl border border-white/10 bg-gradient-to-br from-primary/10 to-surface/10 mt-10 md:mt-12">
+          <img
+            src="/pickleTurf/Pickle7.webp"
+            alt="Pickle court"
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-              <h3>Net Setup & Height</h3>
-              <p>
-                The official net length is 22 feet. Height should be 34 inches
-                at center and 36 inches at the posts. Use durable,
-                weather-resistant net material and ensure the net is properly
-                tensioned for consistent play.
-              </p>
+        {/* Deep dive text section under it */}
+        <div className="mt-16">
+          <article className="prose max-w-none prose-invert  text-lg md:text-xl">
+            <h3>Court Dimensions &amp; Markings</h3>
+            <p>
+              A standard court measures 20&apos; x 44&apos; for both singles and
+              doubles. Allow a 30&apos; x 60&apos; footprint to provide player
+              run-off and spectator space. Key markings include the baseline,
+              sidelines, non-volley zone (7&apos; from the net) and centerline
+              for service.
+            </p>
 
-              <h3>Surface Material & Texture</h3>
-              <p>
-                Concrete and asphalt are common bases; specialized sports
-                surfacing systems deliver the best combination of shock
-                absorption, traction and consistent bounce. We recommend a
-                medium to rough texture for optimal grip without overly
-                affecting ball speed.
-              </p>
+            <h3>Net Setup &amp; Height</h3>
+            <p>
+              The official net length is 22 feet. Height should be 34 inches at
+              center and 36 inches at the posts. Use durable, weather-resistant
+              net material and ensure the net is properly tensioned for
+              consistent play.
+            </p>
 
-              <h3>Lighting & Surroundings</h3>
-              <p>
-                Evening play needs even, glare-controlled light. Aim for a
-                minimum of 50 foot-candles on the playing surface and position
-                fixtures to avoid pointing into players' eyes. Provide at least
-                10' of clearance on each side and a 10' minimum fence to keep
-                the ball in play.
-              </p>
+            <h3>Surface Material &amp; Texture</h3>
+            <p>
+              Concrete and asphalt are common bases; specialized sports
+              surfacing systems deliver the best combination of shock
+              absorption, traction and consistent bounce. We recommend a medium
+              to rough texture for optimal grip without overly affecting ball
+              speed.
+            </p>
 
-              <h3>Maintenance & Longevity</h3>
-              <p>
-                Weekly cleaning, monthly inspections of lines and net, and
-                resurfacing every 3-5 years (depending on usage and material)
-                will keep the court safe and playable. Good drainage and
-                UV-resistant materials extend lifespan.
-              </p>
+            <h3>Lighting &amp; Surroundings</h3>
+            <p>
+              Evening play needs even, glare-controlled light. Aim for a minimum
+              of 50 foot-candles on the playing surface and position fixtures to
+              avoid pointing into players&apos; eyes. Provide at least 10&apos;
+              of clearance on each side and a 10&apos; minimum fence to keep the
+              ball in play.
+            </p>
 
-              <p>
-                For a professional installation or maintenance plan,{" "}
-                <a href="https://gameonsolution.in/" className="underline">
-                  Contact GameOn Solution
-                </a>{" "}
-                for a site survey and quote.
-              </p>
-            </article>
-          </div>
-        </Container>
+            <h3>Maintenance &amp; Longevity</h3>
+            <p>
+              Weekly cleaning, monthly inspections of lines and net, and
+              resurfacing every 3–5 years (depending on usage and material) will
+              keep the court safe and playable. Good drainage and UV-resistant
+              materials extend lifespan.
+            </p>
+
+            <p>
+              For a professional installation or maintenance plan,&nbsp;
+              <a href="https://gameonsolution.in/" className="underline">
+                Contact GameOn Solution
+              </a>{" "}
+              for a site survey and quote.
+            </p>
+          </article>
+        </div>
       </section>
 
       <AnimateCard>

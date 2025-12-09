@@ -166,6 +166,7 @@ import Awards from "../Awards";
 import Testimonials from "../testimonial";
 import { FaCheckCircle } from "react-icons/fa";
 import WhatsAppButton from "../WhatsappButton";
+import TextTestimonials from "../texttestimonials";
 
 const IndoorTurf = () => {
   useEffect(() => {
@@ -219,6 +220,8 @@ const IndoorTurf = () => {
       <Certificates />
       <Awards />
 
+      <TextTestimonials />
+
       <section
         id="indoor-marketing"
         className="px-10 md:px-20 lg:px-[7.5rem] py-20 text-white font-secondary bg-background/50"
@@ -261,14 +264,14 @@ const IndoorTurf = () => {
             <h3 className="text-2xl md:text-3xl font-primary text-secondary">
               Our Story - Built for the Love of the Game
             </h3>
-            <p className="text-gray-300">
+            <p className="text-gray-300 md:text-lg">
               GameOn Solution was founded on one belief - sports should never be
               limited by weather, ground, or geography. From Chennai to
               Coimbatore, Bengaluru to Tirupati, we’ve helped hundreds of sports
               enthusiasts and facility owners turn their indoor spaces into
               vibrant, high-performance playgrounds.
             </p>
-            <p className="text-gray-300">
+            <p className="text-gray-300 md:text-lg">
               Each project we build reflects our promise: eco-conscious
               materials, precision engineering, and athlete-approved quality.
               Our <strong>AQUA Eco Turf System</strong> uses recycled, non-toxic
@@ -293,7 +296,7 @@ const IndoorTurf = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
             Our Turf Installation Process
           </h3>
-          <p className="text-gray-300 mb-6">
+          <p className="text-gray-300 mb-6 md:text-lg">
             We follow a proven, data-backed installation process that ensures
             durability, precision, and global-standard quality.
           </p>
@@ -340,12 +343,12 @@ const IndoorTurf = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
             Why Choose an Indoor Turf?
           </h3>
-          <p className="text-gray-300 mb-4">
+          <p className="text-gray-300 mb-4 md:text-lg">
             Indoor turfs are more than a convenience - they’re a revolution in
             how we experience sports. When you build with GameOn Solution,
             you’re investing in:
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:text-lg">
             {[
               "All-weather playability - No rain delays, no muddy fields.",
               "Consistent surface grip - Perfect traction for every sport.",
@@ -363,7 +366,7 @@ const IndoorTurf = () => {
               </div>
             ))}
           </div>
-          <p className="text-gray-300 mt-4">
+          <p className="text-gray-300 mt-4 md:text-lg">
             It’s not just a turf. It’s a smart surface engineered for comfort,
             control, and creativity.
           </p>
@@ -374,7 +377,7 @@ const IndoorTurf = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-6">
             Indoor Turf Specifications
           </h3>
-          <div className="overflow-hidden rounded-2xl border border-white/10">
+          <div className="overflow-hidden rounded-2xl border border-white/10 md:text-lg">
             <table className="w-full text-left text-gray-200">
               <thead className="bg-white/10">
                 <tr>
@@ -443,14 +446,14 @@ const IndoorTurf = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
             Why GameOn Solution Leads South India’s Turf Industry
           </h3>
-          <p className="text-gray-300 mb-4">
+          <p className="text-gray-300 mb-4 md:text-lg">
             When you partner with GameOn Solution, you don’t just get turf - you
             get a team of visionaries who’ve built some of South India’s finest
             sports facilities. We have completed turf and court installations
             across Tamil Nadu and Karnataka, creating spaces where passion meets
             performance.
           </p>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-200">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-200 md:text-lg">
             {[
               "FIFA-standard turf systems",
               "Precision laser-level base construction",
@@ -465,7 +468,7 @@ const IndoorTurf = () => {
               </li>
             ))}
           </ul>
-          <p className="text-gray-300 mt-3">
+          <p className="text-gray-300 mt-3 md:text-lg">
             Each project begins with your vision and ends with a
             GameOn-certified turf that delivers on it, season after season.
           </p>
@@ -476,7 +479,7 @@ const IndoorTurf = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
             Who Is Indoor Turf For?
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:text-lg">
             {[
               "Sports academies & schools - Year-round practice, weather-proof facilities",
               "Corporate arenas - Employee recreation zones that boost wellness",
@@ -501,7 +504,7 @@ const IndoorTurf = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
             Our Process - Precision from Start to Finish
           </h3>
-          <ol className="list-decimal pl-5 space-y-3 text-gray-200">
+          <ol className="list-decimal pl-5 space-y-3 text-gray-200 md:text-lg">
             <li>
               <strong>Site Study & Design:</strong> We visit your location,
               measure space, and design a layout tailored to your needs - sport,

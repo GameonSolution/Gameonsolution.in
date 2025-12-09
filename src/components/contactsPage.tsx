@@ -111,7 +111,7 @@ const ContactsPage = () => {
                 <p className="font-primary uppercase text-xl md:text-2xl text-white">
                   Write
                 </p>
-                <p className="font-secondary uppercase text-xs font-medium text-white tracking-[1.5px]">
+                <p className="font-secondary lowercase text-xs font-medium text-white tracking-[1.5px]">
                   gameonsolutionoff@gmail.com
                 </p>
               </div>

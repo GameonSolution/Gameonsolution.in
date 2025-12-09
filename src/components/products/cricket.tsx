@@ -168,6 +168,7 @@ import TabSEO from "../seoOptimize/index";
 import { motion } from "framer-motion";
 import Testimonials from "../testimonial";
 import WhatsAppButton from "../WhatsappButton";
+import TextTestimonials from "../texttestimonials";
 
 const CricketTurf = () => {
   useEffect(() => {
@@ -271,6 +272,140 @@ const CricketTurf = () => {
           </motion.p>
         </div>
       </section>
+
+      <TextTestimonials />
+
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="flex flex-col gap-12 px-10 md:px-20 lg:px-[7.5rem] py-20 text-white font-secondary"
+      >
+        <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary text-secondary uppercase">
+          Expert Cricket Turf Installation Services South India - GameOn
+          Solution
+        </h2>
+
+        <p className="md:text-2xl text-lg leading-relaxed">
+          Upgrade your pitch with{" "}
+          <strong>high-quality FIFA-certified Cricket turf</strong>
+          designed to perform in all weather conditions. If you&apos;re looking
+          for professional{" "}
+          <strong className="text-secondary">
+            Cricket turf installation in Chennai, Bangalore, Hyderabad, or
+            anywhere in South India
+          </strong>
+          , GameOn Solution is your trusted partner. Our eco-friendly, durable
+          Cricket turfs provide world-class playing conditions for academies,
+          community fields, and professional stadiums.
+        </p>
+
+        <h3 className="text-2xl md:text-3xl text-secondary font-primary">
+          Why Choose GameOn Solution for Cricket Turf Installation?
+        </h3>
+        <ul className="list-disc pl-5 md:text-xl text-lg space-y-3">
+          <li>
+            <strong>Environmentally Safe Grass Solutions:</strong> We use
+            recyclable, non-toxic materials, ensuring safe play and a minimal
+            environmental footprint.
+          </li>
+          <li>
+            <strong>Aqua Eco-Friendly Grass Systems:</strong> Advanced
+            piezo-drainage technology saves up to 70% water compared to natural
+            grass.
+          </li>
+          <li>
+            <strong>FIFA Pro Certified Quality:</strong> Tested for ball roll,
+            bounce, player interaction, and shock absorption for professional
+            play.
+          </li>
+          <li>
+            <strong>All-Weather Durability:</strong> Play year-round without
+            worrying about monsoons or extreme heat in South India.
+          </li>
+        </ul>
+
+        <h3 className="text-2xl md:text-3xl text-secondary font-primary">
+          Cricket Turf Installation Process
+        </h3>
+        <ol className="list-decimal pl-5 md:text-xl text-lg space-y-3">
+          <li>
+            <strong>Site Evaluations & Planning</strong> - Assessing drainage,
+            soil, and climate.
+          </li>
+          <li>
+            <strong>Ground Preparation</strong> - Creating a stable base with
+            perfect drainage.
+          </li>
+          <li>
+            <strong>Professional Installation</strong> - Using FIFA-approved
+            artificial turf with precise joints.
+          </li>
+          <li>
+            <strong>Quality Assurance</strong> - Comprehensive checks to meet
+            international Cricket standards.
+          </li>
+        </ol>
+
+        <h3 className="text-2xl md:text-3xl text-secondary font-primary">
+          Benefits of Our Cricket Turf Systems
+        </h3>
+        <ul className="list-disc pl-5 md:text-xl text-lg space-y-3">
+          <li>All-climate performance with zero downtime.</li>
+          <li>Low maintenance and cost savings over natural grass.</li>
+          <li>Durable and safe for players with consistent ball roll.</li>
+          <li>Quick project delivery and long-term warranty coverage.</li>
+        </ul>
+
+        <h3 className="text-2xl md:text-3xl text-secondary font-primary">
+          Service Locations Across South India
+        </h3>
+        <p className="md:text-xl text-lg">
+          GameOn Solution offers{" "}
+          <strong>Cricket turf construction and installation</strong>
+          in Tamil Nadu{" "}
+          <span className="text-secondary">(Chennai, Coimbatore, Madurai)</span>
+          , Karnataka{" "}
+          <span className="text-secondary">(Bangalore, Mysore)</span>, Andhra
+          Pradesh{" "}
+          <span className="text-secondary">(Vijayawada, Visakhapatnam)</span>,
+          Kerala <span className="text-secondary">(Kochi, Trivandrum)</span>,
+          and Telangana{" "}
+          <span className="text-secondary">(Hyderabad, Warangal)</span>.
+        </p>
+
+        <h3 className="text-2xl md:text-3xl text-secondary font-primary">
+          Why Eco-Friendly Cricket Turf?
+        </h3>
+        <p className="md:text-xl text-lg">
+          Our <strong>eco-friendly Cricket grass</strong> eliminates toxic
+          rubber infill and uses silica sand or organic alternatives. It stays
+          cooler in the South Indian climate, provides excellent drainage during
+          monsoons, and is 100% recyclable.
+        </p>
+
+        <ul className="list-disc pl-5 md:text-xl text-lg space-y-3">
+          <li>No toxic rubber exposure or respiratory risks.</li>
+          <li>Colder surface temperature with superior drainage.</li>
+          <li>FIFA Pro-level playability with 10+ years of durability.</li>
+          <li>Environmentally safe and fully recyclable materials.</li>
+        </ul>
+
+        <p className="md:text-xl text-lg mt-6">
+          <strong>Transform your Cricket field with GameOn Solution</strong>.
+          Contact us today for a free site assessment and professional quote.
+          Experience world-class{" "}
+          <a
+            href="/blog/turf-cricket-installation"
+            className="text-secondary underline"
+          >
+            turf installation
+          </a>{" "}
+          that delivers durability, eco-friendliness, and top performance for
+          South India&apos;s climate.
+        </p>
+      </motion.div>
 
       {/* Certificates */}
       <section className="px-4 md:px-10 py-10">

@@ -389,6 +389,7 @@ import WhatsAppButton from "../WhatsappButton";
 import Testimonials from "../testimonial";
 import Certificates from "../products/pageAnimation/certificates";
 import Awards from "../Awards";
+import TextTestimonials from "../texttestimonials";
 
 const EcoFriendly: React.FC = () => {
   useEffect(() => {
@@ -604,6 +605,8 @@ const EcoFriendly: React.FC = () => {
           </button>
         </motion.div>
       </div>
+
+      <TextTestimonials />
 
       {/* NEW: Football Turf Installation Content */}
       <div className="py-12 bg-[#081f0e]">

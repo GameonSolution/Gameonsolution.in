@@ -167,6 +167,7 @@ import TabSEO from "../seoOptimize/index";
 import { FaCheckCircle } from "react-icons/fa";
 import Testimonials from "../testimonial";
 import WhatsAppButton from "../WhatsappButton";
+import TextTestimonials from "../texttestimonials";
 
 const MultiSportsTurf = () => {
   useEffect(() => {
@@ -224,6 +225,8 @@ const MultiSportsTurf = () => {
         <Certificates />
       </motion.div>
 
+      <TextTestimonials />
+
       {/* ===================================== */}
       {/* NEW: Multi Sports Marketing Content */}
       {/* ===================================== */}
@@ -272,14 +275,14 @@ const MultiSportsTurf = () => {
             <h3 className="text-2xl md:text-3xl font-primary text-secondary">
               Why Multi Sports Turf Matters
             </h3>
-            <p className="text-gray-300">
+            <p className="text-gray-300 md:text-lg">
               In today’s world, space is valuable - and so is versatility. A
               multi-sport turf gives you the power to host multiple games on a
               single surface, making it perfect for institutions, academies, and
               private developments that want to promote fitness, community, and
               play without needing multiple grounds.
             </p>
-            <p className="text-gray-300">
+            <p className="text-gray-300 md:text-lg">
               Whether it’s kids switching between cricket and football, or
               professionals training for multiple sports, GameOn’s turf systems
               are built to perform across disciplines.{" "}
@@ -304,11 +307,11 @@ const MultiSportsTurf = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
             Why Choose GameOn Solution for Multi Sports Turf Construction?
           </h3>
-          <p className="text-gray-300 mb-4">
+          <p className="text-gray-300 mb-4 md:text-lg">
             We don’t just install turf - we engineer sports ecosystems. Here’s
             why South India trusts GameOn Solution:
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:text-lg">
             {[
               "Custom Layout Design - Tailor-made turf plans for your available area and sports lineup.",
               "All-Weather Performance - Advanced drainage systems for consistent play - rain or shine.",
@@ -334,7 +337,7 @@ const MultiSportsTurf = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-6">
             Specifications & Design Options
           </h3>
-          <div className="overflow-hidden rounded-2xl border border-white/10">
+          <div className="overflow-hidden rounded-2xl border border-white/10 md:text-lg">
             <table className="w-full text-left text-gray-200">
               <thead className="bg-white/10">
                 <tr>
@@ -411,7 +414,7 @@ const MultiSportsTurf = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
             Who Can Benefit From Multi Sports Turf
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:text-lg">
             {[
               "Schools & Colleges - Multiple sports, one playground, endless fun.",
               "Sports Academies - Training zones for football, tennis, and cricket all in one facility.",
@@ -436,7 +439,7 @@ const MultiSportsTurf = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
             How GameOn Builds a World-Class Multi Sports Turf
           </h3>
-          <ol className="list-decimal pl-5 space-y-3 text-gray-200">
+          <ol className="list-decimal pl-5 space-y-3 text-gray-200 md:text-lg">
             <li>
               <strong>Consultation & Layout Planning:</strong> Free site survey
               to understand space, soil conditions, and sports preferences.

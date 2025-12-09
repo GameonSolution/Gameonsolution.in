@@ -14,6 +14,7 @@ import Services from "./services";
 import WhatsAppButton from "./WhatsappButton";
 import WhyUs from "./whyUs";
 import Testimonials from "./testimonial";
+import TextTestimonials from "./texttestimonials";
 // import ChatWidget from "./chatWidget";
 // import Testimonials from "./testimonials";
 
@@ -37,6 +38,7 @@ const HomePage: React.FC = () => {
         <div id="CircleMiniCricketStadiumTurf">
           <CircleMiniCricketStadiumTurf />
         </div>
+        <TextTestimonials />
         <div id="aboutUs">
           <AboutUs />
         </div>

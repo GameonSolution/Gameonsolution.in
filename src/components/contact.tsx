@@ -702,7 +702,7 @@ const Contact: React.FC = () => {
                   <p className="font-primary uppercase text-xl md:text-2xl text-white">
                     Call
                   </p>
-                  <p className="flex flex-col xl:flex-row tracking-[1.5px] justify-center items-center gap-1 font-secondary uppercase text-xs font-medium text-white">
+                  <p className="flex flex-col xl:flex-row tracking-[1.5px] justify-center items-center gap-1 font-secondary uppercase text-md font-medium text-white">
                     Office :{" "}
                     <span className="flex flex-col xl:flex-row justify-center items-center gap-1.5">
                       <span className="tracking-[1.5px]">+91 9615737373</span>
@@ -718,7 +718,7 @@ const Contact: React.FC = () => {
                   <p className="font-primary uppercase text-xl md:text-2xl text-white">
                     Write
                   </p>
-                  <p className="font-secondary uppercase text-xs font-medium text-white tracking-[1.5px]">
+                  <p className="font-secondary lowercase text-md font-medium text-white tracking-[1.5px]">
                     gameonsolutionoff@gmail.com
                   </p>
                 </div>
@@ -729,7 +729,7 @@ const Contact: React.FC = () => {
                   <p className="font-primary uppercase text-2xl text-white">
                     Visit
                   </p>
-                  <p className="font-secondary tracking-[1.5px] uppercase text-center text-xs font-medium text-white">
+                  <p className="font-secondary tracking-[1.5px] text-center text-md font-medium text-white">
                     Hanifa Nagar, NGO Colony, Dindigul, Tamil Nadu 624005
                   </p>
                 </div>

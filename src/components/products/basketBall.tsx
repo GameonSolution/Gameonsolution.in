@@ -167,6 +167,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import Awards from "../Awards";
 import { Footer } from "../footer";
 import WhatsAppButton from "../WhatsappButton";
+import TextTestimonials from "../texttestimonials";
 
 const BasketBallCourt = () => {
   useEffect(() => {
@@ -221,8 +222,7 @@ const BasketBallCourt = () => {
         title="Basketball Court"
         carouselImages={basketballItems}
       />
-
-      <Testimonials />
+      <TextTestimonials />
 
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -233,6 +233,8 @@ const BasketBallCourt = () => {
         <Certificates />
         <Awards />
       </motion.div>
+
+      <Testimonials />
 
       {/* ===================================== */}
       {/* NEW: Marketing + Specs + Process Blocks */}
@@ -281,13 +283,13 @@ const BasketBallCourt = () => {
               Our Story - Building the Foundation for South India’s Future
               Athletes
             </h3>
-            <p className="text-gray-300">
+            <p className="text-gray-300 md:text-lg">
               Basketball in India is growing fast - and GameOn Solution is
               helping that momentum take shape. We started with a vision: to
               make high-quality, affordable basketball courts accessible to
               schools, universities, and communities across South India.
             </p>
-            <p className="text-gray-300">
+            <p className="text-gray-300 md:text-lg">
               From the smooth bounce of the ball to the perfect grip underfoot,
               every detail of our court design is crafted to deliver the
               pro-level experience athletes deserve. We’ve worked with
@@ -311,11 +313,11 @@ const BasketBallCourt = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
             Why Choose a GameOn Basketball Court?
           </h3>
-          <p className="text-gray-300 mb-4">
+          <p className="text-gray-300 mb-4 md:text-lg">
             Building a court is one thing. Building a court that lasts,
             performs, and inspires - that’s GameOn engineering.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:text-lg">
             {[
               "All-weather courts built for Indian climates",
               "Certified materials meeting International standards",
@@ -334,7 +336,7 @@ const BasketBallCourt = () => {
               </div>
             ))}
           </div>
-          <p className="text-gray-300 mt-4 italic">
+          <p className="text-gray-300 mt-4 italic md:text-lg">
             Every bounce feels better when it’s on a GameOn-built court.
           </p>
         </div>
@@ -344,7 +346,7 @@ const BasketBallCourt = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-6">
             Court Specifications
           </h3>
-          <div className="overflow-hidden rounded-2xl border border-white/10">
+          <div className="overflow-hidden rounded-2xl border border-white/10 md:text-lg">
             <table className="w-full text-left text-gray-200">
               <thead className="bg-white/10">
                 <tr>
@@ -415,7 +417,7 @@ const BasketBallCourt = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
             Who We Build For
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:text-lg">
             {[
               "Schools & Colleges - Encourage student participation and tournaments",
               "Sports Academies - Train athletes on pro-standard surfaces",
@@ -439,7 +441,7 @@ const BasketBallCourt = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
             Our Proven Construction Process
           </h3>
-          <ol className="list-decimal pl-5 space-y-3 text-gray-200">
+          <ol className="list-decimal pl-5 space-y-3 text-gray-200 md:text-lg">
             <li>
               <strong>Consultation & Site Assessment:</strong> We visit your
               location, analyze ground conditions, and discuss your design,
@@ -534,6 +536,7 @@ const BasketBallCourt = () => {
           </motion.div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

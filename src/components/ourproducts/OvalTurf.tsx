@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { Footer } from "../footer";
 import WhatsAppButton from "../WhatsappButton";
+import Certificates from "../products/pageAnimation/certificates";
+import Awards from "../Awards";
 
 const OvalTurf: React.FC = () => {
   useEffect(() => {
@@ -100,10 +102,15 @@ const OvalTurf: React.FC = () => {
           </h2>
           <p className="text-gray-200 text-lg">
             GameOn’s <strong>Oval Turf</strong> is purpose-built for{" "}
-            <strong>cricket grounds, athletic ovals, and multipurpose stadiums</strong>. 
-            With an oval-shaped design, it ensures consistent play across large
-            open fields, making it ideal for{" "}
-            <strong>cricket academies, schools, and professional complexes</strong>.
+            <strong>
+              cricket grounds, athletic ovals, and multipurpose stadiums
+            </strong>
+            . With an oval-shaped design, it ensures consistent play across
+            large open fields, making it ideal for{" "}
+            <strong>
+              cricket academies, schools, and professional complexes
+            </strong>
+            .
           </p>
           <p className="text-gray-200 text-lg">
             Its high-density fibers, cooling technology, and superior drainage
@@ -121,6 +128,10 @@ const OvalTurf: React.FC = () => {
           </button>
         </motion.div>
       </div>
+
+      <Certificates />
+
+      <Awards />
 
       {/* ✅ OVAL TURF SPECIFICATIONS */}
       <div className="py-20 bg-[#102010] text-white">
@@ -154,7 +165,8 @@ const OvalTurf: React.FC = () => {
                   <strong>Density:</strong> 15,000
                 </li>
                 <li>
-                  <strong>Backing:</strong> 4 Layers (PP + Mesh + SBR Latex + PU)
+                  <strong>Backing:</strong> 4 Layers (PP + Mesh + SBR Latex +
+                  PU)
                 </li>
                 <li>
                   <strong>Warranty:</strong> 10 Years Manufacturer Warranty
@@ -188,9 +200,11 @@ const OvalTurf: React.FC = () => {
 
           <div className="bg-green-950/30 rounded-xl p-6 text-center text-gray-200 text-lg">
             <span className="text-green-400 font-bold">Oval Turf</span> – the
-            premier choice for <strong>cricket ovals, athletics grounds, and
-            multipurpose stadiums</strong>, offering unmatched durability and
-            performance.
+            premier choice for{" "}
+            <strong>
+              cricket ovals, athletics grounds, and multipurpose stadiums
+            </strong>
+            , offering unmatched durability and performance.
           </div>
         </div>
       </div>

@@ -53,14 +53,14 @@ function OptimizedImage(props: IOptimizedImageProps) {
     <div>
      <LazyLoadImage
         src={imageUrl}
-        className={`${classNames}  object-cover transition-transform duration-[2000ms] ease-in-out`} 
+        className={`${classNames}  object-cover transition-transform duration-&lsqb;2000ms&rsqb; ease-in-out`} 
         onLoad={handleLoad}
         beforeLoad={handleLoadStarted}
 
       />
       {!isLoaded && isLoadStarted && (
         <StyledBlurhash
-        className='transition-transform duration-[2000ms] rounded-xl ease-in-out'
+        className='transition-transform duration-&lsqb;2000ms&rsqb; rounded-xl ease-in-out'
           hash={blurhash}
           width={width}
           height={height}

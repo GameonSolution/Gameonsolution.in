@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import TabSEO from "../seoOptimize/index";
 import Testimonials from "../testimonial";
 import WhatsAppButton from "../WhatsappButton";
+import TextTestimonials from "../texttestimonials";
 
 const AquaEcoTurf = () => {
   useEffect(() => {
@@ -69,6 +70,8 @@ const AquaEcoTurf = () => {
       >
         <Certificates />
       </motion.div>
+
+      <TextTestimonials />
 
       <div className="flex gap-10 lg:flex-row flex-col px-10 md:px-20 lg:px-[7.5rem] py-20">
         <div className="flex md:flex-row flex-col gap-12">

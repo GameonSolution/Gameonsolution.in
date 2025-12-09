@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { Footer } from "../footer";
 import WhatsAppButton from "../WhatsappButton";
+import Certificates from "../products/pageAnimation/certificates";
+import Awards from "../Awards";
 
 const SemiCircleTurf: React.FC = () => {
   useEffect(() => {
@@ -68,9 +70,12 @@ const SemiCircleTurf: React.FC = () => {
             </span>
           </h1>
           <p className="mt-4 text-lg md:text-xl text-[#d8eede]/90 max-w-3xl mx-auto leading-relaxed">
-            <span className="text-[#94f0b6] font-semibold">Semi Circle Turf</span>{" "}
-            — engineered for compact training zones, urban playgrounds and premium
-            coaching arenas. Performance, safety and luxury — in limited space.
+            <span className="text-[#94f0b6] font-semibold">
+              Semi Circle Turf
+            </span>{" "}
+            — engineered for compact training zones, urban playgrounds and
+            premium coaching arenas. Performance, safety and luxury — in limited
+            space.
           </p>
         </motion.div>
       </div>
@@ -125,6 +130,10 @@ const SemiCircleTurf: React.FC = () => {
         </motion.div>
       </div>
 
+      <Certificates />
+
+      <Awards />
+
       {/* SPECIFICATIONS */}
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-6">
@@ -132,31 +141,53 @@ const SemiCircleTurf: React.FC = () => {
             <h3 className="text-2xl md:text-3xl font-primary text-[#bfeac6] uppercase">
               Semi Circle Turf Specifications
             </h3>
-            <p className="mt-3 text-[#d8eede]/90 max-w-3xl mx-auto">
+            <p className="mt-3 text-[#d8eede]/90 max-w-3xl mx-auto md:text-lg">
               Built for compact fields and high-usage training facilities with a
               focus on safety, cooling and consistent play.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:text-lg">
             <div className="p-6 rounded-2xl bg-black/30 border border-[#143019] shadow-lg">
-              <h4 className="text-lg font-semibold text-[#d4af37] mb-4">Turf Specs</h4>
+              <h4 className="text-lg font-semibold text-[#d4af37] mb-4">
+                Turf Specs
+              </h4>
               <ul className="text-[#d8eede]/85 space-y-2">
-                <li><strong>Pile Height:</strong> 35mm</li>
-                <li><strong>Gauge:</strong> 3/8"</li>
-                <li><strong>Stitch Rate:</strong> 20 st / 10 cm</li>
-                <li><strong>Density:</strong> 18,500</li>
-                <li><strong>Backing:</strong> 3 Layers (PP + Mesh + Latex)</li>
-                <li><strong>Warranty:</strong> 6 Years</li>
+                <li>
+                  <strong>Pile Height:</strong> 35mm
+                </li>
+                <li>
+                  <strong>Gauge:</strong> 3/8"
+                </li>
+                <li>
+                  <strong>Stitch Rate:</strong> 20 st / 10 cm
+                </li>
+                <li>
+                  <strong>Density:</strong> 18,500
+                </li>
+                <li>
+                  <strong>Backing:</strong> 3 Layers (PP + Mesh + Latex)
+                </li>
+                <li>
+                  <strong>Warranty:</strong> 6 Years
+                </li>
               </ul>
             </div>
 
             <div className="p-6 rounded-2xl bg-black/30 border border-[#143019] shadow-lg">
-              <h4 className="text-lg font-semibold text-[#d4af37] mb-4">Infill & Performance</h4>
+              <h4 className="text-lg font-semibold text-[#d4af37] mb-4">
+                Infill & Performance
+              </h4>
               <ul className="text-[#d8eede]/85 space-y-2">
-                <li><strong>Infill:</strong> Silica Sand + Organic Infill</li>
-                <li><strong>Grain Size:</strong> 0.4 - 0.8mm</li>
-                <li><strong>Quantity:</strong> 450g / sqft ±20%</li>
+                <li>
+                  <strong>Infill:</strong> Silica Sand + Organic Infill
+                </li>
+                <li>
+                  <strong>Grain Size:</strong> 0.4 - 0.8mm
+                </li>
+                <li>
+                  <strong>Quantity:</strong> 450g / sqft ±20%
+                </li>
                 <li>Cool surface technology — lower heat build-up</li>
                 <li>Non-toxic, recyclable, athlete-safe</li>
               </ul>
@@ -165,7 +196,9 @@ const SemiCircleTurf: React.FC = () => {
 
           <div className="mt-8 p-6 rounded-2xl bg-gradient-to-r from-black/40 to-[#042113] text-center border border-[#153b24]">
             <p className="text-[#d8eede]/90 text-lg">
-              <span className="text-[#9ef3b8] font-semibold">Semi Circle Turf</span>{" "}
+              <span className="text-[#9ef3b8] font-semibold">
+                Semi Circle Turf
+              </span>{" "}
               delivers pro-level quality in small footprints — perfect for urban
               academies, rooftop practice areas and compact community grounds.
             </p>
@@ -190,7 +223,9 @@ const SemiCircleTurf: React.FC = () => {
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 className="p-6 rounded-2xl bg-gradient-to-b from-black/20 to-[#072414] border border-[#153b24] shadow-lg hover:translate-y-[-4px] transition-transform"
               >
-                <h4 className="text-lg font-semibold text-[#d4af37] mb-2">{s.title}</h4>
+                <h4 className="text-lg font-semibold text-[#d4af37] mb-2">
+                  {s.title}
+                </h4>
                 <p className="text-[#d8eede]/85 text-sm">{s.desc}</p>
               </motion.div>
             ))}
@@ -238,8 +273,16 @@ const SemiCircleTurf: React.FC = () => {
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-8">
-            <p className="text-sm uppercase tracking-wider text-[#cfefd0]">FAQs</p>
-            <h2 className="text-2xl md:text-3xl font-primary text-white mt-2">Semi Circle Turf <span className="text-[#bfeac6]">FAQs</span></h2>
+            <p className="text-sm uppercase tracking-wider text-[#cfefd0]">
+              FAQs
+            </p>
+            {/* <h2 className="text-2xl md:text-3xl font-primary text-white mt-2">
+              Semi Circle Turf <span className="text-[#bfeac6]">FAQs</span>
+            </h2> */}
+            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-primary text-white uppercase leading-tight flex flex-wrap justify-center gap-2">
+              <span>Semi Circle Turf</span>
+              <span className="text-[#bfeac6]">FAQs</span>
+            </h1>
           </div>
 
           <div className="space-y-3 border border-[#0f2b17] rounded-lg overflow-hidden">
@@ -271,23 +314,37 @@ const SemiCircleTurf: React.FC = () => {
               >
                 <button
                   className="w-full flex justify-between items-center p-5 cursor-pointer text-left"
-                  onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                  onClick={() =>
+                    setOpenIndex(openIndex === index ? null : index)
+                  }
                   aria-expanded={openIndex === index}
                   aria-controls={`faq-answer-${index}`}
                 >
-                  <h3 className={`text-lg md:text-xl ${index % 2 === 0 ? "text-white" : "text-[#bfeac6]"}`}>
+                  <h3
+                    className={`text-lg md:text-xl lg:text-2xl font-primary ${
+                      index % 2 === 0 ? "text-white" : "text-[#bfeac6]"
+                    }`}
+                  >
                     {faq.q}
                   </h3>
                   <span className="text-[#d4af37] ml-4">
-                    {openIndex === index ? <FaMinus size={16} /> : <FaPlus size={16} />}
+                    {openIndex === index ? (
+                      <FaMinus size={16} />
+                    ) : (
+                      <FaPlus size={16} />
+                    )}
                   </span>
                 </button>
 
                 <div
                   id={`faq-answer-${index}`}
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}
+                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                    openIndex === index
+                      ? "max-h-96 opacity-100"
+                      : "max-h-0 opacity-0"
+                  }`}
                 >
-                  <div className="p-5 bg-[#071814] text-[#d8eede]/90">
+                  <div className="p-4 md:p-6 pt-2 md:pt-3 text-base md:text-lg bg-[#071814] text-[#d8eede]/90">
                     {faq.a}
                   </div>
                 </div>

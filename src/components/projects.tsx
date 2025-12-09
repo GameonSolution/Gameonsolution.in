@@ -357,6 +357,463 @@
 // };
 
 // export default Projects;
+// import { useEffect, useState } from "react";
+// import TextHoverAnimation from "./textHoverAnimation";
+// import { usePortfolio } from "@/hook/usePortfolio";
+// import VideoCard from "./videoCard/main";
+// import TabSEO from "./seoOptimize";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Autoplay, Navigation } from "swiper/modules";
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import { seoData } from "@/common/seoTitleDescription";
+// import { useNavigate } from "react-router-dom";
+// import { MdCall, MdEmail, MdLocationPin } from "react-icons/md";
+// import {
+//   FaInstagram,
+//   FaLinkedin,
+//   FaMedium,
+//   FaReddit,
+//   FaWhatsapp,
+//   FaYoutube,
+// } from "react-icons/fa";
+
+// /**
+//  * Projects page: renders a grid of project cards.
+//  * Each card shows: image/media, Title, Location, Short description, and date.
+//  *
+//  * Added: a simple preloading animation (gif/image) shown while projects are loading.
+//  * - The code observes the portfolio hook for data and/or a loading flag.
+//  * - Falls back to a local loading timeout guard in case the hook doesn't expose a loading flag.
+//  */
+
+// const Projects: React.FC = () => {
+//   const { getPortfolio } = usePortfolio();
+//   const data = getPortfolio.data ?? [];
+
+//   // If the portfolio hook exposes a loading flag, prefer it. Otherwise use our local guard.
+//   const remoteLoading: boolean | undefined =
+//     (getPortfolio as any)?.isLoading ?? (getPortfolio as any)?.loading;
+
+//   const [isLoading, setIsLoading] = useState<boolean>(remoteLoading ?? true);
+
+//   useEffect(() => {
+//     // ensure top-of-page on mount
+//     window.scrollTo({ top: 0, behavior: "smooth" });
+
+//     // If the hook provides a loading flag keep sync
+//     if (typeof remoteLoading === "boolean") {
+//       setIsLoading(remoteLoading);
+//     }
+
+//     // If there's already data available immediately, stop loading
+//     if (data && data.length > 0) {
+//       setIsLoading(false);
+//     }
+
+//     // Safety: in case the hook never toggles a loading flag, set a reasonable timeout to hide loader
+//     const guard = setTimeout(() => {
+//       if (!data || data.length === 0) {
+//         // keep loading if truly empty; otherwise hide
+//         // here we assume backend will respond quickly; adjust as needed
+//         setIsLoading(false);
+//       }
+//     }, 2500); // 2.5s fallback
+
+//     return () => clearTimeout(guard);
+//     // eslint-disable-next-line react-hooks/exhaustive-deps
+//   }, []);
+
+//   // Watch for data changes from the hook to turn off loader
+//   useEffect(() => {
+//     if (data && data.length > 0) setIsLoading(false);
+//   }, [data]);
+
+//   // shuffle & limit to 6 (defensive copy)
+//   const randomProjects = [...data].sort(() => 0.5 - Math.random()).slice(0, 6);
+
+//   const navigate = useNavigate();
+
+//   const handleNavClick = (path: string) => {
+//     if (path.startsWith("#")) {
+//       if (location.pathname !== "/") {
+//         navigate("/", { replace: true });
+//         setTimeout(() => {
+//           const section = document.querySelector(path);
+//           if (section) section.scrollIntoView({ behavior: "smooth" });
+//         }, 100);
+//       } else {
+//         const section = document.querySelector(path);
+//         if (section) section.scrollIntoView({ behavior: "smooth" });
+//       }
+//     } else {
+//       navigate(path);
+//     }
+//   };
+
+//   return (
+//     <>
+//       <TabSEO
+//         title="Our Projects | GameOn Solution"
+//         description="Explore GameOn Solution's world-class projects — turf installations, cricket grounds, football pitches, and multi-sport arenas across South India."
+//         keywords="turf projects, football turf construction, cricket ground projects, GameOn projects, South India sports construction"
+//         image={seoData.testimonials.image}
+//         url="https://gameonsolution.in/projects"
+//       />
+
+//       {/* HERO SECTION */}
+//       <div className="flex flex-col pt-32 pb-20 items-center px-6 md:px-16 bg-gradient-to-b from-[#06120a] via-[#0c1d12] to-[#06120a]">
+//         <div className="max-w-4xl flex flex-col gap-6 text-center items-center justify-center px-10 lg:px-48 mb-16">
+//           <p className="text-[13px] tracking-[2px] uppercase font-secondary text-emerald-300">
+//             our work speaks
+//           </p>
+//           <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl font-primary text-secondary uppercase leading-tight">
+//             <TextHoverAnimation text="Our Projects" />
+//           </h1>
+//           <p className="text-lg md:text-2xl text-gray-200 font-secondary leading-relaxed">
+//             Each project reflects world-class quality, precision, and passion.
+//           </p>
+//         </div>
+
+//         {/* GRID OF PROJECT CARDS */}
+//         <div className="w-full max-w-7xl px-4">
+//           {/* Preloader: centered gif + optional 'loading' skeleton behind */}
+//           {isLoading ? (
+//             <div className="flex flex-col items-center justify-center py-16">
+//               <div className="mb-6">
+//                 {/* Put your gif file in public folder as /preloader.gif or change path as needed */}
+//                 <img
+//                   src="/preloader.gif"
+//                   alt="Loading projects..."
+//                   className="w-40 h-40 object-contain animate-pulse"
+//                   onError={(e) => {
+//                     // fallback static image if gif not available
+//                     (e.target as HTMLImageElement).src = "/preloader.png";
+//                   }}
+//                 />
+//               </div>
+
+//               <p className="text-sm text-gray-300">
+//                 Loading projects — please wait.
+//               </p>
+
+//               {/* lightweight skeleton grid to indicate layout */}
+//               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-8">
+//                 {Array.from({ length: 6 }).map((_, i) => (
+//                   <div
+//                     key={i}
+//                     className="bg-[#0e1b12]/30 border border-emerald-600/20 rounded-2xl overflow-hidden p-0 h-[360px]"
+//                   >
+//                     <div className="h-[220px] bg-gray-700 animate-pulse" />
+//                     <div className="p-5">
+//                       <div className="h-6 bg-gray-700 rounded mb-3 w-3/4 animate-pulse" />
+//                       <div className="h-4 bg-gray-700 rounded mb-2 w-1/2 animate-pulse" />
+//                       <div className="h-3 bg-gray-700 rounded mt-2 w-full animate-pulse" />
+//                       <div className="h-3 bg-gray-700 rounded mt-2 w-5/6 animate-pulse" />
+//                     </div>
+//                   </div>
+//                 ))}
+//               </div>
+//             </div>
+//           ) : (
+//             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+//               {randomProjects.map((proj: any) => {
+//                 const id = proj.id;
+//                 const title = proj.title ?? "Project";
+//                 const locationText = proj.location ?? "";
+//                 const description = proj.shortDescription ?? "";
+//                 // const date = proj.date ?? proj.createdAt ?? "";
+//                 const fileType = proj.fileType ?? "image";
+//                 const mediaUrl = proj.mediaUrl ?? proj.imageUrl ?? "";
+
+//                 return (
+//                   <article
+//                     key={id}
+//                     className="group bg-[#0e1b12]/40 border border-emerald-600/30 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-emerald-300 transition duration-300"
+//                     aria-labelledby={`project-title-${id}`}
+//                   >
+//                     {/* Media */}
+//                     <div className="h-[220px] w-full bg-gray-200">
+//                       {fileType === "image" || !mediaUrl ? (
+//                         <img
+//                           src={mediaUrl || "/placeholder.svg"}
+//                           alt={title}
+//                           className="w-full h-full object-cover"
+//                           onError={(e) => {
+//                             (e.target as HTMLImageElement).src =
+//                               "/placeholder.svg";
+//                           }}
+//                         />
+//                       ) : (
+//                         <VideoCard
+//                           videoSrc={mediaUrl}
+//                           fileType={
+//                             fileType as "video" | "youtube" | "instagram"
+//                           }
+//                         />
+//                       )}
+//                     </div>
+
+//                     {/* Card body */}
+//                     <div className="p-5 bg-[#0b1610]/60 backdrop-blur-sm border-t border-emerald-600/20">
+//                       {/* TITLE */}
+//                       <h3
+//                         id={`project-title-${id}`}
+//                         className="text-xl font-semibold text-emerald-300 leading-snug mb-2 line-clamp-2"
+//                       >
+//                         {title}
+//                       </h3>
+
+//                       {/* LOCATION */}
+//                       <div className="flex items-start mb-3">
+//                         <MdLocationPin className="mt-0.5 mr-2 text-emerald-400 shrink-0" />
+//                         <p className="text-sm text-gray-300 leading-relaxed line-clamp-1">
+//                           {locationText}
+//                         </p>
+//                       </div>
+
+//                       {/* DESCRIPTION */}
+//                       <p className="text-[14px] text-gray-200 leading-relaxed line-clamp-3">
+//                         {description}
+//                       </p>
+//                     </div>
+//                   </article>
+//                 );
+//               })}
+//             </div>
+//           )}
+//         </div>
+//       </div>
+
+//       {/* Testimonial slider (unchanged) */}
+//       <div className="w-full max-w-7xl mx-auto mt-24 px-6 relative">
+//         <Swiper
+//           modules={[Navigation, Autoplay]}
+//           slidesPerView={3}
+//           spaceBetween={30}
+//           centeredSlides={true}
+//           loop={true}
+//           navigation={true}
+//           autoplay={{ delay: 3000, disableOnInteraction: false }}
+//           className="pb-12"
+//           breakpoints={{
+//             0: { slidesPerView: 1 },
+//             768: { slidesPerView: 2 },
+//             1024: { slidesPerView: 3 },
+//           }}
+//         >
+//           =
+//           {[
+//             {
+//               content:
+//                 "GameOn built our football turf with precision. The results exceeded expectations.",
+//               authorName: "Green Park School",
+//               role: "Namakkal",
+//             },
+//             {
+//               content:
+//                 "Our cricket pitch is world-class now. Safe, durable, and professional.",
+//               authorName: "AKT School",
+//               role: "Kallakurichi",
+//             },
+//             {
+//               content:
+//                 "GameOn completed our turf project ahead of time with premium quality.",
+//               authorName: "Joy University",
+//               role: "Alaganeri",
+//             },
+//             {
+//               content:
+//                 "Parents and students love the new playground. It's truly modern and safe.",
+//               authorName: "Thamarai International School",
+//               role: "Thanjavur",
+//             },
+//             {
+//               content:
+//                 "The ground looks stunning. Maintenance is easy, and performance is great.",
+//               authorName: "Hayagrivas International School",
+//               role: "Tamil Nadu",
+//             },
+//           ].map((proj, i) => (
+//             <SwiperSlide key={i}>
+//               <div
+//                 className="bg-[#0c1d12]/60 border border-emerald-600/30 rounded-2xl
+//                            p-8 md:p-10 shadow-xl backdrop-blur-md
+//                            flex flex-col items-center text-center
+//                            max-w-md mx-auto
+//                            h-[250px] md:h-[270px] transition
+//                            hover:border-emerald-300 hover:shadow-2xl"
+//               >
+//                 <p className="text-gray-200 text-lg md:text-xl font-secondary italic leading-relaxed">
+//                   “{proj.content}”
+//                 </p>
+//                 <div className="flex flex-col items-center mt-6">
+//                   <h4 className="text-emerald-300 font-primary text-xl">
+//                     {proj.authorName}
+//                   </h4>
+//                   <p className="text-sm text-gray-400 font-secondary">
+//                     {proj.role}
+//                   </p>
+//                 </div>
+//               </div>
+//             </SwiperSlide>
+//           ))}
+//         </Swiper>
+//       </div>
+
+//       {/* Footer & contacts unchanged */}
+//       <div className="flex flex-col gap-3 px-8 lg:px-28 py-16 lg:py-28 w-full">
+//         <div className="w-full flex flex-col border-t border-b border-slate-100/20 py-10 px-0 lg:px-1 h-full gap-10">
+//           <div className="w-full flex flex-col lg:flex-row gap-10">
+//             <div className="flex flex-col lg:items-center lg:flex-row lg:w-[50%] w-full text-[12px] gap-5 lg:gap-10 font-secondary uppercase">
+//               <p
+//                 onClick={() => handleNavClick("#home")}
+//                 className="hover:cursor-pointer hover:text-white"
+//               >
+//                 Home
+//               </p>
+//               <p
+//                 onClick={() => handleNavClick("#aboutUs")}
+//                 className="hover:cursor-pointer hover:text-white"
+//               >
+//                 About
+//               </p>
+//               <p
+//                 onClick={() => handleNavClick("#services")}
+//                 className="hover:cursor-pointer hover:text-white"
+//               >
+//                 Services
+//               </p>
+//               <p
+//                 onClick={() => handleNavClick("#contact")}
+//                 className="hover:cursor-pointer hover:text-white"
+//               >
+//                 Contact
+//               </p>
+//             </div>
+
+//             <div className="flex lg:w-[50%] w-full text-[12px] gap-8 font-secondary lg:justify-end">
+//               <a
+//                 href="https://www.instagram.com/gameonsolution_southindia/"
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
+//                 aria-label="Visit our Instagram"
+//               >
+//                 <FaInstagram />
+//                 <span className="sr-only">Instagram</span>
+//               </a>
+//               <a
+//                 href="https://youtube.com/@gameonsolutionoffi?si=U3jRSjQ_TscHG2ry"
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
+//                 aria-label="Visit our YouTube"
+//               >
+//                 <FaYoutube />
+//                 <span className="sr-only">YouTube</span>
+//               </a>
+//               <a
+//                 href="https://wa.me/919615737373"
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
+//                 aria-label="Chat on WhatsApp"
+//               >
+//                 <FaWhatsapp />
+//                 <span className="sr-only">WhatsApp</span>
+//               </a>
+//               <a
+//                 href="https://medium.com/@gameon.solution.317"
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
+//                 aria-label="Read on Medium"
+//               >
+//                 <FaMedium />
+//                 <span className="sr-only">Medium</span>
+//               </a>
+//               <a
+//                 href="https://www.reddit.com/user/Dangerous_Aerie_8168/"
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
+//                 aria-label="Follow us on Reddit"
+//               >
+//                 <FaReddit />
+//                 <span className="sr-only">Reddit</span>
+//               </a>
+//               <a
+//                 href="https://www.linkedin.com/company/gameon-solution/"
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//                 className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
+//                 aria-label="Follow us on LinkedIn"
+//               >
+//                 <FaLinkedin />
+//                 <span className="sr-only">LinkedIn</span>
+//               </a>
+//             </div>
+//           </div>
+
+//           <div className="w-full flex justify-center bg-yellow-100/20 px-5 py-5">
+//             <div className="flex flex-col lg:flex-row gap-10 lg:justify-around">
+//               <div className="flex flex-col justify-center w-full lg:w-[30%] items-center gap-2">
+//                 <MdCall className="text-2xl opacity-80" />
+//                 <div className="flex flex-col gap-3 justify-center items-center">
+//                   <p className="font-primary uppercase text-xl md:text-2xl text-secondary">
+//                     Call
+//                   </p>
+//                   <p className="flex tracking-[1.5px] justify-center items-center gap-1 font-secondary uppercase text-xs font-medium text-white">
+//                     <span className="flex justify-center items-center gap-1.5">
+//                       <span className="tracking-[1.5px]">+91 9615737373</span>
+//                       <span>(or)</span>
+//                       <span className="tracking-[1.5px]">+91 9859873873</span>
+//                     </span>
+//                   </p>
+//                 </div>
+//               </div>
+
+//               <div className="flex flex-col justify-center w-full lg:w-[30%] items-center gap-2">
+//                 <MdEmail className="text-2xl opacity-80" />
+//                 <div className="flex flex-col gap-3 justify-center items-center">
+//                   <p className="font-primary uppercase text-xl md:text-2xl text-secondary">
+//                     Write
+//                   </p>
+//                   <a
+//                     href="mailto:gameonsolutionoff@gmail.com"
+//                     className="text-xs font-medium text-white"
+//                   >
+//                     gameonsolutionoff@gmail.com
+//                   </a>
+//                 </div>
+//               </div>
+
+//               <div className="flex flex-col justify-center w-full lg:w-[30%] items-center gap-2">
+//                 <MdLocationPin className="text-2xl opacity-80" />
+//                 <div className="flex flex-col gap-3 justify-center items-center">
+//                   <p className="font-primary uppercase text-2xl text-secondary">
+//                     Visit
+//                   </p>
+//                   <p className="font-secondary tracking-[1.5px] text-center text-xs font-medium text-white">
+//                     Hanifa Nagar, NGO Colony, Dindigul, Tamil Nadu 624005
+//                   </p>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+
+//         <div className="flex">
+//           <p>©2025. All rights reserved.</p>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default Projects;
+
 import { useEffect, useState } from "react";
 import TextHoverAnimation from "./textHoverAnimation";
 import { usePortfolio } from "@/hook/usePortfolio";
@@ -378,59 +835,41 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-/**
- * Projects page: renders a grid of project cards.
- * Each card shows: image/media, Title, Location, Short description, and date.
- *
- * Added: a simple preloading animation (gif/image) shown while projects are loading.
- * - The code observes the portfolio hook for data and/or a loading flag.
- * - Falls back to a local loading timeout guard in case the hook doesn't expose a loading flag.
- */
-
 const Projects: React.FC = () => {
   const { getPortfolio } = usePortfolio();
   const data = getPortfolio.data ?? [];
 
-  // If the portfolio hook exposes a loading flag, prefer it. Otherwise use our local guard.
   const remoteLoading: boolean | undefined =
     (getPortfolio as any)?.isLoading ?? (getPortfolio as any)?.loading;
 
   const [isLoading, setIsLoading] = useState<boolean>(remoteLoading ?? true);
 
   useEffect(() => {
-    // ensure top-of-page on mount
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    // If the hook provides a loading flag keep sync
     if (typeof remoteLoading === "boolean") {
       setIsLoading(remoteLoading);
     }
 
-    // If there's already data available immediately, stop loading
     if (data && data.length > 0) {
       setIsLoading(false);
     }
 
-    // Safety: in case the hook never toggles a loading flag, set a reasonable timeout to hide loader
     const guard = setTimeout(() => {
       if (!data || data.length === 0) {
-        // keep loading if truly empty; otherwise hide
-        // here we assume backend will respond quickly; adjust as needed
         setIsLoading(false);
       }
-    }, 2500); // 2.5s fallback
+    }, 2500);
 
     return () => clearTimeout(guard);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  // Watch for data changes from the hook to turn off loader
   useEffect(() => {
     if (data && data.length > 0) setIsLoading(false);
   }, [data]);
 
-  // shuffle & limit to 6 (defensive copy)
-  const randomProjects = [...data].sort(() => 0.5 - Math.random()).slice(0, 6);
+  // Show projects in order — NO LIMIT
+  const projectsToShow = data ?? [];
 
   const navigate = useNavigate();
 
@@ -461,7 +900,6 @@ const Projects: React.FC = () => {
         url="https://gameonsolution.in/projects"
       />
 
-      {/* HERO SECTION */}
       <div className="flex flex-col pt-32 pb-20 items-center px-6 md:px-16 bg-gradient-to-b from-[#06120a] via-[#0c1d12] to-[#06120a]">
         <div className="max-w-4xl flex flex-col gap-6 text-center items-center justify-center px-10 lg:px-48 mb-16">
           <p className="text-[13px] tracking-[2px] uppercase font-secondary text-emerald-300">
@@ -475,19 +913,15 @@ const Projects: React.FC = () => {
           </p>
         </div>
 
-        {/* GRID OF PROJECT CARDS */}
         <div className="w-full max-w-7xl px-4">
-          {/* Preloader: centered gif + optional 'loading' skeleton behind */}
           {isLoading ? (
             <div className="flex flex-col items-center justify-center py-16">
               <div className="mb-6">
-                {/* Put your gif file in public folder as /preloader.gif or change path as needed */}
                 <img
                   src="/preloader.gif"
                   alt="Loading projects..."
                   className="w-40 h-40 object-contain animate-pulse"
                   onError={(e) => {
-                    // fallback static image if gif not available
                     (e.target as HTMLImageElement).src = "/preloader.png";
                   }}
                 />
@@ -497,7 +931,6 @@ const Projects: React.FC = () => {
                 Loading projects — please wait.
               </p>
 
-              {/* lightweight skeleton grid to indicate layout */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-8">
                 {Array.from({ length: 6 }).map((_, i) => (
                   <div
@@ -517,12 +950,11 @@ const Projects: React.FC = () => {
             </div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-              {randomProjects.map((proj: any) => {
+              {projectsToShow.map((proj: any) => {
                 const id = proj.id;
                 const title = proj.title ?? "Project";
                 const locationText = proj.location ?? "";
                 const description = proj.shortDescription ?? "";
-                // const date = proj.date ?? proj.createdAt ?? "";
                 const fileType = proj.fileType ?? "image";
                 const mediaUrl = proj.mediaUrl ?? proj.imageUrl ?? "";
 
@@ -532,7 +964,6 @@ const Projects: React.FC = () => {
                     className="group bg-[#0e1b12]/40 border border-emerald-600/30 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:border-emerald-300 transition duration-300"
                     aria-labelledby={`project-title-${id}`}
                   >
-                    {/* Media */}
                     <div className="h-[220px] w-full bg-gray-200">
                       {fileType === "image" || !mediaUrl ? (
                         <img
@@ -554,9 +985,7 @@ const Projects: React.FC = () => {
                       )}
                     </div>
 
-                    {/* Card body */}
                     <div className="p-5 bg-[#0b1610]/60 backdrop-blur-sm border-t border-emerald-600/20">
-                      {/* TITLE */}
                       <h3
                         id={`project-title-${id}`}
                         className="text-xl font-semibold text-emerald-300 leading-snug mb-2 line-clamp-2"
@@ -564,7 +993,6 @@ const Projects: React.FC = () => {
                         {title}
                       </h3>
 
-                      {/* LOCATION */}
                       <div className="flex items-start mb-3">
                         <MdLocationPin className="mt-0.5 mr-2 text-emerald-400 shrink-0" />
                         <p className="text-sm text-gray-300 leading-relaxed line-clamp-1">
@@ -572,7 +1000,6 @@ const Projects: React.FC = () => {
                         </p>
                       </div>
 
-                      {/* DESCRIPTION */}
                       <p className="text-[14px] text-gray-200 leading-relaxed line-clamp-3">
                         {description}
                       </p>
@@ -585,7 +1012,6 @@ const Projects: React.FC = () => {
         </div>
       </div>
 
-      {/* Testimonial slider (unchanged) */}
       <div className="w-full max-w-7xl mx-auto mt-24 px-6 relative">
         <Swiper
           modules={[Navigation, Autoplay]}
@@ -602,7 +1028,6 @@ const Projects: React.FC = () => {
             1024: { slidesPerView: 3 },
           }}
         >
-          =
           {[
             {
               content:
@@ -661,7 +1086,7 @@ const Projects: React.FC = () => {
         </Swiper>
       </div>
 
-      {/* Footer & contacts unchanged */}
+      {/* Footer */}
       <div className="flex flex-col gap-3 px-8 lg:px-28 py-16 lg:py-28 w-full">
         <div className="w-full flex flex-col border-t border-b border-slate-100/20 py-10 px-0 lg:px-1 h-full gap-10">
           <div className="w-full flex flex-col lg:flex-row gap-10">
@@ -698,60 +1123,48 @@ const Projects: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
-                aria-label="Visit our Instagram"
               >
                 <FaInstagram />
-                <span className="sr-only">Instagram</span>
               </a>
               <a
                 href="https://youtube.com/@gameonsolutionoffi?si=U3jRSjQ_TscHG2ry"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
-                aria-label="Visit our YouTube"
               >
                 <FaYoutube />
-                <span className="sr-only">YouTube</span>
               </a>
               <a
                 href="https://wa.me/919615737373"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
-                aria-label="Chat on WhatsApp"
               >
                 <FaWhatsapp />
-                <span className="sr-only">WhatsApp</span>
               </a>
               <a
                 href="https://medium.com/@gameon.solution.317"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
-                aria-label="Read on Medium"
               >
                 <FaMedium />
-                <span className="sr-only">Medium</span>
               </a>
               <a
                 href="https://www.reddit.com/user/Dangerous_Aerie_8168/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
-                aria-label="Follow us on Reddit"
               >
                 <FaReddit />
-                <span className="sr-only">Reddit</span>
               </a>
               <a
                 href="https://www.linkedin.com/company/gameon-solution/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border p-2 border-slate-100/20 flex justify-center hover:bg-slate-500/20 hover:text-yellow-400"
-                aria-label="Follow us on LinkedIn"
               >
                 <FaLinkedin />
-                <span className="sr-only">LinkedIn</span>
               </a>
             </div>
           </div>
@@ -765,11 +1178,9 @@ const Projects: React.FC = () => {
                     Call
                   </p>
                   <p className="flex tracking-[1.5px] justify-center items-center gap-1 font-secondary uppercase text-xs font-medium text-white">
-                    <span className="flex justify-center items-center gap-1.5">
-                      <span className="tracking-[1.5px]">+91 9615737373</span>
-                      <span>(or)</span>
-                      <span className="tracking-[1.5px]">+91 9859873873</span>
-                    </span>
+                    <span className="tracking-[1.5px]">+91 9615737373</span>
+                    <span>(or)</span>
+                    <span className="tracking-[1.5px]">+91 9859873873</span>
                   </p>
                 </div>
               </div>

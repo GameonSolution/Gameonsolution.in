@@ -161,6 +161,7 @@ import Testimonials from "../testimonial";
 import { FaCheckCircle } from "react-icons/fa";
 import Awards from "../Awards";
 import WhatsAppButton from "../WhatsappButton";
+import TextTestimonials from "../texttestimonials";
 
 const BadmintonCourt = () => {
   useEffect(() => {
@@ -214,6 +215,8 @@ const BadmintonCourt = () => {
 
       <Certificates />
 
+      <TextTestimonials />
+
       <Testimonials />
 
       <motion.div
@@ -265,12 +268,12 @@ const BadmintonCourt = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
             Why Choose GameOn Solution for Badminton Court Construction?
           </h3>
-          <p className="text-gray-300 mb-4">
+          <p className="text-gray-300 mb-4 md:text-lg">
             Your badminton court isn’t just a floor — it’s where athletes grow,
             train, and compete. That’s why choosing an expert construction
             partner matters. Here’s why South India trusts GameOn Solution:
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:text-lg">
             {[
               "BWF-Standard Design & Precision — Exact specifications matching professional layouts.",
               "Indoor & Outdoor Expertise — Flooring and drainage tailored to your conditions.",
@@ -343,7 +346,7 @@ const BadmintonCourt = () => {
             Technical Specifications & Flooring Options
           </h3>
           <div className="overflow-hidden rounded-2xl border border-white/10">
-            <table className="w-full text-left text-gray-200">
+            <table className="w-full text-left text-gray-200 md:text-lg">
               <thead className="bg-white/10">
                 <tr>
                   <th className="py-3 px-4">Court Type</th>
@@ -388,7 +391,7 @@ const BadmintonCourt = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-6">
             Our 4-Step Badminton Court Construction Process
           </h3>
-          <div className="overflow-hidden rounded-2xl border border-white/10">
+          <div className="overflow-hidden rounded-2xl border border-white/10 md:text-lg">
             <table className="w-full text-left text-gray-200">
               <thead className="bg-white/10">
                 <tr>
@@ -448,7 +451,7 @@ const BadmintonCourt = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-4">
             Who We Build For
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:text-lg">
             {[
               "Schools & Colleges — safe and durable courts for students.",
               "Sports Academies — professional-level training surfaces.",
@@ -472,7 +475,7 @@ const BadmintonCourt = () => {
           <h3 className="text-2xl md:text-3xl font-primary text-secondary mb-3">
             Our Promise of Quality
           </h3>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-200">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-200 md:text-lg">
             {[
               "Designed for high performance & comfort",
               "Built with eco-conscious materials",
@@ -484,7 +487,7 @@ const BadmintonCourt = () => {
               </li>
             ))}
           </ul>
-          <p className="text-gray-300 mt-4">
+          <p className="text-gray-300 mt-4 md:text-lg">
             Every square foot reflects our belief — that great games begin on
             great surfaces.
           </p>

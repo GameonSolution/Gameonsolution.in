@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { FaPlus, FaMinus } from "react-icons/fa";
 import { Footer } from "../footer";
 import WhatsAppButton from "../WhatsappButton";
+import Certificates from "../products/pageAnimation/certificates";
+import Awards from "../Awards";
 
 const UShapeTurf: React.FC = () => {
   useEffect(() => {
@@ -103,14 +105,18 @@ const UShapeTurf: React.FC = () => {
           <p className="text-gray-200 text-lg">
             <strong>U Shape Turf</strong> by GameOn Solution is designed for
             unique venues that need enclosed or semi-enclosed turf setups. Ideal
-            for <strong>batting cages, training academies, futsal courts</strong>
-            , and compact multipurpose play areas.
+            for{" "}
+            <strong>batting cages, training academies, futsal courts</strong>,
+            and compact multipurpose play areas.
           </p>
           <p className="text-gray-200 text-lg">
             Its specialized layout ensures{" "}
-            <strong>better ball rebound, safe side boundaries, and enhanced
-            training focus</strong>. With eco-friendly infills and durable
-            fibers, it is a modern turf built to last.
+            <strong>
+              better ball rebound, safe side boundaries, and enhanced training
+              focus
+            </strong>
+            . With eco-friendly infills and durable fibers, it is a modern turf
+            built to last.
           </p>
           <ul className="list-disc list-inside text-gray-200 space-y-3 text-lg">
             <li>Specialized U-shaped design for targeted play areas</li>
@@ -124,6 +130,10 @@ const UShapeTurf: React.FC = () => {
         </motion.div>
       </div>
 
+      <Certificates />
+
+      <Awards />
+
       {/* ✅ U SHAPE TURF SECTION */}
       <div className="py-20 bg-[#102010] text-white">
         <div className="max-w-6xl mx-auto px-6 flex flex-col gap-8">
@@ -131,10 +141,10 @@ const UShapeTurf: React.FC = () => {
             U Shape Turf Specifications
           </h2>
           <p className="text-gray-300 text-lg text-center max-w-3xl mx-auto">
-            The <strong>U Shape Turf</strong> is engineered for compact, enclosed
-            installations where safety and precision matter. With high-density
-            fibers and advanced drainage, it delivers consistent play throughout
-            the year.
+            The <strong>U Shape Turf</strong> is engineered for compact,
+            enclosed installations where safety and precision matter. With
+            high-density fibers and advanced drainage, it delivers consistent
+            play throughout the year.
           </p>
 
           <div className="bg-green-900/20 border border-green-600 rounded-2xl p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
