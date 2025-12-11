@@ -81,7 +81,7 @@ const OvalTurf: React.FC = () => {
       {/* ✅ INTRO SECTION */}
       <div className="max-w-7xl mx-auto px-6 lg:px-20 py-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         <motion.img
-          src="/oval/O2.webp"
+          src="https://storage.files-vault.com/uploads/1765456097-ZRg9Sdi8qp.jpg"
           alt="Oval Turf Grass"
           className="rounded-2xl shadow-lg w-full h-full object-cover"
           initial={{ opacity: 0, x: -50 }}
@@ -242,11 +242,39 @@ const OvalTurf: React.FC = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6">
           {[
             { src: "/oval/O1.webp", alt: "Oval Turf Project 1" },
-            { src: "/oval/O4.webp", alt: "Oval Turf Project 2" },
-            { src: "/oval/O5.webp", alt: "Oval Turf Project 3" },
-            { src: "/oval/O6.webp", alt: "Oval Turf Project 4" },
+            // { src: "/oval/O4.webp", alt: "Oval Turf Project 2" },
+            // { src: "/oval/O5.webp", alt: "Oval Turf Project 3" },
+            // { src: "/oval/O6.webp", alt: "Oval Turf Project 4" },
             { src: "/oval/O7.webp", alt: "Oval Turf Project 5" },
-            { src: "/oval/O3.webp", alt: "Oval Turf Project 6" },
+            // { src: "/oval/O3.webp", alt: "Oval Turf Project 6" },
+            {
+              src: "https://storage.files-vault.com/uploads/1765456097-xRrm8OEGvA.jpg",
+              alt: "Oval Turf Project 7",
+            },
+            {
+              src: "https://storage.files-vault.com/uploads/1765456097-YAgCoEurbm.jpg",
+              alt: "Oval Turf Project 8",
+            },
+            {
+              src: "https://storage.files-vault.com/uploads/1765456097-zLbtCOp8pO.jpg",
+              alt: "Oval Turf Project 9",
+            },
+            {
+              src: "https://storage.files-vault.com/uploads/1765456098-igaBhMMB73.jpg",
+              alt: "Oval Turf Project 10",
+            },
+            {
+              src: "https://storage.files-vault.com/uploads/1765456097-943En4vRW0.jpg",
+              alt: "Oval Turf Project 11",
+            },
+            {
+              src: "https://storage.files-vault.com/uploads/1765456097-x4xY4VkKFt.jpg",
+              alt: "Oval Turf Project 12",
+            },
+            {
+              src: "https://storage.files-vault.com/uploads/1765456097-ZRg9Sdi8qp.jpg",
+              alt: "Oval Turf Project 13",
+            },
           ].map((img, idx) => (
             <motion.div
               key={idx}
