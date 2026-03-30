@@ -154,11 +154,33 @@
       fbq("track", "PageView");
     </script>
 
-    <script
-      src="https://myappzchat.com/production/master/widget/embed-widget.umd.js"
-      data-widget-id="9c5d0333-e81c-4cf8-b26c-c02d1c94833a"
-      defer
-    ></script>
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "809655858877191");
+      fbq("track", "PageView");
+    </script>
 
     <style>
       .myappz-widget-container,
@@ -186,7 +208,7 @@
       <div class="no-js-fallback">
         <h1>South India's No.1 Sports Infrastructure Developer</h1>
         <p>
-          Welcome to GameOn Solution – We build world-class Football and Cricket
+          Welcome to GameOn Solution - We build world-class Football and Cricket
           Turfs.
         </p>
         <p>
@@ -207,5 +229,13 @@
         alt="Facebook Pixel Tracker"
       />
     </noscript>
+
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=809655858877191&ev=PageView&noscript=1"
+    /></noscript>
   </body>
 </html>
